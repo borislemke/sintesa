@@ -1,0 +1,27 @@
+<md-content class="matter-page-template" id="matter-page-dashboard" ng-cloak>
+    <matter-graph-container>
+        <matter-graph-control layout="row">
+            <button class="matter-button">Last Week</button>
+            <button class="matter-button">Last 30 Days</button>
+            <button class="matter-button">Last Year</button>
+        </matter-graph-control>
+        <matter-graph-pole ng-repeat="point in dashboardCtrl.dashData | filter:query as filtered track by $index" style="left: {{ (100 / (filtered.length + 1)) * ($index + 1) }}%; height: {{ point.percent }}%">
+            <md-tooltip md-direction="top">{{ point.value | number }}</md-tooltip>
+        </matter-graph-pole>
+    </matter-graph-container>
+
+    <md-content layout="row" id="dashboard-quick-data">
+        <md-content layout="column" flex="25" class="dashboard-quick-data-wrapper" ng-repeat="metric in dashboardCtrl.quickDashData track by $index">
+            <h2 ng-bind="metric.data.total | number"></h2>
+            <p ng-bind="'total ' + metric.metric"></p>
+            <div layout="row" class="dashboard-quick-graph-wrapper">
+                <matter-graph-pole style="left: 0; height: 15%"></matter-graph-pole>
+                <matter-graph-pole style="left: 20%; height: 18%"></matter-graph-pole>
+                <matter-graph-pole style="left: 40%; height: 22%"></matter-graph-pole>
+                <matter-graph-pole style="left: 60%; height: 27%"></matter-graph-pole>
+                <matter-graph-pole style="left: 80%; height: 42%"></matter-graph-pole>
+                <matter-graph-pole style="left: calc(100% - 2px); height: 59%"></matter-graph-pole>
+            </div>
+        </md-content>
+    </md-content>
+</md-content>

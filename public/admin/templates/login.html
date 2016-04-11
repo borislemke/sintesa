@@ -1,0 +1,20 @@
+<md-content class="matter-page-template" id="matter-page-dashboard" ng-cloak fixed spread style="margin: auto; background-color: white; z-index: 1000;">
+    <div style="width: 244px;
+    height: 244px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; margin: auto;">
+        <md-content box-shadow layout="row" layout-wrap style="background: #f2f2f2; height: 100%;" class="md-padding">
+            <md-input-container md-no-float fwidth style="margin: 0; height: 32px;">
+                <input type="text" placeholder="username" ng-model="loginCtrl.form.username">
+            </md-input-container>
+            <md-input-container md-no-float fwidth style="margin: 0; height: 32px;">
+                <input type="password" placeholder="password" ng-model="loginCtrl.form.password">
+            </md-input-container>
+            <span class="flex"></span>
+            <div layout="row">
+                <md-button flex>sign up</md-button>
+                <md-button flex>login</md-button>
+            </div>
+        </md-content>
+    </div>
+</md-content>

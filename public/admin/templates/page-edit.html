@@ -1,0 +1,257 @@
+<md-content class="matter-page-template" id="matter-page-content-page-edit" layout="column">
+    <md-toolbar class="md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex>
+                <span ng-bind="pageEditCtrl.page.title"></span>
+            </h2>
+            <md-button ng-href="http://pnkhotels.app/{{ pageEditCtrl.page.url }}" target="_blank">preview page</md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content class="matter-data-container md-padding" flex md-scroll-y>
+        <form>
+            <md-content class="md-padding content-module-block"
+                        style="background-color: #f8f8f8; margin: 8px 0; border: 1px solid #f1f1f1;">
+                <h3 style="margin: 0; font-size: 14px; padding-bottom: 12px;">Basic Information</h3>
+                <div class="" layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="50">
+                        <label>Page Title</label>
+                        <input type="text" ng-model="pageEditCtrl.page.title">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="50">
+                        <label>Page URL</label>
+                        <input type="text" ng-model="pageEditCtrl.page.url">
+                    </md-input-container>
+                </div>
+                <div layout="row">
+                    <md-input-container flex="33">
+                        <label>Status</label>
+                        <md-select ng-model="pageEditCtrl.page.status" aria-label="Page availability">
+                            <md-option ng-repeat="status in [{name: 'Enabled', code: 1}, {name: 'Disabled', code: 0}]"
+                                       value="{{status.code}}" ng-selected="status.code === pageEditCtrl.page.status"
+                                       ng-bind="status.name">
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container flex="33">
+                        <label>Page Header</label>
+                        <md-select ng-model="pageEditCtrl.page.header"
+                                   aria-label="Select which page header this page is using">
+                            <md-option ng-repeat="header in [
+                    {name: 'Home Header', code: 'header'},
+                    {name: 'PNK Header | General', code: 'nav-pnk'},
+                    {name: 'PNK Header | Bali', code: 'nav-bali'},
+                    {name: 'PNK Header | Gili Air', code: 'nav-gili-a'},
+                    {name: 'PNK Header | Gili T', code: 'nav-gili-t'}
+                    ]" ng-selected="header.code == pageEditCtrl.page.header" value="{{header.code}}"
+                                       ng-bind="header.name">
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container flex="33">
+                        <label>Page Footer</label>
+                        <md-select ng-model="pageEditCtrl.page.footer"
+                                   aria-label="Select which page footer this page is using">
+                            <md-option ng-repeat="footer in [
+                    {name: 'PNK Footer', code: 'footer-pnk'},
+                    {name: 'General Footer', code: 'footer'},
+                    {name: 'Footer | Gili T', code: 'footer-gili-t'}
+                    ]" ng-selected="footer.code === pageEditCtrl.page.footer" value="{{footer.code}}"
+                                       ng-bind="footer.name"></md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <md-input-container class="md-block">
+                    <label>Page Meta Description</label>
+                    <textarea ng-model="pageEditCtrl.page.meta" md-maxlength="155"></textarea>
+                    <div ng-messages="pageEditCtrl.page.meta.$error" role="alert">
+                        <div ng-message="md-maxlength" class="my-message">
+                            Meta description that are too long may cripple Search Engine Ranking
+                        </div>
+                    </div>
+                </md-input-container>
+            </md-content>
+
+            <div layout="column">
+                <md-content class="md-padding content-module-block"
+                            ng-repeat="module in pageEditCtrl.page.content | toArray | orderBy:'order' track by $index"
+                            ng-init="parentModule = module"
+                            style="background-color: #f8f8f8; margin: 8px 0; border: 1px solid #f1f1f1;">
+                    <div layout="row">
+                        <div layout="column" flex>
+                            <h3 ng-bind="pageEditCtrl.modules[module.type]['title']"
+                                style="margin: 0; font-size: 14px; padding-bottom: 2px;"></h3>
+                            <p ng-bind="pageEditCtrl.modules[module.type]['description']"
+                               style="margin: 0; padding-bottom: 8px; font-size: 12px;"></p>
+                        </div>
+                        <div layout="row" layout-align="end center" flex>
+                            <md-button class="md-icon-button" ng-if="!$first && pageEditCtrl.page.content.length > 1"
+                                       ng-click="pageEditCtrl.moduleOrder(module, 'up')" aria-label="Move module up">
+                                <md-icon class="md-icon-dark" md-svg-icon="assets/icons/arrow_upward.svg"></md-icon>
+                            </md-button>
+                            <md-button class="md-icon-button" ng-if="!$last && pageEditCtrl.page.content.length > 1"
+                                       ng-click="pageEditCtrl.moduleOrder(module, 'down')"
+                                       aria-label="Move module down">
+                                <md-icon class="md-icon-dark" md-svg-icon="assets/icons/arrow_downward.svg"></md-icon>
+                            </md-button>
+                            <md-button class="md-icon-button" md-menu-align-target
+                                       ng-click="pageEditCtrl.removeModule(module.order)">
+                                <md-icon md-svg-icon="assets/icons/close.svg" class="md-icon-dark"></md-icon>
+                            </md-button>
+
+                            <md-menu md-position-mode="target-right target">
+                                <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                                    <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg"
+                                             class="md-icon-dark"></md-icon>
+                                </md-button>
+
+                                <md-menu-content width="3">
+                                    <md-menu-item>
+                                        <md-button md-menu-align-target>
+                                            <md-icon md-svg-icon="assets/icons/settings.svg"
+                                                     class="md-icon-dark"></md-icon>
+                                            Configure
+                                        </md-button>
+                                    </md-menu-item>
+                                </md-menu-content>
+                            </md-menu>
+                        </div>
+                    </div>
+
+                    <div ng-if="module.type === 'text_column'" ng-init="data = module.content">
+                        <md-input-container ng-repeat="input in data track by $index" ng-init="index = $index"
+                                            class="md-block">
+                            <label ng-bind="'Input ' + ($index + 1)"></label>
+                            <textarea ng-model="input"></textarea>
+                        </md-input-container>
+                    </div>
+                    <div ng-if="module.type === 'image_slider'" ng-init="data = module.content" layout="row"
+                         layout-wrap>
+                        <matter-image-wrapper ng-repeat="item in data" flex="25" style="padding: 2px 4px;">
+                            <img ng-src="http://pnkhotels.app/assets/images/{{item.src}}"
+                                 style="width: 100%; height: auto;">
+                        </matter-image-wrapper>
+                        <div style="width: 100%; max-width: 240px; height: 160px; background-color: white;"
+                             flex="25">
+                            <md-icon md-svg-icon="assets/icons/add.svg" class="md-icon-dark"></md-icon>
+                        </div>
+                    </div>
+                    <div ng-if="module.type === 'text_block_column'" ng-init="data = module.content"
+                         layout="row">
+                        <matter-image-wrapper style="margin-right: 16px;">
+                            <img ng-src="http://pnkhotels.app/assets/images/{{data.image}}"
+                                 style="width: 100%; max-width: 240px; height: auto;">
+                        </matter-image-wrapper>
+                        <div flex layout="column">
+                            <md-input-container class="md-block">
+                                <label>Block Title</label>
+                                <input type="text" ng-model="data.title">
+                            </md-input-container>
+                            <md-input-container class="md-block">
+                                <label>Block Description</label>
+                                <textarea ng-model="data.description"></textarea>
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div ng-if="module.type === 'custom_owner_text_block_column'" layout="row"
+                         ng-init="data = module.content">
+                        <div layout="column" flex="40">
+                            <matter-image-wrapper>
+                                <img ng-src="http://pnkhotels.app/assets/images/{{data.image.file}}"
+                                     style="max-width: 100%; height: auto;">
+                            </matter-image-wrapper>
+
+                            <md-input-container>
+                                <label>Image Title</label>
+                                <input type="text" ng-model="data.image.title">
+                            </md-input-container>
+                            <md-input-container>
+                                <label>Image Subtitle</label>
+                                <input type="text" ng-model="data.image.subtitle">
+                            </md-input-container>
+                        </div>
+                        <div layout="column" flex="60">
+                            <md-input-container>
+                                <label>Block Title</label>
+                                <input type="text" ng-model="data.title">
+                            </md-input-container>
+                            <md-input-container>
+                                <label>Block Description</label>
+                                <textarea ng-model="data.description"></textarea>
+                            </md-input-container>
+                            <md-input-container>
+                                <label>Block Subtitle</label>
+                                <textarea ng-model="data.subdescription"></textarea>
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div ng-if="module.type === 'rooms_module'" layout="row">
+                        <md-input-container flex="60">
+                            <label>Rooms from Hotel</label>
+                            <md-select ng-model="module.hotel_id" aria-label="Choose which hotel to show rooms from">
+                                <md-option ng-repeat="hotel in [{name: 'PNK Bali', id: 1}, {name: 'PNK Gili T', id: 2}]"
+                                           value="{{hotel.id}}" ng-selected="hotel.id === module.hotel_id"
+                                           ng-bind="hotel.name">
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container flex="40">
+                            <label>Sort by</label>
+                            <md-select ng-model="module.sort_by"
+                                       aria-label="Choose order of how the rooms will be listed">
+                                <md-option
+                                        ng-repeat="sort in [{name: 'Date Added', code: 'id'}, {name: 'Room Name', code: 'name'}, {name: 'Room Size', code: 'area'}, {name: 'Capacity', code: 'person'}]"
+                                        value="{{sort.code}}" ng-selected="sort.code === module.sort_by"
+                                        ng-bind="sort.name">
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div ng-if="module.type === 'image_column'" ng-init="data = module.content" layout="row"
+                         layout-xs="column">
+                        <matter-image-wrapper ng-repeat="item in data"
+                                              flex="{{ data.length === 3 ? 33 : data.length === 2 ? 50 : 100 }}">
+                            <img ng-src="http://pnkhotels.app/assets/images/{{item.src}}"
+                                 style="width: 100%; height: auto;">
+                        </matter-image-wrapper>
+                    </div>
+                    <div ng-if="module.type === 'testimony_slider'" ng-init="data = module.content" layout="column">
+                        <div ng-repeat="item in data">
+                            <div layout="row" class="md-block">
+                                <md-input-container flex>
+                                    <label>Title</label>
+                                    <input type="text" ng-model="item.title">
+                                </md-input-container>
+                                <md-input-container flex>
+                                    <label>Date</label>
+                                    <input type="text" ng-model="item.date">
+                                </md-input-container>
+                            </div>
+                            <md-input-container class="md-block">
+                                <label>Testimony</label>
+                                <textarea ng-model="item.text"></textarea>
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div ng-if="module.type === 'image_gallery_sortable'" ng-init="data = module.content" layout="row"
+                         layout-wrap>
+                        <matter-image-wrapper ng-repeat="item in data" flex="25" style="padding: 2px 4px;">
+                            <img ng-src="http://pnkhotels.app/assets/images/{{item.src}}"
+                                 style="width: 100%; height: auto;">
+                        </matter-image-wrapper>
+                        <div style="width: 100%; max-width: 240px; height: 160px; background-color: white;"
+                             flex="25" layout-align="center center">
+                            <md-icon flex md-svg-icon="assets/icons/add.svg" class="md-icon-dark"></md-icon>
+                        </div>
+                    </div>
+                </md-content>
+            </div>
+
+            <div layout="row" layout-align="end center">
+                <md-button>cancel</md-button>
+                <md-button class="md-primary" ng-click="pageEditCtrl.saveForm()">save</md-button>
+            </div>
+        </form>
+    </md-content>
+</md-content>

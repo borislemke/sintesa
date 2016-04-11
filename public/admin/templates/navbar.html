@@ -1,0 +1,60 @@
+<md-content id="matter-sidenav" layout="row">
+    <md-button class="md-icon-button" id="sidebar-lock-button" ng-click="navbarCtrl.switchSideLock()"
+               aria-label="Toggle sidebar lock">
+        <md-icon ng-if="!sideIsLocked" class="md-icon-dark" md-svg-icon="assets/icons/lock_open.svg"></md-icon>
+        <md-icon ng-if="sideIsLocked" class="md-icon-dark" md-svg-icon="assets/icons/lock.svg"></md-icon>
+    </md-button>
+    <md-list id="matter-menu-group-wrapper" layout="column">
+
+        <!-- Admin Profile -->
+        <matter-menu-item id="nav-user-profile">
+            <md-menu class="matter-menu-group-item">
+                <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                    <img src="//gravatar.com/avatar/7f4ec37467f2f7db6fffc7b4d2cc8dc2?s=200&d=https%3A%2F%2Fscotch.io%2Fwp-content%2Fthemes%2Fscotchpress%2Fimg%2Flogo-large.png">
+                </md-button>
+
+                <md-menu-content width="4">
+                    <md-menu-item>
+                        <md-button md-menu-align-target ng-href="notifications">
+                            <md-icon md-svg-icon="assets/icons/notifications_none.svg" class="md-icon-dark"></md-icon>
+                            Notifications
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button md-menu-align-target ng-href="my-account">
+                            <md-icon md-svg-icon="assets/icons/people.svg" class="md-icon-dark"></md-icon>
+                            My Profile
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button md-menu-align-target ng-href="/auth/logout">
+                            <md-icon md-svg-icon="assets/icons/arrow_back.svg" class="md-icon-dark"></md-icon>
+                            Logout
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+            <matter-notif-counter>7</matter-notif-counter>
+        </matter-menu-item>
+
+        <!-- Main Navigation Groups -->
+        <matter-menu-item ng-repeat="menu in navbarCtrl.menuItems track by $index" class="matter-menu-group-item"
+                          ng-click="menu.submenu ? navbarCtrl.openMenu(menu.identifier) : navbarCtrl.navigate(menu.link, menu.identifier)"
+                          md-ink-ripple="#d3d3d3" ng-cloak ng-class="{active: activeMenu == menu.identifier}">
+            <md-icon md-svg-icon="assets/icons/{{menu.icon}}.svg"></md-icon>
+            <md-tooltip class="nav-group-tooltip" md-direction="right">{{menu.title}}</md-tooltip>
+        </matter-menu-item>
+    </md-list>
+
+    <md-content id="matter-submenu-wrapper">
+        <md-list ng-repeat="menu in navbarCtrl.menuItems track by $index" ng-if="menu.submenu"
+                 ng-show="activeMenu == menu.identifier">
+            <h3 ng-bind="menu.title"></h3>
+            <md-list-item ng-repeat="submenu in menu.submenu track by $index" ng-if="!submenu.subtitle"
+                          ng-href="{{submenu.link}}" aria-label="submenu.title">
+                <p ng-bind="submenu.title"></p>
+                <matter-submenu-notif ng-bind="24"></matter-submenu-notif>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-content>

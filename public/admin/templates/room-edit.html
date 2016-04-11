@@ -1,0 +1,57 @@
+<md-content class="matter-page-template" id="matter-page-content-rooms" layout="column">
+    <md-toolbar class="md-tall md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex>
+                <span ng-bind="roomEditCtrl.room.title"></span>
+            </h2>
+        </div>
+    </md-toolbar>
+
+    <md-content class="md-padding" flex md-scroll-y>
+        <div class="md-block" layout="row" layout-wrap style="margin-bottom: 32px;">
+            <div class="matter-gallery-item" ng-repeat="gallery in roomEditCtrl.room.gallery track by $index" style="width: 20%; height: 128px; position: relative; overflow: hidden;">
+                <img ng-src="http://pnkhotels.app/assets/images/rooms/{{ gallery }}" class="spread" style="max-width: 100%; height: auto; position: absolute; margin: auto;">
+            </div>
+        </div>
+
+        <div layout="row" class="md-block">
+            <md-input-container flex>
+                <label>Room Title</label>
+                <input type="text" ng-model="roomEditCtrl.room.title">
+            </md-input-container>
+        </div>
+
+        <div layout="row" class="md-block">
+            <md-input-container flex="33">
+                <label>Room Capacity</label>
+                <input type="text" ng-model="roomEditCtrl.room.person">
+            </md-input-container>
+            <md-input-container flex="33">
+                <label>Room Size</label>
+                <input type="text" ng-model="roomEditCtrl.room.area">
+            </md-input-container>
+            <md-input-container flex="33">
+                <label>Bed Type</label>
+                <md-select ng-model="roomEditCtrl.room.bedtype" aria-label="Room bed type">
+                    <md-option ng-repeat="room in ['King Size', 'Queen Size', 'Single Bed']" value="{{ room }}">
+                        {{ room }}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+        <md-input-container class="md-block">
+            <label>Room Highlight</label>
+            <textarea rows="6" md-maxlength="70" ng-model="roomEditCtrl.room.highlight" md-select-on-focus></textarea>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Room Description</label>
+            <textarea rows="6" md-maxlength="320" ng-model="roomEditCtrl.room.content" md-select-on-focus></textarea>
+        </md-input-container>
+
+        <div layout="row" layout-align="end center">
+            <md-button ng-href="rooms">cancel</md-button>
+            <md-button class="md-primary" ng-click="roomEditCtrl.saveRoom()">save</md-button>
+        </div>
+    </md-content>
+</md-content>

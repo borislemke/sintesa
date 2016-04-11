@@ -1,0 +1,12 @@
+<md-dialog aria-label="Filter dialog">
+    <form>
+        <md-dialog-content class="md-dialog-content">
+            <h2 class="md-title">Filter pages by:</h2>
+            <p>This will be a list of filters</p>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+        <md-button ng-click="filterDialogCtrl.close()">cancel</md-button>
+        <md-button class="md-primary" ng-click="filterDialogCtrl.answer('useful')">apply</md-button>
+    </md-dialog-actions>
+    </form>
+</md-dialog>

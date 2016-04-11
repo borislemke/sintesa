@@ -1,0 +1,461 @@
+{
+    "home": {
+
+        "id": 1,
+
+        "title": "Home",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "content": {
+
+            "banner": {
+                "title": "Live your Story.",
+                "description": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+                "button": {
+                    "text": "read the story",
+                    "link": "about"
+                },
+                "images": [
+                    "homebg.jpg",
+                    "homebg2.jpg",
+                    "homebg4.jpg"
+                ]
+            },
+
+            "modals": {
+
+                "bali": {
+                    "title": "Coco Bali",
+                    "description": "Stay cool, no rules. It's a surfer's paradise at the heart of Padang Padang.",
+                    "link": "bali-home"
+                },
+
+                "gili-t": {
+                    "title": "Coco Gili T.",
+                    "description": "3000 sqm paradise with a beach front, 27 rooms and Sunset Kiss beach club.",
+                    "link": "gili-t-home"
+                },
+
+                "gili-a": {
+                    "title": "Coco Gili Air",
+                    "description": "Beach front paradise with breath-taking sunset view over Gili Meno and Bali.",
+                    "link": "gili-air"
+                }
+            }
+        },
+
+        "url": "home",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "about": {
+
+        "id": 2,
+
+        "title": "About",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "content": {
+
+            "first": {
+                "title": "Nice Small Hotels.",
+                "description": "PNK established in March 2011, starting in Bali, Indonesia. It’s a place where surfers can enjoy their stay without emptying their wallets. PNK promises to be a cool place where everyone can relax, have an easy time, also a good place to have private parties.<br><br>Our motto is: Stay COOL, no RULES! Those staying at PNK will not need to follow any formal RULES, except remembering not to disturb other guests. That’s it for now, if you need more info pls contact us at:",
+                "email": "info@pinkcocobali.com"
+            },
+
+            "second": {
+                "title": "Live your Story.",
+                "description": "Since I first visited Padang Padang in the early 1990s in search for unique waves to surf, I fell in love with this area. Back then, there was no road, let alone electricity or fresh water. I always used to dream of acquiring a piece of land and building a small hotel for surfers. After many years of hard work, my dream has finally come true.",
+                "image": "slider/about2.jpg"
+            },
+
+            "third": {
+                "title": "The People",
+                "description": "PNKhotels™ is a company created by long-time hotel professionals, Ayu & Pancho Llamas, who are partners and manages these small, stylish, well located hotels.",
+                "subdescription": "Pancho has been working in the hotel industry for over 30 years with top international hotel companies in 5 different continents. Starting as a humble night receptionist and still holding the position of Vice President of Operations in a leading luxury hotel company.",
+                "image": {
+
+                    "file": "people/3.jpg",
+                    "title": "Ayu & Pancho Llamas",
+                    "subtitle": "CO-FOUNDERS"
+                }
+            }
+        },
+
+        "url": "about",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "baliHome": {
+
+        "id": 3,
+
+        "title": "Bali",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "content": {
+
+            "slides": [
+                "homebg.jpg",
+                "homebg2.jpg",
+                "homebg4.jpg"
+            ],
+
+            "textblock": {
+                "title": "PinkCoco Bali, Indonesia",
+                "columnOne": "PinkCoco Bali is opened with 21 rooms. There are 4 main categories, 7 Garden View rooms on the ground floor, 7 Seaview rooms, 6 Deluxe rooms and The Penthouse 360.",
+                "columnTwo": "Pinkcoco promises to be cool place, where everyone can relax and have an easy time. Pinkcoco can be rented in full for private parties. Rates will be always competitive and afforable."
+            },
+
+            "gallery": [
+                "general/bali3.jpg",
+                "general/bali2.jpg",
+                "general/bali1.jpg"
+            ],
+
+            "testimonials": [
+                {
+                    "title": "“Peaceful Oasis”",
+                    "description": "A little gem in Pecatu. We booked the Sea Vista room, very spacious, great air-con, and balcony overlooking the pool. Cool surroundings, decor and reasonably priced only $80USD including breakfast. Such a nice change to overcrowded Seminyak.",
+                    "date": "March 15, 2015"
+                },
+                {
+                    "title": "“Enjoyable Stay”",
+                    "description": "we stayed in the penthouse. the room is spacious and the view was fantastic! the value was way exceeding the price we paid! in terms of facilities, we really enjoyed the SPA and the pool!! it's less than 500m to padang padang beach and is close to restaurants and stores. we really enjoyed our stay.",
+                    "date": "March 1, 2015"
+                },
+                {
+                    "title": "“Mother &amp; Daughter loves PINKCOCO!”",
+                    "description": "It was our 'Mother Daughter Bonding' vacation. My daughter couldn't have found a more perfect hotel. Pinkcoco was just a short walk from the beach, not a secluded beach but not overly crowded and the water was ideal for surfers. We were in unit 13, absolutely nothing unlucky about it. It was a HUGE room with a king size bed on one side and a big sitting area on the other. <br><br>HUGE bathroom too. Also has an open terrace overlooking the pool. Could easily accommodate a family of four! Thumbs up for the food &amp; drinks served at the hotel's Trattoria. We also enjoyed our massage session at the Esthetic Spa. The staffs were very friendly &amp; helpful - booked taxis, recommended places of interest, etc. We thoroughly enjoyed our stay @ Pinkcoco. If I must find some fault, I would request for better quality bath towels and for the rooster to crow at more appropriate times!",
+                    "date": "February 28, 2015"
+                },
+                {
+                    "title": "“What a nice surprise”",
+                    "description": "We booking into the pink Coco after moving from another resort close by and we were so relieved. Unlike the other resort, which was much more expensive we had clean rooms, friendly staff and a great vibe. We enjoyed the open feeling of the place and the walk to the beach was shorter then we expected. There are shops all around which is good. We have extended our stay here after looking at other places around bali why pay twice or three times as much to stay in a big resort where you feel boxed in! Here it is easy, peaceful and relaxing.",
+                    "date": "February 9, 2015"
+                }
+            ]
+        },
+
+        "url": "bali-home",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "baliRooms": {
+
+        "id": 4,
+
+        "title": "Bali Rooms",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "content": {
+
+            "slides": [
+                "slider/bali4.jpg"
+            ],
+
+            "textbox": {
+                "title": "PinkCoco Bali Rooms",
+                "lead": "PinkCoco Bali established in March 2011. It’s a place where surfers can enjoy their stay without emptying their wallets.",
+                "content": "PinkCoco Bali is opened with 21 rooms. There are 4 main categories, 7 Garden View rooms on the ground floor, 7 Seaview rooms, 6 Deluxe rooms and The Penthouse 360. Pinkcoco promises to be cool place, where everyone can relax and have an easy time."
+            }
+
+        },
+
+        "url": "bali-rooms",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "baliGallery": {
+
+        "id": 5,
+
+        "title": "Bali Gallery",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "content": {
+
+            "slides": [
+                "bali5.jpg"
+            ],
+
+            "textbox": {
+                "title": "Photo Gallery",
+                "lead": "PinkCoco Bali established in March 2011. It’s a place where surfers can enjoy their stay without emptying their wallets.",
+                "description": "PinkCoco Bali is opened with 21 rooms. There are 4 main categories, 7 Garden View rooms on the ground floor, 7 Seaview rooms, 6 Deluxe rooms and The Penthouse 360. Pinkcoco promises to be cool place, where everyone can relax and have an easy time."
+            },
+
+            "gallery": [
+                {
+                    "type": "rooms",
+                    "file": "bali1.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "rooms",
+                    "file": "bali6.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "spa",
+                    "file": "bali19.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "rooms",
+                    "file": "bali7.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "spa",
+                    "file": "bali8.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "spa",
+                    "file": "bali20.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "pool",
+                    "file": "bali10.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "rooms",
+                    "file": "bali11.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "rooms",
+                    "file": "bali3.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "rooms",
+                    "file": "bali4.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "spa",
+                    "file": "bali21.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "rooms",
+                    "file": "bali5.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "spa",
+                    "file": "bali22.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "pool",
+                    "file": "bali13.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "trattoria",
+                    "file": "bali14.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "trattoria",
+                    "file": "bali15.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "spa",
+                    "file": "bali23.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "spa",
+                    "file": "bali24.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "pool",
+                    "file": "bali16.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "cafe",
+                    "file": "bali17.jpg",
+                    "alt": "some image description"
+                },
+                {
+                    "type": "cafe",
+                    "file": "bali18.jpg",
+                    "alt": "some image description"
+                }
+            ]
+        },
+
+        "url": "bali-gallery",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "baliContact": {
+
+        "id": 6,
+
+        "title": "Contact",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "content": {
+
+            "slides": [
+                "bali6.jpg"
+            ],
+
+            "textbox": {
+                "title": "Get in touch",
+                "description": "We are welcome your questions and enquiries. Please use the e-mail form to contact us, and we’ll aim to reply to your e-mail within one working day."
+            }
+        },
+
+        "url": "bali-contact",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "giliAir": {
+
+        "id": 7,
+
+        "title": "Gili Air Home",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "url": "gili-air",
+
+        "author": "Fleava",
+
+        "content": {
+
+            "title": "Opening in August 2016",
+
+            "description": "PinkCoco Gili Air is a 6000 sqm beach front paradise. It has a breath-taking sunset view over Gili Meno and Bali. It is composed of old Indonesian Joglos. It has a restaurant, a pool and a beach club.",
+
+            "banner": "gilia2.jpg"
+        },
+
+        "status": 1
+    },
+
+    "giliTHome": {
+
+        "id": 8,
+
+        "title": "Gili Trawangan Home",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "url": "gili-t-home",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "giliTRooms": {
+
+        "id": 9,
+
+        "title": "Gili Trawangan Rooms",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "url": "gili-t-rooms",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "giliTFacilities": {
+
+        "id": 10,
+
+        "title": "Gili Trawangan Facilities",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "url": "gili-t-facilities",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "giliTGallery": {
+
+        "id": 11,
+
+        "title": "Gili Trawangan Gallery",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "url": "gili-t-gallery",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "giliTContact": {
+
+        "id": 12,
+
+        "title": "Gili Trawangan Contact",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "url": "gili-t-contact",
+
+        "author": "Fleava",
+
+        "status": 1
+    },
+
+    "hiddenPage": {
+
+        "id": 13,
+
+        "title": "Hidden Page Example",
+
+        "meta": "PNK established in March 2011, starting in Bali, Indonesia. It’s a cool place where everyone can relax and have an easy time without emptying their wallets.",
+
+        "url": "unavailable",
+
+        "author": "Boris Lemke",
+
+        "status": 0
+    }
+}

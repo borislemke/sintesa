@@ -1,0 +1,43 @@
+<md-content class="matter-page-template" id="matter-page-content-footers" layout="column">
+    <md-toolbar class="md-tall md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex>
+                <span>Footer Management</span>
+            </h2>
+        </div>
+
+        <md-list>
+            <md-list-item class="matter-table-header" md-no-ink>
+                <md-checkbox ng-hide="true"></md-checkbox>
+                <p flex>Page</p>
+            </md-list-item>
+        </md-list>
+    </md-toolbar>
+
+    <md-content class="matter-data-container" flex md-scroll-y>
+        <md-list>
+            <md-list-item ng-repeat="footer in filteredFooters = (footersCtrl.footers) track by footer.id" md-no-ink>
+                <md-checkbox ng-model="footer.selected"></md-checkbox>
+                <p flex ng-bind="footer.title"></p>
+                <md-menu md-position-mode="target-right target">
+                    <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                        <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-href="/footer-edit/{{footer.id}}">Edit</md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-click="footersCtrl.deleteItem(footersCtrl.footers, footer.id, $event)">Delete</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </md-list-item>
+            <md-list-item ng-hide="filteredFooters.length">
+                <h3 text-center fwidth>No data found. Try refining your filter to see other items.</h3>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-content>

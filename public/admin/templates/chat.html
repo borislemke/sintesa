@@ -1,0 +1,42 @@
+<md-content class="matter-page-template" id="matter-page-chat" ng-cloak layout="row">
+    <md-list id="messages-contact-list">
+        <h3 style="padding-left: 14px; padding-top: 30px">Chat History</h3>
+        <md-list-item ng-repeat="contact in ['Boris Lemke', 'Lewis Webber', 'Farid S', 'customer@gmail.com']" ng-click="chatCtrl.selectedContact = contact">
+            <p ng-bind="contact"></p>
+        </md-list-item>
+    </md-list>
+    <md-content id="chat-content-wrapper" flex layout="column">
+        <md-toolbar class="md-tall md-scroll-shrink" ng-show="chatCtrl.selectedContact">
+            <span flex></span>
+            <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+                <h2>
+                    <span ng-bind="chatCtrl.selectedContact"></span>
+                </h2>
+                <span class="flex"></span>
+                <md-menu md-position-mode="target-right target" class="toolbar-button">
+                    <md-button aria-label="Pages batch menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                        <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button md-menu-align-target>Contact Info</md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button md-menu-align-target>Delete Conversation</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </div>
+        </md-toolbar>
+        <md-content id="chat-container" flex>
+            <div id="chat-background"></div>
+            <div id="chat-empty" ng-if="!chatCtrl.selectedContact"></div>
+        </md-content>
+        <md-content id="messages-input-wrapper" layout="row">
+            <md-input-container md-no-float flex>
+                <input type="text" ng-model="chatCtrl.message" placeholder="Type a message">
+            </md-input-container>
+        </md-content>
+    </md-content>
+</md-content>

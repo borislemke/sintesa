@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "title": "Seaview Rooms",
+        "content": "The Seaview rooms are located all on the first floor. They are larger in size, all with sitting area, and some can accommodate a third person. These rooms come with private terrace, AC, coffee and tea facility, hot water, international TV, safe deposit box and fridge.",
+        "highlight": "Best liked room Sea Vista 13 & 16",
+        "bedtype": "King Size",
+        "person": "2 - 3",
+        "area": "60 sqm",
+        "gallery": [
+            "bali1-1.jpg",
+            "bali1-2.jpg",
+            "bali1-3.jpg",
+            "bali1-4.jpg",
+            "bali1-5.jpg",
+            "bali1-6.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "CasaNostra Rooms",
+        "content": "The CasaNostra Rooms, are all located on the ground floor facing the Patio. These rooms have air-con and cooler fan inside the room. The rooms have been designed for couples or friends with king size beds.The bathroom has an enclosed garden and open shower. These rooms come with hot water, LCD TV, coffee and tea facility,and safe deposit boxes.",
+        "highlight": "Best liked room Red Pool 23 & 24",
+        "bedtype": "King Size",
+        "person": "2",
+        "area": "40 sqm",
+        "gallery": [
+            "bali2-1.jpg",
+            "bali2-2.jpg",
+            "bali2-3.jpg",
+            "bali2-4.jpg",
+            "bali2-5.jpg",
+            "bali2-6.jpg",
+            "bali2-7.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Garden View Rooms",
+        "content": "The Garden View rooms, are all located on the ground floor facing the garden and pool. These rooms instead of aircon have two ceiling fans, inside the room and at the terrace. The terrace has a confy daybed to relax during daytime. The rooms have been designed for couples or friends with king size beds or twin beds. The bathroom has an enclosed garden and open shower. These rooms come with hot water, heated by solar panels and safe deposit boxes.",
+        "highlight": "",
+        "bedtype": "King Size",
+        "person": "2 - 3",
+        "area": "45 sqm",
+        "gallery": [
+            "bali3-1.jpg",
+            "bali3-2.jpg",
+            "bali3-3.jpg",
+            "bali3-4.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Penthouse 360",
+        "content": "The Penthouse 360, it’s a unique studio on its own, perched on the top of Building 3 with a 360 degrees view over the sunset and the famous Padang Padang break. This studio has a large terrace, sitting area, AC,coffee and tea fasility, hot water, TV, safe deposit box and an exclusive bathroom with open shower and sunset view. It’s a dream, and only available for couples.",
+        "highlight": "Best liked room: Penthouse 360",
+        "bedtype": "King Size",
+        "person": "2",
+        "area": "60 sqm",
+        "gallery": [
+            "bali4-1.jpg",
+            "bali4-2.jpg",
+            "bali4-3.jpg",
+            "bali4-4.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Green Pool Rooms",
+        "content": "Green Pool Rooms, are all located on the ground floor facing the garden and pool. These rooms instead of aircon have two ceiling fans, inside the room and at the terrace. The terrace has a confy daybed to relax during daytime. The rooms have been designed for couples or friends with king size beds or twin beds. The bathroom has an enclosed garden and open shower. These rooms come with hot water, heated by solar panels and safe deposit boxes.",
+        "highlight": "",
+        "bedtype": "King Size",
+        "person": "2",
+        "area": "60 sqm",
+        "gallery": [
+            "bali5-1.jpg",
+            "bali5-2.jpg",
+            "bali5-3.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "My Iguana Rooms",
+        "content": "My Iguana Rooms, it’s a unique studio on its own, perched on the top of Building 3 with a 360 degrees view over the sunset and the famous Padang Padang break. This studio has a large terrace, sitting area, AC,coffee and tea fasility, hot water, TV, safe deposit box and an exclusive bathroom with open shower and sunset view. It’s a dream, and only available for couples.",
+        "highlight": "Best liked room: Penthouse 360",
+        "bedtype": "King Size",
+        "person": "2",
+        "area": "40 sqm",
+        "gallery": [
+            "bali6-1.jpg",
+            "bali6-2.jpg",
+            "bali6-3.jpg",
+            "bali6-4.jpg",
+            "bali6-5.jpg"
+        ]
+    }
+]

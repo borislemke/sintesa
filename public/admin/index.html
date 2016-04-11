@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PNK Hotels | Admin</title>
+    <base href="/fleadmin/">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0001, maximum-scale=1.0001, minimum-scale=1.0001">
+
+    <link href="/admin/assets/libs/angular-material/angular-material.css" rel="stylesheet">
+    <link href="/admin/assets/libs/nprogress/nprogress.css" rel="stylesheet">
+    <link href="/admin/assets/css/style.css" rel="stylesheet">
+
+    <script src="/admin/assets/js/dependencies.js"></script>
+    <script src="/admin/assets/js/app.js"></script>
+</head>
+<body ng-controller="MainCtrl as mainCtrl"
+      ng-class="{init: init, aside: sideIsOpen, sidelocked: sideIsLocked}">
+<matter-app-wrapper layout="row">
+    <matter-navbar></matter-navbar>
+
+    <md-content id="md-content-right" ng-click="mainCtrl.closeMenu()">
+        <!-- MAGIC VIEW -->
+        <md-content id="app-view" ng-view>
+
+        </md-content>
+    </md-content>
+</matter-app-wrapper>
+
+<script type="text/javascript" src="/admin/assets/js/index.js"></script>
+</body>
+</html>
+

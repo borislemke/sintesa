@@ -1,0 +1,83 @@
+<md-content class="matter-page-template" id="matter-page-content-pages" layout="column">
+    <md-toolbar class="md-tall md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex>
+                <span>Page Management</span>
+            </h2>
+            <div class="md-toolbar-search-wrapper" layout="row" flex>
+                <md-input-container md-no-float>
+                    <md-select ng-model="roomsCtrl.generalFilter" aria-label="Filter pages by status">
+                        <md-option ng-repeat="data in [{name: 'Available', code: 1}, {name: 'Hidden', code: 0}]" value="{{ data.code }}"
+                                   ng-click="pagesCtrl.statusFilter = data.code" ng-selected="data.code == 1">
+                            {{ data.name }}
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <input type="text" placeholder="Search for products" ng-model="pagesCtrl.pageSQuery" flex>
+            </div>
+        </div>
+
+        <md-list>
+            <md-list-item class="matter-table-header" md-no-ink>
+                <md-checkbox></md-checkbox>
+                <p flex="25">Page Title</p>
+                <p flex="25" hide-xs>Page URL</p>
+                <p flex="25" hide-xs>Author</p>
+                <p flex="25" hide-xs>Status</p>
+                <matter-button-wrapper>
+                    <md-button class="md-icon-button" ng-click="pagesCtrl.openFilters($event)" aria-label="Pages fitler dialog">
+                        <md-icon md-svg-icon="assets/icons/filter_list.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+                    <md-button ng-if="pagesCtrl.isSelected()" class="md-icon-button"
+                               ng-click="pagesCtrl.batchDelete($event)">
+                        <md-icon md-svg-icon="assets/icons/delete.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+                    <md-menu md-position-mode="target-right target" md-offset="0 40px">
+                        <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                            <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg"
+                                     class="md-icon-dark"></md-icon>
+                        </md-button>
+
+                        <md-menu-content width="3">
+                            <md-menu-item ng-if="pagesCtrl.isSelected()">
+                                <md-button md-menu-align-target>Export Selected</md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button md-menu-align-target>More Info</md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </matter-button-wrapper>
+            </md-list-item>
+        </md-list>
+    </md-toolbar>
+
+    <md-content class="matter-data-container" flex md-scroll-y>
+        <md-list>
+            <md-list-item ng-repeat="page in pagesCtrl.pages | toArray | filter:pagesCtrl.pageSQuery | filter:{status: pagesCtrl.statusFilter} track by page.id" md-no-ink>
+                <md-checkbox ng-model="page.selected" ng-click="null">
+                    {{ page.title }} <span ng-if="null">selected</span>
+                </md-checkbox>
+                <p flex flex-gt-xs="25" ng-bind="page.title"></p>
+                <p flex="25" hide-xs ng-bind="page.url"></p>
+                <p flex="25" hide-xs ng-bind="page.author"></p>
+                <p flex="25" hide-xs ng-bind="page.status == 1 ? 'Enbaled' : 'Disabled'"></p>
+                <md-menu md-position-mode="target-right target">
+                    <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                        <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-href="/page-edit/{{page.id}}">Edit</md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-click="pagesCtrl.deletePage(page.id, $event)">Delete</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-content>

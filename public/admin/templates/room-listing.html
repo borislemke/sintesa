@@ -1,0 +1,83 @@
+<md-content class="matter-page-template" id="matter-page-content-rooms" layout="column">
+    <md-toolbar class="md-tall md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex>
+                <span>Room Management</span>
+            </h2>
+            <div class="md-toolbar-search-wrapper" layout="row" flex>
+                <md-input-container md-no-float>
+                    <md-select ng-model="roomsCtrl.generalFilter" aria-label="Filter rooms by status">
+                        <md-option ng-repeat="data in ['All', 'Available', 'Hidden']" value="{{ data }}"
+                                   ng-selected="data == 'All'">
+                            {{ data }}
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <input type="text" placeholder="Search for products" ng-model="roomsCtrl.roomSQuery" flex>
+            </div>
+        </div>
+
+        <md-list>
+            <md-list-item class="matter-table-header" md-no-ink>
+                <md-checkbox></md-checkbox>
+                <p flex="25">Room Title</p>
+                <p flex="25" hide-xs>Bed Size</p>
+                <p flex="25" hide-xs>Capacity</p>
+                <p flex="" hide-xs>Room Size</p>
+                <matter-button-wrapper>
+                    <md-button class="md-icon-button" ng-click="roomsCtrl.openFilters($event)" aria-label="Rooms fitler dialog">
+                        <md-icon md-svg-icon="assets/icons/filter_list.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+                    <md-button ng-if="roomsCtrl.isSelected()" class="md-icon-button"
+                               ng-click="roomsCtrl.batchDelete($event)">
+                        <md-icon md-svg-icon="assets/icons/delete.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+                    <md-menu md-position-mode="target-right target" md-offset="0 40px">
+                        <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                            <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg"
+                                     class="md-icon-dark"></md-icon>
+                        </md-button>
+
+                        <md-menu-content width="3">
+                            <md-menu-item ng-if="pagesCtrl.isSelected()">
+                                <md-button md-menu-align-target>Export Selected</md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button md-menu-align-target>More Info</md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </matter-button-wrapper>
+            </md-list-item>
+        </md-list>
+    </md-toolbar>
+
+    <md-content class="matter-data-container" flex md-scroll-y>
+        <md-list>
+            <md-list-item ng-repeat="room in roomsCtrl.rooms | toArray | filter:roomsCtrl.roomSQuery track by room.id" md-no-ink>
+                <md-checkbox ng-model="room.selected" ng-click="null">
+                    {{ room.title }} <span ng-if="null">selected</span>
+                </md-checkbox>
+                <p flex flex-gt-xs="25" ng-bind="room.title"></p>
+                <p flex="25" hide-xs ng-bind="room.bedtype"></p>
+                <p flex="25" hide-xs ng-bind="room.person"></p>
+                <p flex="" hide-xs ng-bind="room.area"></p>
+                <md-menu md-position-mode="target-right target">
+                    <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                        <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-href="room-edit/{{room.id}}">Edit</md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-click="roomsCtrl.deleteRoom(room.id, $event)">Delete</md-button>
+                        </md-menu-item>e
+                    </md-menu-content>
+                </md-menu>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-content>

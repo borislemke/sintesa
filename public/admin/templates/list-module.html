@@ -1,0 +1,28 @@
+<md-list>
+    <md-list-item ng-repeat="item in filteredPages = (listModCtrl.items | toArray | filter:pagesCtrl.pageSQuery | filter:{status: pagesCtrl.statusFilter}) track by page.id" md-no-ink>
+        <md-checkbox ng-model="page.selected" ng-click="null">
+            {{ page.title }} <span ng-if="null">selected</span>
+        </md-checkbox>
+        <p flex flex-gt-xs="25" ng-bind="page.title"></p>
+        <p flex="25" hide-xs ng-bind="page.url"></p>
+        <p flex="25" hide-xs ng-bind="page.author"></p>
+        <p flex="25" hide-xs ng-bind="page.status == 1 ? 'Enabled' : 'Disabled'"></p>
+        <md-menu md-position-mode="target-right target">
+            <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                <md-icon md-menu-origin md-svg-icon="assets/icons/more_vert.svg" class="md-icon-dark"></md-icon>
+            </md-button>
+
+            <md-menu-content width="3">
+                <md-menu-item>
+                    <md-button md-menu-align-target ng-href="/page-edit/{{page.id}}">Edit</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button md-menu-align-target ng-click="pagesCtrl.deleteItem(pagesCtrl.pages, page.id, $event)">Delete</md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+    </md-list-item>
+    <md-list-item ng-hide="filteredPages.length">
+        <h3 text-center fwidth>No data found. Try refining your filter to see other items.</h3>
+    </md-list-item>
+</md-list>
