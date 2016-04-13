@@ -3,12 +3,13 @@
     <div class="tmp-content">
         <div class="tmp-content-inner left">
             <div class="row">
-                <div class="column width-6 left center-on-mobile color-white">
+                <div class="column width-6 offset-1 left center-on-mobile color-white">
                     <h2 class="title-medium">{{ $module->data->title }}</h2>
                     <p class=" color-white">
                         {{ $module->data->description }}
                     </p>
-                    <a href="{{ $module->data->button->link }}"
+                    <?php $link = $module->data->button->link->type == "internal" ? route('page', ['url' => $module->data->button->link->url]) : $module->data->button->link->url ?>
+                    <a href="{{ $link }}"
                        class="button text-uppercase border-white bkg-hover-gold color-white color-hover-white mb-mobile-30 mt-30">{{ $module->data->button->text }}</a>
                 </div>
             </div>

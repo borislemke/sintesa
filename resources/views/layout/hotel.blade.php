@@ -1,29 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
-    <meta name="twitter:widgets:theme" content="light">
-    <meta property="og:title" content="Your-Title-Here"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="Your-Image-Url"/>
-    <meta property="og:description" content="Your-Page-Description"/>
-    <title>The Sintesa Jimbaran</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
 
-    <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CRaleway:100,300,400,500,700'
-          rel='stylesheet' type='text/css'>
+@include('layout.head')
 
-    <!-- Css -->
-    <link rel="stylesheet" href="css/core.min.css"/>
-    <link rel="stylesheet" href="css/skin.css"/>
-
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <base href="/">
-</head>
 <body class="home-page">
 
 <!-- Overlay Navigation Menu -->
@@ -43,8 +22,8 @@
                 <nav class="overlay-navigation pull-left clear-float-on-mobile">
                     <h4 class="menu-title">Menu</h4>
                     <ul>
-                        <li class="current"><a href="#">Home</a></li>
-                        <li><a href="#" class="contains-sub-menu">Accomodation</a>
+                        <li class="current"><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('page', ['url' => 'accomodation']) }}" class="contains-sub-menu">Accomodation</a>
                             <ul class="sub-menu">
                                 <li><a href="#" class="contains-sub-menu">The Rooms</a></li>
                                 <li class="contains-sub-menu"><a href="#">Suites Collection</a></li>
@@ -52,36 +31,37 @@
                         </li>
                         <li><a href="#" class="contains-sub-menu">Food &amp; Beverage</a>
                             <ul class="sub-menu">
-                                <li><a href="#">The Coffee Shop</a></li>
-                                <li><a href="#">The BARber</a></li>
-                                <li><a href="#">The Healthy Corner (Coming Soon)</a></li>
-                                <li><a href="#">The Rooftop (Coming Soon)</a></li>
+                                <li><a href="{{ route('page', ['url' => 'angin-angin']) }}">Angin Angin</a></li>
+                                <li><a href="{{ route('page', ['url' => 'barber']) }}">The BARber</a></li>
+                                <li><a href="{{ route('page', ['url' => 'healthy-corner']) }}">The Healthy Corner (Coming Soon)</a></li>
+                                <li><a href="{{ route('page', ['url' => 'rooftop']) }}">The Rooftop (Coming Soon)</a></li>
                             </ul>
                         </li>
                         <li><a href="#" class="contains-sub-menu">Wellness</a>
                             <ul class="sub-menu">
-                                <li><a href="#">SPA Treatment</a></li>
-                                <li><a href="#">Wellness Program</a></li>
-                                <li><a href="#">Fitness Studio</a></li>
+                                <li><a href="{{ route('page', ['url' => 'spa-treatment']) }}">SPA Treatment</a></li>
+                                <li><a href="{{ route('page', ['url' => 'wellness-program']) }}">Wellness Program</a></li>
+                                <li><a href="{{ route('page', ['url' => 'fitness-studio']) }}">Fitness Studio</a></li>
                             </ul>
                         </li>
                         <li><a href="#" class="contains-sub-menu">Facilities</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Kids Creative Room</a></li>
-                                <li><a href="#">Swimming Pools</a></li>
+                                <li><a href="{{ route('page', ['url' => 'kids-creative-room']) }}">Kids Creative Room</a></li>
+                                <li><a href="{{ route('page', ['url' => 'swimming-pools']) }}">Swimming Pools</a></li>
                             </ul>
                         </li>
                         <li><a href="#" class="contains-sub-menu">MICE</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Meeting Package</a></li>
-                                <li><a href="#">Event</a></li>
-                                <li><a href="#">The Wedding</a></li>
+                                <li><a href="{{ route('page', ['url' => 'meeting-package']) }}">Meeting Package</a></li>
+                                <li><a href="{{ route('page', ['url' => 'events']) }}">Events</a></li>
+                                <li><a href="{{ route('page', ['url' => 'the-wedding']) }}">The Wedding</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
+
         <div class="overlay-navigation-footer row full-width">
             <div class="column width-12 no-padding">
                 <p class="copyright no-margin-bottom">&copy; 2014 THEMEMOUNTAIN. All Rights Reserved.</p>
@@ -93,6 +73,8 @@
 
 <div class="wrapper">
     <div class="wrapper-inner">
+
+        @include('sprites')
 
         <!-- Header -->
         <header class="header-1 header header-fixed-on-mobile" data-bkg-threshold="100" data-compact-threshold="100">
@@ -106,8 +88,8 @@
                         </div>
                         <div class="logo">
                             <div class="logo-inner">
-                                <a href="{{ route('home') }}"><img src="images/logo-dark.png" alt="The Sintesa Jimbaran Logo"/></a>
-                                <a href="{{ route('home') }}"><img src="images/logo.png" alt="The Sintesa Jimbaran Logo"/></a>
+                                <a href="{{ route('home') }}"><svg class=""><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa-alt"></use></svg></a>
+                                <a href="{{ route('home') }}"><svg class=""><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use></svg></a>
                             </div>
                         </div>
                         <div class="dropdown pull-right">
@@ -169,7 +151,7 @@
                                 </li>
                                 <li><a href="#">Food &amp; Beverage</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{ route('page', ['url' => 'coffee-shop']) }}">The Coffee Shop</a></li>
+                                        <li><a href="{{ route('page', ['url' => 'angin-angin']) }}">Angin Angin</a></li>
                                         <li><a href="{{ route('page', ['url' => 'barber']) }}">The BARber</a></li>
                                         <li><a href="{{ route('page', ['url' => 'healthy-corner']) }}">The Healthy Corner (Coming Soon)</a></li>
                                         <li><a href="{{ route('page', ['url' => 'rooftop']) }}">The Rooftop (Coming Soon)</a></li>
@@ -264,9 +246,11 @@
 <!-- Js -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script>
+    /*
     $(function() {
         $('.datepicker').datepicker();
     });
+    */
 </script>
 <script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
 <script src="js/timber.master.min.js"></script>

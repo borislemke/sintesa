@@ -1,0 +1,14 @@
+.barber-header-logo-wrapper {
+    text-align: center;
+}
+.barber-header-logo {
+    fill: white;
+    height: 15vw;
+    min-height: 160px;
+}
+.barber-header-logo-text {
+    fill: white;
+    height: 8vw;
+    min-height: 94px;
+    margin-top: 32px;
+}

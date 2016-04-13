@@ -1,7 +1,7 @@
 <!-- module: mixed.featurette -->
-<div class="section-block replicable-content bkg-grey-ultralight">
+<div class="section-block replicable-content bkg-grey-ultralight bkg-pattern">
     <div class="row">
-        <div class="column width-6">
+        <div class="column width-6 offset-1">
             <h2 class="mb-20">{{ $module->data->header->title }}</h2>
             <p class="mb-40">{{ $module->data->header->description }}</p>
             <div class="slider-aux-nav mb-30 left weight-bold">
@@ -10,7 +10,7 @@
                 <a href="#" class="next-team-slider">Next</a>
             </div>
         </div>
-        <div class="column width-12 slider-column no-padding">
+        <div class="column width-10 offset-1 slider-column no-padding">
             <div id="team-slider-1" class="tm-slider-container team-slider team-slider-1"
                  data-carousel-visible-slides="3" data-height="500">
 

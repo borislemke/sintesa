@@ -5,7 +5,7 @@
             <h3 class="mb-50">{!! $module->data->title !!}</h3>
         </div>
         <div class="column width-5">
-            <p>{!! $module->data->text !!}</p>
+            <p style="margin: 0; padding: 0;">{!! $module->data->text !!}</p>
         </div>
     </div>
 </div>

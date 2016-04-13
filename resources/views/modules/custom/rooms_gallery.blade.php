@@ -1,0 +1,43 @@
+<!-- module: custom.rooms_gallery -->
+<div class="section-block portfolio-5 no-margins no-padding-top">
+    <div class="row">
+        <div class="column width-10 offset-1">
+            <div id="grid-1" class="row content-grid-3 masonry-grid fade-in-progressively">
+
+                <?php $i = 0 ?>
+                @foreach($module->data->gallery as $item)
+                    <div class="grid-item{{ $i == 0 ? ' grid-sizer' : ($i == 1 ? ' portrait' : '') }}">
+                        <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
+                             data-hover-bkg-color="#ffffff" data-hover-bkg-opacity=".8">
+                            <?php $popup = isset($item->popup) ? $item->popup : $item->image->src ?>
+                            <a class="overlay-link lightbox-link" data-toolbar="zoom" data-group="gallery-1"
+                               data-caption="{{ $item->image->alt }}"
+                               href="images/{{ $popup }}">
+                                <img src="images/{{ $item->image->src }}" alt="{{ $item->image->alt }}"/>
+                            </a>
+                        </div>
+                    </div>
+                    <?php $i++ ?>
+                @endforeach
+
+                <div class="grid-item">
+                    <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
+                         data-hover-bkg-color="#a39161" data-hover-bkg-opacity=".8">
+                        <a class="overlay-link lightbox-link" data-group="gallery-1"
+                           data-caption="Room floor plan" href="images/{{ $module->data->floorplan }}">
+                            <img src="images/gallery-rooms/floorplan.jpg" alt="Room floor plan"/>
+                            <span class="overlay-info">
+                                <span>
+                                    <span>
+                                        <span class="project-title color-white">View Floorplan</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- module_end: custom.rooms_gallery -->
