@@ -11,27 +11,67 @@
 |
 */
 
-Route::get('/_debugbar/assets/stylesheets', [
-    'as' => 'debugbar-css',
-    'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@css'
-]);
+Route::get('files', 'FilesController@index');
+Route::get('scrape', 'ScrapeController@index');
 
-Route::get('/_debugbar/assets/javascript', [
-    'as' => 'debugbar-js',
-    'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@js'
-]);
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Headers: Authorization, Content-Type');
 
-Route::group(['prefix' => 'api'], function() {
+if (env('APP_DEBUG')) {
+    Route::get('/_debugbar/assets/stylesheets', [
+        'as' => 'debugbar-css',
+        'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@css'
+    ]);
+    Route::get('/_debugbar/assets/javascript', [
+        'as' => 'debugbar-js',
+        'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@js'
+    ]);
+}
 
-    Route::group(['prefix' => 'v1'], function() {
+Route::get('import', 'PaperController@import');
 
-        Route::group(['prefix' => 'pages'], function() {
-            Route::get('index', 'PaperController@index');
-            Route::get('get/{id}', 'PaperController@get');
+Route::group(['prefix' => 'api'], function () {
+
+    Route::post('authenticate', 'AuthenticateController@authenticate');
+
+    Route::post('reauthenticate', 'AuthenticateController@reauthenticate');
+
+    Route::post('logout', 'AuthenticateController@logout');
+
+    Route::group(['middleware' => ['jwt.auth']], function () {
+
+        Route::group(['prefix' => 'v1'], function () {
+
+            Route::group(['prefix' => 'pages'], function () {
+
+                Route::get('get/{id}', 'PaperController@get');
+
+                Route::get('index', 'PaperController@index');
+
+                Route::post('index', 'PaperController@indexRange');
+
+                Route::post('create', 'PaperController@create');
+
+                Route::post('update', 'PaperController@update');
+
+                Route::post('destroy', 'PaperController@destroy');
+            });
+
+            Route::group(['prefix' => 'files'], function () {
+
+                Route::get('index', 'FilesController@index');
+            });
         });
     });
 });
 
+Route::get('barber', function() {
+    return view('static.barber');
+});
+Route::get('the-wellness-center', function() {
+    return view('static.wellness');
+});
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@render']);
 Route::get('/{anything?}', ['as' => 'page', 'uses' => 'PageController@render'])->where('anything', '(.*)');
 

@@ -4,6 +4,9 @@
     </IfModule>
 
     RewriteEngine On
+    # Apache sometimes removes Authorization in header
+    RewriteCond %{HTTP:Authorization} ^(.*)
+    RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 
     # RewriteRule ^admin/([A-Za-z0-9-]+)/?$    admin/#/$1    [NC,L]
     # RewriteRule ^admin/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    admin/#/$1/$2    [NC,L]

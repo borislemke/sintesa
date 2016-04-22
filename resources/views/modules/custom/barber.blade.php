@@ -30,7 +30,7 @@
 <div class="section-block replicable-content">
     <div class="row">
         <div class="column width-4 offset-2">
-            <h3 class="mb-50">Feature and facilities</h3>
+            <h3 class="mb-50" style="color: #161616;">Feature and facilities</h3>
             <ul class="circle">
                 <li>Live Entertainment Venue</li>
                 <li>Baby Grand Piano</li>
@@ -41,7 +41,7 @@
             </ul>
         </div>
         <div class="column width-4">
-            <h3 class="mb-50">Events to host</h3>
+            <h3 class="mb-50" style="color: #161616;">Events to host</h3>
             <ul class="circle">
                 <li>Music Event</li>
                 <li>Social Event</li>
@@ -77,7 +77,7 @@
     <div class="row">
         <div class="three-column-text-wrapper width-10 offset-1">
             <div class="column width-4">
-                <h2>Lorem ipsum dolor sit amet</h2>
+                <h2 style="color: #161616;">Lorem ipsum dolor sit amet</h2>
             </div>
             <div class="column width-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur delectus in labore molestias perferendis, perspiciatis quas suscipit? Dignissimos ducimus, esse impedit modi non perspiciatis?</p>

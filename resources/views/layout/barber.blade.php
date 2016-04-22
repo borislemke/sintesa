@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('layout.head')
+@include('layout.head', compact('data'))
 
 <body class="home-page">
 
@@ -37,11 +37,11 @@
                                 <li><a href="{{ route('page', ['url' => 'rooftop']) }}">The Rooftop (Coming Soon)</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="contains-sub-menu">Wellness</a>
+                        <li><a href="{{ route('page', ['url' => 'the-wellness-center']) }}" class="contains-sub-menu">Wellness</a>
                             <ul class="sub-menu">
-                                <li><a href="{{ route('page', ['url' => 'spa-treatment']) }}">SPA Treatment</a></li>
-                                <li><a href="{{ route('page', ['url' => 'wellness-program']) }}">Wellness Program</a></li>
-                                <li><a href="{{ route('page', ['url' => 'fitness-studio']) }}">Fitness Studio</a></li>
+                                <li><a href="{{ route('page', ['url' => 'chavana-spa']) }}">Chavana SPA</a></li>
+                                <li><a href="{{ route('page', ['url' => 'the-gym']) }}">The Gym</a></li>
+                                <li><a href="{{ route('page', ['url' => 'wellness-activity']) }}">Wellness Activity</a></li>
                             </ul>
                         </li>
                         <li><a href="#" class="contains-sub-menu">Facilities</a>
@@ -50,7 +50,7 @@
                                 <li><a href="{{ route('page', ['url' => 'swimming-pools']) }}">Swimming Pools</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="contains-sub-menu">MICE</a>
+                        <li><a href="#" class="contains-sub-menu">Events &amp; Wedding</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('page', ['url' => 'meeting-package']) }}">Meeting Package</a></li>
                                 <li><a href="{{ route('page', ['url' => 'events']) }}">Events</a></li>
@@ -73,7 +73,14 @@
 
 <div class="wrapper">
     <div class="wrapper-inner">
-
+        <style>
+            .fill-white {
+                fill: white !important;
+            }
+            .fill-black {
+                fill: #161616 !important;
+            }
+        </style>
         <!-- Header -->
         <header class="header-1 header header-fixed-on-mobile" data-bkg-threshold="100" data-compact-threshold="100">
             <div class="header-inner">
@@ -86,10 +93,11 @@
                         </div>
                         <div class="logo">
                             <div class="logo-inner">
-                                <a href="{{ route('home') }}"><svg class=""><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa-alt"></use></svg></a>
-                                <a href="{{ route('home') }}"><svg class=""><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use></svg></a>
+                                <a href="{{ route('home') }}"><svg class="fill-black"><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa-alt"></use></svg></a>
+                                <a href="{{ route('home') }}"><svg class="fill-white"><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use></svg></a>
                             </div>
                         </div>
+                        <!--
                         <div class="dropdown pull-right">
                             <a class="button no-label-on-mobile small text-uppercase no-margin-bottom" style="background-color: #161616"><span>Reservations</span><span
                                         class="icon-calendar"></span></a>
@@ -125,6 +133,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                         <nav class="navigation">
                             <ul>
                                 <li class="current"><a href="{{ route('home') }}">Home</a></li>
@@ -155,11 +164,11 @@
                                         <li><a href="{{ route('page', ['url' => 'rooftop']) }}">The Rooftop (Coming Soon)</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">The Wellness Center</a>
+                                <li><a href="{{ route('page', ['url' => 'the-wellness-center']) }}">The Wellness Center</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{ route('page', ['url' => 'spa-treatment']) }}">SPA Treatment</a></li>
-                                        <li><a href="{{ route('page', ['url' => 'wellness-program']) }}">Wellness Program</a></li>
-                                        <li><a href="{{ route('page', ['url' => 'fitness-studio']) }}">Fitness Studio</a></li>
+                                        <li><a href="{{ route('page', ['url' => 'chavana-spa']) }}">Chavana SPA</a></li>
+                                        <li><a href="{{ route('page', ['url' => 'the-gym']) }}">The Gym</a></li>
+                                        <li><a href="{{ route('page', ['url' => 'wellness-activity']) }}">Wellness Activity</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Facilities</a>
@@ -168,7 +177,7 @@
                                         <li><a href="{{ route('page', ['url' => 'swimming-pools']) }}">Swimming Pools</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">MICE</a>
+                                <li><a href="#">Events &amp; Wedding</a>
                                     <ul class="sub-menu">
                                         <li><a href="{{ route('page', ['url' => 'meeting-package']) }}">Meeting Package</a></li>
                                         <li><a href="{{ route('page', ['url' => 'events']) }}">Events</a></li>

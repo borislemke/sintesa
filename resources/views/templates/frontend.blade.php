@@ -2,7 +2,7 @@
 
 @section('content')
     @foreach($data->content as $module)
-        @if(!isset($module->status))
+        @if($module->status)
             @include('modules.' . $module->type, compact('module'))
         @endif
     @endforeach

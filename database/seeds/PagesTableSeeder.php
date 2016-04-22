@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class PagesTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+        $json = \File::get(storage_path('json/pages.json'));
+        $collection = json_decode($json);
+
+        foreach ($collection as $page) {
+            \App\Paper::create([
+                'title' => $page->title,
+                'meta' => $page->meta,
+                'url' => $page->url,
+                'template' => $page->template,
+                'header' => $page->header,
+                'footer' => $page->footer,
+                'user_id' => 1,
+                'status' => $page->status,
+                'content' => json_encode($page->content)
+            ]);
+        }
+
+    }
+}

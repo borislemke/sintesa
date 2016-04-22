@@ -5,7 +5,10 @@
             <h2 class="mb-50">{{ $module->data->title }}</h2>
             <p class="lead">{{ $module->data->lead }}</p>
 
+            @if(isset($module->data->description) && $module->data->description != "")
             <p class="mb-50">{{ $module->data->description }}</p>
+            @endif
+
             @if(FALSE)
                 <ul class="social-list list-horizontal">
                     <li>

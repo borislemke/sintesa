@@ -1,0 +1,60 @@
+[
+    {
+        "name": "main",
+        "data": {
+            "longtext": {
+                "title": "The Sintesa Jimbaran",
+                "text": "Located just 10 km south of the Bali Airport (Denpasar). Hotel’s location is conveniently positioned, just a 15 minutes drive from Ngurah Rai International Airport and 20 minutes away from vibrant area of Kuta and Nusa Dua."
+            },
+            "navigation": {
+                "title": "Explore",
+                "content": [
+                    {
+                        "type": "internal",
+                        "text": "Accommodation",
+                        "url": "accommodation"
+                    },
+                    {
+                        "type": "external",
+                        "text": "Food &amp; Beverages",
+                        "url": "#"
+                    },
+                    {
+                        "type": "internal",
+                        "text": "The Wellness Center",
+                        "url": "the-wellness-center"
+                    },
+                    {
+                        "type": "external",
+                        "text": "Awards",
+                        "url": "#"
+                    },
+                    {
+                        "type": "internal",
+                        "text": "Contact Us",
+                        "url": "contact-us"
+                    }
+                ]
+            },
+            "address": {
+                "title": "Come visit us",
+                "data": [
+                    {
+                        "type": "address",
+                        "content": "Jl. Kencana No. 1"
+                    },
+                    {
+                        "type": "address",
+                        "content": "Jimbaran, Bali 80361 - Indonesia"
+                    },
+                    {
+                        "type": "email",
+                        "content": "infotsj@sintesahotels.com",
+                        "email": "infotsj@sintesahotels.com"
+                    }
+                ]
+            },
+            "copyright": "The Sintesa Jimbaran. All Rights Reserved."
+        }
+    }
+]
