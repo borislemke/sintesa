@@ -12,7 +12,7 @@ class WebhookController extends Controller
     {
         File::put(storage_path('webhook.json'), json_encode(Input::all()));
 
-        shell_exec('cd /var/www/html && git fetch --all && git reset --hard origin/master');
+        shell_exec('cd ' . storage_path() . '.. && git fetch --all && git reset --hard origin/master');
 
         return 200;
     }
