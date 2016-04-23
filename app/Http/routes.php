@@ -11,6 +11,7 @@
 |
 */
 
+Route::post('webhook', 'WebhookController@handle');
 Route::get('files', 'FilesController@index');
 Route::get('scrape', 'ScrapeController@index');
 
