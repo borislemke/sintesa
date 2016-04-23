@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
-use Illuminate\Http\Response;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Input;
 
 class WebhookController extends Controller
 {
-    //
-    public function handle(Request $request)
+    public function handle()
     {
-        Storage::put('webhook.json', json_encode($request));
+        File::put(storage_path('webhook.json'), json_encode(Input::all()));
 
-        return (new Response(json_encode($request), 200))
-            ->header('Content-Type', 'json');
+        shell_exec('cd /var/www/html && git pull');
+
+        return 200;
     }
 }
