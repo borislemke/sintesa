@@ -1,0 +1,210 @@
+[
+    {
+        "id": 1,
+        "order": 1,
+        "title": "Sintesa Main Menu",
+        "parent": 0,
+        "url": "",
+        "url_type": ""
+    },
+    {
+        "id": 2,
+        "order": 1,
+        "title": "Destination",
+        "parent": 1,
+        "url": "destination",
+        "url_type": "internal"
+    },
+    {
+        "id": 3,
+        "order": 2,
+        "title": "Accommodation",
+        "parent": 1,
+        "url": "accommodation",
+        "url_type": "internal"
+    },
+    {
+        "id": 4,
+        "order": 1,
+        "title": "The Rooms",
+        "parent": 3,
+        "url": "accommodation",
+        "url_type": "internal"
+    },
+    {
+        "id": 5,
+        "order": 1,
+        "title": "Superior Room",
+        "parent": 4,
+        "url": "room-superior",
+        "url_type": "internal"
+    },
+    {
+        "id": 6,
+        "order": 2,
+        "title": "Deluxe Room",
+        "parent": 4,
+        "url": "room-deluxe",
+        "url_type": "internal"
+    },
+    {
+        "id": 7,
+        "order": 3,
+        "title": "Junior Suite Room",
+        "parent": 4,
+        "url": "room-junior-suite",
+        "url_type": "internal"
+    },
+    {
+        "id": 8,
+        "order": 2,
+        "title": "Suite Collection",
+        "parent": 3,
+        "url": "accommodation",
+        "url_type": "internal"
+    },
+    {
+        "id": 9,
+        "order": 1,
+        "title": "Executive Suite",
+        "parent": 8,
+        "url": "suite-executive",
+        "url_type": "internal"
+    },
+    {
+        "id": 10,
+        "order": 2,
+        "title": "Presidential Suite",
+        "parent": 8,
+        "url": "suite-presidential",
+        "url_type": "internal"
+    },
+    {
+        "id": 11,
+        "order": 3,
+        "title": "Food &amp; Beverage",
+        "parent": 1,
+        "url": "accommodation",
+        "url_type": "internal"
+    },
+    {
+        "id": 12,
+        "order": 1,
+        "title": "Angin Angin",
+        "parent": 11,
+        "url": "angin-angin",
+        "url_type": "internal"
+    },
+    {
+        "id": 13,
+        "order": 2,
+        "title": "The BARber",
+        "parent": 11,
+        "url": "barber",
+        "url_type": "internal"
+    },
+    {
+        "id": 14,
+        "order": 3,
+        "title": "The Healthy Corner(Coming Soon)",
+        "parent": 11,
+        "url": "healthy-corner",
+        "url_type": "internal"
+    },
+    {
+        "id": 15,
+        "order": 4,
+        "title": "The Rooftop(Coming Soon)",
+        "parent": 11,
+        "url": "rooftop",
+        "url_type": "internal"
+    },
+    {
+        "id": 16,
+        "order": 4,
+        "title": "The Wellness Center",
+        "parent": 1,
+        "url": "the-wellness-center",
+        "url_type": "internal"
+    },
+    {
+        "id": 17,
+        "order": 1,
+        "title": "Sintesa SPA",
+        "parent": 16,
+        "url": "chavana-spa",
+        "url_type": "internal"
+    },
+    {
+        "id": 18,
+        "order": 2,
+        "title": "The Gym",
+        "parent": 16,
+        "url": "the-gym",
+        "url_type": "internal"
+    },
+    {
+        "id": 19,
+        "order": 3,
+        "title": "Wellness Activity",
+        "parent": 16,
+        "url": "wellness-activity",
+        "url_type": "internal"
+    },
+    {
+        "id": 20,
+        "order": 5,
+        "title": "Facilities",
+        "parent": 1,
+        "url": "destination",
+        "url_type": "internal"
+    },
+    {
+        "id": 21,
+        "order": 1,
+        "title": "Kids Creative Room",
+        "parent": 20,
+        "url": "kids-creative-room",
+        "url_type": "internal"
+    },
+    {
+        "id": 22,
+        "order": 2,
+        "title": "Swimming Pools",
+        "parent": 20,
+        "url": "swimming-pools",
+        "url_type": "internal"
+    },
+    {
+        "id": 23,
+        "order": 6,
+        "title": "Events &amp; Wedding",
+        "parent": 1,
+        "url": "destination",
+        "url_type": "internal"
+    },
+    {
+        "id": 24,
+        "order": 1,
+        "title": "Meeting Package",
+        "parent": 23,
+        "url": "meeting-package",
+        "url_type": "internal"
+    },
+    {
+        "id": 25,
+        "order": 2,
+        "title": "Events",
+        "parent": 23,
+        "url": "events",
+        "url_type": "internal"
+    },
+    {
+        "id": 26,
+        "order": 3,
+        "title": "The Wedding",
+        "parent": 23,
+        "url": "the-wedding",
+        "url_type": "internal"
+    }
+]

@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "main",
         "data": {
             "longtext": {
@@ -12,27 +13,32 @@
                     {
                         "type": "internal",
                         "text": "Accommodation",
-                        "url": "accommodation"
+                        "url": "accommodation",
+                        "url_type": "internal"
                     },
                     {
                         "type": "external",
                         "text": "Food &amp; Beverages",
-                        "url": "#"
+                        "url": "#",
+                        "url_type": "internal"
                     },
                     {
                         "type": "internal",
                         "text": "The Wellness Center",
-                        "url": "the-wellness-center"
+                        "url": "the-wellness-center",
+                        "url_type": "internal"
                     },
                     {
                         "type": "external",
                         "text": "Awards",
-                        "url": "#"
+                        "url": "#",
+                        "url_type": "internal"
                     },
                     {
                         "type": "internal",
                         "text": "Contact Us",
-                        "url": "contact-us"
+                        "url": "contact-us",
+                        "url_type": "internal"
                     }
                 ]
             },

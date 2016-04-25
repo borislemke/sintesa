@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('image');
             $table->boolean('active');
-            $table->integer('author_id');
 
             $table->rememberToken();
             $table->timestamps();

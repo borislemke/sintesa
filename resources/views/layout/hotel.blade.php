@@ -335,7 +335,7 @@
         </div>
         <!-- Content End -->
 
-        @include('footers/' . $data->footer, compact('footer'))
+        {{--@include('footers.sintesa', compact('footer'))--}}
 
     </div>
 </div>

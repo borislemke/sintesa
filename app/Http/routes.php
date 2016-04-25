@@ -11,13 +11,10 @@
 |
 */
 
+Route::get('navigation', 'NavigationController@build');
 Route::post('webhook', 'WebhookController@handle');
 Route::get('files', 'FilesController@index');
 Route::get('scrape', 'ScrapeController@index');
-
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Credentials: true');
-header('Access-Control-Allow-Headers: Authorization, Content-Type');
 
 if (env('APP_DEBUG')) {
     Route::get('/_debugbar/assets/stylesheets', [
@@ -29,43 +26,6 @@ if (env('APP_DEBUG')) {
         'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@js'
     ]);
 }
-
-Route::get('import', 'PaperController@import');
-
-Route::group(['prefix' => 'api'], function () {
-
-    Route::post('authenticate', 'AuthenticateController@authenticate');
-
-    Route::post('reauthenticate', 'AuthenticateController@reauthenticate');
-
-    Route::post('logout', 'AuthenticateController@logout');
-
-    Route::group(['middleware' => ['jwt.auth']], function () {
-
-        Route::group(['prefix' => 'v1'], function () {
-
-            Route::group(['prefix' => 'pages'], function () {
-
-                Route::get('get/{id}', 'PaperController@get');
-
-                Route::get('index', 'PaperController@index');
-
-                Route::post('index', 'PaperController@indexRange');
-
-                Route::post('create', 'PaperController@create');
-
-                Route::post('update', 'PaperController@update');
-
-                Route::post('destroy', 'PaperController@destroy');
-            });
-
-            Route::group(['prefix' => 'files'], function () {
-
-                Route::get('index', 'FilesController@index');
-            });
-        });
-    });
-});
 
 Route::get('barber', function() {
     return view('static.barber');

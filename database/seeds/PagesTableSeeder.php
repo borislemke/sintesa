@@ -20,12 +20,11 @@ class PagesTableSeeder extends Seeder
                 'title' => $page->title,
                 'meta' => $page->meta,
                 'url' => $page->url,
-                'template' => $page->template,
-                'header' => $page->header,
-                'footer' => $page->footer,
+                'layout' => $page->template,
                 'user_id' => 1,
                 'status' => $page->status,
-                'content' => json_encode($page->content)
+                'content' => json_encode($page->content),
+                'navigation_id' => 1
             ]);
         }
 

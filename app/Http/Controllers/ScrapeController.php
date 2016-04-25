@@ -15,6 +15,7 @@ class ScrapeController extends Controller
     //
     public function index()
     {
+        $start_time = microtime(true);
         $json = File::get(storage_path('province.json'));
 
         $data = json_decode($json);
@@ -48,6 +49,7 @@ class ScrapeController extends Controller
             }
             $linkChunks = explode('=', $linksCompiled);
             $pageNumber = end($linkChunks);
+            File::put(storage_path("province_pages/$province" . "_$pageNumber.txt"), '');
 
             for ($i = 1; $i <= $pageNumber; $i++) {
                 $pageUrl = "$url?page=$i";
@@ -64,10 +66,10 @@ class ScrapeController extends Controller
                 }
                 $infoUrls = array_unique($infoUrls);
             }
-
-            echo "Completed data fetching for province $province.<br>";
+            File::put(storage_path("provinces_data/$province.json"), json_encode($infoUrls));
+            File::put(storage_path("completed/$province.txt"), (microtime(true) - $start_time));
         }
-        File::put(storage_path("provinces_data/complete.json"), json_encode($infoUrls));
-        echo 'Done';
+        echo 'Finished in ' . (microtime(true) - $start_time);
+        File::put(storage_path("all_completed.txt"), (microtime(true) - $start_time));
     }
 }

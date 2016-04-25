@@ -12,5 +12,13 @@ class FootersTableSeeder extends Seeder
     public function run()
     {
         //
+        $footers = json_decode(File::get(storage_path('json/footers.json')));
+
+        foreach ($footers as $foot) {
+            \App\Footer::create([
+                "name" => $foot->name,
+                "content" => json_encode($foot->data)
+            ]);
+        }
     }
 }

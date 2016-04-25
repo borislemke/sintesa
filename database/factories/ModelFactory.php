@@ -19,3 +19,12 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Notif::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->sentence($nbWords = 2, $variableNbWords = true),
+        'text' => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'read_status' => $faker->numberBetween($min = 0, $max = 1),
+        'user_id' => 1
+    ];
+});

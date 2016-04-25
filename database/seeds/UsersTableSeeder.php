@@ -21,7 +21,6 @@ class UsersTableSeeder extends Seeder
             'firstname' => 'Boris',
             'lastname' => 'Lemke',
             'image' => 'http://gravatar.com/avatar/7f4ec37467f2f7db6fffc7b4d2cc8dc2?s=200&d=https%3A%2F%2Fscotch.io%2Fwp-content%2Fthemes%2Fscotchpress%2Fimg%2Flogo-large.png',
-            'author_id' => 0,
             'active' => 1
         ]);
     }

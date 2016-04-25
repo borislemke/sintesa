@@ -1,4 +1,4 @@
-@extends('layout/' . $data->template)
+@extends('layout.' . $data->layout)
 
 @section('content')
     @foreach($data->content as $module)

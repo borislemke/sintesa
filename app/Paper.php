@@ -10,10 +10,14 @@ class Paper extends Model
     protected $table = 'pages';
     use SoftDeletes;
 
-    //
-    public function author()
+    public function user()
     {
         return $this->belongsTo('App\User');
+    }
+
+    public function hotel()
+    {
+        return $this->belongsTo('App\Hotel');
     }
 
     // Listens to database changes

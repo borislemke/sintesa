@@ -43,10 +43,36 @@ class User extends Model implements AuthenticatableContract,
         return $this->hasMany('App\Paper');
     }
 
+    public function posts()
+    {
+        return $this->hasMany('App\Post');
+    }
+
+    public function media()
+    {
+        return $this->hasMany('App\Media');
+    }
+
+    public function hotels()
+    {
+        return $this->hasMany('App\Hotel');
+    }
+
+    public function userLog()
+    {
+        return $this->hasMany('App\UserLog');
+    }
+
+    public function notifications()
+    {
+        return $this->hasMany('App\Notif');
+    }
+
     public static function boot()
     {
         parent::boot();
         static::creating(function ($user) {
+            // Authenticated user
         });
         static::updating(function ($user) {
         });

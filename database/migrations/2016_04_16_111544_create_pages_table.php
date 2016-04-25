@@ -14,16 +14,16 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('url')->unique();
             $table->string('title');
             $table->string('meta');
-            $table->string('url')->unique();
-            $table->string('template');
-            $table->string('header');
-            $table->string('footer');
-            $table->integer('user_id');
-            $table->boolean('status');
             $table->longText('content');
-            
+            $table->string('layout');
+            $table->boolean('status');
+            $table->integer('user_id');
+            $table->integer('navigation_id');
+            $table->integer('hotel_id');
+
             $table->timestamps();
             $table->softDeletes();
         });
