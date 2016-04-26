@@ -73,6 +73,27 @@
 		</div>
   </div>
 </section>
+
+<section class="section-block blog-masonry bkg-white small-margins">
+	<div class="row">
+		<div class="column width-10 offset-1">
+			<div class="content-grid-3 masonry-grid equalize">
+				<?php $i = 0 ?>
+				@foreach($module->data->markers as $marker)
+					<?php if ($i < 9) { ?>
+						<div class="grid-item{{ $i == 0 ? ' grid-sizer' : '' }}">
+							<img src="{{ $marker->image }}" />
+							<div class="bkg-grey-ultralight" style="padding:20px">
+								<h4 class="mt-10">{{ $marker->text }}</h4>
+								<p>{{ $marker->description }}</p>
+							</div>
+						</div>
+					<?php $i++; } ?>
+				@endforeach
+	  	</div>
+	  </div>
+	</div>
+</section>
 <!-- module_end: map.half_content -->
 
 

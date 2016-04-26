@@ -728,14 +728,14 @@ body,
 }
 
 .header .logo .logo-inner a svg {
-	width:100px;
-	height:90px;
+	width: 120px;
+  height: 110px;
 	fill: #a39161;
 }
 
 .header .logo .logo-inner a:first-child svg {
-	width: 135px;
-  height: 35px;
+	width: 145px;
+  height: 45px;
 	fill: #a39161;
 }
 
@@ -3341,4 +3341,14 @@ body.wellness .footer-1, body.wellness .bkg-gold, body.wellness .header-compact 
 body.wellness .bkg-grey-ultralight {background-color: #E8ECEE;}
 
 
+/*----- MAP -----*/
+
+.map-popup {padding:20px;}
+.map-popup .image-wrap {width:40%; float:left;}
+.map-popup .image-wrap img {width:100%; height:auto;}
+.map-popup .popup-content {margin-left:40%; padding-left:30px;}
+.map-popup h4, .map-popup p {margin-top:1rem; margin-bottom:0;}
+
+.distances {width:80%; margin:auto; margin-top:3rem !important;}
+.distances tr td {padding:5px; border-bottom:1px solid #c5c7c9;}
 

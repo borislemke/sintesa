@@ -25,9 +25,7 @@ if (env('APP_DEBUG')) {
 Route::get('barber', function() {
     return view('static.barber');
 });
-Route::get('the-wellness-center', function() {
-    return view('static.wellness');
-});
+
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@render']);
 Route::get('/{anything?}', ['as' => 'page', 'uses' => 'PageController@render'])->where('anything', '(.*)');
 

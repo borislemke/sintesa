@@ -38,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-                    <img data-src="images/{{ $slide->banner->src }}" src="images/blank.png" alt="{{ $slide->banner->alt }}"/>
+                    <img data-src="media/{{ $slide->banner->src }}" src="media/blank.png" alt="{{ $slide->banner->alt }}"/>
                 </li>
             @endforeach
 

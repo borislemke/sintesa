@@ -23,12 +23,7 @@
                     <h4 class="menu-title">Menu</h4>
                     <ul>
                         <li class="current"><a href="{{ route('home') }}">Home</a></li>
-                        <li><a href="{{ route('page', ['url' => 'accomodation']) }}" class="contains-sub-menu">Accomodation</a>
-                            <ul class="sub-menu">
-                                <li><a href="#" class="contains-sub-menu">The Rooms</a></li>
-                                <li class="contains-sub-menu"><a href="#">Suites Collection</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ route('page', ['url' => 'accomodation']) }}">Accomodation</a></li>
                         <li><a href="#" class="contains-sub-menu">Food &amp; Beverage</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('page', ['url' => 'angin-angin']) }}">Angin Angin</a></li>
@@ -39,7 +34,7 @@
                         </li>
                         <li><a href="{{ route('page', ['url' => 'the-wellness-center']) }}" class="contains-sub-menu">Wellness</a>
                             <ul class="sub-menu">
-                                <li><a href="{{ route('page', ['url' => 'chavana-spa']) }}">Chavana SPA</a></li>
+                                <li><a href="{{ route('page', ['url' => 'spa-treatment']) }}">Spa Treatment</a></li>
                                 <li><a href="{{ route('page', ['url' => 'wellness-activity']) }}">Wellness Activity</a></li>
                                 <li><a href="{{ route('page', ['url' => 'the-gym']) }}">The Gym</a></li>
                             </ul>
@@ -64,7 +59,7 @@
 
         <div class="overlay-navigation-footer row full-width">
             <div class="column width-12 no-padding">
-                <p class="copyright no-margin-bottom">&copy; 2014 THEMEMOUNTAIN. All Rights Reserved.</p>
+                <p class="copyright no-margin-bottom">&copy; 2016 The Sintesa Jimbaran. All Rights Reserved. Website by <a href="http://fleava.com" target="_blank">Fleava</a>.</p>
             </div>
         </div>
     </div>
@@ -256,7 +251,7 @@
                                 </li>
                                 <li><a href="{{ route('page', ['url' => 'the-wellness-center']) }}">The Wellness Center</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{ route('page', ['url' => 'chavana-spa']) }}">Chavana SPA</a></li>
+                                        <li><a href="{{ route('page', ['url' => 'spa-treatment']) }}">Spa Treatment</a></li>
                                         <li><a href="{{ route('page', ['url' => 'the-gym']) }}">The Gym</a></li>
                                         <li><a href="{{ route('page', ['url' => 'wellness-activity']) }}">Wellness Activity</a></li>
                                     </ul>
