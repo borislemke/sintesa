@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
+        /*
         factory(App\Notif::class, 50)->create();
 
         $this->call(UsersTableSeeder::class);
@@ -22,6 +23,8 @@ class DatabaseSeeder extends Seeder
         $this->call(RoomsTableSeeder::class);
         $this->call(NavigationTableSeeder::class);
         $this->call(FootersTableSeeder::class);
+        */
+        $this->call(MediaTableSeeder::class);
 
         Model::reguard();
     }

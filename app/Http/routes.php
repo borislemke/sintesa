@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('navigation', 'NavigationController@build');
-Route::post('webhook', 'WebhookController@handle');
-Route::get('files', 'FilesController@index');
-Route::get('scrape', 'ScrapeController@index');
-
 if (env('APP_DEBUG')) {
     Route::get('/_debugbar/assets/stylesheets', [
         'as' => 'debugbar-css',

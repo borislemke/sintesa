@@ -17,6 +17,7 @@ class FootersTableSeeder extends Seeder
         foreach ($footers as $foot) {
             \App\Footer::create([
                 "name" => $foot->name,
+                "title" => $foot->title,
                 "content" => json_encode($foot->data)
             ]);
         }

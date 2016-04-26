@@ -31,6 +31,13 @@ Route::group(['prefix' => 'api'], function () {
                 Route::post('update', 'NavigationController@update');
             });
 
+            Route::group(['prefix' => 'footers'], function () {
+                Route::get('index', 'FootersController@index');
+                Route::post('index', 'FootersController@indexRange');
+                Route::get('get/{id}', 'FootersController@get');
+                Route::post('update', 'FootersController@update');
+            });
+
             Route::group(['prefix' => 'hotels'], function () {
                 Route::get('index', 'HotelsController@index');
                 Route::post('index', 'HotelsController@index');
@@ -51,7 +58,7 @@ Route::group(['prefix' => 'api'], function () {
             });
 
             Route::group(['prefix' => 'media'], function () {
-                Route::get('index', 'MediaController@index');
+                Route::post('index', 'MediaController@index');
                 Route::post('save', 'MediaController@save');
             });
         });
