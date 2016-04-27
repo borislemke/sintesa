@@ -1,12 +1,12 @@
 <?php
 
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Credentials: true');
-header('Access-Control-Allow-Headers: Authorization, Content-Type');
-
 Route::get('import', 'PaperController@import');
 
 Route::group(['prefix' => 'api'], function () {
+
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Credentials: true');
+    header('Access-Control-Allow-Headers: Authorization, Content-Type');
 
     Route::post('authenticate', 'AuthenticateController@authenticate');
     Route::post('reauthenticate', 'AuthenticateController@reauthenticate');
@@ -58,8 +58,10 @@ Route::group(['prefix' => 'api'], function () {
             });
 
             Route::group(['prefix' => 'media'], function () {
-                Route::post('index', 'MediaController@index');
+                Route::post('index', 'MediaController@indexFolder');
                 Route::post('save', 'MediaController@save');
+                Route::post('upload', 'MediaController@upload');
+                Route::post('updateFile', 'MediaController@updateFile');
             });
         });
 

@@ -16,20 +16,21 @@ class MediaTableSeeder extends Seeder
         $files = File::allFiles(public_path("media"));
 
         foreach($files as $file) {
-            File::put(storage_path('json/file_spec.json'), json_encode(pathinfo($file))); break;
-            /*
+
+            $fileInfo = pathinfo($file);
+            $url = str_replace(public_path('media'), '', $fileInfo["dirname"]) . "/" . $fileInfo["basename"];
             \App\Media::create([
-                "title" => $file->,
-                "url" => "",
-                "filename" => "",
-                "type" => "",
-                "size" => "",
-                "dimension" => "",
-                "caption" => "",
-                "description" => "",
-                "alt_text" => ""
+                "title" => $fileInfo["basename"],
+                "url" => ltrim($url, "/"),
+                "name" => $fileInfo["basename"],
+                "folder" => trim(str_replace($fileInfo["basename"], '', $url), "/"),
+                "type" => $fileInfo["extension"],
+                "size" => filesize($file),
+                "dimension" => getimagesize($file)[0] . " x " . getimagesize($file)[1],
+                "caption" => $fileInfo["basename"],
+                "description" => $fileInfo["basename"],
+                "alt_text" => $fileInfo["basename"]
             ]);
-            */
         }
     }
 }

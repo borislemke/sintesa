@@ -2,15 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c2dc891-0b41-47e0-b596-4e5c4a128550" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.zip" afterPath="$PROJECT_DIR$/public.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/wellness/wellness1.jpg" afterPath="$PROJECT_DIR$/public/images/wellness/wellness1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/wellness/wellness2.jpg" afterPath="$PROJECT_DIR$/public/images/wellness/wellness2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/wellness/wellness3.jpg" afterPath="$PROJECT_DIR$/public/images/wellness/wellness3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/wellness/wellness4.jpg" afterPath="$PROJECT_DIR$/public/images/wellness/wellness4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/media/wellness/wellness1.jpg" afterPath="$PROJECT_DIR$/public/media/wellness/wellness1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/media/wellness/wellness2.jpg" afterPath="$PROJECT_DIR$/public/media/wellness/wellness2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/media/wellness/wellness3.jpg" afterPath="$PROJECT_DIR$/public/media/wellness/wellness3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/media/wellness/wellness4.jpg" afterPath="$PROJECT_DIR$/public/media/wellness/wellness4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/borisl.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/borisl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/added_file.flag" afterPath="$PROJECT_DIR$/added_file.flag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AuthTrait.php" afterPath="$PROJECT_DIR$/app/AuthTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Conf.php" afterPath="$PROJECT_DIR$/app/Conf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ConfGroup.php" afterPath="$PROJECT_DIR$/app/ConfGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Footer.php" afterPath="$PROJECT_DIR$/app/Footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ConfigController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConfigController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/FootersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/FootersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HotelsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/NavigationController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/NavigationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/WebhookController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebhookController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/api.routes.php" afterPath="$PROJECT_DIR$/app/Http/api.routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Media.php" afterPath="$PROJECT_DIR$/app/Media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Nav.php" afterPath="$PROJECT_DIR$/app/Nav.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Notif.php" afterPath="$PROJECT_DIR$/app/Notif.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Post.php" afterPath="$PROJECT_DIR$/app/Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/RoomFacility.php" afterPath="$PROJECT_DIR$/app/RoomFacility.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/UserLog.php" afterPath="$PROJECT_DIR$/app/UserLog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044426_create_notifications_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044426_create_notifications_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044433_create_hotels_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044433_create_hotels_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044440_create_navigation_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044440_create_navigation_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044449_create_rooms_gallery_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044449_create_rooms_gallery_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044454_create_rooms_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044454_create_rooms_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044459_create_media_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044459_create_media_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044503_create_config_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044503_create_config_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044509_create_config_group_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044509_create_config_group_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044517_create_rooms_facility_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044517_create_rooms_facility_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044528_create_posts_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044528_create_posts_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_24_044532_create_users_log_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_24_044532_create_users_log_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_022331_create_footers_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_022331_create_footers_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ConfigGroupTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ConfigGroupTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ConfigTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ConfigTableSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/FootersTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/FootersTableSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/MediaTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/MediaTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/json/footers.json" afterPath="$PROJECT_DIR$/storage/json/footers.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/NavigationTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/NavigationTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UsersLogTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UsersLogTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digital_ocean" afterPath="$PROJECT_DIR$/digital_ocean" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digital_ocean.pub" afterPath="$PROJECT_DIR$/digital_ocean.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/static/wellness.blade.php" afterPath="$PROJECT_DIR$/resources/views/static/wellness.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/all_completed.txt" afterPath="$PROJECT_DIR$/storage/all_completed.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/aceh.txt" afterPath="$PROJECT_DIR$/storage/completed/aceh.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/bali.txt" afterPath="$PROJECT_DIR$/storage/completed/bali.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/banten.txt" afterPath="$PROJECT_DIR$/storage/completed/banten.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/bengkulu.txt" afterPath="$PROJECT_DIR$/storage/completed/bengkulu.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/daerah-istimewa-yogyakarta.txt" afterPath="$PROJECT_DIR$/storage/completed/daerah-istimewa-yogyakarta.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/dki-jakarta.txt" afterPath="$PROJECT_DIR$/storage/completed/dki-jakarta.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/gorontalo.txt" afterPath="$PROJECT_DIR$/storage/completed/gorontalo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/jambi.txt" afterPath="$PROJECT_DIR$/storage/completed/jambi.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/jawa-barat.txt" afterPath="$PROJECT_DIR$/storage/completed/jawa-barat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/jawa-tengah.txt" afterPath="$PROJECT_DIR$/storage/completed/jawa-tengah.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/jawa-timur.txt" afterPath="$PROJECT_DIR$/storage/completed/jawa-timur.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kalimantan-barat.txt" afterPath="$PROJECT_DIR$/storage/completed/kalimantan-barat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kalimantan-selatan.txt" afterPath="$PROJECT_DIR$/storage/completed/kalimantan-selatan.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kalimantan-tengah.txt" afterPath="$PROJECT_DIR$/storage/completed/kalimantan-tengah.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kalimantan-timur.txt" afterPath="$PROJECT_DIR$/storage/completed/kalimantan-timur.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kalimantan-utara.txt" afterPath="$PROJECT_DIR$/storage/completed/kalimantan-utara.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kepulauan-bangka-belitung.txt" afterPath="$PROJECT_DIR$/storage/completed/kepulauan-bangka-belitung.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kepulauan-maluku.txt" afterPath="$PROJECT_DIR$/storage/completed/kepulauan-maluku.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/kepulauan-riau.txt" afterPath="$PROJECT_DIR$/storage/completed/kepulauan-riau.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/lampung.txt" afterPath="$PROJECT_DIR$/storage/completed/lampung.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/maluku-utara.txt" afterPath="$PROJECT_DIR$/storage/completed/maluku-utara.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/nusa-tenggara-barat.txt" afterPath="$PROJECT_DIR$/storage/completed/nusa-tenggara-barat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/nusa-tenggara-timur.txt" afterPath="$PROJECT_DIR$/storage/completed/nusa-tenggara-timur.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/papua-barat.txt" afterPath="$PROJECT_DIR$/storage/completed/papua-barat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/papua.txt" afterPath="$PROJECT_DIR$/storage/completed/papua.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/riau.txt" afterPath="$PROJECT_DIR$/storage/completed/riau.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sulawesi-barat.txt" afterPath="$PROJECT_DIR$/storage/completed/sulawesi-barat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sulawesi-selatan.txt" afterPath="$PROJECT_DIR$/storage/completed/sulawesi-selatan.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sulawesi-tengah.txt" afterPath="$PROJECT_DIR$/storage/completed/sulawesi-tengah.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sulawesi-tenggara.txt" afterPath="$PROJECT_DIR$/storage/completed/sulawesi-tenggara.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sulawesi-utara.txt" afterPath="$PROJECT_DIR$/storage/completed/sulawesi-utara.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sumatera-barat.txt" afterPath="$PROJECT_DIR$/storage/completed/sumatera-barat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sumatera-selatan.txt" afterPath="$PROJECT_DIR$/storage/completed/sumatera-selatan.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/completed/sumatera-utara.txt" afterPath="$PROJECT_DIR$/storage/completed/sumatera-utara.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/json/file_spec.json" afterPath="$PROJECT_DIR$/storage/json/file_spec.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/json/nav.json" afterPath="$PROJECT_DIR$/storage/json/nav.json" />
     </list>
     <ignored path="matter_laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,13 +114,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MediaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MediaController.php">
+      <file leaf-file-name="MediaTableSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/MediaTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="433">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
               <folding>
-                <element signature="e#40#62#0#PHP" expanded="true" />
+                <element signature="e#7#38#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,63 +129,8 @@
       <file leaf-file-name="2016_04_24_044459_create_media_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2016_04_24_044459_create_media_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="25" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NavigationTableSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/NavigationTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MediaTableSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/MediaTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
-              <folding>
-                <element signature="e#7#38#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file_spec.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/storage/json/file_spec.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="12" />
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="14" />
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FootersTableSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/FootersTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="243">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -112,8 +139,31 @@
       <file leaf-file-name="api.routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/api.routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+            <state relative-caret-position="27">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <marker date="1461769042000" expanded="false" signature="467:575" placeholder="..." />
+                <marker date="1461769042000" expanded="false" signature="627:733" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediaController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MediaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -127,8 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2016_04_24_044503_create_config_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_04_24_044509_create_config_group_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_24_044449_create_rooms_gallery_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_24_044517_create_rooms_facility_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_24_044528_create_posts_table.php" />
@@ -171,13 +219,15 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_04_25_022331_create_footers_table.php" />
         <option value="$PROJECT_DIR$/storage/json/footers.json" />
         <option value="$PROJECT_DIR$/database/seeds/FootersTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/api.routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_04_24_044459_create_media_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/MediaTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/storage/json/file_spec.json" />
+        <option value="$PROJECT_DIR$/storage/image_spec.json" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/MediaTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_04_24_044459_create_media_table.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/api.routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" />
       </list>
     </option>
   </component>
@@ -191,10 +241,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1793" />
-    <option name="y" value="114" />
-    <option name="width" value="1793" />
-    <option name="height" value="976" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -347,43 +396,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sintesa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sintesa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sintesa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sintesa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Providers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,28 +415,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sintesa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sintesa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,6 +431,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/media/barber/dummy_dir" />
       <recent name="$PROJECT_DIR$/public/media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -502,18 +494,18 @@
       <workItem from="1460688296369" duration="6991000" />
       <workItem from="1460735821034" duration="29885000" />
       <workItem from="1461123724189" duration="24860000" />
-      <workItem from="1461319044926" duration="40288000" />
+      <workItem from="1461319044926" duration="51593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176053000" />
+    <option name="totallyTimeSpent" value="187358000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1793" y="114" width="1793" height="976" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31734523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -553,30 +545,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/PagesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ConfGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Notif.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -904,14 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/api.routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NavigationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1133">
@@ -919,35 +879,6 @@
           <folding>
             <element signature="e#40#52#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#466#576#0#PHP" expanded="false" />
-            <element signature="e#626#734#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MediaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="e#40#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_04_24_044459_create_media_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="25" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,31 +898,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/MediaTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/storage/json/file_spec.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/image_spec.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/testfile.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_04_24_044459_create_media_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/MediaTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="81">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1461769042000" expanded="false" signature="467:575" placeholder="..." />
+            <marker date="1461769042000" expanded="false" signature="627:733" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/api.routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/json/file_spec.json">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MediaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="12" />
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="14" />
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding />
         </state>
       </provider>
