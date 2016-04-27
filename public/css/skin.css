@@ -272,6 +272,7 @@ a:hover,
 a[class*="icon-"]:hover{
 	text-decoration: none;
 }
+a.disabled {cursor: default}
 a:hover .text-line,
 a.animated-link:hover .text-line,
 .accordion li a:hover .text-line,
@@ -548,7 +549,7 @@ body,
 }
 
 .footer-1 svg {fill: rgba(255,255,255,.6);}
-.footer-1 {font-size:.8em;}
+.footer-1 {font-size:.9em;}
 
 .section-block.slanted-top:before{
 	width: 100%;
@@ -728,14 +729,14 @@ body,
 }
 
 .header .logo .logo-inner a svg {
-	width:100px;
-	height:90px;
+	width: 120px;
+  height: 110px;
 	fill: #a39161;
 }
 
 .header .logo .logo-inner a:first-child svg {
-	width: 135px;
-  height: 35px;
+	width: 145px;
+  height: 45px;
 	fill: #a39161;
 }
 
@@ -1467,7 +1468,7 @@ body,
 	padding: 0;
 }
 .page-intro{
-	height: 45rem;
+	height: 55rem;
 }
 .window-height{
 	height: 100vh;
@@ -1476,8 +1477,51 @@ body,
 .tms-content-inner .column {max-width: 500px}
 
 .window-height.include-booking{
-	height: 90vh;
-	height: calc(100vh - 100px);
+	height: 100%;
+	height:100vh;
+}
+
+.tms-pagination {display: none !important}
+
+.window-height.include-booking .tm-slider-container .tms-content{
+	padding-bottom: 110px;
+}
+
+.slide-overlay-gradient {
+	top:0;
+	position: absolute;
+	left:0;
+	height:30%;
+	width: 100%;
+	z-index: 99;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+.blur-effect {
+	position: absolute;
+	bottom:0;
+	z-index: 9;
+	width: 100%;
+	height: 110px;
+	overflow: hidden;
+}
+
+.blur-effect div {
+	background-size: cover;
+	background-position: center;
+	height:104vh;
+	width:104vw;
+	position: absolute;
+	bottom: -4vh;
+	left:-2vw;
+	-webkit-filter: blur(25px);
+	-moz-filter: blur(25px);
+	-o-filter: blur(25px);
+	-ms-filter: blur(25px);
+	filter: blur(25px);
 }
 
 .page-intro .full-width-slider,
@@ -3315,12 +3359,14 @@ only screen and (				min-resolution: 2dppx) {
 	margin-top:32px
 }
 
-body.barber .footer-1, body.barber .bkg-gold, body.barber .header-compact .nav-bar-inner > .dropdown > .button {background-color: #000 !important; border-color: #000}
+body.barber .footer-1, body.barber .bkg-gold, body.barber .header-compact .nav-bar-inner > .dropdown > .button {background-color: #594d48 !important; border-color: #594d48}
 body.barber .tms-content-inner .column {padding-left: 8%;}
-body.barber h1, body.barber h2, body.barber h3, body.barber h4, body.barber h5, body.barber h6 {color:#000;}
+body.barber h1, body.barber h2, body.barber h3, body.barber h4, body.barber h5, body.barber h6 {color:#594d48;}
 body.barber h1, body.barber h2, body.barber h3, body.barber h4 {font-family: 'Bebas', sans-serif}
 body.barber h4 {letter-spacing: 1px}
 .hominis {font-family: 'Hominis', sans-serif !important}
+
+body.barber .bkg-gold {background-image:url('../media/barber-texture.jpg'); background-size: 1000px 380px; background-position: bottom left; background-repeat: no-repeat;}
 
 body.barber .overlay-info .project-description {font-family: "Open Sans", sans-serif; font-style: normal; letter-spacing: normal; max-width: 300px; line-height: 1.6}
 body.barber .overlay-info .project-title {font-family: "Bebas", sans-serif; font-style: normal; font-size: 2rem; letter-spacing: 1px; max-width: 300px; line-height: 1.6}
@@ -3335,10 +3381,54 @@ img.bordered {padding:5px; background-color: #fff;}
 
 /*----- WELNESS SPECIFIC -----*/
 
-body.wellness h1, body.wellness h2, body.wellness h3, body.wellness h4, body.wellness h5, body.wellness h6 {color:#595963; line-height: 1.3}
+body.wellness h1, body.wellness h2, body.wellness h3, body.wellness h4, body.wellness h5, body.wellness h6 {color:#595963;}
 body.wellness .footer-1, body.wellness .bkg-gold, body.wellness .header-compact .nav-bar-inner > .dropdown > .button {background-color: #595963 !important; border-color: #595963}
 
 body.wellness .bkg-grey-ultralight {background-color: #E8ECEE;}
+
+
+/*----- MAP -----*/
+
+.map-popup {padding:20px;}
+.map-popup .image-wrap {width:40%; float:left;}
+.map-popup .image-wrap img {width:100%; height:auto;}
+.map-popup .popup-content {margin-left:40%; padding-left:30px;}
+.map-popup h4, .map-popup p {margin-top:1rem; margin-bottom:0;}
+
+.distances {width:80%; margin:auto; margin-top:3rem !important;}
+.distances tr td {padding:5px; border-bottom:1px solid #c5c7c9;}
+
+
+/*----- SOCIAL SHARE -----*/
+
+.social-share {
+	position: absolute !important; left:50%;
+	margin-top:20px;
+	-webkit-transform: translateX(-50%)!important;
+	-ms-transform: translateX(-50%)!important;
+	transform: translateX(-50%)!important;
+}
+
+.social-share p, .social-share ul {
+  float: left;
+  margin-top: 0;
+  margin-left: 5px;
+  color:rgba(255,255,255,.8);
+}
+.social-share ul li a {color:rgba(255,255,255,.8); font-size:1.5em;}
+.social-share ul li a:hover {color:#fff}
+
+
+/*----- MEETING PACKAGE -----*/
+
+
+.meeting-package {width:100%;}
+.meeting-package td {padding:5px 0; border-bottom: 1px solid #e5e7e9}
+
+
+.portfolio-5.small-margins [class*="content-grid"] .grid-item {height:auto !important;}
+
+
 
 
 

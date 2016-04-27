@@ -1,11 +1,11 @@
 <!-- module: text.two_column -->
-<div class="section-block replicable-content">
+<div class="section-block no-padding-bottom">
     <div class="row">
-        <div class="column width-3 offset-2">
-            <h3 class="mb-50">{!! $module->data->title !!}</h3>
+        <div class="column width-5 offset-1 pb-50">
+            <p class="sublead">{!! $module->data->title !!}</p>
         </div>
-        <div class="column width-5">
-            <p style="margin: 0; padding: 0;">{!! $module->data->text !!}</p>
+        <div class="column width-5 pb-50">
+            <p class="">{!! $module->data->text !!}</p>
         </div>
     </div>
 </div>

@@ -16,6 +16,7 @@ class CreatePagesTable extends Migration
             $table->increments('id');
             $table->string('url')->unique();
             $table->string('title');
+            $table->string('bodyclass');
             $table->string('meta');
             $table->longText('content');
             $table->string('layout');
