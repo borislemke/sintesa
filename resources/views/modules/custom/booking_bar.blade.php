@@ -22,7 +22,8 @@
     }
 
     #b_availSubmit {
-        margin-top: 0
+        margin-top: 0;
+        width: 20%;
     }
 
     #b_availCheckIn, #b_availCheckOut {
@@ -31,12 +32,13 @@
     }
 
     #b_availSubmit > input {
-        background: #161616;
-        color: #fff;
+        color: #161616;
         border: 0;
         border-radius: 0;
-        background: #161616;
-        padding: .9rem 2rem;
+        background: #fff;
+        padding: .9rem 0;
+        width: 100%;
+        margin-top:27px;
     }
 
     #b_availSubmit > input:hover {
@@ -49,7 +51,8 @@
     }
 
     .b_availDatesInner select {
-        background: rgba(10, 20, 40, .1);
+        background: rgba(255, 255, 255, .2);
+        color: #fff;
         border: none;
         border-radius: 0;
         -webkit-appearance: none;
@@ -63,22 +66,26 @@
     }
 
     .b_availDatesInner h4 {
-        margin: 0.3em 0 0;
-        font-size: 100%;
+        font-size: 90%;
         float: left;
-        margin-right: 10px;
         line-height: 2.2;
-        font-family: Open Sans;
-        width: 30%;
-        text-align: right;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:#fff !important;
     }
 
     .b_availDatesInner select:first-child {
-        width: 20%;
+        width: 30%;
+        float: left;
+        margin-right:2%;
     }
 
     .b_availDatesInner select:last-child {
-        width: 40%;
+        width: 66%;
+        float: left;
+        margin-right:2%;
     }
 
     @media only screen and (max-width: 960px) {
@@ -99,6 +106,17 @@
             margin-top: 3rem;
         }
     }
+
+    #booking-section {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        background: rgba(90,95,100,.5);
+        margin-top:-110px;
+        height:110px;
+        overflow: hidden;
+    }
+
+
 </style>
 
 <section id="booking-section" class="section-block small-section left bkg-grey-ultralight hide-on-mobile">
@@ -112,41 +130,3 @@
         </div>
     </div>
 </section>
-<!--
-<section id="booking-section" class="section-block small-section left bkg-grey-ultralight hide-on-mobile">
-    <div class="booking-form-container">
-        <form class="login-form" action="#" method="post" novalidate>
-            <div class="row">
-                <div class="column width-2 offset-1">
-                    <div class="field-wrapper">
-                        <input type="text" name="email" class="form-name form-element small" placeholder="Check In" tabindex="1" required>
-                    </div>
-                </div>
-                <div class="column width-2">
-                    <div class="field-wrapper">
-                        <input type="text" name="password" class="form-email form-element small" placeholder="Check Out" tabindex="2" required>
-                    </div>
-                </div>
-                <div class="column width-2">
-                    <div class="field-wrapper">
-                        <input type="text" name="email" class="form-name form-element small" placeholder="Adults" tabindex="1" required>
-                    </div>
-                </div>
-                <div class="column width-2">
-                    <div class="field-wrapper">
-                        <input type="text" name="email" class="form-name form-element small" placeholder="Children" tabindex="1" required>
-                    </div>
-                </div>
-                <div class="column width-2">
-                    <input type="submit" value="Check Availability" class="form-submit full-width button small bkg-charcoal bkg-hover-pink color-white color-hover-white no-margin-bottom">
-                </div>
-
-
-            </div>
-            <input type="text" name="honeypot" class="form-honeypot form-element">
-        </form>
-        <div class="form-response"></div>
-    </div>
-</section>
--->
-<!-- module_end: custom.booking_bar -->

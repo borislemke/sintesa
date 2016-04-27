@@ -1,13 +1,22 @@
 <!-- module: text.about -->
-<div class="section-block replicable-content">
+<div class="section-block">
     <div class="row">
-        <div class="column width-8 offset-2 center">
-            <h2 class="mb-50">{{ $module->data->title }}</h2>
-            <p class="lead">{{ $module->data->lead }}</p>
-
-            @if(isset($module->data->description) && $module->data->description != "")
-            <p class="mb-50">{{ $module->data->description }}</p>
-            @endif
+        <div class="column width-10 offset-1">
+            <div class="column width-4">
+                <h2 class="">{{ $module->data->title }}</h2>
+                <p class="lead"><em>{{ $module->data->lead }}</em></p>
+            </div>
+            <div class="column width-4">
+                @if(isset($module->data->description_one) && $module->data->description_one != "")
+                    <p>{{ $module->data->description_one }}</p>
+                @endif
+            </div>
+            <div class="column width-4">
+                @if(isset($module->data->description_two) && $module->data->description_two != "")
+                    <p>{{ $module->data->description_two }}</p>
+                @endif
+            </div>
+            
 
             @if(FALSE)
                 <ul class="social-list list-horizontal">
