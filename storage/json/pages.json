@@ -3,6 +3,7 @@
         "id": 1,
         "title": "Sintesa | Home",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "home",
         "template": "hotel",
         "header": "sintesa",
@@ -176,10 +177,37 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "text_image.two_alt",
+                "data": {
+                    "blocks": [
+                        {
+                            "title": "The BARber",
+                            "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
+                            "background": "generic/home-barber.jpg",
+                            "link": {
+                                "type": "internal",
+                                "url": "barber"
+                            }
+                        },
+                        {
+                            "title": "The Wellness Center",
+                            "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                            "background": "generic/home-wellness.jpg",
+                            "link": {
+                                "type": "internal",
+                                "url": "the-wellness-center"
+                            }
+                        }
+                    ]
+                }
             },
             {
                 "order": 7,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 8,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
@@ -188,7 +216,7 @@
                 }
             },
             {
-                "order": 8,
+                "order": 9,
                 "status": 0,
                 "type": "sliders.testimony",
                 "data": {
@@ -396,6 +424,7 @@
         "id": 3,
         "title": "Sintesa | Accommodation",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "accommodation",
         "template": "hotel",
         "header": "sintesa",
@@ -556,6 +585,7 @@
         "id": 4,
         "title": "Sintesa | Superior Room",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "room-superior",
         "template": "hotel",
         "header": "sintesa",
@@ -566,17 +596,20 @@
             {
                 "order": 1,
                 "status": 1,
-                "type": "parallax.simple_short",
+                "type": "sliders.fullscreen",
                 "config": {
                     "short": true
                 },
-                "data": {
-                    "title": "Superior Room",
-                    "image": {
-                        "src": "page-banners/room-superior.jpg",
-                        "alt": "Some alt text"
+                "data": [
+                    {
+                        "title": "Superior Room",
+                        "subtitle": "",
+                        "banner": {
+                            "src": "page-banners/room-superior.jpg",
+                            "alt": "Some alt text"
+                        }
                     }
-                }
+                ]
             },
             {
                 "order": 2,
@@ -650,6 +683,7 @@
         "id": 5,
         "title": "Sintesa | Deluxe Room",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "room-deluxe",
         "template": "hotel",
         "header": "sintesa",
@@ -660,17 +694,19 @@
             {
                 "order": 1,
                 "status": 1,
-                "type": "parallax.simple_short",
+                "type": "sliders.fullscreen",
                 "config": {
                     "short": true
                 },
-                "data": {
-                    "title": "Deluxe Room",
-                    "image": {
-                        "src": "page-banners/room-deluxe.jpg",
-                        "alt": "Some alt text"
+                "data": [
+                    {
+                        "title": "Deluxe Room",
+                        "banner": {
+                            "src": "page-banners/room-deluxe.jpg",
+                            "alt": "Some alt text"
+                        }
                     }
-                }
+                ]
             },
             {
                 "order": 2,
@@ -744,6 +780,7 @@
         "id": 6,
         "title": "Sintesa | Junior Suite Room",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "room-junior-suite",
         "template": "hotel",
         "header": "sintesa",
@@ -754,17 +791,19 @@
             {
                 "order": 1,
                 "status": 1,
-                "type": "parallax.simple_short",
+                "type": "sliders.fullscreen",
                 "config": {
                     "short": true
                 },
-                "data": {
-                    "title": "Junior Suite Room",
-                    "image": {
-                        "src": "page-banners/room-junior-suite.jpg",
-                        "alt": "Some alt text"
+                "data": [
+                    {
+                        "title": "Junior Suite Room",
+                        "banner": {
+                            "src": "page-banners/room-junior-suite.jpg",
+                            "alt": "Some alt text"
+                        }
                     }
-                }
+                ]
             },
             {
                 "order": 2,
@@ -838,6 +877,7 @@
         "id": 7,
         "title": "Sintesa | Executive Suite",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "suite-executive",
         "template": "hotel",
         "header": "sintesa",
@@ -848,17 +888,19 @@
             {
                 "order": 1,
                 "status": 1,
-                "type": "parallax.simple_short",
+                "type": "sliders.fullscreen",
                 "config": {
                     "short": true
                 },
-                "data": {
-                    "title": "Executive Suite",
-                    "image": {
-                        "src": "page-banners/room-executive-suite.jpg",
-                        "alt": "Some alt text"
+                "data": [
+                    {
+                        "title": "Executive Suite",
+                        "banner": {
+                            "src": "page-banners/room-executive-suite.jpg",
+                            "alt": "Some alt text"
+                        }
                     }
-                }
+                ]
             },
             {
                 "order": 2,
@@ -932,6 +974,7 @@
         "id": 8,
         "title": "Sintesa | Sintesa and Peninsula Suite",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "suite-sintesa-and-peninsula",
         "template": "hotel",
         "header": "sintesa",
@@ -942,17 +985,19 @@
             {
                 "order": 1,
                 "status": 1,
-                "type": "parallax.simple_short",
+                "type": "sliders.fullscreen",
                 "config": {
                     "short": true
                 },
-                "data": {
-                    "title": "Sintesa and Peninsula Suite",
-                    "image": {
-                        "src": "page-banners/room-sintesa-suite.jpg",
-                        "alt": "Some alt text"
+                "data": [
+                    {
+                        "title": "Sintesa and Peninsula Suite",
+                        "banner": {
+                            "src": "page-banners/room-sintesa-suite.jpg",
+                            "alt": "Some alt text"
+                        }
                     }
-                }
+                ]
             },
             {
                 "order": 2,
@@ -1026,6 +1071,7 @@
         "id": 9,
         "title": "Sintesa | Presidential Suite",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "suite-presidential",
         "template": "hotel",
         "header": "sintesa",
@@ -1036,17 +1082,19 @@
             {
                 "order": 1,
                 "status": 1,
-                "type": "parallax.simple_short",
+                "type": "sliders.fullscreen",
                 "config": {
                     "short": true
                 },
-                "data": {
-                    "title": "Presidential Suite",
-                    "image": {
-                        "src": "page-banners/room-presidential-suite.jpg",
-                        "alt": "Some alt text"
+                "data": [
+                    {
+                        "title": "Presidential Suite",
+                        "banner": {
+                            "src": "page-banners/room-presidential-suite.jpg",
+                            "alt": "Some alt text"
+                        }
                     }
-                }
+                ]
             },
             {
                 "order": 2,
@@ -1120,6 +1168,7 @@
         "id": 10,
         "title": "Sintesa | Angin Angin",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "angin-angin",
         "template": "hotel",
         "header": "sintesa",
@@ -1179,8 +1228,9 @@
         "id": 11,
         "title": "Sintesa | BARber",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "barber",
         "url": "barber",
-        "template": "barber",
+        "template": "hotel",
         "header": "sintesa",
         "footer": "sintesa",
         "author": "Fleava",
@@ -1203,8 +1253,91 @@
             {
                 "order": 3,
                 "status": 1,
-                "type": "custom.barber",
-                "data": []
+                "type": "mixed.page_intro_alt",
+                "data": {
+                    "title": "Ut wisi enim ad minim veniam, quis nostru.",
+                    "text_one": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop to furthest left corner of the room, inside the cloak room reveals a secret door to find the venue.",
+                    "text_two": "Old reclaimed wooden panels in dark lacquer, antique light fixtures, warm leather sofas, a fine pool table in one corner, a baby grand piano on the other and of course a bar complete with the finest collection of Single Malts, Whiskeys, a range of premium Vodkas and Branded Liquors.",
+                    "intro": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.",
+                    "image_wide": {
+                        "src": "generic/barber1.jpg",
+                        "alt": "The Barber Sintesa"
+                    },
+                    "image_square": {
+                        "src": "generic/barber2.jpg",
+                        "alt": "The Barber Sintesa"
+                    }
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "parallax.custom_barber",
+                "data": {
+                    "title": "Happy Hours",
+                    "description": "BUY 1 GET 1 FREE",
+                    "background": "slider/torasudiro.jpg",
+                    "button": {
+                        "text": "Learn More",
+                        "link": {
+                            "type": "internal",
+                            "url": "#"
+                        }
+                    }
+                }
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "text.three_column",
+                "data": {
+                    "title": "Ut wisi enim ad minim veniam, quis nostru. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                    "text_one": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse moles tie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissi.",
+                    "text_two": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adm."
+                }
+            },
+             {
+                "order": 6,
+                "status": 1,
+                "type": "lightbox.gallery_column",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "barber/monday.jpg",
+                            "title": "Monday"
+                        },
+                        {
+                            "image": "barber/tuesday.jpg",
+                            "title": "Tuesday"
+                        },
+                        {
+                            "image": "barber/wednesday.jpg",
+                            "title": "Wednesday"
+                        },
+                        {
+                            "image": "barber/thursday.jpg",
+                            "title": "Thursday"
+                        },
+                        {
+                            "image": "barber/friday.jpg",
+                            "title": "Friday"
+                        },
+                        {
+                            "image": "barber/saturday.jpg",
+                            "title": "Saturday"
+                        },
+                        {
+                            "image": "barber/sunday.jpg",
+                            "title": "Sunday"
+                        }
+
+                    ]
+                }
+            },
+            {
+                "order": 7,
+                "status": 1,
+                "type": "mixed.featurette"
             }
         ]
     },
@@ -1212,6 +1345,7 @@
         "id": 12,
         "title": "Sintesa | The Healthy Corner",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "healthy-corner",
         "template": "hotel",
         "header": "sintesa",
@@ -1271,6 +1405,7 @@
         "id": 13,
         "title": "Sintesa | The Rooftop",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "rooftop",
         "template": "hotel",
         "header": "sintesa",
@@ -1330,6 +1465,7 @@
         "id": 15,
         "title": "Sintesa | The Wellness Center",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "wellness",
         "url": "the-wellness-center",
         "template": "hotel",
         "header": "sintesa",
@@ -1437,6 +1573,7 @@
         "id": 14,
         "title": "Sintesa | Spa Treatment",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "wellness",
         "url": "spa-treatment",
         "template": "hotel",
         "header": "sintesa",
@@ -1505,6 +1642,7 @@
         "id": 15,
         "title": "Sintesa | Wellness Activity",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "wellness",
         "url": "wellness-activity",
         "template": "hotel",
         "header": "sintesa",
@@ -1565,6 +1703,7 @@
         "id": 16,
         "title": "Sintesa | The Gym",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "wellness",
         "url": "the-gym",
         "template": "hotel",
         "header": "sintesa",
@@ -1625,6 +1764,7 @@
         "id": 17,
         "title": "Sintesa | Kids Creative Room",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "kids-creative-room",
         "template": "hotel",
         "header": "sintesa",
@@ -1685,6 +1825,7 @@
         "id": 18,
         "title": "Sintesa | Swimming Pools",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "swimming-pools",
         "template": "hotel",
         "header": "sintesa",
@@ -1718,10 +1859,20 @@
             {
                 "order": 3,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "text.two_column",
+                "data": {
+                    "height": 400,
+                    "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. ",
+                    "text": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat."
+                }
             },
             {
                 "order": 4,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 5,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
@@ -1735,6 +1886,7 @@
         "id": 19,
         "title": "Sintesa | Meeting Package",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "meeting-package",
         "template": "hotel",
         "header": "sintesa",
@@ -1766,12 +1918,27 @@
                 "type": "custom.booking_bar"
             },
             {
+                "order": 3,
+                "status": 1,
+                "type": "text.two_column",
+                "data": {
+                    "height": 400,
+                    "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. ",
+                    "text": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat."
+                }
+            },
+            {
                 "order": 4,
+                "status": 1,
+                "type": "custom.meeting_package"
+            },
+            {
+                "order": 5,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 5,
+                "order": 6,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
@@ -1785,6 +1952,7 @@
         "id": 20,
         "title": "Sintesa | Events",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "events",
         "template": "hotel",
         "header": "sintesa",
@@ -1845,6 +2013,7 @@
         "id": 21,
         "title": "Sintesa | The Wedding",
         "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
         "url": "the-wedding",
         "template": "hotel",
         "header": "sintesa",

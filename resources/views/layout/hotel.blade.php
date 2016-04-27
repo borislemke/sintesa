@@ -3,7 +3,7 @@
 
 @include('layout.head', compact('data'))
 
-<body class="home-page">
+<body class="home-page {{ $data->bodyclass }}">
 
 <!-- Overlay Navigation Menu -->
 <div class="overlay-navigation-wrapper">
@@ -24,7 +24,7 @@
                     <ul>
                         <li class="current"><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('page', ['url' => 'accomodation']) }}">Accomodation</a></li>
-                        <li><a href="#" class="contains-sub-menu">Food &amp; Beverage</a>
+                        <li><a href="#" class="contains-sub-menu disabled">Food &amp; Beverage</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('page', ['url' => 'angin-angin']) }}">Angin Angin</a></li>
                                 <li><a href="{{ route('page', ['url' => 'barber']) }}">The BARber</a></li>
@@ -39,13 +39,13 @@
                                 <li><a href="{{ route('page', ['url' => 'the-gym']) }}">The Gym</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="contains-sub-menu">Facilities</a>
+                        <li><a href="#" class="contains-sub-menu disabled">Facilities</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('page', ['url' => 'kids-creative-room']) }}">Kids Creative Room</a></li>
                                 <li><a href="{{ route('page', ['url' => 'swimming-pools']) }}">Swimming Pools</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="contains-sub-menu">Events &amp; Wedding</a>
+                        <li><a href="#" class="contains-sub-menu disabled">Events &amp; Wedding</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('page', ['url' => 'meeting-package']) }}">Meeting Package</a></li>
                                 <li><a href="{{ route('page', ['url' => 'events']) }}">Events</a></li>
@@ -241,7 +241,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Food &amp; Beverage</a>
+                                <li><a href="#" class="disabled">Food &amp; Beverage</a>
                                     <ul class="sub-menu">
                                         <li><a href="{{ route('page', ['url' => 'angin-angin']) }}">Angin Angin</a></li>
                                         <li><a href="{{ route('page', ['url' => 'barber']) }}">The BARber</a></li>
@@ -256,13 +256,13 @@
                                         <li><a href="{{ route('page', ['url' => 'wellness-activity']) }}">Wellness Activity</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Facilities</a>
+                                <li><a href="#" class="disabled">Facilities</a>
                                     <ul class="sub-menu">
                                         <li><a href="{{ route('page', ['url' => 'kids-creative-room']) }}">Kids Creative Room</a></li>
                                         <li><a href="{{ route('page', ['url' => 'swimming-pools']) }}">Swimming Pools</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Events &amp; Wedding</a>
+                                <li><a href="#" class="disabled">Events &amp; Wedding</a>
                                     <ul class="sub-menu">
                                         <li><a href="{{ route('page', ['url' => 'meeting-package']) }}">Meeting Package</a></li>
                                         <li><a href="{{ route('page', ['url' => 'events']) }}">Events</a></li>
@@ -330,7 +330,7 @@
         </div>
         <!-- Content End -->
 
-        {{--@include('footers.sintesa', compact('footer'))--}}
+        @include ('layout.footer')
 
     </div>
 </div>

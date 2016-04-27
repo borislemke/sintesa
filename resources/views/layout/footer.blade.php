@@ -5,30 +5,20 @@
     <?php else: ?>
     <footer class="footer-1 footer reveal-side-navigation bkg-gold color-white">
         <?php endif ?>
-        <div class="footer-top">
-            <div class="row">
-                <div class="column width-3">
+        <div class="footer-top ">
+            <div class="row pb-60">
+                 <div class="column width-3">
                     <svg class="">
                         <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
                     </svg>
                 </div>
+                
                 <div class="column width-3">
                     <div class="widget">
+                        
                         <h4 class="widget-title">{{ $footer->data->longtext->title }}</h4>
                         <p>{{ $footer->data->longtext->text }}</p>
-                    </div>
-                </div>
-                <div class="column width-2 offset-1">
-                    <div class="widget">
-                        <h4 class="widget-title">{{ $footer->data->navigation->title }}</h4>
-                        <ul>
-                            @foreach($footer->data->navigation->content as $nav)
-                                <?php $link = $nav->type == 'internal' ? route('page', ['url' => $nav->url]) : $nav->url ?>
-                                <li>
-                                    <a href="{{ $link }}">{{ $nav->text }}</a>
-                                </li>
-                            @endforeach
-                        </ul>
+                        <small style="display:block; line-height:1.3">&copy; {{ $footer->data->copyright }}<br> Website by <a href="http://fleava.com/" target="_blank" title="Fleava - Bali Digital Advertising Agency">Fleava</a>.</small>
                     </div>
                 </div>
                 <div class="column width-3">
@@ -37,7 +27,8 @@
                         <address>
                             Jl. Kencana No. 1<br>
                             Jimbaran, Bali 80361 - Indonesia<br>
-                            <a href="mailto:infotsj@sintesahotels.com">infotsj@sintesahotels.com</a>
+                            <i class="icon-phone"></i> <strong>+62 361 472 5333</strong><br>
+                            <i class="icon-mail"></i> <a href="mailto:infotsj@sintesahotels.com">infotsj@sintesahotels.com</a>
                         </address>
 
                         <ul class="social-list list-horizontal no-margin-bottom">
@@ -79,16 +70,19 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="row">
-                <div class="column width-9 push-3">
-                    <p class="copyright pull-left">
-                        &copy; {{ $footer->data->copyright }} Website by <a href="http://fleava.com/" target="_blank">Fleava</a>.
-                    </p>
+                
+                <div class="column width-2">
+                    <img src="media/bookingaward.jpg" style="width:100%; height:auto" />
+                    <!--
+                    <svg class="">
+                        <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
+                    </svg>
+                    -->
                 </div>
+
+                
             </div>
         </div>
+       
     </footer>
     <!-- Footer 1 End -->
