@@ -1,12 +1,12 @@
 <!-- module: sliders.fullscreen -->
-<section class="section-block featured-media include-booking tm-slider-parallax-container {{ $module->config->short ? 'page-intro' : ' window-height'  }}">
-    <div class="tm-slider-container full-width-slider" data-featured-slider data-auto-advance="2000" data-parallax
-         data-parallax-fade-out data-animation="slide" data-scale-under="960">
+<section class="section-block featured-media include-booking  {{ $module->config->short ? 'page-intro' : ' window-height'  }}">
+    <div class="tm-slider-container full-width-slider" data-featured-slider data-auto-advance="2000" data-animation="slide" data-scale-under="960">
+         <div class="slide-overlay-gradient"></div>
         <ul class="tms-slides">
 
             @foreach($module->data as $slide)
                 <li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#15130f"
-                    data-overlay-bkg-opacity="0.6">
+                    data-overlay-bkg-opacity="0.5">
                     <div class="tms-content">
 
                         <div class="tms-content-inner {{ $module->config->short ? 'center v-align-center' : 'left v-align-bottom' }}">
@@ -34,16 +34,33 @@
                                            data-animate-in="opacity:0;transX:30px;duration:800ms;delay:900ms;easing:easeFastSlow;"
                                         >{{ $slide->button->text }}</a>
                                     @endif
+
+                                    @if($module->config->short)
+                                      <div class="social-share tms-caption" data-animate-in="opacity:0;duration:1000ms;delay:600;easing:easeFastSlow;" data-no-scale>
+                                        <p class="">Share:</p>
+                                        <ul class="social-list list-horizontal">
+                                          <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                          <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                          <li><a href="#"><i class="icon-google"></i></a></li>
+                                        </ul>
+                                      </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img data-src="images/{{ $slide->banner->src }}" src="images/blank.png" alt="{{ $slide->banner->alt }}"/>
+                    <img data-src="media/{{ $slide->banner->src }}" src="media/blank.png" alt="{{ $slide->banner->alt }}"/>
+                    <div class="blur-effect">
+                      <div style="background-image:url(media/{{ $slide->banner->src }})"></div>
+                    </div>
                 </li>
             @endforeach
 
         </ul>
+
+        
     </div>
 </section>
+
 <!-- module_end: sliders.fullscreen -->
 

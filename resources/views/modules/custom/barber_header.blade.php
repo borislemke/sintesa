@@ -4,7 +4,7 @@
          data-parallax-fade-out data-animation="slide" data-scale-under="960">
         <ul class="tms-slides">
 
-            <li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#15130f"
+            <li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#131027"
                 data-overlay-bkg-opacity="0.6">
                 <div class="tms-content">
                     <div class="tms-content-inner left left-on-mobile v-align-bottom">

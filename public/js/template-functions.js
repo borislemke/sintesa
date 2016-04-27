@@ -144,7 +144,7 @@ $( document ).ready( function(){
 	var pageFadeLocation = true;
 	var page = 'body';
 	var launchLink = '.fade-location, .logo a, .footer-logo a, .navigation a, .side-navigation a, .overlay-navigation a, [class*="portfolio-"] .overlay-link, .post-media .overlay-link, .post-title a, .post-read-more a, .pagination-previous, .pagination-next';
-	var excludeLink = '.no-page-fade, .mail-link, .lightbox-link, .contains-sub-menu, .blog .pagination-previous, .blog .pagination-next, .disabled, .scroll-link';
+	var excludeLink = '.no-page-fade, .mail-link, .lightbox-link, .contains-sub-menu, .blog .pagination-previous, .blog .pagination-next, .disabled, .scroll-link, .disable-linkeffect';
 
 	// Transition End
 	var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
@@ -1517,3 +1517,35 @@ $( document ).ready( function(){
 	// Initiate
 	templateFunctions.init();
 });
+
+
+function heroScroll(){
+  var scrolled = $(window).scrollTop();
+  var heroHeight = $('.featured-media.include-booking').height();
+
+  animate = function(scrolled) {
+    scrolled <= heroHeight && (
+
+     	$(".featured-media.include-booking .tms-content-inner").css({
+     		"transform": "translate3d(0px, " + scrolled / 5 + "px, 0px)",
+        opacity: 1 - scrolled / 300
+      })
+      
+    )
+  };
+  animate(scrolled);
+}
+
+$(document).ready(function () {
+
+	$('a.disabled').click(function(e){
+		e.preventDefault()
+	});
+
+  if ( $('.featured-media.include-booking').length ) {
+		$(window).scroll(function(){
+		  heroScroll();
+		});
+	}
+});
+

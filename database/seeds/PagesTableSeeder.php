@@ -18,6 +18,7 @@ class PagesTableSeeder extends Seeder
         foreach ($collection as $page) {
             \App\Paper::create([
                 'title' => $page->title,
+                'bodyclass' => isset($page->bodyclass) ? $page->bodyclass : "",
                 'meta' => $page->meta,
                 'url' => $page->url,
                 'layout' => $page->template,

@@ -8,7 +8,7 @@
                 @foreach($module->data->gallery as $item)
                     <div class="grid-item{{ $i == 0 ? ' grid-sizer' : ($i == 1 ? ' portrait' : '') }}">
                         <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
-                             data-hover-bkg-color="#ffffff" data-hover-bkg-opacity=".8">
+                             data-hover-bkg-color="#ffffff" data-hover-bkg-opacity=".8" style="padding:2px">
                             <?php $popup = isset($item->popup) ? $item->popup : $item->image->src ?>
                             <a class="overlay-link lightbox-link" data-toolbar="zoom" data-group="gallery-1"
                                data-caption="{{ $item->image->alt }}"
@@ -22,7 +22,7 @@
 
                 <div class="grid-item">
                     <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
-                         data-hover-bkg-color="#a39161" data-hover-bkg-opacity=".8">
+                         data-hover-bkg-color="#a39161" data-hover-bkg-opacity=".8" style="padding:2px">
                         <a class="overlay-link lightbox-link" data-group="gallery-1"
                            data-caption="Room floor plan" href="images/{{ $module->data->floorplan }}">
                             <img src="images/gallery-rooms/floorplan.jpg" alt="Room floor plan"/>

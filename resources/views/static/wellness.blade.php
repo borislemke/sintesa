@@ -7,7 +7,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="Your-Image-Url"/>
     <meta property="og:description" content="Your-Page-Description"/>
-    <title>Sintesa | The BARber</title>
+    <title>Sintesa | The Wellness Center</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
 
     <!-- Font -->
@@ -453,8 +453,8 @@
                                         <a href="{{ route('page', ['url' => 'chavana-spa']) }}"><img data-src="images/wellness/wellness1.jpg" src="images/wellness/wellness1.jpg" width="760" height="500" alt=""/></a>
                                     </div>
                                     <div class="team-content-info">
-                                        <h4 class="mb-20"><a href="#">Spa Treatment</a></h4>
-                                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse moles tie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissi.</p>
+                                        <h4 class="mb-20"><a href="/spa-treatment">Spa Treatment</a></h4>
+                                        <p>Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic &amp; authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony.</p>
                                     </div>
                                 </li>
 
@@ -463,8 +463,8 @@
                                         <a href="{{ route('page', ['url' => 'wellness-activity']) }}"><img data-src="images/wellness/wellness2.jpg" src="images/wellness/wellness2.jpg" width="760" height="500" alt=""/></a>
                                     </div>
                                     <div class="team-content-info">
-                                        <h4 class="mb-20"><a href="#">Wellness Program</a></h4>
-                                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse moles tie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissi.</p>
+                                        <h4 class="mb-20"><a href="/wellness-activity">Wellness Activity</a></h4>
+                                        <p>Designed and fully facilitated by the purest natural products, enter a world of harmony as you are treated to treatments created to nurture and inspire the soul.</p>
                                     </div>
                                 </li>
 
@@ -473,12 +473,10 @@
                                         <a href="{{ route('page', ['url' => 'the-gym']) }}"><img data-src="images/wellness/wellness3.jpg" src="images/wellness/wellness3.jpg" width="760" height="500" alt=""/></a>
                                     </div>
                                     <div class="team-content-info">
-                                        <h4 class="mb-20"><a href="#">Fitness Studio</a></h4>
-                                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse moles tie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissi.</p>
+                                        <h4 class="mb-20"><a href="/the-gym">The Gym</a></h4>
+                                        <p>Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines.</p>
                                     </div>
                                 </li>
-
-
                             </ul>
                         </div>
                     </div>
