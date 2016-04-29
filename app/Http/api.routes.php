@@ -62,6 +62,7 @@ Route::group(['prefix' => 'api'], function () {
                 Route::post('save', 'MediaController@save');
                 Route::post('upload', 'MediaController@upload');
                 Route::post('updateFile', 'MediaController@updateFile');
+                Route::post('mkdir', 'MediaController@mkdir');
             });
         });
 

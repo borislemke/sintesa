@@ -23,16 +23,20 @@
     <![endif]-->
     <base href="/">
 
-    <!--Start of Zopim Live Chat Script-->
-    <script type="text/javascript">
-        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");$.src="//v2.zopim.com/?3rKYqhUuWUs4b5IccS67xjnwAVzfHVFX";z.t=+new Date;$.type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-
-        window.$zopim(function(){
-            $zopim.livechat.button.setPosition('br');
-            $zopim.livechat.theme.setColors({badge: '#FFFFFF', primary: '#555555'});
-            $zopim.livechat.theme.reload(); 
-
-        });
+    <!-- Chatra {literal} -->
+    <script>
+        ChatraID = 'Lfyf6zdiMrd8RTKie';
+        (function(d, w, c) {
+            var n = d.getElementsByTagName('script')[0],
+                s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+                + '//call.chatra.io/chatra.js';
+            n.parentNode.insertBefore(s, n);
+        })(document, window, 'Chatra');
     </script>
-    <!--End of Zopim Live Chat Script-->
+    <!-- /Chatra {/literal} -->
 </head>

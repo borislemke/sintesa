@@ -38,6 +38,17 @@ class MediaController extends Controller
         ]);
     }
 
+    public function digestFolder($folder)
+    {
+        $folders = File::directories(public_path("media/$folder"));
+
+        foreach($folders as $folder) {
+            $sub = trim($this->digestFolder(str_replace(public_path("media/"), "", $folder)), "/");
+        }
+
+        return $folder;
+    }
+
     public function updateFile(Request $request)
     {
         $file = Media::find($request->id);
@@ -117,9 +128,15 @@ class MediaController extends Controller
 
     public function mkdir(Request $request)
     {
-        $curr_dir = $request->current;
-        $new_dir = $request->create;
-        File::makeDirectory(public_path("$curr_dir/$new_dir"));
+        File::makeDirectory(public_path("media/$request->new_dir"));
+
+        return response()->json([
+            "status" => 200,
+            "monolog" => [
+                "title" => "Folder create",
+                "message" => "New folder has been created"
+            ]
+        ]);
     }
 
     function formatBytes($size, $precision = 2)
