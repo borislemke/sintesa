@@ -1,7 +1,5 @@
 <?php
 
-Route::get('import', 'PaperController@import');
-
 Route::group(['prefix' => 'api'], function () {
 
     header('Access-Control-Allow-Origin: *');
@@ -60,9 +58,12 @@ Route::group(['prefix' => 'api'], function () {
             Route::group(['prefix' => 'media'], function () {
                 Route::post('index', 'MediaController@indexFolder');
                 Route::post('save', 'MediaController@save');
-                Route::post('upload', 'MediaController@upload');
-                Route::post('updateFile', 'MediaController@updateFile');
+                Route::post('upload-file', 'MediaController@upload');
+                Route::post('update-file', 'MediaController@updateFile');
+                Route::post('delete-file', 'MediaController@deleteFile');
                 Route::post('mkdir', 'MediaController@mkdir');
+                Route::post('delete-folder', 'MediaController@rmdir');
+                Route::post('rename-folder', 'MediaController@renameDir');
             });
         });
 
