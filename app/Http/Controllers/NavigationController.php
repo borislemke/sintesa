@@ -31,13 +31,17 @@ class NavigationController extends Controller
     {
         $nav = Nav::find($id);
 
-        $nav->children = $nav->children()->get();
+        if($nav) $nav->children = $nav->children()->get();
 
-        foreach ($nav->children as $child) {
-            $child->children = $child->children()->get();
+        if(isset($nav->children) && $nav->children) {
+            foreach ($nav->children as $child) {
+                $child->children = $child->children()->get();
 
-            foreach ($child->children as $grand) {
-                $grand->children = $grand->children()->get();
+                if(isset($child->children) && $child->children) {
+                    foreach ($child->children as $grand) {
+                        $grand->children = $grand->children()->get();
+                    }
+                }
             }
         }
 

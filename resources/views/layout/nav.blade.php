@@ -158,11 +158,11 @@
                         @foreach($navigation->children as $nav)
                             <li>
                                 <a href="{{ $nav->url_type == 'internal' ? route('page', ['url' => $nav->url]) : $nav->url }}">{{  $nav->title }}</a>
-                                @if(isset($nav->children))
+                                @if(isset($nav->children) AND $nav->children)
                                     <ul class="sub-menu">
                                         @foreach($nav->children as $child)
                                             <li class="contains-sub-menu"><a href="{{ $child->url_type == 'internal' ? route('page', ['url' => $child->url]) : $child->url }}">{{ $child->title }}</a>
-                                                @if(isset($child->children))
+                                                @if(isset($child->children) AND $child->children)
                                                     <ul class="sub-menu">
                                                         @foreach($child->children as $_child)
                                                             <li>

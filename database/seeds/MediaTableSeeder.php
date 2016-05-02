@@ -13,6 +13,12 @@ class MediaTableSeeder extends Seeder
     public function run()
     {
         //
+        $trash_files = File::allFiles(storage_path("trashed_files"));
+
+        foreach ($trash_files as $file) {
+            File::delete($file);
+        }
+
         $files = File::allFiles(public_path("media"));
 
         foreach($files as $file) {

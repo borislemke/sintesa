@@ -25,8 +25,10 @@ class CreateMediaTable extends Migration
             $table->string('caption');
             $table->text('description');
             $table->text('alt_text');
+            $table->text('trash_name');
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
