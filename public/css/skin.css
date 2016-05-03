@@ -3394,10 +3394,16 @@ img.bordered {padding:5px; background-color: #fff;}
 /*----- WELNESS SPECIFIC -----*/
 
 
-.wellness-header-logo-wrapper{text-align:center}
+.wellness-header-logo-wrapper{
+	  text-align: center;
+    margin-top: -80px;
+    position: relative;
+    top: -70px;
+}
 .wellness-header-logo{
-	fill:#662D91;
+	fill:#fff;
 	height:18vw;
+	;
 }
 
 body.wellness {color: #675972}
