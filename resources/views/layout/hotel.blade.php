@@ -292,17 +292,17 @@
                             <ul>
                                 @foreach($navigation->children as $nav)
                                     <li>
-                                        <a href="{{ $nav->url_type == 'internal' ? route('page', ['url' => $nav->url]) : $nav->url }}">{{  $nav->title }}</a>
+                                        <a href="{{ $nav->no_link ? Request::path() . '#' : ($nav->url_type == 'internal' ? route('page', ['url' => $nav->url]) : $nav->url) }}" class="{{ $nav->no_link ? 'disable-linkeffect' : '' }}">{{  $nav->title }}</a>
                                         @if(isset($nav->children) AND $nav->children)
                                             <ul class="sub-menu">
                                                 @foreach($nav->children as $child)
-                                                    <li class="{{ count($nav->children) ? 'contains-sub-menu' : '' }}"><a
-                                                                href="{{ $child->url_type == 'internal' ? route('page', ['url' => $child->url]) : $child->url }}">{{ $child->title . count($nav->children) }}</a>
+                                                    <li class="{{ count($child->children) ? 'contains-sub-menu' : '' }}">
+                                                        <a href="{{ $child->no_link ? Request::path() . '#' : ($child->url_type == 'internal' ? route('page', ['url' => $child->url]) : $child->url) }}" class="{{ $child->no_link ? 'disable-linkeffect' : '' }}">{{  $child->title }}</a>
                                                         @if(isset($child->children) AND $child->children)
                                                             <ul class="sub-menu">
                                                                 @foreach($child->children as $_child)
                                                                     <li>
-                                                                        <a href="{{ $_child->url_type == 'internal' ? route('page', ['url' => $_child->url]) : $_child->url }}">{{ $_child->title }}</a>
+                                                                        <a href="{{ $_child->no_link ? Request::path() . '#' : ($_child->url_type == 'internal' ? route('page', ['url' => $_child->url]) : $_child->url) }}" class="{{ $_child->no_link ? 'disable-linkeffect' : '' }}">{{  $_child->title }}</a>
                                                                     </li>
                                                                 @endforeach
                                                             </ul>
