@@ -13,7 +13,7 @@
                         <div class="content-overlay"></div>
                         <div class="content-outer">
                             <span class="content-inner center">
-                                <h3 class="post-title">{{ $item->title }}</h3>
+                                <h2 class="post-title">{{ $item->title }}</h2>
                                 <span class="post-info">
                                     <span class="">{{ $item->description }}</span>
                                 </span>

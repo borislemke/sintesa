@@ -45,7 +45,7 @@
                             }
                         },
                         "banner": {
-                            "src": "slider/slide-1.jpg",
+                            "src": "slider/pillow.jpg",
                             "alt": "Some alt text"
                         }
                     },
@@ -105,7 +105,22 @@
                             }
                         },
                         "banner": {
-                            "src": "page-banners/the-rooftop.jpg",
+                            "src": "slider/fountain.jpg",
+                            "alt": "Some alt text"
+                        }
+                    },
+                    {
+                        "title": "Sunken Lounge",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                        "button": {
+                            "text": "View the Rooftop",
+                            "link": {
+                                "type": "internal",
+                                "url": "swimming-pools"
+                            }
+                        },
+                        "banner": {
+                            "src": "slider/sunken.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -122,7 +137,7 @@
                 "type": "text.title_subtitle",
                 "data": {
                     "title": "'The Sintesa' Jimbaran - Bali",
-                    "subtitle": "Sintesa Hotels Group proudly to present the opening of ‘The Sintesa ‘ Jimbaran - Bali, a new concept of 5 star resort hotel in Jimbaran and locate on Bali’s southwestern coast is connecting between Jimbaran Bay and Clift (Bukit) of Jimbaran. The Sintesa Jimbaran Bali, designed for natural living with choices of the wellness and lifestyle activities and facilities to deliver ‘a best moment to stay‘.",
+                    "subtitle": "Sintesa Hotels Group proudly to present the opening of ‘The Sintesa ‘ Jimbaran - Bali, a new concept of upscale hotel in Jimbaran and located on Bali’s southwestern coast is connecting between Jimbaran Bay and Clift (Bukit) of Jimbaran. The Sintesa Jimbaran Bali, designed for natural living with choices of the wellness and lifestyle activities and facilities to deliver ‘a best moment to stay‘.",
                     "text": "The Sintesa Jimbaran – Bali is just 10 km south of the Bali Airport (Denpasar). 'The Sintesa' Jimbaran Bali is a short walk to many of Bali's most famous traditional beach - side Seafood Restaurants and is a close drive by hotel shuttle  to Cafés and Bars at Jimbaran Bay and Uluwatu. The Jimbaran region is also home to several world-class hotels and high end villas. Jimbaran is where we enjoy the majestic sunset emerged all year along the bay. Hotel’s location is conveniently positioned, is only 15 km away from vibrant area of Kuta and Nusa Dua. The Hotel is easily accessible to the main tourist quarter of Legian and Seminyak Beachs with its world- famous shopping and nightlife venues."
                 }
             },
@@ -444,7 +459,7 @@
                         "title": "Accommodation",
                         "subtitle": "",
                         "banner": {
-                            "src": "page-banners/room-presidential-suite.jpg",
+                            "src": "slider/accommodation.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1476,20 +1491,11 @@
             {
                 "order": 1,
                 "status": 1,
-                "type": "sliders.fullscreen",
+                "type": "custom.wellness_header",
                 "config": {
-                    "short": false
+                    "short": true
                 },
-                "data": [
-                    {
-                        "title": "The Wellness Center",
-                        "subtitle": "Sintesa Wellness Center offers a complete range of therapies experiences, luxurious, organic & authentic.",
-                        "banner": {
-                            "src": "slider/slide-3.jpg",
-                            "alt": "Some alt text"
-                        }
-                    }
-                ]
+                "data": []
             },
             {
                 "order": 2,
@@ -1747,10 +1753,27 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "parallax.call_to_action",
+                "data": {
+                    "title": "Join our Gym Membership",
+                    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                    "banner": "page-banners/gym-proposal.jpg",
+                    "button": {
+                        "text": "Inquire Now",
+                        "link": {
+                            "type": "internal",
+                            "url": "#"
+                        }
+                    }
+                }
             },
             {
                 "order": 5,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
@@ -1935,10 +1958,27 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "parallax.call_to_action",
+                "data": {
+                    "title": "Meeting Package Proposal Request",
+                    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                    "banner": "page-banners/meeting-proposal.jpg",
+                    "button": {
+                        "text": "Inquire Now",
+                        "link": {
+                            "type": "internal",
+                            "url": "#"
+                        }
+                    }
+                }
             },
             {
                 "order": 6,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 7,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
@@ -1996,10 +2036,27 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "parallax.call_to_action",
+                "data": {
+                    "title": "Event Proposal Request",
+                    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                    "banner": "page-banners/event-proposal.jpg",
+                    "button": {
+                        "text": "Inquire Now",
+                        "link": {
+                            "type": "internal",
+                            "url": "#"
+                        }
+                    }
+                }
             },
             {
                 "order": 5,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
@@ -2057,10 +2114,27 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "parallax.call_to_action",
+                "data": {
+                    "title": "Wedding Package Proposal Request",
+                    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                    "banner": "page-banners/wedding-proposal.jpg",
+                    "button": {
+                        "text": "Inquire Now",
+                        "link": {
+                            "type": "internal",
+                            "url": "#"
+                        }
+                    }
+                }
             },
             {
                 "order": 5,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
