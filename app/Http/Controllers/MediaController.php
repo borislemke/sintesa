@@ -15,6 +15,7 @@ class MediaController extends Controller
     {
         $media_path = public_path("media");
         $current_path = $media_path . "/" . $request->dir;
+        if (strpos($request->dir, "..") !== false) return response(["monolog" => ["title" => "Forbidden", "message" => "Cannot access restricted directory", "target" => $current_path]], 403);
         if (!is_dir($current_path) || !file_exists($current_path)) return response(["monolog" => ["title" => "Not found", "message" => "Directory or file could not be found", "target" => $current_path]], 404);
         $folders = File::directories($current_path);
         $items = [];
@@ -36,17 +37,6 @@ class MediaController extends Controller
             "folders" => $items,
             "files" => $files
         ]);
-    }
-
-    public function digestFolder($folder)
-    {
-        $folders = File::directories(public_path("media/$folder"));
-
-        foreach($folders as $folder) {
-            $sub = trim($this->digestFolder(str_replace(public_path("media/"), "", $folder)), "/");
-        }
-
-        return $folder;
     }
 
     public function updateFile(Request $request)

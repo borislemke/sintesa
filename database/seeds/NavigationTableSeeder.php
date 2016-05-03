@@ -24,7 +24,7 @@ class NavigationTableSeeder extends Seeder
                 'parent' => $n->parent,
                 'url_type' => $n->url_type,
                 'open_in_new' => 0,
-                'no_link' => 0,
+                'no_link' => isset($n->no_link) ? $n->no_link : 0,
                 'hide' => 0
             ]);
         }

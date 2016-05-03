@@ -20,6 +20,11 @@ class Paper extends Model
         return $this->belongsTo('App\Hotel');
     }
 
+    public function footer()
+    {
+        return $this->hasOne('App\Footer', 'id');
+    }
+
     // Listens to database changes
     public static function boot()
     {

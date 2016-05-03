@@ -85,7 +85,8 @@
         "title": "Food &amp; Beverage",
         "parent": 1,
         "url": "accommodation",
-        "url_type": "internal"
+        "url_type": "internal",
+        "no_link": 1
     },
     {
         "id": 12,
@@ -181,7 +182,8 @@
         "title": "Events &amp; Wedding",
         "parent": 1,
         "url": "destination",
-        "url_type": "internal"
+        "url_type": "internal",
+        "no_link": 1
     },
     {
         "id": 24,

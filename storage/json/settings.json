@@ -1,0 +1,67 @@
+{
+    "groups": [
+        {
+            "id": "1",
+            "order": "1",
+            "key": "core",
+            "title": "Core Settings"
+        },
+        {
+            "id": "2",
+            "order": "2",
+            "key": "social",
+            "title": "Social Accounts"
+        }
+    ],
+    "data": [
+        {
+            "order": 1,
+            "title": "Facebook profile",
+            "key": "social/facebook",
+            "value": "The-Sintesa-Jimbaran-Bali-1590874997861251",
+            "config_group_id": 2
+        },
+        {
+            "order": 2,
+            "title": "Twitter id",
+            "key": "social/twitter",
+            "value": "SintesaJimbaran",
+            "config_group_id": 2
+        },
+        {
+            "order": 3,
+            "title": "Instagram id",
+            "key": "social/instagram",
+            "value": "thesintesajimbaran",
+            "config_group_id": 2
+        },
+        {
+            "order": 4,
+            "title": "Pinterest URL",
+            "key": "social/pinterest",
+            "value": "https://id.pinterest.com/sintesajimbaran/",
+            "config_group_id": 2
+        },
+        {
+            "order": 5,
+            "title": "Google Plus ID",
+            "key": "social/google_plus",
+            "value": "106742365410489660521",
+            "config_group_id": 2
+        },
+        {
+            "order": 6,
+            "title": "LinkedIn URL",
+            "key": "social/linkedin",
+            "value": "https://www.linkedin.com/in/the-sintesa-jimbaran-b6095a100",
+            "config_group_id": 2
+        },
+        {
+            "order": 7,
+            "title": "YouTube Channel",
+            "key": "social/youtube",
+            "value": "https://www.youtube.com/channel/UClt1s81tGD_sSFQ0TsYV7ew",
+            "config_group_id": 2
+        }
+    ]
+}

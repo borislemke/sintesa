@@ -42,9 +42,11 @@ class FootersController extends Controller
 
     public function get($id)
     {
-        $hotel = Hotel::find($id);
+        $footer = Footer::find($id);
 
-        return response()->json($hotel);
+        $footer->content = json_decode($footer->content);
+
+        return response()->json($footer);
     }
 
     public function create(Request $request)

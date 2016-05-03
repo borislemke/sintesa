@@ -162,6 +162,7 @@ return [
          * Third parties
          */
         Barryvdh\Debugbar\ServiceProvider::class,
+        Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
     ],
 
@@ -215,5 +216,6 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'LaravelAnalytics' => Spatie\LaravelAnalytics\LaravelAnalyticsFacade::class,
     ],
 ];

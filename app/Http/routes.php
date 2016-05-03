@@ -23,6 +23,7 @@ if (env('APP_DEBUG')) {
 }
 
 Route::get('modules', 'PaperController@indexModules');
+Route::get('analytics', 'AnalyticsController@test');
 
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@render']);
 Route::get('/{anything?}', ['as' => 'page', 'uses' => 'PageController@render'])->where('anything', '(.*)');

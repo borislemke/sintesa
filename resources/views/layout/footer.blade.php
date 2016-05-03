@@ -12,10 +12,10 @@
                         <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
                     </svg>
                 </div>
-                
+
                 <div class="column width-3">
                     <div class="widget">
-                        
+
                         <h4 class="widget-title">{{ $footer->data->longtext->title }}</h4>
                         <p>{{ $footer->data->longtext->text }}</p>
                         <small style="display:block; line-height:1.3">&copy; {{ $footer->data->copyright }}<br> Website by <a href="http://fleava.com/" target="_blank" title="Fleava - Bali Digital Advertising Agency">Fleava</a>.</small>
@@ -70,19 +70,14 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="column width-2">
                     <img src="media/bookingaward.jpg" style="width:100%; height:auto" />
-                    <!--
-                    <svg class="">
-                        <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
-                    </svg>
-                    -->
                 </div>
 
-                
+
             </div>
         </div>
-       
+
     </footer>
     <!-- Footer 1 End -->

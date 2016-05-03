@@ -29,6 +29,8 @@ class AuthenticateController extends Controller
             return response()->json(['error' => 'could_not_create_token'], 500);
         }
 
+        // $user = JWTAuth::parseToken()->authenticate();
+
         // all good so return the token
         return response()->json(compact('token'));
     }
