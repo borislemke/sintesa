@@ -55,6 +55,15 @@
         }
     }
 </script>
+
+<section class="section-block no-padding-top no-padding-bottom bkg-white">
+	<div class="row">
+		<div class="column width-10 push-1 pb-40">
+			<h3>Get Closer with cultural destination from Hotel</h3>
+		</div>
+	</div>
+</section>
+
 <section class="section-block no-padding-top no-padding-bottom" style="background-color:#d9d9d9">
 	<div class="row collapse full-width">
 		<div class="column width-6">

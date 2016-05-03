@@ -297,7 +297,7 @@
                                             <ul class="sub-menu">
                                                 @foreach($nav->children as $child)
                                                     <li class="{{ count($nav->children) ? 'contains-sub-menu' : '' }}"><a
-                                                                href="{{ $child->url_type == 'internal' ? route('page', ['url' => $child->url]) : $child->url }}">{{ $child->title . count($nav->children) }}</a>
+                                                                href="{{ $child->url_type == 'internal' ? route('page', ['url' => $child->url]) : $child->url }}">{{ $child->title }}</a>
                                                         @if(isset($child->children) AND $child->children)
                                                             <ul class="sub-menu">
                                                                 @foreach($child->children as $_child)
