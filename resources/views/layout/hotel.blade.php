@@ -28,20 +28,24 @@
                             <ul class="sub-menu">
                                 <li><a href="{{ route('page', ['url' => 'angin-angin']) }}">Angin Angin</a></li>
                                 <li><a href="{{ route('page', ['url' => 'barber']) }}">The BARber</a></li>
-                                <li><a href="{{ route('page', ['url' => 'healthy-corner']) }}">The Healthy Corner (Coming Soon)</a></li>
-                                <li><a href="{{ route('page', ['url' => 'rooftop']) }}">The Rooftop (Coming Soon)</a></li>
+                                <li><a href="{{ route('page', ['url' => 'healthy-corner']) }}">The Healthy Corner
+                                        (Coming Soon)</a></li>
+                                <li><a href="{{ route('page', ['url' => 'rooftop']) }}">The Rooftop (Coming Soon)</a>
+                                </li>
                             </ul>
                         </li>
                         <li><a href="{{ route('page', ['url' => 'the-wellness-center']) }}" class="contains-sub-menu">Wellness</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('page', ['url' => 'spa-treatment']) }}">Spa Treatment</a></li>
-                                <li><a href="{{ route('page', ['url' => 'wellness-activity']) }}">Wellness Activity</a></li>
+                                <li><a href="{{ route('page', ['url' => 'wellness-activity']) }}">Wellness Activity</a>
+                                </li>
                                 <li><a href="{{ route('page', ['url' => 'the-gym']) }}">The Gym</a></li>
                             </ul>
                         </li>
                         <li><a href="#" class="contains-sub-menu disabled">Facilities</a>
                             <ul class="sub-menu">
-                                <li><a href="{{ route('page', ['url' => 'kids-creative-room']) }}">Kids Creative Room</a></li>
+                                <li><a href="{{ route('page', ['url' => 'kids-creative-room']) }}">Kids Creative
+                                        Room</a></li>
                                 <li><a href="{{ route('page', ['url' => 'swimming-pools']) }}">Swimming Pools</a></li>
                             </ul>
                         </li>
@@ -59,7 +63,8 @@
 
         <div class="overlay-navigation-footer row full-width">
             <div class="column width-12 no-padding">
-                <p class="copyright no-margin-bottom">&copy; 2016 The Sintesa Jimbaran. All Rights Reserved. Website by <a href="http://fleava.com" target="_blank">Fleava</a>.</p>
+                <p class="copyright no-margin-bottom">&copy; 2016 The Sintesa Jimbaran. All Rights Reserved. Website by
+                    <a href="http://fleava.com" target="_blank">Fleava</a>.</p>
             </div>
         </div>
     </div>
@@ -71,7 +76,7 @@
 
         @include('sprites')
 
-        <!-- Header -->
+                <!-- Header -->
         <header class="header-1 header header-fixed-on-mobile" data-bkg-threshold="100" data-compact-threshold="100">
             <div class="header-inner">
                 <div class="row nav-bar reveal-side-navigation">
@@ -83,8 +88,16 @@
                         </div>
                         <div class="logo">
                             <div class="logo-inner">
-                                <a href="{{ route('home') }}"><svg class=""><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa-alt"></use></svg></a>
-                                <a href="{{ route('home') }}"><svg class=""><use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use></svg></a>
+                                <a href="{{ route('home') }}">
+                                    <svg class="">
+                                        <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa-alt"></use>
+                                    </svg>
+                                </a>
+                                <a href="{{ route('home') }}">
+                                    <svg class="">
+                                        <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
 
@@ -95,11 +108,14 @@
                             <div class="dropdown-list custom-content">
                                 <h5>Make a Reservation</h5>
                                 <div class="login-form-container">
-                                    <form class="login-form" action="http://www.booking.com/hotel/id/the-sintesa-jimbaran-bali-jimbaran.en.html" method="get" novalidate target="_blank">
+                                    <form class="login-form"
+                                          action="http://www.booking.com/hotel/id/the-sintesa-jimbaran-bali-jimbaran.en.html"
+                                          method="get" novalidate target="_blank">
 
                                         <input type="hidden" name="aid" value="330843">
                                         <input type="hidden" name="hotel_id" value="1476215">
-                                        <input type="hidden" name="lang" value="en"> <input type="hidden" name="pb" value="">
+                                        <input type="hidden" name="lang" value="en"> <input type="hidden" name="pb"
+                                                                                            value="">
                                         <input type="hidden" name="stage" value="0">
                                         <input type="hidden" name="hostname" value="www.booking.com">
 
@@ -219,7 +235,7 @@
                         </div>
 
 
-
+                        <!--
                         <nav class="navigation">
                             <ul>
                                 <li><a href="{{ route('page', ['url' => 'destination']) }}">Destination</a></li>
@@ -269,6 +285,34 @@
                                         <li><a href="{{ route('page', ['url' => 'the-wedding']) }}">The Wedding</a></li>
                                     </ul>
                                 </li>
+                            </ul>
+                        </nav>
+                        -->
+                        <nav class="navigation">
+                            <ul>
+                                @foreach($navigation->children as $nav)
+                                    <li>
+                                        <a href="{{ $nav->url_type == 'internal' ? route('page', ['url' => $nav->url]) : $nav->url }}">{{  $nav->title }}</a>
+                                        @if(isset($nav->children) AND $nav->children)
+                                            <ul class="sub-menu">
+                                                @foreach($nav->children as $child)
+                                                    <li class="{{ count($nav->children) ? 'contains-sub-menu' : '' }}"><a
+                                                                href="{{ $child->url_type == 'internal' ? route('page', ['url' => $child->url]) : $child->url }}">{{ $child->title }}</a>
+                                                        @if(isset($child->children) AND $child->children)
+                                                            <ul class="sub-menu">
+                                                                @foreach($child->children as $_child)
+                                                                    <li>
+                                                                        <a href="{{ $_child->url_type == 'internal' ? route('page', ['url' => $_child->url]) : $_child->url }}">{{ $_child->title }}</a>
+                                                                    </li>
+                                                                @endforeach
+                                                            </ul>
+                                                        @endif
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    </li>
+                                @endforeach
                             </ul>
                         </nav>
                     </div>
@@ -339,13 +383,14 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script>
     /*
-    $(function() {
-        $('.datepicker').datepicker();
-    });
-    */
+     $(function() {
+     $('.datepicker').datepicker();
+     });
+     */
 </script>
 {{--<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>--}}
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbZed0XBhy8tgs-2OgoZoO8tHqO33SUw&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbZed0XBhy8tgs-2OgoZoO8tHqO33SUw&callback=initMap" async
+        defer></script>
 <script src="js/timber.master.min.js"></script>
 <script src="js/template-functions.js"></script>
 </body>

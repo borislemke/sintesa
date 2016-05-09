@@ -38,6 +38,17 @@ class MediaController extends Controller
         ]);
     }
 
+    public function digestFolder($folder)
+    {
+        $folders = File::directories(public_path("media/$folder"));
+
+        foreach($folders as $folder) {
+            $sub = trim($this->digestFolder(str_replace(public_path("media/"), "", $folder)), "/");
+        }
+
+        return $folder;
+    }
+
     public function updateFile(Request $request)
     {
         $file = Media::find($request->id);
@@ -108,24 +119,88 @@ class MediaController extends Controller
         ]);
     }
 
-    public function resolveDuplicate($path, $fileName)
+    public function deleteFile(Request $request)
     {
+        $file = Media::find($request->file_id);
 
+        $file->delete();
 
-        return $path;
+        return response()->json([
+            "status" => 200,
+            "monolog" => [
+                "title" => "File deleted",
+                "message" => "File has been moved to trash"
+            ]
+        ]);
     }
 
     public function mkdir(Request $request)
     {
-        $curr_dir = $request->current;
-        $new_dir = $request->create;
-        File::makeDirectory(public_path("$curr_dir/$new_dir"));
+        File::makeDirectory(public_path("media/$request->new_dir"));
+
+        return response()->json([
+            "status" => 200,
+            "monolog" => [
+                "title" => "Folder create",
+                "message" => "New folder has been created",
+                "target" => $request->new_dir
+            ]
+        ]);
+    }
+
+    public function renameDir(Request $request)
+    {
+        File::move(public_path("media/$request->current"), public_path("media/$request->rename"));
+
+        $files = Media::where('folder', '<>', "$request->current%")->get();
+
+        foreach ($files as $file) {
+            $file->url = str_replace($request->current, $request->rename, $file->url);
+            $file->folder = str_replace($request->current, $request->rename, $file->folder);
+            $file->save();
+        }
+
+        return response()->json([
+            "status" => 200,
+            "monolog" => [
+                "title" => "Folder renamed",
+                "message" => "Folder has been renamed"
+            ]
+        ]);
+    }
+
+    public function rmdir(Request $request)
+    {
+        if($request->folder_name == "") return response()->json([
+            "status" => 403,
+            "monolog" => [
+                "title" => "Protected folder",
+                "message" => "Selected folder could not be deleted, insufficient permission"
+            ]
+        ]);
+
+        $files = Media::where('folder', 'LIKE', "$request->folder_name%")->get();
+
+        foreach($files as $file) {
+            $file->delete();
+        }
+
+        File::deleteDirectory(public_path("media/$request->folder_name"));
+
+        return response()->json([
+            "status" => 200,
+            "monolog" => [
+                "title" => "Folder deleted",
+                "message" => "Folder and it's content have been permanently deleted",
+                "dir_name" => $request->folder_name
+            ]
+        ]);
     }
 
     function formatBytes($size, $precision = 2)
     {
         $base = log($size, 1024);
-        $suffixes = array('', 'kb', 'mb', 'gb', 'tb');
+        $suffixes = array('Bytes', 'KB', 'MB', 'GB', 'TB');
 
         return round(pow(1024, $base - floor($base)), $precision) .' '. $suffixes[floor($base)];
     }

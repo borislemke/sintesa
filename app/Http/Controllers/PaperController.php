@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Paper;
 use App\Http\Requests;
+use Illuminate\Support\Facades\File;
 
 class PaperController extends Controller
 {
@@ -19,15 +20,18 @@ class PaperController extends Controller
         return Paper::all();
     }
 
-    public function indexModules($collection)
+    public function indexModules()
     {
+        $collection = Paper::all();
+
         $availableModules = [];
         foreach ($collection as $page) {
-            foreach ($page['content'] as $module) {
-                $availableModules[$module['type']] = $module['type'];
+            foreach (json_decode($page->content) as $module) {
+                $availableModules[] = $module->type;
             }
         }
-        return $availableModules;
+        $availableModules = array_unique($availableModules);
+        echo "<pre>"; print_r($availableModules); echo "</pre>";
     }
 
     public function indexRange(Request $request)
