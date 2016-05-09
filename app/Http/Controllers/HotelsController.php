@@ -14,32 +14,7 @@ class HotelsController extends Controller
     {
         return Hotel::all();
     }
-
-    public function indexRange(Request $request)
-    {
-        $filter = $request->filter;
-        $filter[] = 'id';
-        $collection = Hotel::all($filter);
-        $row_count = $collection->count();
-
-        if ($request->sortDir) {
-            $collection = $collection->sortByDesc($request->sortBy);
-        } else {
-            $collection = $collection->sortBy($request->sortBy);
-        }
-
-        $start = ($request->start - 1) * $request->offset;
-        $collection = $collection->slice($start, $request->offset);
-
-        return response()->json([
-            'data' => $collection,
-            'start' => $start + 1,
-            'sortDir' => $request->sortDir,
-            'last' => $start + count($collection),
-            'length' => $row_count
-        ]);
-    }
-
+    
     public function get($id)
     {
         $hotel = Hotel::find($id);

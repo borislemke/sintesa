@@ -1272,7 +1272,7 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "parallax.custom_barber",
+                "type": "custom.barber_parallax",
                 "data": {
                     "title": "Happy Hours",
                     "description": "BUY 1 GET 1 FREE",
@@ -2071,7 +2071,7 @@
         ]
     },
     {
-        "id": 21,
+        "id": 22,
         "title": "All Modules",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
@@ -2538,7 +2538,7 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "parallax.custom_barber",
+                "type": "custom.barber_parallax",
                 "data": {
                     "title": "Happy Hours",
                     "description": "BUY 1 GET 1 FREE",
