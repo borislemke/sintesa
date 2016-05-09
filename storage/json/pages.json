@@ -536,7 +536,7 @@
                                 "src": "gallery-rooms/executive-suite-long.jpg",
                                 "alt": "Executive Suite"
                             },
-                            "title": "Executive Suite", 
+                            "title": "Executive Suite",
                             "link": {
                                 "type": "internal",
                                 "url": "suite-executive"
@@ -549,7 +549,7 @@
                                 "src": "gallery-rooms/sintesa-suite-long.jpg",
                                 "alt": "Sintesa Suite"
                             },
-                            "title": "Sintesa Suite", 
+                            "title": "Sintesa Suite",
                             "link": {
                                 "type": "internal",
                                 "url": "suite-sintesa-and-peninsula"
@@ -562,7 +562,7 @@
                                 "src": "gallery-rooms/presidential-suite-long.jpg",
                                 "alt": "Presidential Suite"
                             },
-                            "title": "Presidential Suite", 
+                            "title": "Presidential Suite",
                             "link": {
                                 "type": "internal",
                                 "url": "suite-presidential"
@@ -583,7 +583,7 @@
             {
                 "order": 7,
                 "status": 1,
-                "type": "mixed.featurette"                
+                "type": "mixed.featurette"
             },
             {
                 "order": 8,
@@ -1287,7 +1287,7 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "parallax.custom_barber",
+                "type": "custom.barber_parallax",
                 "data": {
                     "title": "Happy Hours",
                     "description": "BUY 1 GET 1 FREE",
@@ -1515,7 +1515,7 @@
                                 "src": "wellness/wellness1.jpg",
                                 "alt": "Spa Treatment"
                             },
-                            "title": "Spa Treatment", 
+                            "title": "Spa Treatment",
                             "link": {
                                 "type": "internal",
                                 "url": "spa-treatment"
@@ -1528,7 +1528,7 @@
                                 "src": "wellness/wellness2.jpg",
                                 "alt": "Wellness Activity"
                             },
-                            "title": "Wellness Activity", 
+                            "title": "Wellness Activity",
                             "link": {
                                 "type": "internal",
                                 "url": "wellness-activity"
@@ -1541,7 +1541,7 @@
                                 "src": "wellness/wellness3.jpg",
                                 "alt": "The Gym"
                             },
-                            "title": "The Gym", 
+                            "title": "The Gym",
                             "link": {
                                 "type": "internal",
                                 "url": "the-gym"
@@ -2143,6 +2143,498 @@
                 }
             }
         ]
+    },
+    {
+        "id": 22,
+        "title": "All Modules",
+        "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
+        "url": "all-modules",
+        "template": "hotel",
+        "header": "sintesa",
+        "footer": "sintesa",
+        "author": "Fleava",
+        "status": 1,
+        "content": [
+            {
+                "order": 1,
+                "status": 1,
+                "type": "sliders.fullscreen",
+                "config": {
+                    "short": true
+                },
+                "data": [
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "banner": {
+                            "src": "page-banners/wedding.jpg",
+                            "alt": "Some alt text"
+                        }
+                    }
+                ]
+            },
+            {
+                "order": 9,
+                "status": 0,
+                "type": "sliders.testimony",
+                "data": {
+                    "title": "Here's what people say",
+                    "testimonies": [
+                        {
+                            "order": 1,
+                            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+                            "source": "John K. Riley - Harvest Goods."
+                        },
+                        {
+                            "order": 2,
+                            "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.",
+                            "source": "John K. Riley - Harvest Goods."
+                        },
+                        {
+                            "order": 3,
+                            "text": "Adignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend.",
+                            "source": "John K. Riley - Harvest Goods."
+                        },
+                        {
+                            "order": 3,
+                            "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.",
+                            "source": "John K. Riley - Harvest Goods."
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 2,
+                "status": 1,
+                "type": "custom.booking_bar"
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "custom.rooms_gallery",
+                "data": {
+                    "floorplan": "gallery-rooms/floorplan-superior.jpg",
+                    "gallery": [
+                        {
+                            "image": {
+                                "src": "gallery-rooms/superior1.jpg",
+                                "alt": "Superior Room"
+                            },
+                            "popup": "gallery-rooms/popup-superior1.jpg"
+                        },
+                        {
+                            "image": {
+                                "src": "gallery-rooms/generic2.jpg",
+                                "alt": "Superior Room"
+                            },
+                            "popup": "gallery-rooms/popup-generic2.jpg"
+                        },
+                        {
+                            "image": {
+                                "src": "gallery-rooms/generic3.jpg",
+                                "alt": "Superior Room"
+                            },
+                            "popup": "gallery-rooms/popup-generic3.jpg"
+                        },
+                        {
+                            "image": {
+                                "src": "gallery-rooms/generic4.jpg",
+                                "alt": "Superior Room"
+                            },
+                            "popup": "gallery-rooms/popup-generic4.jpg"
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 1,
+                "status": 1,
+                "type": "custom.barber_header",
+                "config": {
+                    "short": true
+                },
+                "data": []
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "custom.meeting_package"
+            },
+            {
+                "order": 3,
+                "status": 1,
+                "type": "text.two_column",
+                "data": {
+                    "height": 400,
+                    "title": "Exchange vows here. A dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali. ",
+                    "text": "Our dedicated wedding team delivers impeccable service to every bridal party couple, friends, and families, ensuring your wedding day runs smoothly with every detail taken care of. A blend of gracious Balinese hospitality, local expertise, and the professional know-how that will guarantee your wedding day to be magical and memorable experience you have always dreamed of."
+                }
+            },
+            {
+                "order": 3,
+                "status": 1,
+                "type": "text.title_subtitle",
+                "data": {
+                    "title": "'The Sintesa' Jimbaran - Bali",
+                    "subtitle": "Sintesa Hotels Group proudly to present the opening of ‘The Sintesa ‘ Jimbaran - Bali, a new concept of 5 star resort hotel in Jimbaran and locate on Bali’s southwestern coast is connecting between Jimbaran Bay and Clift (Bukit) of Jimbaran. The Sintesa Jimbaran Bali, designed for natural living with choices of the wellness and lifestyle activities and facilities to deliver ‘a best moment to stay‘.",
+                    "text": "The Sintesa Jimbaran – Bali is just 10 km south of the Bali Airport (Denpasar). 'The Sintesa' Jimbaran Bali is a short walk to many of Bali's most famous traditional beach - side Seafood Restaurants and is a close drive by hotel shuttle  to Cafés and Bars at Jimbaran Bay and Uluwatu. The Jimbaran region is also home to several world-class hotels and high end villas. Jimbaran is where we enjoy the majestic sunset emerged all year along the bay. Hotel’s location is conveniently positioned, is only 15 km away from vibrant area of Kuta and Nusa Dua. The Hotel is easily accessible to the main tourist quarter of Legian and Seminyak Beachs with its world- famous shopping and nightlife venues."
+                }
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "text.three_column",
+                "data": {
+                    "title": "Ut wisi enim ad minim veniam, quis nostru. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                    "text_one": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse moles tie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissi.",
+                    "text_two": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adm."
+                }
+            },
+            {
+                "order": 3,
+                "status": 1,
+                "type": "text.about",
+                "data": {
+                    "title": "Jimbaran, Bali",
+                    "lead": "Jimbaran Bay is one of iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay.",
+                    "description_one": "Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fishermen are coming into shore with last night’s catch. Hire a fishing boat to take you out into the bay to give you a glimpse of the village way of life. Visit Kedonganan Fish Market, this daily market sells fresh seafood straight off the boats.",
+                    "description_two": "Taste the succulent catches of the day, freshly grilled over coconut husk barbecues when night falls and the beachside restaurants serve up. Dine under the starry skies to the sounds of the waves, the ultimate toes-in-the-sand dining experience."
+                }
+            },
+            {
+                "order": 4,
+                "status": 0,
+                "type": "text_image.three",
+                "data": [
+                    {
+                        "title": "Nyepi Package",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
+                        "image": {
+                            "src": "generic/offer1.jpg",
+                            "alt": "Some image alt"
+                        }
+                    },
+                    {
+                        "title": "Flight &amp; Hotel Deals",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
+                        "image": {
+                            "src": "generic/offer2.jpg",
+                            "alt": "Some image alt"
+                        }
+                    },
+                    {
+                        "title": "Chinese New Year Package",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
+                        "image": {
+                            "src": "generic/offer3.jpg",
+                            "alt": "Some image alt"
+                        }
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "status": 1,
+                "type": "text_image.two_alt",
+                "data": {
+                    "blocks": [
+                        {
+                            "title": "The BARber",
+                            "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
+                            "background": "generic/home-barber.jpg",
+                            "link": {
+                                "type": "internal",
+                                "url": "barber"
+                            }
+                        },
+                        {
+                            "title": "The Wellness Center",
+                            "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                            "background": "generic/home-wellness.jpg",
+                            "link": {
+                                "type": "internal",
+                                "url": "the-wellness-center"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 3,
+                "status": 1,
+                "type": "mixed.page_intro_alt",
+                "data": {
+                    "title": "Ut wisi enim ad minim veniam, quis nostru.",
+                    "text_one": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop to furthest left corner of the room, inside the cloak room reveals a secret door to find the venue.",
+                    "text_two": "Old reclaimed wooden panels in dark lacquer, antique light fixtures, warm leather sofas, a fine pool table in one corner, a baby grand piano on the other and of course a bar complete with the finest collection of Single Malts, Whiskeys, a range of premium Vodkas and Branded Liquors.",
+                    "intro": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.",
+                    "image_wide": {
+                        "src": "generic/barber1.jpg",
+                        "alt": "The Barber Sintesa"
+                    },
+                    "image_square": {
+                        "src": "generic/barber2.jpg",
+                        "alt": "The Barber Sintesa"
+                    }
+                }
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "mixed.three_column_header",
+                "data": {
+                    "title": "Suites Collection and Presidential Suite",
+                    "heading": "All rooms are facilitated with complimentary Wi-Fi, tea and coffee making facilities.",
+                    "gallery": [
+                        {
+                            "order": 1,
+                            "banner": {
+                                "src": "gallery-rooms/executive-suite-long.jpg",
+                                "alt": "Executive Suite"
+                            },
+                            "title": "Executive Suite",
+                            "link": {
+                                "type": "internal",
+                                "url": "suite-executive"
+                            },
+                            "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
+                        },
+                        {
+                            "order": 2,
+                            "banner": {
+                                "src": "gallery-rooms/sintesa-suite-long.jpg",
+                                "alt": "Sintesa Suite"
+                            },
+                            "title": "Sintesa Suite",
+                            "link": {
+                                "type": "internal",
+                                "url": "suite-sintesa-and-peninsula"
+                            },
+                            "text": "The 97–sqm suites with highlight style, spaciousness and comfort, anticipating you every need."
+                        },
+                        {
+                            "order": 3,
+                            "banner": {
+                                "src": "gallery-rooms/presidential-suite-long.jpg",
+                                "alt": "Presidential Suite"
+                            },
+                            "title": "Presidential Suite",
+                            "link": {
+                                "type": "internal",
+                                "url": "suite-presidential"
+                            },
+                            "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 6,
+                "status": 1,
+                "type": "lightbox.gallery_column",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "barber/monday.jpg",
+                            "title": "Monday"
+                        },
+                        {
+                            "image": "barber/tuesday.jpg",
+                            "title": "Tuesday"
+                        },
+                        {
+                            "image": "barber/wednesday.jpg",
+                            "title": "Wednesday"
+                        },
+                        {
+                            "image": "barber/thursday.jpg",
+                            "title": "Thursday"
+                        },
+                        {
+                            "image": "barber/friday.jpg",
+                            "title": "Friday"
+                        },
+                        {
+                            "image": "barber/saturday.jpg",
+                            "title": "Saturday"
+                        },
+                        {
+                            "image": "barber/sunday.jpg",
+                            "title": "Sunday"
+                        }
+
+                    ]
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "maps.half_content_gallery",
+                "data": {
+                    "lat": -8.7682457,
+                    "long": 115.1718413,
+                    "content": "test",
+                    "zoom": 12,
+                    "markers": [
+                        {
+                            "text": "Uluwatu",
+                            "lat": -8.8291432,
+                            "long": 115.0827129,
+                            "dist": "13km",
+                            "time": "31 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/uluwatu.jpg"
+                        },
+                        {
+                            "text": "Airport",
+                            "lat": -8.7467172,
+                            "long": 115.164593,
+                            "dist": "11km",
+                            "time": "23 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/airport.jpg"
+                        },
+                        {
+                            "text": "Fish market",
+                            "lat": -8.7574181,
+                            "long": 115.1662358,
+                            "dist": "5.8km",
+                            "time": "15 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/fish-market.jpg"
+                        },
+                        {
+                            "text": "Jimbaran bay seafood",
+                            "lat": -8.760493,
+                            "long": 115.1674373,
+                            "dist": "5.6km",
+                            "time": "16 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/seafood.jpg"
+                        },
+                        {
+                            "text": "Jimbaran Beach",
+                            "lat": -8.769994,
+                            "long": 115.1664503,
+                            "dist": "4.4km",
+                            "time": "12 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/jimbaran-beach.jpg"
+                        },
+                        {
+                            "text": "GWK",
+                            "lat": -8.8104228,
+                            "long": 115.1654046,
+                            "dist": "3.9km",
+                            "time": "15 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/gwk.jpg"
+                        },
+                        {
+                            "text": "Dreamland",
+                            "lat": -8.7995139,
+                            "long": 115.1120981,
+                            "dist": "10.3km",
+                            "time": "26 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/dreamland.jpg"
+                        },
+                        {
+                            "text": "Padang Padang",
+                            "lat": -8.8111524,
+                            "long": 115.1016303,
+                            "dist": "11.9km",
+                            "time": "29 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/padangpadang.jpg"
+                        },
+                        {
+                            "text": "Pandawa",
+                            "lat": -8.8448081,
+                            "long": 115.1821374,
+                            "dist": "11.4km",
+                            "time": "28 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/pandawa.jpg"
+                        },
+                        {
+                            "text": "Nusa dua beach Benoa",
+                            "lat": -8.8276109,
+                            "long": 115.2181854,
+                            "dist": "11.4km",
+                            "time": "30 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/nusa-dua.jpg"
+                        },
+                        {
+                            "text": "Kuta Beach",
+                            "lat": -8.71689,
+                            "long": 115.1662153,
+                            "dist": "11.6km",
+                            "time": "26 minutes",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "image": "/media/destinations/kuta.jpg"
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "parallax.image_text",
+                "data": {
+                    "title": "Destination: Jimbaran",
+                    "description": "Jimbaran Bay is one of iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay. Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fishermen are coming into shore with last night’s catch.",
+                    "background": "generic/jimbaran.jpg",
+                    "button": {
+                        "text": "Explore Jimbaran",
+                        "link": {
+                            "type": "internal",
+                            "url": "destination"
+                        }
+                    }
+                }
+            },
+            {
+                "order": 6,
+                "status": 1,
+                "type": "parallax.image",
+                "data": {
+                    "background": "gallery-rooms/rooms-big.jpg"
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "custom.barber_parallax",
+                "data": {
+                    "title": "Happy Hours",
+                    "description": "BUY 1 GET 1 FREE",
+                    "background": "slider/torasudiro.jpg",
+                    "button": {
+                        "text": "Learn More",
+                        "link": {
+                            "type": "internal",
+                            "url": "#"
+                        }
+                    }
+                }
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "parallax.video",
+                "data": {
+                    "background": "generic/bgvid.jpg",
+                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
+                }
+            }
+        ]
     }
-    
 ]
