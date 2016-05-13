@@ -5486,7 +5486,7 @@ pre code {
     color: #ffffff !important
 }
 .color-hover-white:hover {
-    color: #ffffff
+    color: #ffffff !important
 }
 .color-grey {
     color: #666666
@@ -5519,7 +5519,7 @@ pre code {
     color: #444444
 }
 .color-black {
-    color: #000000
+    color: #000000 !important
 }
 .color-hover-black:hover {
     color: #000000

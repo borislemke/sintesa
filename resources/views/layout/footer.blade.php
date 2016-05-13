@@ -11,16 +11,9 @@
                     <svg class="">
                         <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
                     </svg>
+                    
                 </div>
 
-                <div class="column width-3">
-                    <div class="widget">
-
-                        <h4 class="widget-title">{{ $footer->data->longtext->title }}</h4>
-                        <p>{{ $footer->data->longtext->text }}</p>
-                        <small style="display:block; line-height:1.3">&copy; {{ $footer->data->copyright }}<br> Website by <a href="http://fleava.com/" target="_blank" title="Fleava - Bali Digital Advertising Agency">Fleava</a>.</small>
-                    </div>
-                </div>
                 <div class="column width-3">
                     <div class="widget">
                         <h4 class="widget-title">{{ $footer->data->address->title }}</h4>
@@ -28,7 +21,8 @@
                             Jl. Kencana No. 1<br>
                             Jimbaran, Bali 80361 - Indonesia<br>
                             <i class="icon-phone"></i> <strong>+62 361 472 5333</strong><br>
-                            <i class="icon-mail"></i> <a href="mailto:infotsj@sintesahotels.com">infotsj@sintesahotels.com</a>
+                            <i class="icon-mail"></i> <a href="mailto:infotsj@sintesahotels.com">infotsj@sintesahotels.com</a><br>
+                            
                         </address>
 
                         <ul class="social-list list-horizontal no-margin-bottom">
@@ -68,11 +62,29 @@
                                 </a>
                             </li>
                         </ul>
+                        <br>
+                        <small style="display:block; line-height:1.3">&copy; {{ $footer->data->copyright }}<br> Website by <a href="http://fleava.com/" target="_blank" title="Fleava - Bali Digital Advertising Agency">Fleava</a>.</small>
                     </div>
                 </div>
 
+                <div class="column width-3 contact-form">
+                    <div class="widget">
+                        
+                        <h4 class="widget-title">Contact Us</h4>
+                        <form>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <textarea placeholder="Email" ></textarea>
+                            <a href="#" class="button bkg-white bkg-hover-black color-black color-hover-white text-uppercase">Submit</a>
+                        </form>
+
+                    </div>
+                </div>
+
+
                 <div class="column width-2">
-                    <img src="media/bookingaward.jpg" style="width:100%; height:auto" />
+                    <h4 class="widget-title">Awards</h4>
+                    <img src="media/bookingaward2.jpg" style="width:100%; height:auto" />
                 </div>
 
 

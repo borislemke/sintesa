@@ -35,7 +35,7 @@
                         }
                     },
                     {
-                        "title": "Redifining Luxury",
+                        "title": "The Best Moment to Stay",
                         "subtitle": "Enjoy the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our guests.",
                         "button": {
                             "text": "learn more",
@@ -278,7 +278,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -317,104 +317,104 @@
                     "content": "test",
                     "zoom": 12,
                     "markers": [
+                    {
+                            "text": "Jimbaran Beach",
+                            "lat": -8.769994,
+                            "long": 115.1664503,
+                            "dist": "1.6km",
+                            "time": "5 minutes",
+                            "description": "Jimbaran Beach is iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay.",
+                            "image": "/media/destinations/jimbaran-beach.jpg"
+                        },
                         {
-                            "text": "Uluwatu",
-                            "lat": -8.8291432,
-                            "long": 115.0827129,
-                            "dist": "13km",
-                            "time": "31 minutes",
+                            "text": "Jimbaran Bay Seafood",
+                            "lat": -8.760493,
+                            "long": 115.1674373,
+                            "dist": "1.6km",
+                            "time": "5 minutes",
+                            "description": "Taste the succulent catches of the day, freshly grilled coconut husk barbecues when night falls and the beachside restaurants served up. Dine under the starry skies to the sounds of the waves, the ultimate toes-in-the-sand dinning experience.",
+                            "image": "/media/destinations/seafood.jpg"
+                        },
+                        {
+                            "text": "Garuda Wisnu Kencana",
+                            "lat": -8.8104228,
+                            "long": 115.1654046,
+                            "dist": "3.9km",
+                            "time": "13 minutes",
+                            "description": "Known as GWK is a 60 Ha area of cultural park located in Ungasan, Badung Regency or about 10 - 15 minutes driving from The 'Sintesa' Jimbaran. It is devoted to Hindu God Vhisnu, and His mount; Garuda, mythical bird who become His companion.",
+                            "image": "/media/destinations/gwk.jpg"
+                        },
+                        {
+                            "text": "Fish Market",
+                            "lat": -8.7574181,
+                            "long": 115.1662358,
+                            "dist": "7.2km",
+                            "time": "19 minutes",
+                            "description": "Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fisherman are coming into shore with last night's catch. Visit Kedonganan Fish Market, this daily market sells fresh seafood straight off the boats.",
+                            "image": "/media/destinations/fish-market.jpg"
+                        },
+                        {
+                            "text": "Dreamland Beach",
+                            "lat": -8.7995139,
+                            "long": 115.1120981,
+                            "dist": "8.6km",
+                            "time": "21 minutes",
+                            "description": "Dreamland beach is located on the Bukit Peninsula, and is one of the most beautiful beaches on the island, renowned for its shore breaks. Dreamland is the expression of hope and dreams come true with its luxurious cliff top views and unique remote island.",
+                            "image": "/media/destinations/dreamland.jpg"
+                        },
+                        {
+                            "text": "Nusa Dua Beach Benoa",
+                            "lat": -8.8276109,
+                            "long": 115.2181854,
+                            "dist": "9.6km",
+                            "time": "24 minutes",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/uluwatu.jpg"
+                            "image": "/media/destinations/nusa-dua.jpg"
                         },
                         {
                             "text": "Airport",
                             "lat": -8.7467172,
                             "long": 115.164593,
-                            "dist": "11km",
-                            "time": "23 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "dist": "9.7km",
+                            "time": "25 minutes",
+                            "description": "Located just 10 km south of the Bali Airport (Denpasar). Hotel's location is conveniently positioned, just 15 minutes drive from Ngurah Rai International Airport and 20 minutes away from vibrant area of Kuta and Nusa Dua.",
                             "image": "/media/destinations/airport.jpg"
                         },
                         {
-                            "text": "Fish market",
-                            "lat": -8.7574181,
-                            "long": 115.1662358,
-                            "dist": "5.8km",
-                            "time": "15 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/fish-market.jpg"
-                        },
-                        {
-                            "text": "Jimbaran bay seafood",
-                            "lat": -8.760493,
-                            "long": 115.1674373,
-                            "dist": "5.6km",
-                            "time": "16 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/seafood.jpg"
-                        },
-                        {
-                            "text": "Jimbaran Beach",
-                            "lat": -8.769994,
-                            "long": 115.1664503,
-                            "dist": "4.4km",
-                            "time": "12 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/jimbaran-beach.jpg"
-                        },
-                        {
-                            "text": "GWK",
-                            "lat": -8.8104228,
-                            "long": 115.1654046,
-                            "dist": "3.9km",
-                            "time": "15 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/gwk.jpg"
-                        },
-                        {
-                            "text": "Dreamland",
-                            "lat": -8.7995139,
-                            "long": 115.1120981,
+                            "text": "Pandawa Beach",
+                            "lat": -8.8448081,
+                            "long": 115.1821374,
                             "dist": "10.3km",
                             "time": "26 minutes",
+                            "description": "Often referred as the secret beach, Pandawa is concealed behind high cliffs and overgrown shruberry. As you near Pandawa, you will be greeted by five status carved into the cliffs beside you : Yudhistira, Bima, Arjuna, Nakula and Sadewa, the five brothers PANDAWA in the shadow puppet theater, from which the beach take its name. 'The Sintesa' Jimbaran's icon Drupadi has closed relation with Pandawa. She's the wife's of five Pandawa from the story of Mahabarata. She's the symbol of beauty and power.",
+                            "image": "/media/destinations/pandawa.jpg"
+                        },
+                        {
+                            "text": "Kuta Beach",
+                            "lat": -8.71689,
+                            "long": 115.1662153,
+                            "dist": "10.5km",
+                            "time": "26 minutes",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/dreamland.jpg"
+                            "image": "/media/destinations/kuta.jpg"
                         },
                         {
                             "text": "Padang Padang",
                             "lat": -8.8111524,
                             "long": 115.1016303,
                             "dist": "11.9km",
-                            "time": "29 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "time": "30 minutes",
+                            "description": "Best surfing at Uluwatu Area. It has a fast long pipeline on a shallow reef and having a beautiful Bali's nastier wave. Perfect beach for yoga and professional surfer.",
                             "image": "/media/destinations/padangpadang.jpg"
                         },
                         {
-                            "text": "Pandawa",
-                            "lat": -8.8448081,
-                            "long": 115.1821374,
-                            "dist": "11.4km",
-                            "time": "28 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/pandawa.jpg"
-                        },
-                        {
-                            "text": "Nusa dua beach Benoa",
-                            "lat": -8.8276109,
-                            "long": 115.2181854,
-                            "dist": "11.4km",
-                            "time": "30 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/nusa-dua.jpg"
-                        },
-                        {
-                            "text": "Kuta Beach",
-                            "lat": -8.71689,
-                            "long": 115.1662153,
-                            "dist": "11.6km",
-                            "time": "26 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/kuta.jpg"
+                            "text": "Uluwatu Temple",
+                            "lat": -8.8291432,
+                            "long": 115.0827129,
+                            "dist": "13.4km",
+                            "time": "31 minutes",
+                            "description": "The temple at Uluwatu which is near to 'The Sintesa' Jimbaran was built by the Javanese Hindu Guru Empu Kuturan in the 10th century. The temple at 'the head of the rock stands a top a sheer cliff rising two hundreds feet above the Indian Ocean. The most compeling part of the temple complex however, comes from its nightly kecak and fire dance performances.",
+                            "image": "/media/destinations/uluwatu.jpg"
                         }
                     ]
                 }
@@ -452,7 +452,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -613,7 +613,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -711,7 +711,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -808,7 +808,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -905,7 +905,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1002,7 +1002,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1099,7 +1099,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1196,7 +1196,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1256,7 +1256,7 @@
                 "status": 1,
                 "type": "custom.barber_header",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": []
             },
@@ -1373,7 +1373,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1433,7 +1433,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1493,7 +1493,7 @@
                 "status": 1,
                 "type": "custom.wellness_header",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": []
             },
@@ -1592,7 +1592,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1661,7 +1661,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1722,7 +1722,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1800,7 +1800,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1861,7 +1861,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -1922,7 +1922,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -2005,7 +2005,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -2083,7 +2083,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -2161,7 +2161,7 @@
                 "status": 1,
                 "type": "sliders.fullscreen",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": [
                     {
@@ -2252,7 +2252,7 @@
                 "status": 1,
                 "type": "custom.barber_header",
                 "config": {
-                    "short": true
+                    "short": false
                 },
                 "data": []
             },

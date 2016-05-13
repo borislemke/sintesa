@@ -1,5 +1,5 @@
 <!-- module: parallax.image_text -->
-<div class="section-block parallax fixed-height bkg-black" data-src="images/{{ $module->data->background }}">
+<div class="section-block parallax fixed-height bkg-black" data-src="media/{{ $module->data->background }}">
     <div class="tmp-content">
         <div class="tmp-content-inner left">
             <div class="row">

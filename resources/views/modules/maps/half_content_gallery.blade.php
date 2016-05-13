@@ -58,7 +58,7 @@
 
 <section class="section-block no-padding-top no-padding-bottom bkg-white">
 	<div class="row">
-		<div class="column width-10 push-1 pb-40">
+		<div class="column width-10 push-1 pb-40 center">
 			<h3>Get Closer with cultural destination from Hotel</h3>
 		</div>
 	</div>
@@ -90,9 +90,9 @@
 				<?php $i = 0 ?>
 				@foreach($module->data->markers as $marker)
 					<?php if ($i < 9) { ?>
-						<div class="grid-item{{ $i == 0 ? ' grid-sizer' : '' }}">
+						<div class="grid-item{{ $i == 0 ? ' grid-sizer' : '' }} bkg-grey-ultralight" style="border:5px solid #fff;">
 							<img src="{{ $marker->image }}" />
-							<div class="bkg-grey-ultralight" style="padding:20px">
+							<div class="" style="padding:20px;">
 								<h4 class="mt-10">{{ $marker->text }}</h4>
 								<p>{{ $marker->description }}</p>
 							</div>

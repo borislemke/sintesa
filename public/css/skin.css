@@ -3459,6 +3459,37 @@ body.wellness .bkg-grey-ultralight {background-color: #f4eff8;}
 .portfolio-5.small-margins [class*="content-grid"] .grid-item {height:auto !important;}
 
 
+.contact-form input, .contact-form textarea {
+	border:none;
+	background:rgba(255,255,255,.1);
+	margin-bottom: 3px;
+	color:#fff;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 0;
+}
+
+.contact-form textarea {
+	min-height: 70px;
+}
+
+.contact-form ::-webkit-input-placeholder{
+	color: rgba(255,255,255,.6);
+}
+.contact-form :focus::-webkit-input-placeholder{
+	color: rgba(255,255,255,.6);
+}
+.contact-form ::-moz-placeholder{
+	color: rgba(255,255,255,.6);
+}
+.contact-form :focus::-moz-placeholder{
+	color: rgba(255,255,255,.6);
+}
+.contact-form :-ms-input-placeholder{
+	color: rgba(255,255,255,.6);
+}
+.contact-form :focus:-ms-input-placeholder{
+	color: rgba(255,255,255,.6);
+}
 
 
 
