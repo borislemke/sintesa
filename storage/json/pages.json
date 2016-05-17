@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "title": "Sintesa | Home",
+        "title": "Home",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "home",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -95,8 +95,8 @@
                         }
                     },
                     {
-                        "title": "The Rooftop",
-                        "subtitle": "Situated on the 7th floor of the building the indoor restaurant has the extension to the outdoor venue that has 360 views in Jimbaran.",
+                        "title": "Water Fountain Poolside",
+                        "subtitle": "Experiencing daylight while swimming just beside Angin Angin Restaurant",
                         "button": {
                             "text": "View the Rooftop",
                             "link": {
@@ -121,6 +121,21 @@
                         },
                         "banner": {
                             "src": "slider/sunken.jpg",
+                            "alt": "Some alt text"
+                        }
+                    },
+                    {
+                        "title": "Lobby Lounge",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                        "button": {
+                            "text": "Lobby Lounge",
+                            "link": {
+                                "type": "internal",
+                                "url": "#"
+                            }
+                        },
+                        "banner": {
+                            "src": "slider/lobby-lounge.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -264,12 +279,12 @@
     },
     {
         "id": 2,
-        "title": "Sintesa | Destination",
+        "title": "Destination",
         "meta": "The Sintesa Jimbaran Resort | Description for Destination",
         "url": "destination",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -317,21 +332,30 @@
                     "content": "test",
                     "zoom": 12,
                     "markers": [
-                    {
+                        {
+                            "text": "The Sintesa Jimbaran",
+                            "lat": -8.791018,
+                            "long": 115.15922,
+                            "dist": "",
+                            "time": "",
+                            "description": "Enjoy the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our guests.",
+                            "image": "/media/slider/sunken.jpg"
+                        },
+                        {
                             "text": "Jimbaran Beach",
-                            "lat": -8.769994,
-                            "long": 115.1664503,
+                            "lat": -8.7825104,
+                            "long": 115.1610004,
                             "dist": "1.6km",
-                            "time": "5 minutes",
+                            "time": "5 minutes in 'normal traffic'",
                             "description": "Jimbaran Beach is iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay.",
                             "image": "/media/destinations/jimbaran-beach.jpg"
                         },
                         {
                             "text": "Jimbaran Bay Seafood",
-                            "lat": -8.760493,
-                            "long": 115.1674373,
+                            "lat": -8.7594019,
+                            "long": 115.1687055,
                             "dist": "1.6km",
-                            "time": "5 minutes",
+                            "time": "5 minutes in 'normal traffic'",
                             "description": "Taste the succulent catches of the day, freshly grilled coconut husk barbecues when night falls and the beachside restaurants served up. Dine under the starry skies to the sounds of the waves, the ultimate toes-in-the-sand dinning experience.",
                             "image": "/media/destinations/seafood.jpg"
                         },
@@ -340,25 +364,25 @@
                             "lat": -8.8104228,
                             "long": 115.1654046,
                             "dist": "3.9km",
-                            "time": "13 minutes",
+                            "time": "13 minutes in 'normal traffic'",
                             "description": "Known as GWK is a 60 Ha area of cultural park located in Ungasan, Badung Regency or about 10 - 15 minutes driving from The 'Sintesa' Jimbaran. It is devoted to Hindu God Vhisnu, and His mount; Garuda, mythical bird who become His companion.",
                             "image": "/media/destinations/gwk.jpg"
                         },
                         {
                             "text": "Fish Market",
-                            "lat": -8.7574181,
-                            "long": 115.1662358,
+                            "lat": -8.757079,
+                            "long": 115.168451,
                             "dist": "7.2km",
-                            "time": "19 minutes",
+                            "time": "19 minutes in 'normal traffic'",
                             "description": "Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fisherman are coming into shore with last night's catch. Visit Kedonganan Fish Market, this daily market sells fresh seafood straight off the boats.",
                             "image": "/media/destinations/fish-market.jpg"
                         },
                         {
                             "text": "Dreamland Beach",
-                            "lat": -8.7995139,
+                            "lat": -8.7995033,
                             "long": 115.1120981,
                             "dist": "8.6km",
-                            "time": "21 minutes",
+                            "time": "21 minutes in 'normal traffic'",
                             "description": "Dreamland beach is located on the Bukit Peninsula, and is one of the most beautiful beaches on the island, renowned for its shore breaks. Dreamland is the expression of hope and dreams come true with its luxurious cliff top views and unique remote island.",
                             "image": "/media/destinations/dreamland.jpg"
                         },
@@ -367,16 +391,16 @@
                             "lat": -8.8276109,
                             "long": 115.2181854,
                             "dist": "9.6km",
-                            "time": "24 minutes",
+                            "time": "24 minutes in 'normal traffic'",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                             "image": "/media/destinations/nusa-dua.jpg"
                         },
                         {
                             "text": "Airport",
                             "lat": -8.7467172,
-                            "long": 115.164593,
+                            "long": 115.1668,
                             "dist": "9.7km",
-                            "time": "25 minutes",
+                            "time": "25 minutes in 'normal traffic'",
                             "description": "Located just 10 km south of the Bali Airport (Denpasar). Hotel's location is conveniently positioned, just 15 minutes drive from Ngurah Rai International Airport and 20 minutes away from vibrant area of Kuta and Nusa Dua.",
                             "image": "/media/destinations/airport.jpg"
                         },
@@ -385,16 +409,16 @@
                             "lat": -8.8448081,
                             "long": 115.1821374,
                             "dist": "10.3km",
-                            "time": "26 minutes",
-                            "description": "Often referred as the secret beach, Pandawa is concealed behind high cliffs and overgrown shruberry. As you near Pandawa, you will be greeted by five status carved into the cliffs beside you : Yudhistira, Bima, Arjuna, Nakula and Sadewa, the five brothers PANDAWA in the shadow puppet theater, from which the beach take its name. 'The Sintesa' Jimbaran's icon Drupadi has closed relation with Pandawa. She's the wife's of five Pandawa from the story of Mahabarata. She's the symbol of beauty and power.",
+                            "time": "26 minutes in 'normal traffic'",
+                            "description": "Often referred as the secret beach, Pandawa is concealed behind high cliffs and overgrown shruberry. As you near Pandawa, you will be greeted by five status carved into the cliffs beside you : Yudhistira, Bima, Arjuna, Nakula and Sadewa, the five brothers PANDAWA in the shadow puppet theater, from which the beach take its name.",
                             "image": "/media/destinations/pandawa.jpg"
                         },
                         {
                             "text": "Kuta Beach",
-                            "lat": -8.71689,
-                            "long": 115.1662153,
+                            "lat": -8.718489,
+                            "long": 115.168826,
                             "dist": "10.5km",
-                            "time": "26 minutes",
+                            "time": "26 minutes in 'normal traffic'",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                             "image": "/media/destinations/kuta.jpg"
                         },
@@ -403,16 +427,16 @@
                             "lat": -8.8111524,
                             "long": 115.1016303,
                             "dist": "11.9km",
-                            "time": "30 minutes",
+                            "time": "30 minutes in 'normal traffic'",
                             "description": "Best surfing at Uluwatu Area. It has a fast long pipeline on a shallow reef and having a beautiful Bali's nastier wave. Perfect beach for yoga and professional surfer.",
                             "image": "/media/destinations/padangpadang.jpg"
                         },
                         {
                             "text": "Uluwatu Temple",
                             "lat": -8.8291432,
-                            "long": 115.0827129,
+                            "long": 115.0849,
                             "dist": "13.4km",
-                            "time": "31 minutes",
+                            "time": "31 minutes in 'normal traffic'",
                             "description": "The temple at Uluwatu which is near to 'The Sintesa' Jimbaran was built by the Javanese Hindu Guru Empu Kuturan in the 10th century. The temple at 'the head of the rock stands a top a sheer cliff rising two hundreds feet above the Indian Ocean. The most compeling part of the temple complex however, comes from its nightly kecak and fire dance performances.",
                             "image": "/media/destinations/uluwatu.jpg"
                         }
@@ -437,13 +461,13 @@
     },
     {
         "id": 3,
-        "title": "Sintesa | Accommodation",
+        "title": "Accommodation",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "accommodation",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -598,13 +622,13 @@
     },
     {
         "id": 4,
-        "title": "Sintesa | Superior Room",
+        "title": "Superior Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "room-superior",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -696,13 +720,13 @@
     },
     {
         "id": 5,
-        "title": "Sintesa | Deluxe Room",
+        "title": "Deluxe Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "room-deluxe",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -793,13 +817,13 @@
     },
     {
         "id": 6,
-        "title": "Sintesa | Junior Suite Room",
+        "title": "Junior Suite Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "room-junior-suite",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -890,13 +914,13 @@
     },
     {
         "id": 7,
-        "title": "Sintesa | Executive Suite",
+        "title": "Executive Suite",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "suite-executive",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -987,13 +1011,13 @@
     },
     {
         "id": 8,
-        "title": "Sintesa | Sintesa and Peninsula Suite",
+        "title": "Sintesa and Peninsula Suite",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "suite-sintesa-and-peninsula",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1084,13 +1108,13 @@
     },
     {
         "id": 9,
-        "title": "Sintesa | Presidential Suite",
+        "title": "Presidential Suite",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "suite-presidential",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1181,13 +1205,13 @@
     },
     {
         "id": 10,
-        "title": "Sintesa | Angin Angin",
+        "title": "Angin Angin",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "angin-angin",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1241,13 +1265,13 @@
     },
     {
         "id": 11,
-        "title": "Sintesa | BARber",
+        "title": "BARber",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "barber",
         "url": "barber",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1311,7 +1335,7 @@
                     "text_two": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adm."
                 }
             },
-             {
+            {
                 "order": 6,
                 "status": 1,
                 "type": "lightbox.gallery_column",
@@ -1345,7 +1369,6 @@
                             "image": "barber/sunday.jpg",
                             "title": "Sunday"
                         }
-
                     ]
                 }
             },
@@ -1358,13 +1381,13 @@
     },
     {
         "id": 12,
-        "title": "Sintesa | The Healthy Corner",
+        "title": "Sunken Lounge",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
-        "url": "healthy-corner",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "url": "sunken-lounge",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1377,10 +1400,10 @@
                 },
                 "data": [
                     {
-                        "title": "The Healthy Corner",
+                        "title": "Sunken Lounge",
                         "subtitle": "Coming Soon",
                         "banner": {
-                            "src": "page-banners/healthy-corner.jpg",
+                            "src": "slider/sunken.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1418,13 +1441,13 @@
     },
     {
         "id": 13,
-        "title": "Sintesa | The Rooftop",
+        "title": "The Rooftop",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "rooftop",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1440,7 +1463,23 @@
                         "title": "The Rooftop",
                         "subtitle": "Coming Soon",
                         "banner": {
-                            "src": "page-banners/the-rooftop.jpg",
+                            "src": "slide/rooftop-slide-new-1.jpg",
+                            "alt": "Some alt text"
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "banner": {
+                            "src": "slide/rooftop-slide-new-2.jpg",
+                            "alt": "Some alt text"
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "banner": {
+                            "src": "slide/rooftop-slide-new-3.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1478,13 +1517,13 @@
     },
     {
         "id": 15,
-        "title": "Sintesa | The Wellness Center",
+        "title": "The Wellness Center",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
         "url": "the-wellness-center",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1577,13 +1616,13 @@
     },
     {
         "id": 14,
-        "title": "Sintesa | Spa Treatment",
+        "title": "Spa Treatment",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
         "url": "spa-treatment",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1646,13 +1685,13 @@
     },
     {
         "id": 15,
-        "title": "Sintesa | Wellness Activity",
+        "title": "Wellness Activity",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
         "url": "wellness-activity",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1707,13 +1746,13 @@
     },
     {
         "id": 16,
-        "title": "Sintesa | The Gym",
+        "title": "The Gym",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
         "url": "the-gym",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1785,13 +1824,13 @@
     },
     {
         "id": 17,
-        "title": "Sintesa | Kids Creative Room",
+        "title": "Kids Creative Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "kids-creative-room",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1846,13 +1885,13 @@
     },
     {
         "id": 18,
-        "title": "Sintesa | Swimming Pools",
+        "title": "Swimming Pools",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "swimming-pools",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1866,9 +1905,9 @@
                 "data": [
                     {
                         "title": "Swimming Pools",
-                        "subtitle": "",
+                        "subtitle": "Experiencing daylight while swimming just beside Angin Angin Restaurant",
                         "banner": {
-                            "src": "page-banners/swimming-pool.jpg",
+                            "src": "page-banners/swimming-pool-new.jpeg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1882,6 +1921,43 @@
             {
                 "order": 3,
                 "status": 1,
+                "type": "lightbox.gallery_column",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "barber/monday.jpg",
+                            "title": "Monday"
+                        },
+                        {
+                            "image": "barber/tuesday.jpg",
+                            "title": "Tuesday"
+                        },
+                        {
+                            "image": "barber/wednesday.jpg",
+                            "title": "Wednesday"
+                        },
+                        {
+                            "image": "barber/thursday.jpg",
+                            "title": "Thursday"
+                        },
+                        {
+                            "image": "barber/friday.jpg",
+                            "title": "Friday"
+                        },
+                        {
+                            "image": "barber/saturday.jpg",
+                            "title": "Saturday"
+                        },
+                        {
+                            "image": "barber/sunday.jpg",
+                            "title": "Sunday"
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
                 "type": "text.two_column",
                 "data": {
                     "height": 400,
@@ -1890,12 +1966,12 @@
                 }
             },
             {
-                "order": 4,
+                "order": 5,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 5,
+                "order": 6,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
@@ -1907,13 +1983,13 @@
     },
     {
         "id": 19,
-        "title": "Sintesa | Meeting Package",
+        "title": "Meeting Package",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "meeting-package",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1990,13 +2066,13 @@
     },
     {
         "id": 20,
-        "title": "Sintesa | Events",
+        "title": "Events",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "events",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -2068,13 +2144,13 @@
     },
     {
         "id": 21,
-        "title": "Sintesa | The Wedding",
+        "title": "The Wedding",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "the-wedding",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -2150,9 +2226,9 @@
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "all-modules",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -2468,7 +2544,6 @@
                             "image": "barber/sunday.jpg",
                             "title": "Sunday"
                         }
-
                     ]
                 }
             },
@@ -2625,6 +2700,94 @@
                         }
                     }
                 }
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "parallax.video",
+                "data": {
+                    "background": "generic/bgvid.jpg",
+                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
+                }
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "title": "Hotel Gallery",
+        "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
+        "url": "hotel-gallery",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
+        "author": "Fleava",
+        "status": 1,
+        "content": [
+            {
+                "order": 1,
+                "status": 1,
+                "type": "sliders.fullscreen",
+                "config": {
+                    "short": false
+                },
+                "data": [
+                    {
+                        "title": "Hotel Gallery",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+                        "banner": {
+                            "src": "page-banners/swimming-pool-new.jpeg",
+                            "alt": "Some alt text"
+                        }
+                    }
+                ]
+            },
+            {
+                "order": 2,
+                "status": 1,
+                "type": "custom.booking_bar"
+            },
+            {
+                "order": 3,
+                "status": 1,
+                "type": "lightbox.gallery_column",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "barber/monday.jpg",
+                            "title": "Monday"
+                        },
+                        {
+                            "image": "barber/tuesday.jpg",
+                            "title": "Tuesday"
+                        },
+                        {
+                            "image": "barber/wednesday.jpg",
+                            "title": "Wednesday"
+                        },
+                        {
+                            "image": "barber/thursday.jpg",
+                            "title": "Thursday"
+                        },
+                        {
+                            "image": "barber/friday.jpg",
+                            "title": "Friday"
+                        },
+                        {
+                            "image": "barber/saturday.jpg",
+                            "title": "Saturday"
+                        },
+                        {
+                            "image": "barber/sunday.jpg",
+                            "title": "Sunday"
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "mixed.featurette"
             },
             {
                 "order": 5,

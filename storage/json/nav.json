@@ -29,7 +29,8 @@
         "title": "The Rooms",
         "parent": 3,
         "url": "accommodation",
-        "url_type": "internal"
+        "url_type": "internal",
+        "no_link": 1
     },
     {
         "id": 5,
@@ -61,7 +62,8 @@
         "title": "Suite Collection",
         "parent": 3,
         "url": "accommodation",
-        "url_type": "internal"
+        "url_type": "internal",
+        "no_link": 1
     },
     {
         "id": 9,
@@ -107,9 +109,9 @@
     {
         "id": 14,
         "order": 3,
-        "title": "The Healthy Corner(Coming Soon)",
+        "title": "Sunken Lounge",
         "parent": 11,
-        "url": "healthy-corner",
+        "url": "sunken-lounge",
         "url_type": "internal"
     },
     {
@@ -157,8 +159,9 @@
         "order": 5,
         "title": "Facilities",
         "parent": 1,
-        "url": "destination",
-        "url_type": "internal"
+        "url": "#",
+        "url_type": "internal",
+        "no_link": 1
     },
     {
         "id": 21,
@@ -207,6 +210,22 @@
         "title": "The Wedding",
         "parent": 23,
         "url": "the-wedding",
+        "url_type": "internal"
+    },
+    {
+        "id": 27,
+        "order": 3,
+        "title": "Hotel Gallery",
+        "parent": 20,
+        "url": "hotel-gallery",
+        "url_type": "internal"
+    },
+    {
+        "id": 28,
+        "order": 4,
+        "title": "Fact Sheet",
+        "parent": 20,
+        "url": "fact-sheet",
         "url_type": "internal"
     }
 ]
