@@ -712,31 +712,31 @@
                     "gallery": [
                         {
                             "image": {
-                                "src": "gallery-rooms/superior1.jpg",
+                                "src": "gallery-rooms/superior-new-1.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-superior1.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-1.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic2.jpg",
+                                "src": "gallery-rooms/superior-new-2.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-generic2.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-2.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic3.jpg",
+                                "src": "gallery-rooms/superior-new-3.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-generic3.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-3.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic4.jpg",
+                                "src": "gallery-rooms/superior-new-4.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-generic4.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-4.jpg"
                         }
                     ]
                 }
@@ -822,24 +822,24 @@
                     "gallery": [
                         {
                             "image": {
-                                "src": "gallery-rooms/deluxe1.jpg",
+                                "src": "gallery-rooms/deluxe-new-1.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-deluxe1.jpg"
+                            "popup": "gallery-rooms/popup-deluxe-new-1.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/deluxe2.jpg",
+                                "src": "gallery-rooms/deluxe-new-2.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-deluxe2.jpg"
+                            "popup": "gallery-rooms/popup-deluxe-new-2.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/deluxe3.jpg",
+                                "src": "gallery-rooms/deluxe-new-3.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-deluxe3.jpg"
+                            "popup": "gallery-rooms/popup-deluxe-new-3.jpg"
                         },
                         {
                             "image": {
@@ -932,17 +932,17 @@
                     "gallery": [
                         {
                             "image": {
-                                "src": "gallery-rooms/junior-suite1.jpg",
+                                "src": "gallery-rooms/junior-new-1.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-junior-suite1.jpg"
+                            "popup": "gallery-rooms/popup-junior-new-1.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic2.jpg",
+                                "src": "gallery-rooms/junior-new-2.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-generic2.jpg"
+                            "popup": "gallery-rooms/popup-junior-new-2.jpg"
                         },
                         {
                             "image": {

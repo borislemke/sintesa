@@ -12,8 +12,8 @@
                             <?php $popup = isset($item->popup) ? $item->popup : $item->image->src ?>
                             <a class="overlay-link lightbox-link" data-toolbar="zoom" data-group="gallery-1"
                                data-caption="{{ $item->image->alt }}"
-                               href="images/{{ $popup }}">
-                                <img src="images/{{ $item->image->src }}" alt="{{ $item->image->alt }}"/>
+                               href="media/{{ $popup }}">
+                                <img src="media/{{ $item->image->src }}" alt="{{ $item->image->alt }}"/>
                             </a>
                         </div>
                     </div>
@@ -24,8 +24,8 @@
                     <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
                          data-hover-bkg-color="#a39161" data-hover-bkg-opacity=".8" style="padding:2px">
                         <a class="overlay-link lightbox-link" data-group="gallery-1"
-                           data-caption="Room floor plan" href="images/{{ $module->data->floorplan }}">
-                            <img src="images/gallery-rooms/floorplan.jpg" alt="Room floor plan"/>
+                           data-caption="Room floor plan" href="media/{{ $module->data->floorplan }}">
+                            <img src="media/gallery-rooms/floorplan.jpg" alt="Room floor plan"/>
                             <span class="overlay-info">
                                 <span>
                                     <span>
