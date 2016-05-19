@@ -1,14 +1,4 @@
 <!-- module: mixed.page_intro_alt -->
-<style>
-    .section-block .three-column-text-wrapper .column p {
-        margin-bottom: 8px;
-    }
-    .section-block .three-column-text-wrapper .column ul {
-        list-style: disc;
-        padding-left: 24px;
-        margin-bottom: 8px;
-    }
-</style>
 <section class="section-block bkg-gold color-white no-padding-bottom">
     <div class="row">
         <div class="three-column-text-wrapper">
@@ -41,6 +31,7 @@
                  data-animate-in="opacity:0;transY:50;duration:1000;easing:easeFastSlow;"
                  data-threshold="0.5" alt="{{ $module->data->image_square->src }}"/>
         </div>
+
     </div>
 </section>
 <!-- module_end: mixed.page_intro_alt -->

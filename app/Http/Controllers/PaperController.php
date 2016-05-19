@@ -15,8 +15,9 @@ class PaperController extends Controller
     {
     }
 
-    public function index()
+    public function index(Request $request)
     {
+        if(isset($request->start)) return $this->indexRange($request);
         return Paper::all();
     }
 
@@ -36,7 +37,7 @@ class PaperController extends Controller
 
     public function indexRange(Request $request)
     {
-        $filter = $request->filter;
+        $filter = explode(',', $request->filter);
         $filter[] = 'id';
         $collection = Paper::all($filter);
         $row_count = $collection->count();
@@ -59,7 +60,7 @@ class PaperController extends Controller
         ]);
     }
 
-    public function get($id)
+    public function show($id)
     {
         $page = Paper::find($id);
 

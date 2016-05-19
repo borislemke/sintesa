@@ -5,7 +5,7 @@
         "title": "Sintesa Main Menu",
         "parent": 0,
         "url": "",
-        "url_type": ""
+        "url_type": "page"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "title": "Destination",
         "parent": 1,
         "url": "destination",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "title": "Accommodation",
         "parent": 1,
         "url": "accommodation",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "title": "The Rooms",
         "parent": 3,
         "url": "accommodation",
-        "url_type": "internal",
+        "url_type": "page",
         "no_link": 1
     },
     {
@@ -38,7 +38,7 @@
         "title": "Superior Room",
         "parent": 4,
         "url": "room-superior",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 6,
@@ -46,7 +46,7 @@
         "title": "Deluxe Room",
         "parent": 4,
         "url": "room-deluxe",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 7,
@@ -54,7 +54,7 @@
         "title": "Junior Suite Room",
         "parent": 4,
         "url": "room-junior-suite",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 8,
@@ -62,7 +62,7 @@
         "title": "Suite Collection",
         "parent": 3,
         "url": "accommodation",
-        "url_type": "internal",
+        "url_type": "page",
         "no_link": 1
     },
     {
@@ -71,7 +71,7 @@
         "title": "Executive Suite",
         "parent": 8,
         "url": "suite-executive",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 10,
@@ -79,7 +79,7 @@
         "title": "Presidential Suite",
         "parent": 8,
         "url": "suite-presidential",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 11,
@@ -87,7 +87,7 @@
         "title": "Food &amp; Beverage",
         "parent": 1,
         "url": "accommodation",
-        "url_type": "internal",
+        "url_type": "page",
         "no_link": 1
     },
     {
@@ -96,7 +96,7 @@
         "title": "Angin Angin",
         "parent": 11,
         "url": "angin-angin",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 13,
@@ -104,7 +104,7 @@
         "title": "The BARber",
         "parent": 11,
         "url": "barber",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 14,
@@ -112,7 +112,7 @@
         "title": "Sunken Lounge",
         "parent": 11,
         "url": "sunken-lounge",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 15,
@@ -120,7 +120,7 @@
         "title": "The Rooftop(Coming Soon)",
         "parent": 11,
         "url": "rooftop",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 16,
@@ -128,15 +128,15 @@
         "title": "The Wellness Center",
         "parent": 1,
         "url": "the-wellness-center",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 17,
         "order": 1,
         "title": "Sintesa SPA",
         "parent": 16,
-        "url": "chavana-spa",
-        "url_type": "internal"
+        "url": "spa-treatment",
+        "url_type": "page"
     },
     {
         "id": 18,
@@ -144,7 +144,7 @@
         "title": "The Gym",
         "parent": 16,
         "url": "the-gym",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 19,
@@ -152,7 +152,7 @@
         "title": "Wellness Activity",
         "parent": 16,
         "url": "wellness-activity",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 20,
@@ -160,7 +160,7 @@
         "title": "Facilities",
         "parent": 1,
         "url": "#",
-        "url_type": "internal",
+        "url_type": "page",
         "no_link": 1
     },
     {
@@ -169,7 +169,7 @@
         "title": "Kids Creative Room",
         "parent": 20,
         "url": "kids-creative-room",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 22,
@@ -177,7 +177,7 @@
         "title": "Swimming Pools",
         "parent": 20,
         "url": "swimming-pools",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 23,
@@ -185,7 +185,7 @@
         "title": "Events &amp; Wedding",
         "parent": 1,
         "url": "destination",
-        "url_type": "internal",
+        "url_type": "page",
         "no_link": 1
     },
     {
@@ -194,7 +194,7 @@
         "title": "Meeting Package",
         "parent": 23,
         "url": "meeting-package",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 25,
@@ -202,7 +202,7 @@
         "title": "Events",
         "parent": 23,
         "url": "events",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 26,
@@ -210,7 +210,7 @@
         "title": "The Wedding",
         "parent": 23,
         "url": "the-wedding",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 27,
@@ -218,14 +218,14 @@
         "title": "Hotel Gallery",
         "parent": 20,
         "url": "hotel-gallery",
-        "url_type": "internal"
+        "url_type": "page"
     },
     {
         "id": 28,
         "order": 4,
         "title": "Fact Sheet",
         "parent": 20,
-        "url": "fact-sheet",
-        "url_type": "internal"
+        "url": "pdf/fact-sheet.pdf",
+        "url_type": "pdf"
     }
 ]

@@ -25,7 +25,7 @@
                         "button": {
                             "text": "Discover Jimbaran",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "destination"
                             }
                         },
@@ -40,7 +40,7 @@
                         "button": {
                             "text": "learn more",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "accommodation"
                             }
                         },
@@ -55,7 +55,7 @@
                         "button": {
                             "text": "Explore the BARber",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "barber"
                             }
                         },
@@ -70,7 +70,7 @@
                         "button": {
                             "text": "Discover Sintesa Wellness SPA",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "the-wellness-center"
                             }
                         },
@@ -85,7 +85,7 @@
                         "button": {
                             "text": "Explore Our Amenities",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "accommodation"
                             }
                         },
@@ -100,7 +100,7 @@
                         "button": {
                             "text": "View the Rooftop",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "rooftop"
                             }
                         },
@@ -115,7 +115,7 @@
                         "button": {
                             "text": "View the Rooftop",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "swimming-pools"
                             }
                         },
@@ -130,7 +130,7 @@
                         "button": {
                             "text": "Lobby Lounge",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "#"
                             }
                         },
@@ -198,7 +198,7 @@
                     "button": {
                         "text": "Explore Jimbaran",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "destination"
                         }
                     }
@@ -215,7 +215,7 @@
                             "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
                             "background": "generic/home-barber.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "barber"
                             }
                         },
@@ -224,7 +224,7 @@
                             "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
                             "background": "generic/home-wellness.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "the-wellness-center"
                             }
                         }
@@ -239,38 +239,51 @@
             {
                 "order": 8,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             },
             {
                 "order": 9,
-                "status": 0,
+                "status": 1,
                 "type": "sliders.testimony",
                 "data": {
                     "title": "Here's what people say",
                     "testimonies": [
                         {
                             "order": 1,
-                            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "text": "This was one of the best hotels I have stayed in. The room was large, the beds very comfortable and the facilities great. And the spa - what a treat. Loved, loved, loved this place. Food was great and the staff were amazing. I would return there in a heartbeat",
+                            "source": "Salatchee, Australia - booking.com"
                         },
                         {
                             "order": 2,
-                            "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "text": "The staff are amazing!!! They could not have done anymore for me to make my stay as great as it was. From the front desk you are greeted with big smiles and that was the same from all of the staff throughout my stay. The room service to the laundry service and everything in between was excellent.",
+                            "source": "Mark, United Kingdom - booking.com"
                         },
                         {
                             "order": 3,
-                            "text": "Adignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "text": "This is a brand new Jimbaran Hotel and it's really good. The staff is superb and makes every effort to make the stay here comfortable.",
+                            "source": "jennifer637, Italy - TripAdvisor"
                         },
                         {
-                            "order": 3,
-                            "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "order": 4,
+                            "text": "Such a lovely atmosphere, quiet and charming with warm and caring staff. The lounge is perfectly designed for small and enjoyable fun or large parties.",
+                            "source": "Julia, Indonesia - TripAdvisor"
                         }
                     ]
                 }
@@ -451,11 +464,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -512,7 +538,7 @@
                         "title": "Superior Room",
                         "subtitle": "Specially designed for a couple, honeymooner or friends. A home comfort of 35-sqm room, choice twin bed or king bed is an elegant heaven decoration with stylish furnishing and balcony.",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "room-superior"
                         },
                         "image": {
@@ -524,7 +550,7 @@
                         "title": "Deluxe Room",
                         "subtitle": "A modern appointed accommodation of 48-sqm room with spacious bedroom overlooking Jimbaran Hill. It is subtly blended between modern design and classy Balinese artwork.",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "room-deluxe"
                         },
                         "image": {
@@ -536,7 +562,7 @@
                         "title": "Junior Suite Room",
                         "subtitle": "Junior Suite is the hotel’s premier accommodation category that truly defines luxury. A 56-sqm accommodation that provide an elevated level of hospitality.",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "room-junior-suite"
                         },
                         "image": {
@@ -562,7 +588,7 @@
                             },
                             "title": "Executive Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-executive"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -575,7 +601,7 @@
                             },
                             "title": "Sintesa Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-sintesa-and-peninsula"
                             },
                             "text": "The 97–sqm suites with highlight style, spaciousness and comfort, anticipating you every need."
@@ -588,7 +614,7 @@
                             },
                             "title": "Presidential Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-presidential"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -612,11 +638,24 @@
             {
                 "order": 8,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -710,11 +749,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -807,11 +859,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -904,11 +969,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1001,11 +1079,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1098,11 +1189,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1195,11 +1299,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1255,11 +1372,24 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1294,9 +1424,11 @@
                 "status": 1,
                 "type": "mixed.page_intro_alt",
                 "data": {
-                    "title": "Ut wisi enim ad minim veniam, quis nostru.",
-                    "text_one": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop to furthest left corner of the room, inside the cloak room reveals a secret door to find the venue.",
-                    "text_two": "Old reclaimed wooden panels in dark lacquer, antique light fixtures, warm leather sofas, a fine pool table in one corner, a baby grand piano on the other and of course a bar complete with the finest collection of Single Malts, Whiskeys, a range of premium Vodkas and Branded Liquors.",
+                    "columns": [
+                        "<h2>Ut wisi enim ad minim veniam, quis nostru.</h2>",
+                        "<p>Features and Facilities</p><ul><li>Band Venue</li><li>Grand Piano Jazz</li><li>DJ-Booth</li><li>BARber Shop</li><li>Billiard Area</li><li>Cigar Area</li></ul>",
+                        "<p>Event To Host</p><ul><li>Music Events</li><li>Social Events</li><li>Cocktail Party</li><li>Pre and Post Wedding Parties</li><li>Private Party</li></ul><p>And more</p>"
+                    ],
                     "intro": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.",
                     "image_wide": {
                         "src": "generic/barber1.jpg",
@@ -1319,7 +1451,7 @@
                     "button": {
                         "text": "Learn More",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -1328,12 +1460,12 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "text.three_column",
-                "data": {
-                    "title": "Ut wisi enim ad minim veniam, quis nostru. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-                    "text_one": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse moles tie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissi.",
-                    "text_two": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adm."
-                }
+                "type": "text.columns_raw",
+                "data": [
+                    "<h3>The Venue</h3>",
+                    "<ul><li>Sitting Capacity : (+-) 150 Pax</li><li>Cocktail Capacity : : (+-) 300 Pax</li><li>Space Area : 535 sqm</li><li>Ceiling Height : 2,3 m</li></ul>",
+                    "<ul><li>Door Height : 2 m</li><li>Electric Socket : 29 points</li><li>Sound System : 24 Points</li><li>Subwofer : 2 Points</li></ul>"
+                ]
             },
             {
                 "order": 6,
@@ -1431,11 +1563,24 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1507,11 +1652,24 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1556,7 +1714,7 @@
                             },
                             "title": "Spa Treatment",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "spa-treatment"
                             },
                             "text": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic &amp; authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony."
@@ -1569,7 +1727,7 @@
                             },
                             "title": "Wellness Activity",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "wellness-activity"
                             },
                             "text": "Designed and fully facilitated by the purest natural products, enter a world of harmony as you are treated to treatments created to nurture and inspire the soul."
@@ -1582,7 +1740,7 @@
                             },
                             "title": "The Gym",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "the-gym"
                             },
                             "text": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines."
@@ -1599,18 +1757,31 @@
                 }
             },
             {
-                "order": 6,
+                "order": 5,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 7,
+                "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1675,11 +1846,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1736,11 +1920,24 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1800,7 +1997,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -1814,11 +2011,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1875,11 +2085,24 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -1921,6 +2144,16 @@
             {
                 "order": 3,
                 "status": 1,
+                "type": "text.two_column",
+                "data": {
+                    "height": 400,
+                    "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. ",
+                    "text": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat."
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
                 "type": "lightbox.gallery_column",
                 "data": {
                     "gallery": [
@@ -1956,16 +2189,6 @@
                 }
             },
             {
-                "order": 4,
-                "status": 1,
-                "type": "text.two_column",
-                "data": {
-                    "height": 400,
-                    "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. ",
-                    "text": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat."
-                }
-            },
-            {
                 "order": 5,
                 "status": 1,
                 "type": "mixed.featurette"
@@ -1973,11 +2196,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -2042,7 +2278,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -2056,11 +2292,24 @@
             {
                 "order": 7,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -2120,7 +2369,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -2134,11 +2383,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -2198,7 +2460,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -2212,11 +2474,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -2420,7 +2695,7 @@
                             "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
                             "background": "generic/home-barber.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "barber"
                             }
                         },
@@ -2429,7 +2704,7 @@
                             "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
                             "background": "generic/home-wellness.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "the-wellness-center"
                             }
                         }
@@ -2476,7 +2751,7 @@
                             },
                             "title": "Executive Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-executive"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -2489,7 +2764,7 @@
                             },
                             "title": "Sintesa Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-sintesa-and-peninsula"
                             },
                             "text": "The 97–sqm suites with highlight style, spaciousness and comfort, anticipating you every need."
@@ -2502,7 +2777,7 @@
                             },
                             "title": "Presidential Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-presidential"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -2670,7 +2945,7 @@
                     "button": {
                         "text": "Explore Jimbaran",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "destination"
                         }
                     }
@@ -2695,7 +2970,7 @@
                     "button": {
                         "text": "Learn More",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -2792,11 +3067,24 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     }

@@ -21,6 +21,8 @@ class MediaTableSeeder extends Seeder
 
         $files = File::allFiles(public_path("media"));
 
+        $images = ['jpeg', 'png', 'svg', 'jpeg', 'tiff', 'gif'];
+
         foreach($files as $file) {
 
             $fileInfo = pathinfo($file);
@@ -32,7 +34,7 @@ class MediaTableSeeder extends Seeder
                 "folder" => trim(str_replace($fileInfo["basename"], '', $url), "/"),
                 "type" => $fileInfo["extension"],
                 "size" => filesize($file),
-                "dimension" => getimagesize($file)[0] . " x " . getimagesize($file)[1],
+                "dimension" => in_array($fileInfo["extension"], $images) ? getimagesize($file)[0] . " x " . getimagesize($file)[1] : '-',
                 "caption" => $fileInfo["basename"],
                 "description" => $fileInfo["basename"],
                 "alt_text" => $fileInfo["basename"]

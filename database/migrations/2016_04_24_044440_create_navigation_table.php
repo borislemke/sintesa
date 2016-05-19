@@ -24,7 +24,7 @@ class CreateNavigationTable extends Migration
             $table->boolean('open_in_new');
             $table->boolean('no_link');
             $table->boolean('hide');
-            $table->enum('url_type', ['internal', 'external']); // internal/external
+            $table->string('url_type'); // internal/external
 
             $table->timestamps();
             $table->softDeletes();
