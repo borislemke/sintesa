@@ -717,6 +717,16 @@ body,
 	.header .header-inner > .nav-bar{
 		padding: 0;
 	}
+
+  .blur-effect {
+    display: none;
+  }
+  #booking-section {
+    display: none;
+  }
+  .window-height.include-booking {
+    height: calc(100vh - 228px) !important;
+  }
 }
 
 /*------------------------------------------------------------------
@@ -3490,6 +3500,3 @@ body.wellness .bkg-grey-ultralight {background-color: #f4eff8;}
 .contact-form :focus:-ms-input-placeholder{
 	color: rgba(255,255,255,.6);
 }
-
-
-
