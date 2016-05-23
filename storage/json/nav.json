@@ -141,9 +141,9 @@
     {
         "id": 18,
         "order": 2,
-        "title": "The Gym",
+        "title": "Fitness Studio",
         "parent": 16,
-        "url": "the-gym",
+        "url": "fitness-studio",
         "url_type": "page"
     },
     {

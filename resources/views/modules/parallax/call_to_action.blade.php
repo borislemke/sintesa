@@ -7,13 +7,16 @@
                     <h3 class="">{{ $module->data->title }}</h3>
                     <p class="">{{ $module->data->text }}</p>
                     <?php $link = $module->data->button->link->type == "internal" ? route('page', ['url' => $module->data->button->link->url]) : $module->data->button->link->url ?>
-                    <a href="{{ $link }}"
-                    class="button text-uppercase border-white bkg-hover-gold color-white color-hover-white mb-mobile-30 mt-30">{{ $module->data->button->text }}</a>
+                    @if(FALSE)
+                    <a href="{{ $link }}" class="button text-uppercase border-white bkg-hover-gold color-white color-hover-white mb-mobile-30 mt-30">{{ $module->data->button->text }}</a>
+                    @endif
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+@if(FALSE)
 <div class="enquire-popup-wrapper" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, .5); z-index: 99999">
     <div class="enquiry-popup" style="position: absolute; top: 32px; left: 32px; right: 32px; bottom: 32px; margin: auto; max-width: 640px; background-color: white; padding: 16px;">
         <h3>Enquire for Meeting Package</h3>
@@ -56,4 +59,5 @@
         e.preventDefault();
     });
 </script>
+@endif
 <!-- module_end: parallax.call_to_action -->

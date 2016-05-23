@@ -98,10 +98,10 @@
                         "title": "Water Fountain Poolside",
                         "subtitle": "Experiencing daylight while swimming just beside Angin Angin Restaurant",
                         "button": {
-                            "text": "View the Rooftop",
+                            "text": "Learn More",
                             "link": {
                                 "type": "page",
-                                "url": "rooftop"
+                                "url": "swimming-pools"
                             }
                         },
                         "banner": {
@@ -113,10 +113,10 @@
                         "title": "Sunken Lounge",
                         "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                         "button": {
-                            "text": "View the Rooftop",
+                            "text": "Explore",
                             "link": {
                                 "type": "page",
-                                "url": "swimming-pools"
+                                "url": "sunken-lounge"
                             }
                         },
                         "banner": {
@@ -127,13 +127,6 @@
                     {
                         "title": "Lobby Lounge",
                         "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                        "button": {
-                            "text": "Lobby Lounge",
-                            "link": {
-                                "type": "page",
-                                "url": "#"
-                            }
-                        },
                         "banner": {
                             "src": "slider/lobby-lounge.jpg",
                             "alt": "Some alt text"
@@ -1445,7 +1438,7 @@
                 "type": "mixed.page_intro_alt",
                 "data": {
                     "columns": [
-                        "<h2>Ut wisi enim ad minim veniam, quis nostru.</h2>",
+                        "<h3>The BARber opens at 7am to 11pm on weekdays and 7am to 1 am on weekends with special live music performance on 8.30pm</h>",
                         "<p>Features and Facilities</p><ul><li>Band Venue</li><li>Grand Piano Jazz</li><li>DJ-Booth</li><li>BARber Shop</li><li>Billiard Area</li><li>Cigar Area</li></ul>",
                         "<p>Event To Host</p><ul><li>Music Events</li><li>Social Events</li><li>Cocktail Party</li><li>Pre and Post Wedding Parties</li><li>Private Party</li></ul><p>And more</p>"
                     ],
@@ -1761,7 +1754,7 @@
                             "title": "The Gym",
                             "link": {
                                 "type": "page",
-                                "url": "the-gym"
+                                "url": "fitness-studio"
                             },
                             "text": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines."
                         }
@@ -1963,10 +1956,10 @@
     },
     {
         "id": 16,
-        "title": "The Gym",
+        "title": "Fitness Studio",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
-        "url": "the-gym",
+        "url": "fitness-studio",
         "template": "main",
         "header": "main",
         "footer": "main",
@@ -2222,32 +2215,12 @@
                 "data": {
                     "gallery": [
                         {
-                            "image": "barber/monday.jpg",
-                            "title": "Monday"
+                            "image": "pool/swimming_building.jpg",
+                            "title": "Swimming Pool"
                         },
                         {
-                            "image": "barber/tuesday.jpg",
-                            "title": "Tuesday"
-                        },
-                        {
-                            "image": "barber/wednesday.jpg",
-                            "title": "Wednesday"
-                        },
-                        {
-                            "image": "barber/thursday.jpg",
-                            "title": "Thursday"
-                        },
-                        {
-                            "image": "barber/friday.jpg",
-                            "title": "Friday"
-                        },
-                        {
-                            "image": "barber/saturday.jpg",
-                            "title": "Saturday"
-                        },
-                        {
-                            "image": "barber/sunday.jpg",
-                            "title": "Sunday"
+                            "image": "pool/swimming_ceiling.jpg",
+                            "title": "Swimming Pool"
                         }
                     ]
                 }
@@ -2424,7 +2397,7 @@
             },
             {
                 "order": 4,
-                "status": 0,
+                "status": 1,
                 "type": "parallax.call_to_action",
                 "data": {
                     "title": "Event Proposal Request",
@@ -2515,7 +2488,7 @@
             },
             {
                 "order": 4,
-                "status": 0,
+                "status": 1,
                 "type": "parallax.call_to_action",
                 "data": {
                     "title": "Wedding Package Proposal Request",

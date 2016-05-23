@@ -1,7 +1,7 @@
 <!-- module: lightbox.gallery_column -->
 <div class="section-block portfolio-5 small-margins no-padding-top">
     <div class="row">
-        <div class="column width-12">
+        <div class="column width-10 offset-1">
             <div id="grid-1" class="row content-grid-4 masonry-grid fade-in-progressively" data-grid-ratio="1">
                 <?php $i = 0 ?>
                 @foreach($module->data->gallery as $item)
