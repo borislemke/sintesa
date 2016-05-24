@@ -23,9 +23,10 @@
     <![endif]-->
     <base href="/">
 
+    {!! $settings->widget->chatra or '' !!}
     <!-- Chatra {literal} -->
     <script>
-        ChatraID = 'Lfyf6zdiMrd8RTKie';
+        ChatraID = 'iqFxHHaSmXuBgvjSe';
         (function(d, w, c) {
             var n = d.getElementsByTagName('script')[0],
                 s = d.createElement('script');
