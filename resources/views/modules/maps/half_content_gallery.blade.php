@@ -16,19 +16,37 @@
             zoom: {{ $module->data->zoom }}
         });
 
-
         infowindow = new google.maps.InfoWindow();
 
-        var locations = [];
+        var locations = [],
+            focus = [];
         locations = {!! json_encode($module->data->markers) !!};
+        focus = {!! json_encode($module->data->focus) !!};
 
         var marker, i;
 
+        var vendor_logo = new google.maps.MarkerImage("media/" + focus["icon"], null, null, null, new google.maps.Size(32, 32));
+
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(focus['lat'], focus['long']),
+            icon: vendor_logo,
+            map: map
+        });
+
         var image = new google.maps.MarkerImage("/media/marker.png", null, null, null, new google.maps.Size(20, 27));
 
-    
-
-	     
+        google.maps.event.addListener(marker, 'click', (function (marker, items) {
+            return function () {
+                infowindow.setContent(
+                    '<div class="map-popup">'+
+                    '<div class="image-wrap"><img src="' + focus['image'] + '" /></div> <div class="popup-content">'+
+                    '<h4>' + focus['text'] + '</h4>'+
+                    '<p>' + focus['description'] + '</p>'+
+                    '</div><div class="clear"></div></div>'
+                    );
+                infowindow.open(map, marker);
+            }
+        })(marker, item));
 
         for (var item in locations) {
             if (locations.hasOwnProperty(item)) {

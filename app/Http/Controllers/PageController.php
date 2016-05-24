@@ -20,10 +20,11 @@ class PageController extends Controller
         return $footer[0];
     }
 
-    public function render($url = '')
+    // $target equals $url in this context
+    public function render($target = '')
     {
-        $url = ($url == '' ? 'home' : $url);
-        $data = Paper::where('url', $url)->where('status', 1)->first();
+        $target = ($target == '' ? 'home' : $target);
+        $data = Paper::where('url', $target)->where('status', 1)->first();
 
         if(!$data) return abort(404);
 

@@ -8,7 +8,7 @@
     <meta property="og:image" content="Your-Image-Url"/>
     <meta property="og:description" content="Your-Page-Description"/>
     <title>{{ $data->title }}</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
 
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CRaleway:100,300,400,500,700'

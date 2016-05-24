@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "title": "Sintesa | Home",
+        "title": "Home",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "home",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -25,7 +25,7 @@
                         "button": {
                             "text": "Discover Jimbaran",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "destination"
                             }
                         },
@@ -40,7 +40,7 @@
                         "button": {
                             "text": "learn more",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "accommodation"
                             }
                         },
@@ -55,7 +55,7 @@
                         "button": {
                             "text": "Explore the BARber",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "barber"
                             }
                         },
@@ -70,7 +70,7 @@
                         "button": {
                             "text": "Discover Sintesa Wellness SPA",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "the-wellness-center"
                             }
                         },
@@ -85,7 +85,7 @@
                         "button": {
                             "text": "Explore Our Amenities",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "accommodation"
                             }
                         },
@@ -95,13 +95,13 @@
                         }
                     },
                     {
-                        "title": "The Rooftop",
-                        "subtitle": "Situated on the 7th floor of the building the indoor restaurant has the extension to the outdoor venue that has 360 views in Jimbaran.",
+                        "title": "Water Fountain Poolside",
+                        "subtitle": "Experiencing daylight while swimming just beside Angin Angin Restaurant",
                         "button": {
-                            "text": "View the Rooftop",
+                            "text": "Learn More",
                             "link": {
-                                "type": "internal",
-                                "url": "rooftop"
+                                "type": "page",
+                                "url": "swimming-pools"
                             }
                         },
                         "banner": {
@@ -113,14 +113,22 @@
                         "title": "Sunken Lounge",
                         "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                         "button": {
-                            "text": "View the Rooftop",
+                            "text": "Explore",
                             "link": {
-                                "type": "internal",
-                                "url": "swimming-pools"
+                                "type": "page",
+                                "url": "sunken-lounge"
                             }
                         },
                         "banner": {
                             "src": "slider/sunken.jpg",
+                            "alt": "Some alt text"
+                        }
+                    },
+                    {
+                        "title": "Lobby Lounge",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                        "banner": {
+                            "src": "slider/lobby-lounge.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -183,7 +191,7 @@
                     "button": {
                         "text": "Explore Jimbaran",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "destination"
                         }
                     }
@@ -200,7 +208,7 @@
                             "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
                             "background": "generic/home-barber.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "barber"
                             }
                         },
@@ -209,7 +217,7 @@
                             "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
                             "background": "generic/home-wellness.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "the-wellness-center"
                             }
                         }
@@ -224,38 +232,51 @@
             {
                 "order": 8,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             },
             {
                 "order": 9,
-                "status": 0,
+                "status": 1,
                 "type": "sliders.testimony",
                 "data": {
                     "title": "Here's what people say",
                     "testimonies": [
                         {
                             "order": 1,
-                            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "text": "This was one of the best hotels I have stayed in. The room was large, the beds very comfortable and the facilities great. And the spa - what a treat. Loved, loved, loved this place. Food was great and the staff were amazing. I would return there in a heartbeat",
+                            "source": "Salatchee, Australia - booking.com"
                         },
                         {
                             "order": 2,
-                            "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "text": "The staff are amazing!!! They could not have done anymore for me to make my stay as great as it was. From the front desk you are greeted with big smiles and that was the same from all of the staff throughout my stay. The room service to the laundry service and everything in between was excellent.",
+                            "source": "Mark, United Kingdom - booking.com"
                         },
                         {
                             "order": 3,
-                            "text": "Adignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "text": "This is a brand new Jimbaran Hotel and it's really good. The staff is superb and makes every effort to make the stay here comfortable.",
+                            "source": "jennifer637, Italy - TripAdvisor"
                         },
                         {
-                            "order": 3,
-                            "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.",
-                            "source": "John K. Riley - Harvest Goods."
+                            "order": 4,
+                            "text": "Such a lovely atmosphere, quiet and charming with warm and caring staff. The lounge is perfectly designed for small and enjoyable fun or large parties.",
+                            "source": "Julia, Indonesia - TripAdvisor"
                         }
                     ]
                 }
@@ -264,12 +285,12 @@
     },
     {
         "id": 2,
-        "title": "Sintesa | Destination",
+        "title": "Destination",
         "meta": "The Sintesa Jimbaran Resort | Description for Destination",
         "url": "destination",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -316,22 +337,30 @@
                     "long": 115.1718413,
                     "content": "test",
                     "zoom": 12,
+                    "focus": {
+                        "text": "The Sintesa Jimbaran",
+                        "lat": -8.791018,
+                        "long": 115.15922,
+                        "icon": "favicon.png",
+                        "description": "Enjoy the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our guests.",
+                        "image": "/media/slider/sunken.jpg"
+                    },
                     "markers": [
-                    {
+                        {
                             "text": "Jimbaran Beach",
-                            "lat": -8.769994,
-                            "long": 115.1664503,
+                            "lat": -8.7825104,
+                            "long": 115.1610004,
                             "dist": "1.6km",
-                            "time": "5 minutes",
+                            "time": "5 minutes in 'normal traffic'",
                             "description": "Jimbaran Beach is iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay.",
                             "image": "/media/destinations/jimbaran-beach.jpg"
                         },
                         {
                             "text": "Jimbaran Bay Seafood",
-                            "lat": -8.760493,
-                            "long": 115.1674373,
+                            "lat": -8.7594019,
+                            "long": 115.1687055,
                             "dist": "1.6km",
-                            "time": "5 minutes",
+                            "time": "5 minutes in 'normal traffic'",
                             "description": "Taste the succulent catches of the day, freshly grilled coconut husk barbecues when night falls and the beachside restaurants served up. Dine under the starry skies to the sounds of the waves, the ultimate toes-in-the-sand dinning experience.",
                             "image": "/media/destinations/seafood.jpg"
                         },
@@ -340,25 +369,25 @@
                             "lat": -8.8104228,
                             "long": 115.1654046,
                             "dist": "3.9km",
-                            "time": "13 minutes",
+                            "time": "13 minutes in 'normal traffic'",
                             "description": "Known as GWK is a 60 Ha area of cultural park located in Ungasan, Badung Regency or about 10 - 15 minutes driving from The 'Sintesa' Jimbaran. It is devoted to Hindu God Vhisnu, and His mount; Garuda, mythical bird who become His companion.",
                             "image": "/media/destinations/gwk.jpg"
                         },
                         {
                             "text": "Fish Market",
-                            "lat": -8.7574181,
-                            "long": 115.1662358,
+                            "lat": -8.757079,
+                            "long": 115.168451,
                             "dist": "7.2km",
-                            "time": "19 minutes",
+                            "time": "19 minutes in 'normal traffic'",
                             "description": "Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fisherman are coming into shore with last night's catch. Visit Kedonganan Fish Market, this daily market sells fresh seafood straight off the boats.",
                             "image": "/media/destinations/fish-market.jpg"
                         },
                         {
                             "text": "Dreamland Beach",
-                            "lat": -8.7995139,
+                            "lat": -8.7995033,
                             "long": 115.1120981,
                             "dist": "8.6km",
-                            "time": "21 minutes",
+                            "time": "21 minutes in 'normal traffic'",
                             "description": "Dreamland beach is located on the Bukit Peninsula, and is one of the most beautiful beaches on the island, renowned for its shore breaks. Dreamland is the expression of hope and dreams come true with its luxurious cliff top views and unique remote island.",
                             "image": "/media/destinations/dreamland.jpg"
                         },
@@ -367,16 +396,16 @@
                             "lat": -8.8276109,
                             "long": 115.2181854,
                             "dist": "9.6km",
-                            "time": "24 minutes",
+                            "time": "24 minutes in 'normal traffic'",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                             "image": "/media/destinations/nusa-dua.jpg"
                         },
                         {
                             "text": "Airport",
                             "lat": -8.7467172,
-                            "long": 115.164593,
+                            "long": 115.1668,
                             "dist": "9.7km",
-                            "time": "25 minutes",
+                            "time": "25 minutes in 'normal traffic'",
                             "description": "Located just 10 km south of the Bali Airport (Denpasar). Hotel's location is conveniently positioned, just 15 minutes drive from Ngurah Rai International Airport and 20 minutes away from vibrant area of Kuta and Nusa Dua.",
                             "image": "/media/destinations/airport.jpg"
                         },
@@ -385,16 +414,16 @@
                             "lat": -8.8448081,
                             "long": 115.1821374,
                             "dist": "10.3km",
-                            "time": "26 minutes",
-                            "description": "Often referred as the secret beach, Pandawa is concealed behind high cliffs and overgrown shruberry. As you near Pandawa, you will be greeted by five status carved into the cliffs beside you : Yudhistira, Bima, Arjuna, Nakula and Sadewa, the five brothers PANDAWA in the shadow puppet theater, from which the beach take its name. 'The Sintesa' Jimbaran's icon Drupadi has closed relation with Pandawa. She's the wife's of five Pandawa from the story of Mahabarata. She's the symbol of beauty and power.",
+                            "time": "26 minutes in 'normal traffic'",
+                            "description": "Often referred as the secret beach, Pandawa is concealed behind high cliffs and overgrown shruberry. As you near Pandawa, you will be greeted by five status carved into the cliffs beside you : Yudhistira, Bima, Arjuna, Nakula and Sadewa, the five brothers PANDAWA in the shadow puppet theater, from which the beach take its name.",
                             "image": "/media/destinations/pandawa.jpg"
                         },
                         {
                             "text": "Kuta Beach",
-                            "lat": -8.71689,
-                            "long": 115.1662153,
+                            "lat": -8.718489,
+                            "long": 115.168826,
                             "dist": "10.5km",
-                            "time": "26 minutes",
+                            "time": "26 minutes in 'normal traffic'",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                             "image": "/media/destinations/kuta.jpg"
                         },
@@ -403,16 +432,16 @@
                             "lat": -8.8111524,
                             "long": 115.1016303,
                             "dist": "11.9km",
-                            "time": "30 minutes",
+                            "time": "30 minutes in 'normal traffic'",
                             "description": "Best surfing at Uluwatu Area. It has a fast long pipeline on a shallow reef and having a beautiful Bali's nastier wave. Perfect beach for yoga and professional surfer.",
                             "image": "/media/destinations/padangpadang.jpg"
                         },
                         {
                             "text": "Uluwatu Temple",
                             "lat": -8.8291432,
-                            "long": 115.0827129,
+                            "long": 115.0849,
                             "dist": "13.4km",
-                            "time": "31 minutes",
+                            "time": "31 minutes in 'normal traffic'",
                             "description": "The temple at Uluwatu which is near to 'The Sintesa' Jimbaran was built by the Javanese Hindu Guru Empu Kuturan in the 10th century. The temple at 'the head of the rock stands a top a sheer cliff rising two hundreds feet above the Indian Ocean. The most compeling part of the temple complex however, comes from its nightly kecak and fire dance performances.",
                             "image": "/media/destinations/uluwatu.jpg"
                         }
@@ -427,23 +456,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 3,
-        "title": "Sintesa | Accommodation",
+        "title": "Accommodation",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "accommodation",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -488,7 +530,7 @@
                         "title": "Superior Room",
                         "subtitle": "Specially designed for a couple, honeymooner or friends. A home comfort of 35-sqm room, choice twin bed or king bed is an elegant heaven decoration with stylish furnishing and balcony.",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "room-superior"
                         },
                         "image": {
@@ -500,7 +542,7 @@
                         "title": "Deluxe Room",
                         "subtitle": "A modern appointed accommodation of 48-sqm room with spacious bedroom overlooking Jimbaran Hill. It is subtly blended between modern design and classy Balinese artwork.",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "room-deluxe"
                         },
                         "image": {
@@ -512,7 +554,7 @@
                         "title": "Junior Suite Room",
                         "subtitle": "Junior Suite is the hotel’s premier accommodation category that truly defines luxury. A 56-sqm accommodation that provide an elevated level of hospitality.",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "room-junior-suite"
                         },
                         "image": {
@@ -538,7 +580,7 @@
                             },
                             "title": "Executive Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-executive"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -551,7 +593,7 @@
                             },
                             "title": "Sintesa Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-sintesa-and-peninsula"
                             },
                             "text": "The 97–sqm suites with highlight style, spaciousness and comfort, anticipating you every need."
@@ -564,7 +606,7 @@
                             },
                             "title": "Presidential Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-presidential"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -575,9 +617,30 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.image",
+                "type": "custom.accommodation_promo",
                 "data": {
-                    "background": "gallery-rooms/rooms-big.jpg"
+                    "gallery": [
+                        {
+                            "image": "promotion/advance_purchase.jpg",
+                            "title": "Advance Purchase",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/best_rate.jpg",
+                            "title": "Best Rate",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/early_booking.jpg",
+                            "title": "Early Booking",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/long_stay.jpg",
+                            "title": "Long Stay",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        }
+                    ]
                 }
             },
             {
@@ -588,23 +651,36 @@
             {
                 "order": 8,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 4,
-        "title": "Sintesa | Superior Room",
+        "title": "Superior Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "room-superior",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -649,31 +725,31 @@
                     "gallery": [
                         {
                             "image": {
-                                "src": "gallery-rooms/superior1.jpg",
+                                "src": "gallery-rooms/superior-new-1.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-superior1.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-1.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic2.jpg",
+                                "src": "gallery-rooms/superior-new-2.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-generic2.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-2.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic3.jpg",
+                                "src": "gallery-rooms/superior-new-3.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-generic3.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-3.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic4.jpg",
+                                "src": "gallery-rooms/superior-new-4.jpg",
                                 "alt": "Superior Room"
                             },
-                            "popup": "gallery-rooms/popup-generic4.jpg"
+                            "popup": "gallery-rooms/popup-superior-new-4.jpg"
                         }
                     ]
                 }
@@ -686,23 +762,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 5,
-        "title": "Sintesa | Deluxe Room",
+        "title": "Deluxe Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "room-deluxe",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -746,24 +835,24 @@
                     "gallery": [
                         {
                             "image": {
-                                "src": "gallery-rooms/deluxe1.jpg",
+                                "src": "gallery-rooms/deluxe-new-1.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-deluxe1.jpg"
+                            "popup": "gallery-rooms/popup-deluxe-new-1.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/deluxe2.jpg",
+                                "src": "gallery-rooms/deluxe-new-2.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-deluxe2.jpg"
+                            "popup": "gallery-rooms/popup-deluxe-new-2.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/deluxe3.jpg",
+                                "src": "gallery-rooms/deluxe-new-3.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-deluxe3.jpg"
+                            "popup": "gallery-rooms/popup-deluxe-new-3.jpg"
                         },
                         {
                             "image": {
@@ -783,23 +872,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 6,
-        "title": "Sintesa | Junior Suite Room",
+        "title": "Junior Suite Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "room-junior-suite",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -843,17 +945,17 @@
                     "gallery": [
                         {
                             "image": {
-                                "src": "gallery-rooms/junior-suite1.jpg",
+                                "src": "gallery-rooms/junior-new-1.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-junior-suite1.jpg"
+                            "popup": "gallery-rooms/popup-junior-new-1.jpg"
                         },
                         {
                             "image": {
-                                "src": "gallery-rooms/generic2.jpg",
+                                "src": "gallery-rooms/junior-new-2.jpg",
                                 "alt": "Deluxe Room"
                             },
-                            "popup": "gallery-rooms/popup-generic2.jpg"
+                            "popup": "gallery-rooms/popup-junior-new-2.jpg"
                         },
                         {
                             "image": {
@@ -880,23 +982,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 7,
-        "title": "Sintesa | Executive Suite",
+        "title": "Executive Suite",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "suite-executive",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -977,23 +1092,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 8,
-        "title": "Sintesa | Sintesa and Peninsula Suite",
+        "title": "Sintesa and Peninsula Suite",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "suite-sintesa-and-peninsula",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1074,23 +1202,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 9,
-        "title": "Sintesa | Presidential Suite",
+        "title": "Presidential Suite",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "suite-presidential",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1171,23 +1312,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 10,
-        "title": "Sintesa | Angin Angin",
+        "title": "Angin Angin",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "angin-angin",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1231,23 +1385,36 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 11,
-        "title": "Sintesa | BARber",
+        "title": "BARber",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "barber",
         "url": "barber",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1270,9 +1437,11 @@
                 "status": 1,
                 "type": "mixed.page_intro_alt",
                 "data": {
-                    "title": "Ut wisi enim ad minim veniam, quis nostru.",
-                    "text_one": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop to furthest left corner of the room, inside the cloak room reveals a secret door to find the venue.",
-                    "text_two": "Old reclaimed wooden panels in dark lacquer, antique light fixtures, warm leather sofas, a fine pool table in one corner, a baby grand piano on the other and of course a bar complete with the finest collection of Single Malts, Whiskeys, a range of premium Vodkas and Branded Liquors.",
+                    "columns": [
+                        "<h3>The BARber opens at 7am to 11pm on weekdays and 7am to 1 am on weekends with special live music performance on 8.30pm</h>",
+                        "<p>Features and Facilities</p><ul><li>Band Venue</li><li>Grand Piano Jazz</li><li>DJ-Booth</li><li>BARber Shop</li><li>Billiard Area</li><li>Cigar Area</li></ul>",
+                        "<p>Event To Host</p><ul><li>Music Events</li><li>Social Events</li><li>Cocktail Party</li><li>Pre and Post Wedding Parties</li><li>Private Party</li></ul><p>And more</p>"
+                    ],
                     "intro": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.",
                     "image_wide": {
                         "src": "generic/barber1.jpg",
@@ -1295,7 +1464,7 @@
                     "button": {
                         "text": "Learn More",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -1304,14 +1473,14 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "text.three_column",
-                "data": {
-                    "title": "Ut wisi enim ad minim veniam, quis nostru. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-                    "text_one": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse moles tie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissi.",
-                    "text_two": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adm."
-                }
+                "type": "text.columns_raw",
+                "data": [
+                    "<h3>The Venue</h3>",
+                    "<ul><li>Sitting Capacity : (+-) 150 Pax</li><li>Cocktail Capacity : : (+-) 300 Pax</li><li>Space Area : 535 sqm</li><li>Ceiling Height : 2,3 m</li></ul>",
+                    "<ul><li>Door Height : 2 m</li><li>Electric Socket : 29 points</li><li>Sound System : 24 Points</li><li>Subwofer : 2 Points</li></ul>"
+                ]
             },
-             {
+            {
                 "order": 6,
                 "status": 1,
                 "type": "lightbox.gallery_column",
@@ -1345,7 +1514,6 @@
                             "image": "barber/sunday.jpg",
                             "title": "Sunday"
                         }
-
                     ]
                 }
             },
@@ -1358,13 +1526,13 @@
     },
     {
         "id": 12,
-        "title": "Sintesa | The Healthy Corner",
+        "title": "Sunken Lounge",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
-        "url": "healthy-corner",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "url": "sunken-lounge",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1377,10 +1545,10 @@
                 },
                 "data": [
                     {
-                        "title": "The Healthy Corner",
+                        "title": "Sunken Lounge",
                         "subtitle": "Coming Soon",
                         "banner": {
-                            "src": "page-banners/healthy-corner.jpg",
+                            "src": "slider/sunken.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1408,23 +1576,36 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 13,
-        "title": "Sintesa | The Rooftop",
+        "title": "The Rooftop",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "rooftop",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1440,7 +1621,23 @@
                         "title": "The Rooftop",
                         "subtitle": "Coming Soon",
                         "banner": {
-                            "src": "page-banners/the-rooftop.jpg",
+                            "src": "slide/rooftop-slide-new-1.jpg",
+                            "alt": "Some alt text"
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "banner": {
+                            "src": "slide/rooftop-slide-new-2.jpg",
+                            "alt": "Some alt text"
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "banner": {
+                            "src": "slide/rooftop-slide-new-3.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1468,23 +1665,36 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 15,
-        "title": "Sintesa | The Wellness Center",
+        "title": "The Wellness Center",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
         "url": "the-wellness-center",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1517,7 +1727,7 @@
                             },
                             "title": "Spa Treatment",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "spa-treatment"
                             },
                             "text": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic &amp; authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony."
@@ -1530,7 +1740,7 @@
                             },
                             "title": "Wellness Activity",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "wellness-activity"
                             },
                             "text": "Designed and fully facilitated by the purest natural products, enter a world of harmony as you are treated to treatments created to nurture and inspire the soul."
@@ -1543,8 +1753,8 @@
                             },
                             "title": "The Gym",
                             "link": {
-                                "type": "internal",
-                                "url": "the-gym"
+                                "type": "page",
+                                "url": "fitness-studio"
                             },
                             "text": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines."
                         }
@@ -1560,30 +1770,43 @@
                 }
             },
             {
-                "order": 6,
+                "order": 5,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 7,
+                "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 14,
-        "title": "Sintesa | Spa Treatment",
+        "title": "Spa Treatment",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
         "url": "spa-treatment",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1636,23 +1859,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 15,
-        "title": "Sintesa | Wellness Activity",
+        "title": "Wellness Activity",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
         "url": "wellness-activity",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1697,23 +1933,36 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 16,
-        "title": "Sintesa | The Gym",
+        "title": "Fitness Studio",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "wellness",
-        "url": "the-gym",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "url": "fitness-studio",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1761,7 +2010,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -1775,23 +2024,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 17,
-        "title": "Sintesa | Kids Creative Room",
+        "title": "Kids Creative Room",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "kids-creative-room",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1831,28 +2093,85 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "lightbox.kids_gallery_column",
+                "data": {
+                    "gallery": [
+                        {
+                            "thumbnail": "kids/tutu_monday.jpg",
+                            "popup": "kids/popup_tutu_monday.jpg",
+                            "title": "Tutu Monday"
+                        },
+                        {
+                            "thumbnail": "kids/bubu_tuesday.jpg",
+                            "popup": "kids/popup_bubu_tuesday.jpg",
+                            "title": "Bubu Tuesday"
+                        },
+                        {
+                            "thumbnail": "kids/gaga_wednesday.jpg",
+                            "popup": "kids/popup_gaga_wednesday.jpg",
+                            "title": "Gaga Wednesday"
+                        },
+                        {
+                            "thumbnail": "kids/gukguk_thursday.jpg",
+                            "popup": "kids/popup_gukguk_thursday.jpg",
+                            "title": "Gukguk Thursday"
+                        },
+                        {
+                            "thumbnail": "kids/meomeo_friday.jpg",
+                            "popup": "kids/popup_meomeo_friday.jpg",
+                            "title": "Meomeo Friday"
+                        },
+                        {
+                            "thumbnail": "kids/momo_saturday.jpg",
+                            "popup": "kids/popup_momo_saturday.jpg",
+                            "title": "Momo Saturday"
+                        },
+                        {
+                            "thumbnail": "kids/papa_sunday.jpg",
+                            "popup": "kids/popup_papa_sunday.jpg",
+                            "title": "Papa Sunday"
+                        }
+                    ]
+                }
             },
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
+                "status": 1,
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 18,
-        "title": "Sintesa | Swimming Pools",
+        "title": "Swimming Pools",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "swimming-pools",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1866,9 +2185,9 @@
                 "data": [
                     {
                         "title": "Swimming Pools",
-                        "subtitle": "",
+                        "subtitle": "Experiencing daylight while swimming just beside Angin Angin Restaurant",
                         "banner": {
-                            "src": "page-banners/swimming-pool.jpg",
+                            "src": "page-banners/swimming-pool-new.jpeg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1892,28 +2211,58 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "lightbox.gallery_column",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "pool/swimming_building.jpg",
+                            "title": "Swimming Pool"
+                        },
+                        {
+                            "image": "pool/swimming_ceiling.jpg",
+                            "title": "Swimming Pool"
+                        }
+                    ]
+                }
             },
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
+                "status": 1,
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 19,
-        "title": "Sintesa | Meeting Package",
+        "title": "Meeting Package",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "meeting-package",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -1952,7 +2301,7 @@
             },
             {
                 "order": 4,
-                "status": 1,
+                "status": 0,
                 "type": "custom.meeting_package"
             },
             {
@@ -1966,7 +2315,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -1980,23 +2329,36 @@
             {
                 "order": 7,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 20,
-        "title": "Sintesa | Events",
+        "title": "Events",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "events",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -2044,7 +2406,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -2058,23 +2420,36 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
     {
         "id": 21,
-        "title": "Sintesa | The Wedding",
+        "title": "The Wedding",
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "the-wedding",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -2122,7 +2497,7 @@
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
@@ -2136,11 +2511,24 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     },
@@ -2150,9 +2538,9 @@
         "meta": "The Sintesa Jimbaran Resort",
         "bodyclass": "",
         "url": "all-modules",
-        "template": "hotel",
-        "header": "sintesa",
-        "footer": "sintesa",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
         "author": "Fleava",
         "status": 1,
         "content": [
@@ -2175,7 +2563,7 @@
                 ]
             },
             {
-                "order": 9,
+                "order": 2,
                 "status": 0,
                 "type": "sliders.testimony",
                 "data": {
@@ -2205,7 +2593,7 @@
                 }
             },
             {
-                "order": 2,
+                "order": 3,
                 "status": 1,
                 "type": "custom.booking_bar"
             },
@@ -2248,7 +2636,7 @@
                 }
             },
             {
-                "order": 1,
+                "order": 5,
                 "status": 1,
                 "type": "custom.barber_header",
                 "config": {
@@ -2257,12 +2645,12 @@
                 "data": []
             },
             {
-                "order": 4,
+                "order": 6,
                 "status": 1,
                 "type": "custom.meeting_package"
             },
             {
-                "order": 3,
+                "order": 7,
                 "status": 1,
                 "type": "text.two_column",
                 "data": {
@@ -2272,7 +2660,7 @@
                 }
             },
             {
-                "order": 3,
+                "order": 8,
                 "status": 1,
                 "type": "text.title_subtitle",
                 "data": {
@@ -2282,7 +2670,7 @@
                 }
             },
             {
-                "order": 5,
+                "order": 9,
                 "status": 1,
                 "type": "text.three_column",
                 "data": {
@@ -2292,7 +2680,7 @@
                 }
             },
             {
-                "order": 3,
+                "order": 10,
                 "status": 1,
                 "type": "text.about",
                 "data": {
@@ -2303,7 +2691,7 @@
                 }
             },
             {
-                "order": 4,
+                "order": 11,
                 "status": 0,
                 "type": "text_image.three",
                 "data": [
@@ -2334,7 +2722,7 @@
                 ]
             },
             {
-                "order": 6,
+                "order": 12,
                 "status": 1,
                 "type": "text_image.two_alt",
                 "data": {
@@ -2344,7 +2732,7 @@
                             "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
                             "background": "generic/home-barber.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "barber"
                             }
                         },
@@ -2353,7 +2741,7 @@
                             "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
                             "background": "generic/home-wellness.jpg",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "the-wellness-center"
                             }
                         }
@@ -2361,18 +2749,20 @@
                 }
             },
             {
-                "order": 4,
+                "order": 13,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 3,
+                "order": 14,
                 "status": 1,
                 "type": "mixed.page_intro_alt",
                 "data": {
-                    "title": "Ut wisi enim ad minim veniam, quis nostru.",
-                    "text_one": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop to furthest left corner of the room, inside the cloak room reveals a secret door to find the venue.",
-                    "text_two": "Old reclaimed wooden panels in dark lacquer, antique light fixtures, warm leather sofas, a fine pool table in one corner, a baby grand piano on the other and of course a bar complete with the finest collection of Single Malts, Whiskeys, a range of premium Vodkas and Branded Liquors.",
+                    "columns": [
+                        "<h2>Ut wisi enim ad minim veniam, quis nostru.</h2>",
+                        "<p>Features and Facilities</p><ul><li>Band Venue</li><li>Grand Piano Jazz</li><li>DJ-Booth</li><li>BARber Shop</li><li>Billiard Area</li><li>Cigar Area</li></ul>",
+                        "<p>Event To Host</p><ul><li>Music Events</li><li>Social Events</li><li>Cocktail Party</li><li>Pre and Post Wedding Parties</li><li>Private Party</li></ul><p>And more</p>"
+                    ],
                     "intro": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.",
                     "image_wide": {
                         "src": "generic/barber1.jpg",
@@ -2385,7 +2775,7 @@
                 }
             },
             {
-                "order": 5,
+                "order": 15,
                 "status": 1,
                 "type": "mixed.three_column_header",
                 "data": {
@@ -2400,7 +2790,7 @@
                             },
                             "title": "Executive Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-executive"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -2413,7 +2803,7 @@
                             },
                             "title": "Sintesa Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-sintesa-and-peninsula"
                             },
                             "text": "The 97–sqm suites with highlight style, spaciousness and comfort, anticipating you every need."
@@ -2426,7 +2816,7 @@
                             },
                             "title": "Presidential Suite",
                             "link": {
-                                "type": "internal",
+                                "type": "page",
                                 "url": "suite-presidential"
                             },
                             "text": "The 100–sqm suite anticipates every conceivable need of the discerning global traveler, with the latest modern conveniences."
@@ -2435,7 +2825,7 @@
                 }
             },
             {
-                "order": 6,
+                "order": 16,
                 "status": 1,
                 "type": "lightbox.gallery_column",
                 "data": {
@@ -2468,12 +2858,11 @@
                             "image": "barber/sunday.jpg",
                             "title": "Sunday"
                         }
-
                     ]
                 }
             },
             {
-                "order": 4,
+                "order": 17,
                 "status": 1,
                 "type": "maps.half_content_gallery",
                 "data": {
@@ -2481,111 +2870,119 @@
                     "long": 115.1718413,
                     "content": "test",
                     "zoom": 12,
+                    "focus": {
+                        "text": "The Sintesa Jimbaran",
+                        "lat": -8.791018,
+                        "long": 115.15922,
+                        "icon": "favicon.png",
+                        "description": "Enjoy the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our guests.",
+                        "image": "/media/slider/sunken.jpg"
+                    },
                     "markers": [
                         {
-                            "text": "Uluwatu",
-                            "lat": -8.8291432,
-                            "long": 115.0827129,
-                            "dist": "13km",
-                            "time": "31 minutes",
+                            "text": "Jimbaran Beach",
+                            "lat": -8.7825104,
+                            "long": 115.1610004,
+                            "dist": "1.6km",
+                            "time": "5 minutes in 'normal traffic'",
+                            "description": "Jimbaran Beach is iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay.",
+                            "image": "/media/destinations/jimbaran-beach.jpg"
+                        },
+                        {
+                            "text": "Jimbaran Bay Seafood",
+                            "lat": -8.7594019,
+                            "long": 115.1687055,
+                            "dist": "1.6km",
+                            "time": "5 minutes in 'normal traffic'",
+                            "description": "Taste the succulent catches of the day, freshly grilled coconut husk barbecues when night falls and the beachside restaurants served up. Dine under the starry skies to the sounds of the waves, the ultimate toes-in-the-sand dinning experience.",
+                            "image": "/media/destinations/seafood.jpg"
+                        },
+                        {
+                            "text": "Garuda Wisnu Kencana",
+                            "lat": -8.8104228,
+                            "long": 115.1654046,
+                            "dist": "3.9km",
+                            "time": "13 minutes in 'normal traffic'",
+                            "description": "Known as GWK is a 60 Ha area of cultural park located in Ungasan, Badung Regency or about 10 - 15 minutes driving from The 'Sintesa' Jimbaran. It is devoted to Hindu God Vhisnu, and His mount; Garuda, mythical bird who become His companion.",
+                            "image": "/media/destinations/gwk.jpg"
+                        },
+                        {
+                            "text": "Fish Market",
+                            "lat": -8.757079,
+                            "long": 115.168451,
+                            "dist": "7.2km",
+                            "time": "19 minutes in 'normal traffic'",
+                            "description": "Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fisherman are coming into shore with last night's catch. Visit Kedonganan Fish Market, this daily market sells fresh seafood straight off the boats.",
+                            "image": "/media/destinations/fish-market.jpg"
+                        },
+                        {
+                            "text": "Dreamland Beach",
+                            "lat": -8.7995033,
+                            "long": 115.1120981,
+                            "dist": "8.6km",
+                            "time": "21 minutes in 'normal traffic'",
+                            "description": "Dreamland beach is located on the Bukit Peninsula, and is one of the most beautiful beaches on the island, renowned for its shore breaks. Dreamland is the expression of hope and dreams come true with its luxurious cliff top views and unique remote island.",
+                            "image": "/media/destinations/dreamland.jpg"
+                        },
+                        {
+                            "text": "Nusa Dua Beach Benoa",
+                            "lat": -8.8276109,
+                            "long": 115.2181854,
+                            "dist": "9.6km",
+                            "time": "24 minutes in 'normal traffic'",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/uluwatu.jpg"
+                            "image": "/media/destinations/nusa-dua.jpg"
                         },
                         {
                             "text": "Airport",
                             "lat": -8.7467172,
-                            "long": 115.164593,
-                            "dist": "11km",
-                            "time": "23 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "long": 115.1668,
+                            "dist": "9.7km",
+                            "time": "25 minutes in 'normal traffic'",
+                            "description": "Located just 10 km south of the Bali Airport (Denpasar). Hotel's location is conveniently positioned, just 15 minutes drive from Ngurah Rai International Airport and 20 minutes away from vibrant area of Kuta and Nusa Dua.",
                             "image": "/media/destinations/airport.jpg"
                         },
                         {
-                            "text": "Fish market",
-                            "lat": -8.7574181,
-                            "long": 115.1662358,
-                            "dist": "5.8km",
-                            "time": "15 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/fish-market.jpg"
-                        },
-                        {
-                            "text": "Jimbaran bay seafood",
-                            "lat": -8.760493,
-                            "long": 115.1674373,
-                            "dist": "5.6km",
-                            "time": "16 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/seafood.jpg"
-                        },
-                        {
-                            "text": "Jimbaran Beach",
-                            "lat": -8.769994,
-                            "long": 115.1664503,
-                            "dist": "4.4km",
-                            "time": "12 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/jimbaran-beach.jpg"
-                        },
-                        {
-                            "text": "GWK",
-                            "lat": -8.8104228,
-                            "long": 115.1654046,
-                            "dist": "3.9km",
-                            "time": "15 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/gwk.jpg"
-                        },
-                        {
-                            "text": "Dreamland",
-                            "lat": -8.7995139,
-                            "long": 115.1120981,
+                            "text": "Pandawa Beach",
+                            "lat": -8.8448081,
+                            "long": 115.1821374,
                             "dist": "10.3km",
-                            "time": "26 minutes",
+                            "time": "26 minutes in 'normal traffic'",
+                            "description": "Often referred as the secret beach, Pandawa is concealed behind high cliffs and overgrown shruberry. As you near Pandawa, you will be greeted by five status carved into the cliffs beside you : Yudhistira, Bima, Arjuna, Nakula and Sadewa, the five brothers PANDAWA in the shadow puppet theater, from which the beach take its name.",
+                            "image": "/media/destinations/pandawa.jpg"
+                        },
+                        {
+                            "text": "Kuta Beach",
+                            "lat": -8.718489,
+                            "long": 115.168826,
+                            "dist": "10.5km",
+                            "time": "26 minutes in 'normal traffic'",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/dreamland.jpg"
+                            "image": "/media/destinations/kuta.jpg"
                         },
                         {
                             "text": "Padang Padang",
                             "lat": -8.8111524,
                             "long": 115.1016303,
                             "dist": "11.9km",
-                            "time": "29 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                            "time": "30 minutes in 'normal traffic'",
+                            "description": "Best surfing at Uluwatu Area. It has a fast long pipeline on a shallow reef and having a beautiful Bali's nastier wave. Perfect beach for yoga and professional surfer.",
                             "image": "/media/destinations/padangpadang.jpg"
                         },
                         {
-                            "text": "Pandawa",
-                            "lat": -8.8448081,
-                            "long": 115.1821374,
-                            "dist": "11.4km",
-                            "time": "28 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/pandawa.jpg"
-                        },
-                        {
-                            "text": "Nusa dua beach Benoa",
-                            "lat": -8.8276109,
-                            "long": 115.2181854,
-                            "dist": "11.4km",
-                            "time": "30 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/nusa-dua.jpg"
-                        },
-                        {
-                            "text": "Kuta Beach",
-                            "lat": -8.71689,
-                            "long": 115.1662153,
-                            "dist": "11.6km",
-                            "time": "26 minutes",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                            "image": "/media/destinations/kuta.jpg"
+                            "text": "Uluwatu Temple",
+                            "lat": -8.8291432,
+                            "long": 115.0849,
+                            "dist": "13.4km",
+                            "time": "31 minutes in 'normal traffic'",
+                            "description": "The temple at Uluwatu which is near to 'The Sintesa' Jimbaran was built by the Javanese Hindu Guru Empu Kuturan in the 10th century. The temple at 'the head of the rock stands a top a sheer cliff rising two hundreds feet above the Indian Ocean. The most compeling part of the temple complex however, comes from its nightly kecak and fire dance performances.",
+                            "image": "/media/destinations/uluwatu.jpg"
                         }
                     ]
                 }
             },
             {
-                "order": 5,
+                "order": 18,
                 "status": 1,
                 "type": "parallax.image_text",
                 "data": {
@@ -2595,14 +2992,14 @@
                     "button": {
                         "text": "Explore Jimbaran",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "destination"
                         }
                     }
                 }
             },
             {
-                "order": 6,
+                "order": 19,
                 "status": 1,
                 "type": "parallax.image",
                 "data": {
@@ -2610,7 +3007,7 @@
                 }
             },
             {
-                "order": 4,
+                "order": 20,
                 "status": 1,
                 "type": "custom.barber_parallax",
                 "data": {
@@ -2620,20 +3017,143 @@
                     "button": {
                         "text": "Learn More",
                         "link": {
-                            "type": "internal",
+                            "type": "page",
                             "url": "#"
                         }
                     }
                 }
             },
             {
-                "order": 5,
+                "order": 21,
                 "status": 1,
                 "type": "parallax.video",
                 "data": {
                     "background": "generic/bgvid.jpg",
                     "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
                 }
+            },
+            {
+                "order": 22,
+                "status": 1,
+                "type": "mixed.page_intro_alt",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "title": "Hotel Gallery",
+        "meta": "The Sintesa Jimbaran Resort",
+        "bodyclass": "",
+        "url": "hotel-gallery",
+        "template": "main",
+        "header": "main",
+        "footer": "main",
+        "author": "Fleava",
+        "status": 1,
+        "content": [
+            {
+                "order": 1,
+                "status": 1,
+                "type": "sliders.fullscreen",
+                "config": {
+                    "short": false
+                },
+                "data": [
+                    {
+                        "title": "Hotel Gallery",
+                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+                        "banner": {
+                            "src": "page-banners/swimming-pool-new.jpeg",
+                            "alt": "Some alt text"
+                        }
+                    }
+                ]
+            },
+            {
+                "order": 2,
+                "status": 1,
+                "type": "custom.booking_bar"
+            },
+            {
+                "order": 3,
+                "status": 1,
+                "type": "lightbox.gallery_column",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "barber/monday.jpg",
+                            "title": "Monday"
+                        },
+                        {
+                            "image": "barber/tuesday.jpg",
+                            "title": "Tuesday"
+                        },
+                        {
+                            "image": "barber/wednesday.jpg",
+                            "title": "Wednesday"
+                        },
+                        {
+                            "image": "barber/thursday.jpg",
+                            "title": "Thursday"
+                        },
+                        {
+                            "image": "barber/friday.jpg",
+                            "title": "Friday"
+                        },
+                        {
+                            "image": "barber/saturday.jpg",
+                            "title": "Saturday"
+                        },
+                        {
+                            "image": "barber/sunday.jpg",
+                            "title": "Sunday"
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 4,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": "slider/slide-1.jpg",
+                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
+                        "subtitle": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": "slider/tora-sudiro.jpg",
+                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
+                        "subtitle": "The BARber"
+                    },
+                    {
+                        "background": "slider/event.jpg",
+                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
+                        "subtitle": "The Sintesa Group"
+                    }
+                ]
             }
         ]
     }

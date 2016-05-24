@@ -19,7 +19,7 @@
                                     </h1>
                                     <div class="clear"></div>
 
-                                    @if(!$module->config->short)
+                                    @if(!$module->config->short AND isset($slide->subtitle) AND $slide->subtitle != "")
                                     <p class="tms-caption color-white sublead"
                                        data-animate-in="opacity:0;transX:-30px;duration:800ms;delay:700ms;easing:easeFastSlow;"
                                        data-no-scale>{{ $slide->subtitle }}</p>
@@ -58,7 +58,7 @@
 
         </ul>
 
-        
+
     </div>
 </section>
 

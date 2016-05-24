@@ -11,16 +11,36 @@ Route::group(['prefix' => 'api'], function () {
     Route::post('logout', 'AuthenticateController@logout');
 
     Route::group(['middleware' => ['jwt.auth']], function () {
+
         Route::group(['prefix' => 'v1'], function () {
 
-            Route::group(['prefix' => 'pages'], function () {
-                Route::get('get/{id}', 'PaperController@get');
-                Route::get('index', 'PaperController@index');
-                Route::post('index', 'PaperController@indexRange');
-                Route::post('create', 'PaperController@create');
-                Route::post('update', 'PaperController@update');
-                Route::post('destroy', 'PaperController@destroy');
-            });
+            /**
+             * Resource map:
+             * | Verb       | Path               | Action    | Route Name    |
+             * ---------------------------------------------------------------
+             * | GET        | /{model}             | index     | model.index   |
+             * | GET        | /{model}/create      | create    | model.index   |
+             * | POST       | /{model}             | store     | model.index   |
+             * | GET        | /{model}/{model_id}        | show      | model.index   |
+             * | GET        | /{model}/{model_id}/edit   | edit      | model.index   |
+             * | PUT/PATHC  | /{model}/{model_id}        | update    | model.index   |
+             * | DELETE     | /{model}/{model_id}        | destroy   | model.index   |
+             * ---------------------------------------------------------------
+             */
+            
+            Route::resource('pages', 'PaperController');
+
+            Route::resource('posts', 'PostsController');
+
+            Route::resource('navigation', 'NavigationController');
+
+            Route::resource('footers', 'PostsController');
+
+            Route::resource('rooms', 'PostsController');
+
+            Route::resource('hotels', 'PostsController');
+
+            //Route::resource('media', 'PostsController');
 
             Route::group(['prefix' => 'navigation'], function () {
                 Route::get('index', 'NavigationController@index');
@@ -41,13 +61,6 @@ Route::group(['prefix' => 'api'], function () {
                 Route::get('get/{id}', 'RoomsController@get');
                 Route::post('create', 'RoomsController@create');
                 Route::post('update', 'RoomsController@update');
-            });
-
-            Route::group(['prefix' => 'hotels'], function () {
-                Route::post('index', 'HotelsController@index');
-                Route::get('get/{id}', 'HotelsController@get');
-                Route::post('create', 'HotelsController@create');
-                Route::post('update', 'HotelsController@update');
             });
 
             Route::group(['prefix' => 'media'], function () {

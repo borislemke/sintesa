@@ -26,6 +26,7 @@ Route::get('modules', 'PaperController@indexModules');
 Route::get('analytics', 'AnalyticsController@test');
 
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@render']);
+Route::get('/file/{file?}', ['as' => 'pdf', 'uses' => 'FileController@renderPdf'])->where('file', '(.*)');
 Route::get('/{anything?}', ['as' => 'page', 'uses' => 'PageController@render'])->where('anything', '(.*)');
 
 Route::auth();
