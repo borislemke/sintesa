@@ -104,13 +104,19 @@ $data = json_decode('{
 <!-- module: mixed.featurette -->
 <div class="section-block replicable-content bkg-grey-ultralight bkg-pattern">
     <div class="row">
-        <div class="column width-10 offset-1">
+        <div class="column width-6 offset-1">
             <h2 class="mb-20">{{ $data->header->title }}</h2>
             <p class="mb-40">{{ $data->header->description }}</p>
-            <div class="slider-aux-nav mb-30 left weight-bold" style="text-align: right;">
-                <a href="#" class="previous-team-slider">Prev</a>
-                <span>/</span>
-                <a href="#" class="next-team-slider">Next</a>
+            
+        </div>
+        <div class="column width-4">
+
+            <div class="slider-aux-nav mb-30 left weight-bold v-align-bottom right">
+                <div>
+                    <a href="#" class="previous-team-slider">Prev</a>
+                    <span>/</span>
+                    <a href="#" class="next-team-slider">Next</a>
+                </div>
             </div>
         </div>
         <div class="column width-10 offset-1 slider-column no-padding">

@@ -2301,7 +2301,7 @@
             },
             {
                 "order": 4,
-                "status": 0,
+                "status": 1,
                 "type": "custom.meeting_package"
             },
             {

@@ -26,7 +26,7 @@
     }
     .three-videos > .tmp-content > .tmp-content-inner > .video-item > .video-item-background > a {}
 </style>
-<div class="section-block fixed-height three-videos" style="height: 240px">
+<div class="section-block fixed-height three-videos bkg-white" style="height: 240px">
     <div class="tmp-content">
         <div class="tmp-content-inner left">
             {{--<div class="row">--}}
@@ -36,7 +36,7 @@
                             <a href="{{ $video->video }}"
                                class="lightbox-link icon-play icon-circled bkg-white bkg-hover-gold color-black color-hover-white no-margin-bottom left"></a>
                         </div>
-                        <p>{{ $video->subtitle }}</p>
+                        <p class="mt-10">{{ $video->subtitle }}</p>
                     </div>
                 @endforeach
             {{--</div>--}}

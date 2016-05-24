@@ -40,9 +40,9 @@
         border: 0;
         border-radius: 0;
         background: #fff;
-        padding: .9rem 0;
+        padding: 1rem 0;
         width: 100%;
-        margin-top: 27px;
+        margin-top: 6px;
     }
 
     #b_availSubmit > input:hover {
@@ -95,6 +95,7 @@
         font-weight: 700;
         text-transform: uppercase;
         color: #fff !important;
+        margin-bottom: 0;
     }
 
     .b_availDatesInner select:first-child {

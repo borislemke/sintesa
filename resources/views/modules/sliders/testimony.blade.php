@@ -1,5 +1,5 @@
 <!-- module: sliders.testimony -->
-<div class="section-block testimonial-5 testimonials-5-about-1">
+<div class="section-block testimonial-5 testimonials-5-about-1 bkg-grey-ultralight">
     <div class="row">
         <div class="column width-8 offset-2 center">
             <h2 class="mb-30">{{ $module->data->title }}</h2>

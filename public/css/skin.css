@@ -1917,11 +1917,18 @@ h4.project-title{
 
 /* Testimonial Slider */
 .testimonials-5-about-1{
-	background: none;
 	color: #666;
 }
 .testimonials-5-about-1 .tms-bullet-nav{
 	background: #000;
+}
+
+.sep {
+	height:1px;
+	width:100%;
+	background-color: #e5e7e9;
+	margin:20px 0;
+	clear:both;
 }
 
 /*------------------------------------------------------------------
@@ -3469,6 +3476,11 @@ body.wellness .bkg-grey-ultralight {background-color: #f4eff8;}
 .portfolio-5.small-margins [class*="content-grid"] .grid-item {height:auto !important;}
 
 
+.enquiry-popup form {
+	max-width:700px;
+	margin:10px auto;
+}
+
 .contact-form input, .contact-form textarea {
 	border:none;
 	background:rgba(255,255,255,.1);
@@ -3476,6 +3488,39 @@ body.wellness .bkg-grey-ultralight {background-color: #f4eff8;}
 	color:#fff;
 	font-family: "Open Sans", sans-serif;
 	letter-spacing: 0;
+}
+
+
+.reservation-form {
+	font-size:1.2rem;
+}
+.reservation-form input, .reservation-form textarea, .reservation-form select {
+	border:none;
+	background:#f1f3f6;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 0;
+	font-size:1.2rem;
+  border-radius: 0;
+}
+.reservation-form input.bkg-gold {
+	background-color: #86754d;
+	border-color:#86754d;
+}
+.reservation-form input.bkg-gold.bkg-hover-black:hover {
+	background-color: #000;
+	border-color:#000;
+}
+
+#tml-content {
+    width: 100% !important;
+   
+}
+
+.reservation-form select {
+	width:100%;
+	text-indent: 10px;
+	outline: none;
+	height: 40px;
 }
 
 .contact-form textarea {
