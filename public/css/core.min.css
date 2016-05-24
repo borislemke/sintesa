@@ -9608,7 +9608,7 @@ body.boxed .portfolio-5.full-width > .row > .column {
 .portfolio-5 .grid-item.large {
     width: 50%
 }
-.portfolio-5 .grid-item img {
+.portfolio-5#module__custom-rooms-gallery .grid-item img {
     width: auto;
     height:auto;
     max-width: 1000%;
