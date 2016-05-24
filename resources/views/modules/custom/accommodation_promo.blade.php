@@ -13,16 +13,16 @@
                     <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
                     data-hover-bkg-color="#e5e7e9" data-hover-bkg-opacity=".98">
                     <a data-toolbar="Promotion" data-group="project-1" data-caption="{{ $item->title }}"
-                     data-image-url="media{{ $item->image }}"
-                     href="{{ $item->promo_link }}" data-lightbox-animation="slideInBottom">
-                     <img src="media/{{ $item->image }}" alt=""/>
-                </a>
+                        data-image-url="media{{ $item->image }}"
+                        href="{{ $item->promo_link }}" data-lightbox-animation="slideInBottom">
+                        <img src="media/{{ $item->image }}" alt=""/>
+                    </a>
+                </div>
             </div>
+            <?php $i++ ?>
+            @endforeach
         </div>
-        <?php $i++ ?>
-        @endforeach
     </div>
-</div>
 </div>
 </div>
 <!-- module_end: lightbox.gallery_column -->

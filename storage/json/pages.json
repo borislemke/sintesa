@@ -1356,19 +1356,67 @@
             {
                 "order": 3,
                 "status": 1,
-                "type": "text.two_column",
+                "type": "mixed.three_column_header",
                 "data": {
-                    "title": "The exotic aromas, the stunning views. Angin Angin overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out.",
-                    "text": "Sipping your favorite cocktail or enjoy a glass of wine from the extensive beverage list created by one of Bali best cocktail & sommeliers, indulge in a gastronomic selection or nibble small bites of authentic Asian and Continental cuisine."
+                    "heading": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                    "gallery": [
+                        {
+                            "order": 1,
+                            "banner": {
+                                "src": "wellness/wellness1.jpg",
+                                "alt": "Spa Treatment"
+                            },
+                            "title": "Spa Treatment",
+                            "link": {
+                                "type": "page",
+                                "url": "spa-treatment"
+                            },
+                            "text": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic &amp; authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony."
+                        },
+                        {
+                            "order": 2,
+                            "banner": {
+                                "src": "wellness/wellness2.jpg",
+                                "alt": "Wellness Activity"
+                            },
+                            "title": "Wellness Activity",
+                            "link": {
+                                "type": "page",
+                                "url": "wellness-activity"
+                            },
+                            "text": "Designed and fully facilitated by the purest natural products, enter a world of harmony as you are treated to treatments created to nurture and inspire the soul."
+                        },
+                        {
+                            "order": 3,
+                            "banner": {
+                                "src": "wellness/wellness3.jpg",
+                                "alt": "The Gym"
+                            },
+                            "title": "The Gym",
+                            "link": {
+                                "type": "page",
+                                "url": "fitness-studio"
+                            },
+                            "text": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines."
+                        }
+                    ]
                 }
             },
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "parallax.image",
+                "data": {
+                    "background": "wellness/wellness4.jpg"
+                }
             },
             {
                 "order": 5,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -1547,19 +1595,67 @@
             {
                 "order": 3,
                 "status": 1,
-                "type": "text.two_column",
+                "type": "mixed.three_column_header",
                 "data": {
-                    "title": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice is a part of a well-balanced, plant-based diet is an important tool for achieving good health.",
-                    "text": "Juicing offers many life-enhancing health benefits including a faster, more efficient way to absorb immune boosting nutrients naturally found in fruits and vegetables.  Drinking fresh juice can help us adopt healthier eating patterns. <br><br>For those of us who do not traditionally consume many fruits and vegetables, incorporating fresh juice can be a fun and different approach to increasing consumption of these important plant foods for improved health and wellness and reaching your weight loss goals."
+                    "heading": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                    "gallery": [
+                        {
+                            "order": 1,
+                            "banner": {
+                                "src": "wellness/wellness1.jpg",
+                                "alt": "Spa Treatment"
+                            },
+                            "title": "Spa Treatment",
+                            "link": {
+                                "type": "page",
+                                "url": "spa-treatment"
+                            },
+                            "text": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic &amp; authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony."
+                        },
+                        {
+                            "order": 2,
+                            "banner": {
+                                "src": "wellness/wellness2.jpg",
+                                "alt": "Wellness Activity"
+                            },
+                            "title": "Wellness Activity",
+                            "link": {
+                                "type": "page",
+                                "url": "wellness-activity"
+                            },
+                            "text": "Designed and fully facilitated by the purest natural products, enter a world of harmony as you are treated to treatments created to nurture and inspire the soul."
+                        },
+                        {
+                            "order": 3,
+                            "banner": {
+                                "src": "wellness/wellness3.jpg",
+                                "alt": "The Gym"
+                            },
+                            "title": "The Gym",
+                            "link": {
+                                "type": "page",
+                                "url": "fitness-studio"
+                            },
+                            "text": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines."
+                        }
+                    ]
                 }
             },
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "parallax.image",
+                "data": {
+                    "background": "wellness/wellness4.jpg"
+                }
             },
             {
                 "order": 5,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -1636,19 +1732,67 @@
             {
                 "order": 3,
                 "status": 1,
-                "type": "text.two_column",
+                "type": "mixed.three_column_header",
                 "data": {
-                    "title": "Soon to be ready the most hip place in Jimbaran Area. Situated on the 7th floor of the building the indoor restaurant has the extension to the outdoor venue that has 360 views in Jimbaran. A magnificent sunset, a white sand of Jimbaran bay and the night lights of Benoa harbor.",
-                    "text": "Suitable for small parties, corporate gathering, birthdays, social events, we will caters the tailor made event to be a memorable one. The indoor restaurant will bring you the most distinctive menu for your culinary adventure. Selections of grill pairing with premium wine to enjoy under the starry night.  Mesmerize your romantic occasion with your love ones."
+                    "heading": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                    "gallery": [
+                        {
+                            "order": 1,
+                            "banner": {
+                                "src": "wellness/wellness1.jpg",
+                                "alt": "Spa Treatment"
+                            },
+                            "title": "Spa Treatment",
+                            "link": {
+                                "type": "page",
+                                "url": "spa-treatment"
+                            },
+                            "text": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic &amp; authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony."
+                        },
+                        {
+                            "order": 2,
+                            "banner": {
+                                "src": "wellness/wellness2.jpg",
+                                "alt": "Wellness Activity"
+                            },
+                            "title": "Wellness Activity",
+                            "link": {
+                                "type": "page",
+                                "url": "wellness-activity"
+                            },
+                            "text": "Designed and fully facilitated by the purest natural products, enter a world of harmony as you are treated to treatments created to nurture and inspire the soul."
+                        },
+                        {
+                            "order": 3,
+                            "banner": {
+                                "src": "wellness/wellness3.jpg",
+                                "alt": "The Gym"
+                            },
+                            "title": "The Gym",
+                            "link": {
+                                "type": "page",
+                                "url": "fitness-studio"
+                            },
+                            "text": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines."
+                        }
+                    ]
                 }
             },
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "parallax.image",
+                "data": {
+                    "background": "wellness/wellness4.jpg"
+                }
             },
             {
                 "order": 5,
+                "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 6,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -2290,22 +2434,7 @@
             },
             {
                 "order": 3,
-                "status": 1,
-                "type": "text.two_column",
-                "data": {
-                    "height": 400,
-                    "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. ",
-                    "text": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat."
-                }
-            },
-            {
-                "order": 4,
-                "status": 1,
-                "type": "custom.meeting_package"
-            },
-            {
-                "order": 5,
-                "status": 1,
+                "status": 0,
                 "type": "parallax.call_to_action",
                 "data": {
                     "title": "Meeting Package Proposal Request",
@@ -2321,12 +2450,74 @@
                 }
             },
             {
+                "order": 4,
+                "status": 1,
+                "type": "mixed.three_column_header",
+                "data": {
+                    "heading": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                    "gallery": [
+                        {
+                            "order": 1,
+                            "banner": {
+                                "src": "wellness/wellness1.jpg",
+                                "alt": "Spa Treatment"
+                            },
+                            "title": "Spa Treatment",
+                            "link": {
+                                "type": "page",
+                                "url": "spa-treatment"
+                            },
+                            "text": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic &amp; authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony."
+                        },
+                        {
+                            "order": 2,
+                            "banner": {
+                                "src": "wellness/wellness2.jpg",
+                                "alt": "Wellness Activity"
+                            },
+                            "title": "Wellness Activity",
+                            "link": {
+                                "type": "page",
+                                "url": "wellness-activity"
+                            },
+                            "text": "Designed and fully facilitated by the purest natural products, enter a world of harmony as you are treated to treatments created to nurture and inspire the soul."
+                        },
+                        {
+                            "order": 3,
+                            "banner": {
+                                "src": "wellness/wellness3.jpg",
+                                "alt": "The Gym"
+                            },
+                            "title": "The Gym",
+                            "link": {
+                                "type": "page",
+                                "url": "fitness-studio"
+                            },
+                            "text": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines."
+                        }
+                    ]
+                }
+            },
+            {
+                "order": 5,
+                "status": 1,
+                "type": "custom.meeting_package"
+            },
+            {
                 "order": 6,
+                "status": 1,
+                "type": "parallax.image",
+                "data": {
+                    "background": "wellness/wellness4.jpg"
+                }
+            },
+            {
+                "order": 7,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 7,
+                "order": 8,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
