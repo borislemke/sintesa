@@ -26,8 +26,8 @@ class UsersTableSeeder extends Seeder
 
         \App\User::create([
             'username' => 'thesintesajimbaran',
-            'email' => 'admin@thesintesajimbaran.com',
-            'password' => bcrypt('TheSintesaJimbaran13'),
+            'email' => 'gdtsj@sintesahotels.com',
+            'password' => bcrypt('sintesajimbaran2016'),
             'remember_token' => str_random(10),
             'role_id' => 1,
             'firstname' => 'Admin',
