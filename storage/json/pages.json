@@ -232,24 +232,31 @@
             {
                 "order": 8,
                 "status": 1,
-                "type": "parallax.videos",
-                "data": [
-                    {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
-                    },
-                    {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
-                    },
-                    {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
-                    }
-                ]
+                "type": "custom.accommodation_promo",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "promotion/advance_purchase.jpg",
+                            "title": "Advance Purchase",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/best_rate.jpg",
+                            "title": "Best Rate",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/early_booking.jpg",
+                            "title": "Early Booking",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/long_stay.jpg",
+                            "title": "Long Stay",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        }
+                    ]
+                }
             },
             {
                 "order": 9,
@@ -617,6 +624,11 @@
             {
                 "order": 6,
                 "status": 1,
+                "type": "mixed.featurette"
+            },
+            {
+                "order": 7,
+                "status": 1,
                 "type": "custom.accommodation_promo",
                 "data": {
                     "gallery": [
@@ -642,33 +654,6 @@
                         }
                     ]
                 }
-            },
-            {
-                "order": 7,
-                "status": 1,
-                "type": "mixed.featurette"
-            },
-            {
-                "order": 8,
-                "status": 1,
-                "type": "parallax.videos",
-                "data": [
-                    {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
-                    },
-                    {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
-                    },
-                    {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
-                    }
-                ]
             }
         ]
     },
@@ -2142,24 +2127,31 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.videos",
-                "data": [
-                    {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
-                    },
-                    {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
-                    },
-                    {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
-                    }
-                ]
+                "type": "custom.accommodation_promo",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "promotion/advance_purchase.jpg",
+                            "title": "Advance Purchase",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/best_rate.jpg",
+                            "title": "Best Rate",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/early_booking.jpg",
+                            "title": "Early Booking",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/long_stay.jpg",
+                            "title": "Long Stay",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        }
+                    ]
+                }
             }
         ]
     },
@@ -2233,24 +2225,31 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "parallax.videos",
-                "data": [
-                    {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
-                    },
-                    {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
-                    },
-                    {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
-                    }
-                ]
+                "type": "custom.accommodation_promo",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "promotion/advance_purchase.jpg",
+                            "title": "Advance Purchase",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/best_rate.jpg",
+                            "title": "Best Rate",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/early_booking.jpg",
+                            "title": "Early Booking",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/long_stay.jpg",
+                            "title": "Long Stay",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        }
+                    ]
+                }
             }
         ]
     },
@@ -3136,24 +3135,31 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "parallax.videos",
-                "data": [
-                    {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
-                    },
-                    {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
-                    },
-                    {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
-                    }
-                ]
+                "type": "custom.accommodation_promo",
+                "data": {
+                    "gallery": [
+                        {
+                            "image": "promotion/advance_purchase.jpg",
+                            "title": "Advance Purchase",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/best_rate.jpg",
+                            "title": "Best Rate",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/early_booking.jpg",
+                            "title": "Early Booking",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        },
+                        {
+                            "image": "promotion/long_stay.jpg",
+                            "title": "Long Stay",
+                            "promo_link": "http://booking.com/sintesa/promotion"
+                        }
+                    ]
+                }
             }
         ]
     }

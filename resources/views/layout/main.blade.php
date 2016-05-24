@@ -12,7 +12,7 @@
                 <div class="column width-12">
                     <div id="overlay-nav-hide" class="navigation-hide">
                         <a href="#">
-                            <span class="icon-cancel"></span>
+                <span class="icon-cancel"></span>
                         </a>
                     </div>
                 </div>
@@ -101,87 +101,7 @@
                                             </div>
                                         </div>
 
-
-                                        <div class="dropdown pull-right">
-                                            <a class="button no-label-on-mobile small text-uppercase no-margin-bottom"><span>Reservations</span><span
-                                                class="icon-calendar"></span></a>
-                                                <div class="dropdown-list custom-content">
-                                                    <h5>Make a Reservation</h5>
-                                                    <div class="login-form-container">
-                                                        <form class="login-form"
-                                                        action="http://www.booking.com/hotel/id/the-sintesa-jimbaran-bali-jimbaran.en.html"
-                                                        method="get" novalidate target="_blank">
-
-                                                        <input type="hidden" name="aid" value="330843">
-                                                        <input type="hidden" name="hotel_id" value="1476215">
-                                                        <input type="hidden" name="lang" value="en"> <input type="hidden" name="pb"
-                                                        value="">
-                                                        <input type="hidden" name="stage" value="0">
-                                                        <input type="hidden" name="hostname" value="www.booking.com">
-
-                                                        <div class="row">
-                                                            <div class="column width-12">
-                                                                <select id="b_checkin_day" name="checkin_monthday">
-                                                                <?php
-                                                                    for($day = 1; $day <= 31; $day++) {
-                                                                        $today = $day == date('j');
-                                                                        echo "<option value='$day' " . ($today ? " selected='selected'" : "") . "> $day</option>";
-                                                                    }
-                                                                ?>
-                                                                </select>
-                                                                <select id="b_checkin_month" name="checkin_year_month">
-                                                                    <?php
-                                                                    $months = array();
-                                                                    $currentMonth = (int)date('m');
-                                                                    $start = true;
-
-                                                                    for ($x = $currentMonth; $x < $currentMonth + 12; $x++) {
-                                                                        $month = date('Y-n', mktime(0, 0, 0, $x, 1));
-                                                                        $month_alt = date('F\'y', mktime(0, 0, 0, $x, 1));
-                                                                        echo "<option value=\"" . $month . ($start ? " selected=\"selected\"" : "") . "\"> $month_alt</option>";
-                                                                        $start = false;
-                                                                    }
-                                                                    ?>
-                                                                </select>
-                                                            </div>
-                                                            <div class="column width-12">
-                                                                <select id="b_checkout_day" name="checkout_monthday">
-                                                                <?php
-                                                                    for($day = 1; $day <= 31; $day++) {
-                                                                        $today = $day == date('j', strtotime(' +1 day'));
-                                                                        echo "<option value='$day' " . ($today ? " selected='selected'" : "") . "> $day</option>";
-                                                                    }
-                                                                ?>
-                                                                </select>
-                                                                <select id="b_checkout_month" name="checkout_year_month">
-                                                                    <?php
-                                                                    $months = array();
-                                                                    $currentMonth = (int)date('m');
-                                                                    $start = true;
-
-                                                                    for ($x = $currentMonth; $x < $currentMonth + 12; $x++) {
-                                                                        $month = date('Y-n', mktime(0, 0, 0, $x, 1));
-                                                                        $month_alt = date('F\'y', mktime(0, 0, 0, $x, 1));
-                                                                        echo "<option value='$month' " . ($start ? " selected=\"selected\"" : "") . "> $month_alt</option>";
-                                                                        $start = false;
-                                                                    }
-                                                                    ?>
-                                                                </select>
-                                                            </div>
-                                                            <div class="column width-6">
-                                                                <input type="submit" value="Check Availability"
-                                                                class="form-submit button small bkg-charcoal bkg-hover-pink color-white color-hover-white no-margin-bottom">
-                                                            </div>
-                                                            <div class="column width-6 right">
-                                                                <a class="recuperate-password pt-10" href="">Contact Us</a>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    <div class="form-response"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                        @include('includes.booking-bar')
 
                         <!--
                         <nav class="navigation">

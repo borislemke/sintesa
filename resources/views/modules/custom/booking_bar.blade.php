@@ -1,13 +1,4 @@
 <!-- module: custom.booking_bar -->
-<!--
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-        //do work
-        var inputWrapper = document.getElementById('b_availSubmit');
-        inputWrapper.children[0].value = 'Check Our Promotion';
-    });
-</script>
--->
 <style>
     #b_editDates > h3 {
         margin-top: 0;
@@ -26,7 +17,6 @@
     #b_availSubmit {
         margin-top: 21px;
         width: 20%;
-        margin-left: 5px;
         float: left;
     }
 
@@ -73,6 +63,7 @@
     .b_availPromo {
         width: 10%;
         float: left;
+        margin-right: 8px;
     }
 
     .b_availPromo input {
@@ -148,16 +139,14 @@
                 {{--<script src="http://www.booking.com/general.html?tmpl=bookit;aid=330843;lang=en-us;hotel_id=1476215;cc1=id;hotel_page=the-sintesa-jimbaran-bali-jimbaran" type="text/javascript"></script>--}}
                 <div id="b_editDates">
                     <h3>When would you like to stay?</h3>
-                    <form id="b_availFrm" class="b_availForm"
-                          action="http://www.booking.com/hotel/id/the-sintesa-jimbaran-bali-jimbaran.en.html"
-                          method="get">
+                    <form id="b_availFrm" class="b_availForm">
                         <div class="b_availFormInner">
-                            <input type="hidden" name="aid" value="330843">
-                            <input type="hidden" name="hotel_id" value="1476215">
-                            <input type="hidden" name="lang" value="en">
-                            <input type="hidden" name="pb" value="">
-                            <input type="hidden" name="stage" value="0">
-                            <input type="hidden" name="hostname" value="www.booking.com">
+                        <div class="b_availPromo">
+                            <h4>Promo Code</h4>
+                            <div id="b_availPromo">
+                                <input type="text" name="AccessCode" id="promoCode">
+                            </div>
+                        </div>
                             <div class="b_availDatesInner">
                                 <h4>Check-in</h4>
                                 <div id="b_availCheckIn">
@@ -165,7 +154,7 @@
                                         <?php
                                         for($day = 1; $day <= 31; $day++) {
                                             $today = $day == date('j');
-                                            echo "<option value='$day' " . ($today ? " selected='selected'" : "") . "> $day</option>";
+                                            echo "<option value=\"$day\"" . ($today ? " selected=\"selected\"" : "") . "> $day</option>";
                                         }
                                         ?>
                                     </select>
@@ -178,7 +167,7 @@
                                         for ($x = $currentMonth; $x < $currentMonth + 12; $x++) {
                                             $month = date('Y-n', mktime(0, 0, 0, $x, 1));
                                             $month_alt = date('F\'y', mktime(0, 0, 0, $x, 1));
-                                            echo "<option value=\"" . $month . ($start ? " selected=\"selected\"" : "") . "\"> $month_alt</option>";
+                                            echo "<option value=\"$month\"" . ($start ? " selected=\"selected\"" : "") . "> $month_alt</option>";
                                             $start = false;
                                         }
                                         ?>
@@ -192,7 +181,7 @@
                                         <?php
                                         for($day = 1; $day <= 31; $day++) {
                                             $today = $day == date('j', strtotime(' +1 day'));
-                                            echo "<option value='$day' " . ($today ? " selected='selected'" : "") . "> $day</option>";
+                                            echo "<option value=\"$day\"" . ($today ? " selected=\"selected\"" : "") . "> $day</option>";
                                         }
                                         ?>
                                     </select>
@@ -205,17 +194,11 @@
                                         for ($x = $currentMonth; $x < $currentMonth + 12; $x++) {
                                             $month = date('Y-n', mktime(0, 0, 0, $x, 1));
                                             $month_alt = date('F\'y', mktime(0, 0, 0, $x, 1));
-                                            echo "<option value='$month' " . ($start ? " selected=\"selected\"" : "") . "> $month_alt</option>";
+                                            echo "<option value=\"$month\"" . ($start ? " selected=\"selected\"" : "") . "> $month_alt</option>";
                                             $start = false;
                                         }
                                         ?>
                                     </select>
-                                </div>
-                            </div>
-                            <div class="b_availPromo">
-                                <h4>Promo Code</h4>
-                                <div id="b_availPromo">
-                                    <input type="text" name="AccessCode" id="promoCode">
                                 </div>
                             </div>
                             <div id="b_availSubmit">
@@ -228,3 +211,29 @@
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    window.onload = function() {
+    var bookingForm = document.getElementById('b_availFrm');
+    bookingForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        var checkinDay = document.getElementById('b_checkin_day').value;
+        var checkinMonth = document.getElementById('b_checkin_month').value;
+        var checkoutDay = document.getElementById('b_checkout_day').value;
+        var checkoutMonth = document.getElementById('b_checkout_month').value;
+        var promoCode = document.getElementById('b_availPromo').value;
+        var param = "&arrival=" + checkinMonth + '-' + checkinDay +
+        "&departure=" + checkoutMonth + '-' + checkoutDay +
+        "&promo=" + promoCode
+        "&adults1=1" +
+        "&children1=0";
+        var bookingUrl = "https://www.book-secure.com/index.php?s=results&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl" + param;
+        window.location = bookingUrl;
+        
+    });
+}
+</script>
+<!--
+https://www.book-secure.com/index.php?s=results&property=idbal28401&arrival=2016-05-24&departure=2016-05-25&code=qwerwqrwqr&adults1=1&children1=0&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl
+-->
+<!-- module: custom.booking_bar -->
