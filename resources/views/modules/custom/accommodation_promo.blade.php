@@ -33,7 +33,7 @@ $dates = [
 ?>
 /DATES
 -->
-<div class="section-block portfolio-5 small-margins">
+<div class="section-block portfolio-5 small-margins bkg-pattern">
     <div class="row">
         <div class="column width-3 offset-1">
             <h2 class="mb-20">Promotion</h2>

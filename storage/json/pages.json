@@ -227,11 +227,6 @@
             {
                 "order": 7,
                 "status": 1,
-                "type": "mixed.featurette"
-            },
-            {
-                "order": 8,
-                "status": 1,
                 "type": "custom.accommodation_promo",
                 "data": {
                     "gallery": [
@@ -257,6 +252,11 @@
                         }
                     ]
                 }
+            },
+            {
+                "order": 8,
+                "status": 1,
+                "type": "mixed.featurette"
             },
             {
                 "order": 9,
@@ -624,11 +624,6 @@
             {
                 "order": 6,
                 "status": 1,
-                "type": "mixed.featurette"
-            },
-            {
-                "order": 7,
-                "status": 1,
                 "type": "custom.accommodation_promo",
                 "data": {
                     "gallery": [
@@ -654,6 +649,11 @@
                         }
                     ]
                 }
+            },
+            {
+                "order": 7,
+                "status": 1,
+                "type": "mixed.featurette"
             }
         ]
     },
@@ -2264,12 +2264,12 @@
                 }
             },
             {
-                "order": 5,
+                "order": 6,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 6,
+                "order": 5,
                 "status": 1,
                 "type": "custom.accommodation_promo",
                 "data": {
@@ -2362,12 +2362,12 @@
                 }
             },
             {
-                "order": 5,
+                "order": 6,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 6,
+                "order": 5,
                 "status": 1,
                 "type": "custom.accommodation_promo",
                 "data": {
