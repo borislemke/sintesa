@@ -3324,12 +3324,12 @@
                 }
             },
             {
-                "order": 4,
+                "order": 5,
                 "status": 1,
                 "type": "mixed.featurette"
             },
             {
-                "order": 5,
+                "order": 4,
                 "status": 1,
                 "type": "custom.accommodation_promo",
                 "data": {
