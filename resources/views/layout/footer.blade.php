@@ -76,9 +76,9 @@
 
                         <h4 class="widget-title">Contact Us</h4>
                         <form id="footer-message-form">
-                            <input type="text" placeholder="Name" name="name"/>
-                            <input type="email" placeholder="Email" name="email"/>
-                            <textarea placeholder="Message" name="message"></textarea>
+                            <input id="contact-form-field-name" type="text" placeholder="Name" name="name"/>
+                            <input id="contact-form-field-email" type="email" placeholder="Email" name="email"/>
+                            <textarea id="contact-form-field-message" placeholder="Message" name="message"></textarea>
                             <button id="contact-submit-button" type="submit"
                                     class="button bkg-white bkg-hover-black color-black color-hover-white text-uppercase">
                                 Submit
@@ -102,6 +102,19 @@
             var contactForm = document.getElementById('footer-message-form');
 
             contactForm.addEventListener('submit', function (e) {
+                var nameContact = document.getElementById('contact-form-field-name').value;
+                var emailContact = document.getElementById('contact-form-field-email').value;
+                var messageContact = document.getElementById('contact-form-field-message').value;
+                if (nameContact === '') {
+                    alert('Please provide a name');
+                    return false;
+                } else if (emailContact === '') {
+                    alert('Please provide an email address');
+                    return false;
+                } else if (messageContact === '') {
+                    alert('Please provide a message');
+                    return false;
+                }
                 e.preventDefault();
                 document.getElementById('contact-submit-button').innerHTML = 'Sending, please wait';
                 console.log('sending');
