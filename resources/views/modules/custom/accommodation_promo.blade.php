@@ -25,40 +25,51 @@ echo "two_days_after_thirty_days_from_today: " . $two_days_after_thirty_days_fro
 echo "five_days_from_today: " . $five_days_from_today . "\n";
 
 $dates = [
-    "https://www.book-secure.com/index.php?s=results&arrival=" . $one_week_from_today . "&departure=" . $two_days_after_one_week_from_today . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2",
-    "https://www.book-secure.com/index.php?s=results&arrival=" . $today . "&departure=" . $day_after_tomorrow . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2",
-    "https://www.book-secure.com/index.php?s=results&arrival=" . $thirty_days_from_today . "&departure=" . $two_days_after_thirty_days_from_today . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2",
-    "https://www.book-secure.com/index.php?s=results&arrival=" . $tomorrow . "&departure=" . $five_days_from_today . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2"
+        "https://www.book-secure.com/index.php?s=results&arrival=" . $one_week_from_today . "&departure=" . $two_days_after_one_week_from_today . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2",
+        "https://www.book-secure.com/index.php?s=results&arrival=" . $today . "&departure=" . $day_after_tomorrow . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2",
+        "https://www.book-secure.com/index.php?s=results&arrival=" . $thirty_days_from_today . "&departure=" . $two_days_after_thirty_days_from_today . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2",
+        "https://www.book-secure.com/index.php?s=results&arrival=" . $tomorrow . "&departure=" . $five_days_from_today . "&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl&adults1=2"
 ];
 ?>
-/DATES
--->
+        /DATES
+        -->
 <div class="section-block portfolio-5 small-margins bkg-pattern">
     <div class="row">
         <div class="column width-3 offset-1">
             <h2 class="mb-20">Promotion</h2>
             @if(FALSE)
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
             @endif
         </div>
         <div class="column width-7">
             <div id="grid-1" class="row content-grid-2 masonry-grid fade-in-progressively" data-grid-ratio="1">
                 <?php $i = 0 ?>
                 @foreach($module->data->gallery as $item)
-                <div class="grid-item {{ $i == 0 ? ' grid-sizer' : '' }}">
-                    <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
-                    data-hover-bkg-color="#e5e7e9" data-hover-bkg-opacity=".98">
-                    <a data-toolbar="Promotion" data-group="project-1" data-caption="{{ $item->title }}"
-                        data-image-url="media{{ $item->image }}"
-                        href="{{ $dates[$i] }}" target="_blank" data-lightbox-animation="slideInBottom">
-                        <img src="media/{{ $item->image }}" alt=""/>
-                    </a>
-                </div>
+                    <div class="grid-item {{ $i == 0 ? ' grid-sizer' : '' }}">
+                        <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
+                             data-hover-bkg-color="#e5e7e9" data-hover-bkg-opacity=".98">
+                            <a data-toolbar="Promotion" data-group="project-1" data-caption="{{ $item->title }}"
+                               data-image-url="media{{ $item->image }}"
+                               href="{{ $dates[$i] }}" target="_blank" data-lightbox-animation="slideInBottom">
+                                <img src="media/{{ $item->image }}" alt=""/>
+							<span class="overlay-info center">
+								<span>
+									<span>
+										<span class="left inline">
+											<span class="project-title">{{ $item->title }}</span>
+										</span>
+									</span>
+								</span>
+							</span>
+                            </a>
+                        </div>
+                    </div>
+                    <?php $i++ ?>
+                @endforeach
             </div>
-            <?php $i++ ?>
-            @endforeach
         </div>
     </div>
-</div>
 </div>
 <!-- module_end: custom.accommodation_promo -->

@@ -10,6 +10,11 @@ Route::group(['prefix' => 'api'], function () {
     Route::post('reauthenticate', 'AuthenticateController@reauthenticate');
     Route::post('logout', 'AuthenticateController@logout');
 
+    Route::group(['prefix' => 'ajax'], function() {
+
+        Route::post('contact-form', 'AjaxController@submit');
+    });
+
     Route::group(['middleware' => ['jwt.auth']], function () {
 
         Route::group(['prefix' => 'v1'], function () {
@@ -27,7 +32,7 @@ Route::group(['prefix' => 'api'], function () {
              * | DELETE     | /{model}/{model_id}        | destroy   | model.index   |
              * ---------------------------------------------------------------
              */
-            
+
             Route::resource('pages', 'PaperController');
 
             Route::resource('posts', 'PostsController');

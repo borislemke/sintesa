@@ -7,11 +7,11 @@
         <?php endif ?>
         <div class="footer-top ">
             <div class="row pb-60">
-                 <div class="column width-3">
+                <div class="column width-3">
                     <svg class="">
                         <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
                     </svg>
-                    
+
                 </div>
 
                 <div class="column width-3">
@@ -21,8 +21,9 @@
                             Jl. Kencana No. 1<br>
                             Jimbaran, Bali 80361 - Indonesia<br>
                             <i class="icon-phone"></i> <strong>+62 361 472 5333</strong><br>
-                            <i class="icon-mail"></i> <a href="mailto:infotsj@sintesahotels.com">infotsj@sintesahotels.com</a><br>
-                            
+                            <i class="icon-mail"></i> <a href="mailto:infotsj@sintesahotels.com">infotsj@sintesahotels
+                                .com</a><br>
+
                         </address>
 
                         <ul class="social-list list-horizontal no-margin-bottom">
@@ -63,19 +64,25 @@
                             </li>
                         </ul>
                         <br>
-                        <small style="display:block; line-height:1.3">&copy; {{ $footer->data->copyright }}<br> Website by <a href="http://fleava.com/" target="_blank" title="Fleava - Bali Digital Advertising Agency">Fleava</a>.</small>
+                        <small style="display:block; line-height:1.3">&copy; {{ $footer->data->copyright }}<br> Website
+                            by <a href="http://fleava.com/" target="_blank"
+                                  title="Fleava - Bali Digital Advertising Agency">Fleava</a>.
+                        </small>
                     </div>
                 </div>
 
                 <div class="column width-3 contact-form">
                     <div class="widget">
-                        
+
                         <h4 class="widget-title">Contact Us</h4>
-                        <form>
-                            <input type="text" placeholder="Name" />
-                            <input type="email" placeholder="Email" />
-                            <textarea placeholder="Email" ></textarea>
-                            <a href="#" class="button bkg-white bkg-hover-black color-black color-hover-white text-uppercase">Submit</a>
+                        <form id="footer-message-form">
+                            <input type="text" placeholder="Name" name="name"/>
+                            <input type="email" placeholder="Email" name="email"/>
+                            <textarea placeholder="Message" name="message"></textarea>
+                            <button id="contact-submit-button" type="submit"
+                                    class="button bkg-white bkg-hover-black color-black color-hover-white text-uppercase">
+                                Submit
+                            </button>
                         </form>
 
                     </div>
@@ -84,12 +91,34 @@
 
                 <div class="column width-2">
                     <h4 class="widget-title">Awards</h4>
-                    <img src="media/bookingaward2.jpg" style="width:100%; height:auto" />
+                    <img src="media/bookingaward2.jpg" style="width:100%; height:auto"/>
                 </div>
 
 
             </div>
         </div>
+        <script>
+            console.log('haha');
+            var contactForm = document.getElementById('footer-message-form');
 
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('contact-submit-button').innerHTML = 'Sending, please wait';
+                console.log('sending');
+                var fd = new FormData(contactForm);
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function () {
+                    if (request.readyState === 4) {
+                        alert('Thank you for contacting us, we will get back to you as soon as possible!');
+                        contactForm.reset();
+                        setTimeout(function () {
+                            document.getElementById('contact-submit-button').innerHTML = 'Submit';
+                        }, 300);
+                    }
+                };
+                request.open('POST', '/api/ajax/contact-form');
+                request.send(fd);
+            });
+        </script>
     </footer>
     <!-- Footer 1 End -->

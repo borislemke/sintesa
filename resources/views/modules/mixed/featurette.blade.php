@@ -107,10 +107,8 @@ $data = json_decode('{
         <div class="column width-6 offset-1">
             <h2 class="mb-20">{{ $data->header->title }}</h2>
             <p class="mb-40">{{ $data->header->description }}</p>
-            
         </div>
         <div class="column width-4">
-
             <div class="slider-aux-nav mb-30 left weight-bold v-align-bottom right">
                 <div>
                     <a href="#" class="previous-team-slider">Prev</a>
@@ -124,7 +122,6 @@ $data = json_decode('{
                  data-carousel-visible-slides="3" data-height="500">
 
                 <ul class="tms-slides">
-
                     @foreach($data->caroussel as $slide)
                         <?php $link = $slide->link->type == 'internal' ? route('page', ['url' => $slide->link->url]) : $slide->link->url ?>
                         <li class="tms-slide">
@@ -146,7 +143,6 @@ $data = json_decode('{
                             </div>
                         </li>
                     @endforeach
-
                 </ul>
             </div>
         </div>

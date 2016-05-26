@@ -2662,7 +2662,6 @@ textarea.required-field{
 }
 .footer .form-element:focus,
 .footer textarea:focus{
-	background-color: #fff;
 	box-shadow: none;
 	color: #000;
 }
@@ -3513,7 +3512,7 @@ body.wellness .bkg-grey-ultralight {background-color: #f4eff8;}
 
 #tml-content {
     width: 100% !important;
-   
+
 }
 
 .reservation-form select {

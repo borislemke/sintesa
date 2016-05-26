@@ -232,22 +232,22 @@
                     "gallery": [
                         {
                             "image": "promotion/advance_purchase.jpg",
-                            "title": "Advance Purchase",
+                            "title": "Book 7 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/best_rate.jpg",
-                            "title": "Best Rate",
+                            "title": "Book Directly Through our website for Best Rate",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/early_booking.jpg",
-                            "title": "Early Booking",
+                            "title": "Book 30 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/long_stay.jpg",
-                            "title": "Long Stay",
+                            "title": "Book for at least 5 nights",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         }
                     ]
@@ -629,22 +629,22 @@
                     "gallery": [
                         {
                             "image": "promotion/advance_purchase.jpg",
-                            "title": "Advance Purchase",
+                            "title": "Book 7 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/best_rate.jpg",
-                            "title": "Best Rate",
+                            "title": "Book Directly Through our website for Best Rate",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/early_booking.jpg",
-                            "title": "Early Booking",
+                            "title": "Book 30 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/long_stay.jpg",
-                            "title": "Long Stay",
+                            "title": "Book for at least 5 nights",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         }
                     ]
@@ -1390,9 +1390,9 @@
                             "order": 3,
                             "banner": {
                                 "src": "wellness/wellness3.jpg",
-                                "alt": "The Gym"
+                                "alt": "Fitness Studio"
                             },
-                            "title": "The Gym",
+                            "title": "Fitness Studio",
                             "link": {
                                 "type": "page",
                                 "url": "fitness-studio"
@@ -1629,9 +1629,9 @@
                             "order": 3,
                             "banner": {
                                 "src": "wellness/wellness3.jpg",
-                                "alt": "The Gym"
+                                "alt": "Fitness Studio"
                             },
-                            "title": "The Gym",
+                            "title": "Fitness Studio",
                             "link": {
                                 "type": "page",
                                 "url": "fitness-studio"
@@ -1702,7 +1702,7 @@
                         "title": "The Rooftop",
                         "subtitle": "Coming Soon",
                         "banner": {
-                            "src": "slide/rooftop-slide-new-1.jpg",
+                            "src": "rooftop/rooftop-slide-new-1.jpg",
                             "alt": "Some alt text"
                         }
                     },
@@ -1710,7 +1710,7 @@
                         "title": "The Rooftop",
                         "subtitle": "Coming Soon",
                         "banner": {
-                            "src": "slide/rooftop-slide-new-2.jpg",
+                            "src": "rooftop/rooftop-slide-new-2.jpg",
                             "alt": "Some alt text"
                         }
                     },
@@ -1718,7 +1718,7 @@
                         "title": "The Rooftop",
                         "subtitle": "Coming Soon",
                         "banner": {
-                            "src": "slide/rooftop-slide-new-3.jpg",
+                            "src": "rooftop/rooftop-slide-new-3.jpg",
                             "alt": "Some alt text"
                         }
                     }
@@ -1766,9 +1766,9 @@
                             "order": 3,
                             "banner": {
                                 "src": "wellness/wellness3.jpg",
-                                "alt": "The Gym"
+                                "alt": "Fitness studio"
                             },
-                            "title": "The Gym",
+                            "title": "Fitness Studio",
                             "link": {
                                 "type": "page",
                                 "url": "fitness-studio"
@@ -1878,9 +1878,9 @@
                             "order": 3,
                             "banner": {
                                 "src": "wellness/wellness3.jpg",
-                                "alt": "The Gym"
+                                "alt": "Fitness Studio"
                             },
-                            "title": "The Gym",
+                            "title": "Fitness Studio",
                             "link": {
                                 "type": "page",
                                 "url": "fitness-studio"
@@ -2104,7 +2104,7 @@
                 },
                 "data": [
                     {
-                        "title": "The Gym",
+                        "title": "Fitness Studio",
                         "subtitle": "",
                         "banner": {
                             "src": "page-banners/fitness-center.jpg",
@@ -2276,22 +2276,22 @@
                     "gallery": [
                         {
                             "image": "promotion/advance_purchase.jpg",
-                            "title": "Advance Purchase",
+                            "title": "Book 7 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/best_rate.jpg",
-                            "title": "Best Rate",
+                            "title": "Book Directly Through our website for Best Rate",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/early_booking.jpg",
-                            "title": "Early Booking",
+                            "title": "Book 30 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/long_stay.jpg",
-                            "title": "Long Stay",
+                            "title": "Book for at least 5 nights",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         }
                     ]
@@ -2374,22 +2374,22 @@
                     "gallery": [
                         {
                             "image": "promotion/advance_purchase.jpg",
-                            "title": "Advance Purchase",
+                            "title": "Book 7 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/best_rate.jpg",
-                            "title": "Best Rate",
+                            "title": "Book Directly Through our website for Best Rate",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/early_booking.jpg",
-                            "title": "Early Booking",
+                            "title": "Book 30 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/long_stay.jpg",
-                            "title": "Long Stay",
+                            "title": "Book for at least 5 nights",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         }
                     ]
@@ -2486,9 +2486,9 @@
                             "order": 3,
                             "banner": {
                                 "src": "wellness/wellness3.jpg",
-                                "alt": "The Gym"
+                                "alt": "Fitness Studio"
                             },
-                            "title": "The Gym",
+                            "title": "Fitness Studio",
                             "link": {
                                 "type": "page",
                                 "url": "fitness-studio"
@@ -3286,34 +3286,39 @@
                 "status": 1,
                 "type": "lightbox.gallery_column",
                 "data": {
+                    "title": "Hotel Gallery",
                     "gallery": [
                         {
-                            "image": "barber/monday.jpg",
-                            "title": "Monday"
+                            "image": "gallery-rooms/generic3.jpg",
+                            "title": "Accommodation"
                         },
                         {
-                            "image": "barber/tuesday.jpg",
-                            "title": "Tuesday"
+                            "image": "gallery-rooms/popup-executive-suite1.jpg",
+                            "title": "Executive Suite"
                         },
                         {
-                            "image": "barber/wednesday.jpg",
-                            "title": "Wednesday"
+                            "image": "generic/pic2.jpg",
+                            "title": "Swimming Pool"
                         },
                         {
-                            "image": "barber/thursday.jpg",
-                            "title": "Thursday"
+                            "image": "gallery-rooms/presidential-suite1.jpg",
+                            "title": "Presidential Suite"
                         },
                         {
-                            "image": "barber/friday.jpg",
-                            "title": "Friday"
+                            "image": "page-banners/wedding.jpg",
+                            "title": "Wedding"
                         },
                         {
-                            "image": "barber/saturday.jpg",
-                            "title": "Saturday"
+                            "image": "slider/tora-sudiro.jpg",
+                            "title": "The BARber"
                         },
                         {
-                            "image": "barber/sunday.jpg",
-                            "title": "Sunday"
+                            "image": "slider/sunken.jpg",
+                            "title": "Sunken Lounge"
+                        },
+                        {
+                            "image": "wellness/wellness4.jpg",
+                            "title": "Wellness SPA"
                         }
                     ]
                 }
@@ -3331,22 +3336,22 @@
                     "gallery": [
                         {
                             "image": "promotion/advance_purchase.jpg",
-                            "title": "Advance Purchase",
+                            "title": "Book 7 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/best_rate.jpg",
-                            "title": "Best Rate",
+                            "title": "Book Directly Through our website for Best Rate",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/early_booking.jpg",
-                            "title": "Early Booking",
+                            "title": "Book 30 days in advance",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         },
                         {
                             "image": "promotion/long_stay.jpg",
-                            "title": "Long Stay",
+                            "title": "Book for at least 5 nights",
                             "promo_link": "http://booking.com/sintesa/promotion"
                         }
                     ]
