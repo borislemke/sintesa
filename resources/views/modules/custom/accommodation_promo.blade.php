@@ -46,14 +46,14 @@ $dates = [
         <div class="column width-7">
             <div id="grid-1" class="row content-grid-2 masonry-grid fade-in-progressively" data-grid-ratio="1">
                 <?php $i = 0 ?>
-                @foreach($module->data->gallery as $item)
+                @foreach($module->data as $item)
                     <div class="grid-item {{ $i == 0 ? ' grid-sizer' : '' }}">
                         <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
                              data-hover-bkg-color="#e5e7e9" data-hover-bkg-opacity=".98">
                             <a data-toolbar="Promotion" data-group="project-1" data-caption="{{ $item->title }}"
-                               data-image-url="media{{ $item->image }}"
+                               data-image-url="media/{{ $item->image->src }}"
                                href="{{ $dates[$i] }}" target="_blank" data-lightbox-animation="slideInBottom">
-                                <img src="media/{{ $item->image }}" alt=""/>
+                                <img src="media/{{ $item->image->src }}" alt="{{ $item->image->alt }}"/>
 							<span class="overlay-info center">
 								<span>
 									<span>

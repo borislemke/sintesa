@@ -21,18 +21,21 @@ Route::group(['prefix' => 'api'], function () {
 
             /**
              * Resource map:
-             * | Verb       | Path               | Action    | Route Name    |
-             * ---------------------------------------------------------------
-             * | GET        | /{model}             | index     | model.index   |
-             * | GET        | /{model}/create      | create    | model.index   |
-             * | POST       | /{model}             | store     | model.index   |
-             * | GET        | /{model}/{model_id}        | show      | model.index   |
-             * | GET        | /{model}/{model_id}/edit   | edit      | model.index   |
-             * | PUT/PATHC  | /{model}/{model_id}        | update    | model.index   |
-             * | DELETE     | /{model}/{model_id}        | destroy   | model.index   |
-             * ---------------------------------------------------------------
+             * | Verb       | Path                          | Action    | Route Name    |
+             * --------------------------------------------------------------------------
+             * | GET        | /{model}                      | index     | model.index   |
+             * | GET        | /{model}/create               | create    | model.create  |
+             * | POST       | /{model}                      | store     | model.store   |
+             * | GET        | /{model}/{model_id}           | show      | model.show    |
+             * | GET        | /{model}/{model_id}/edit      | edit      | model.edit    |
+             * | PUT/PATCH  | /{model}/{model_id}           | update    | model.update  |
+             * | DELETE     | /{model}/{model_id}           | destroy   | model.destroy |
+             * --------------------------------------------------------------------------
+             * NGINX DOES NOT ACCEPT WEBDAV METHODS BY DEFAULT
+             * FORGET ABOUT THEM AS IT IS TEDIOUS
              */
 
+            Route::post('pages/update', 'PaperController@update');
             Route::resource('pages', 'PaperController');
 
             Route::resource('posts', 'PostsController');

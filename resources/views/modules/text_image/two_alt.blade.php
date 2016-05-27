@@ -3,12 +3,11 @@
     <div class="row">
         <div class="column width-12">
             <div class="row content-grid-4 masonry-grid fade-in-progressively" data-grid-ratio="1">
-
                 <?php $i = 0 ?>
-                @foreach($module->data->blocks as $item)
+                @foreach($module->data as $item)
                     <a href="{{ $item->link->url }}" class="text-white grid-item wide img-move-left grid-item{{ !$i ? ' grid-sizer' : '' }}">
                         <div class="thumbnail" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
-                            <img src="media/{{ $item->background }}" alt=""/>
+                            <img src="media/{{ $item->background->src }}" alt="{{ $item->background->alt }}"/>
                         </div>
                         <div class="content-overlay"></div>
                         <div class="content-outer">

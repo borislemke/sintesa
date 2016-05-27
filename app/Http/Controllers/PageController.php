@@ -37,4 +37,12 @@ class PageController extends Controller
         $footer = $this->footer();
         return view('templates.frontend', compact('data', 'footer'));
     }
+
+    public function listUrls()
+    {
+        $pages = json_decode(File::get(storage_path('json/pages.json')));
+        foreach ($pages as $page) {
+            echo "&ltmd-option value=\"$page->url\"&gt$page->title&lt/md-option&gt<br>";
+        }
+    }
 }

@@ -78,16 +78,15 @@ class PaperController extends Controller
 
     public function update(Request $request)
     {
-        return $request;
         $page = Paper::find($request->id);
-        $page->title = $request->title;
-        $page->meta = $request->meta;
-        $page->url = $request->url;
-        $page->template = $request->template;
-        $page->header = $request->header;
-        $page->footer = $request->footer;
-        $page->status = $request->status;
+        $page->bodyclass = $request->bodyclass;
         $page->content = json_encode($request->content);
+        $page->layout = $request->layout;
+        $page->meta = $request->meta;
+        $page->navigation_id = $request->navigation_id;
+        $page->status = $request->status;
+        $page->title = $request->title;
+        $page->url = $request->url;
         $page->save();
 
         return ['status' => 200, 'status-text' => 'success', 'monolog' => ['title' => 'Page created', 'message' => 'Page has been created successfully']];

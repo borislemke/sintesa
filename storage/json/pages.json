@@ -20,6 +20,7 @@
                 },
                 "data": [
                     {
+                        "order": 1,
                         "title": "Destination: Jimbaran",
                         "subtitle": "Jimbaran Bay is one of iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay.",
                         "button": {
@@ -35,6 +36,7 @@
                         }
                     },
                     {
+                        "order": 2,
                         "title": "The Best Moment to Stay",
                         "subtitle": "Enjoy the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our guests.",
                         "button": {
@@ -50,6 +52,7 @@
                         }
                     },
                     {
+                        "order": 3,
                         "title": "The BARber",
                         "subtitle": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
                         "button": {
@@ -65,6 +68,7 @@
                         }
                     },
                     {
+                        "order": 4,
                         "title": "The Wellness Center",
                         "subtitle": "Sintesa Wellness Center offers a complete range of therapies experiences, luxurious, organic & authentic.",
                         "button": {
@@ -80,6 +84,7 @@
                         }
                     },
                     {
+                        "order": 5,
                         "title": "Accommodation",
                         "subtitle": "206 beautiful appointed guestrooms and suites are available in unique tiers of accommodation which include Superior Room, Deluxe Room, Family Rooms and our Suites Collection.",
                         "button": {
@@ -95,6 +100,7 @@
                         }
                     },
                     {
+                        "order": 6,
                         "title": "Water Fountain Poolside",
                         "subtitle": "Experiencing daylight while swimming just beside Angin Angin Restaurant",
                         "button": {
@@ -110,6 +116,7 @@
                         }
                     },
                     {
+                        "order": 7,
                         "title": "Sunken Lounge",
                         "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                         "button": {
@@ -125,6 +132,7 @@
                         }
                     },
                     {
+                        "order": 8,
                         "title": "Lobby Lounge",
                         "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                         "banner": {
@@ -143,10 +151,13 @@
                 "order": 3,
                 "status": 1,
                 "type": "text.title_subtitle",
+                "config": {
+                    "pattern": true
+                },
                 "data": {
                     "title": "'The Sintesa' Jimbaran - Bali",
                     "subtitle": "Sintesa Hotels Group proudly to present the opening of ‘The Sintesa ‘ Jimbaran - Bali, a new concept of upscale hotel in Jimbaran and located on Bali’s southwestern coast is connecting between Jimbaran Bay and Clift (Bukit) of Jimbaran. The Sintesa Jimbaran Bali, designed for natural living with choices of the wellness and lifestyle activities and facilities to deliver ‘a best moment to stay‘.",
-                    "text": "The Sintesa Jimbaran – Bali is just 10 km south of the Bali Airport (Denpasar). 'The Sintesa' Jimbaran Bali is a short walk to many of Bali's most famous traditional beach - side Seafood Restaurants and is a close drive by hotel shuttle  to Cafés and Bars at Jimbaran Bay and Uluwatu. The Jimbaran region is also home to several world-class hotels and high end villas. Jimbaran is where we enjoy the majestic sunset emerged all year along the bay. Hotel’s location is conveniently positioned, is only 15 km away from vibrant area of Kuta and Nusa Dua. The Hotel is easily accessible to the main tourist quarter of Legian and Seminyak Beachs with its world- famous shopping and nightlife venues."
+                    "text": "<p>The Sintesa Jimbaran – Bali is just 10 km south of the Bali Airport (Denpasar). 'The Sintesa' Jimbaran Bali is a short walk to many of Bali's most famous traditional beach - side Seafood Restaurants and is a close drive by hotel shuttle  to Cafés and Bars at Jimbaran Bay and Uluwatu. The Jimbaran region is also home to several world-class hotels and high end villas. Jimbaran is where we enjoy the majestic sunset emerged all year along the bay. Hotel’s location is conveniently positioned, is only 15 km away from vibrant area of Kuta and Nusa Dua. The Hotel is easily accessible to the main tourist quarter of Legian and Seminyak Beachs with its world- famous shopping and nightlife venues.</p>"
                 }
             },
             {
@@ -201,92 +212,204 @@
                 "order": 6,
                 "status": 1,
                 "type": "text_image.two_alt",
-                "data": {
-                    "blocks": [
-                        {
-                            "title": "The BARber",
-                            "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
-                            "background": "generic/home-barber.jpg",
-                            "link": {
-                                "type": "page",
-                                "url": "barber"
-                            }
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
+                        "background": {
+                            "src": "generic/home-barber.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "title": "The Wellness Center",
-                            "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
-                            "background": "generic/home-wellness.jpg",
-                            "link": {
-                                "type": "page",
-                                "url": "the-wellness-center"
-                            }
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
                         }
-                    ]
-                }
+                    },
+                    {
+                        "title": "The Wellness Center",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                        "background": {
+                            "src": "generic/home-wellness.jpg",
+                            "alt": "Some text"
+                        },
+                        "link": {
+                            "type": "page",
+                            "url": "the-wellness-center"
+                        }
+                    }
+                ]
             },
             {
                 "order": 7,
                 "status": 1,
                 "type": "custom.accommodation_promo",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "promotion/advance_purchase.jpg",
-                            "title": "Book 7 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/best_rate.jpg",
-                            "title": "Book Directly Through our website for Best Rate",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/early_booking.jpg",
-                            "title": "Book 30 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/long_stay.jpg",
-                            "title": "Book for at least 5 nights",
-                            "promo_link": "http://booking.com/sintesa/promotion"
-                        }
-                    ]
-                }
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
             },
             {
                 "order": 8,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 9,
                 "status": 1,
                 "type": "sliders.testimony",
-                "data": {
-                    "title": "Here's what people say",
-                    "testimonies": [
-                        {
-                            "order": 1,
-                            "text": "This was one of the best hotels I have stayed in. The room was large, the beds very comfortable and the facilities great. And the spa - what a treat. Loved, loved, loved this place. Food was great and the staff were amazing. I would return there in a heartbeat",
-                            "source": "Salatchee, Australia - booking.com"
-                        },
-                        {
-                            "order": 2,
-                            "text": "The staff are amazing!!! They could not have done anymore for me to make my stay as great as it was. From the front desk you are greeted with big smiles and that was the same from all of the staff throughout my stay. The room service to the laundry service and everything in between was excellent.",
-                            "source": "Mark, United Kingdom - booking.com"
-                        },
-                        {
-                            "order": 3,
-                            "text": "This is a brand new Jimbaran Hotel and it's really good. The staff is superb and makes every effort to make the stay here comfortable.",
-                            "source": "jennifer637, Italy - TripAdvisor"
-                        },
-                        {
-                            "order": 4,
-                            "text": "Such a lovely atmosphere, quiet and charming with warm and caring staff. The lounge is perfectly designed for small and enjoyable fun or large parties.",
-                            "source": "Julia, Indonesia - TripAdvisor"
-                        }
-                    ]
-                }
+                "config": {
+                    "title": "Here's what people say"
+                },
+                "data": [
+                    {
+                        "order": 1,
+                        "text": "This was one of the best hotels I have stayed in. The room was large, the beds very comfortable and the facilities great. And the spa - what a treat. Loved, loved, loved this place. Food was great and the staff were amazing. I would return there in a heartbeat",
+                        "source": "Salatchee, Australia - booking.com"
+                    },
+                    {
+                        "order": 2,
+                        "text": "The staff are amazing!!! They could not have done anymore for me to make my stay as great as it was. From the front desk you are greeted with big smiles and that was the same from all of the staff throughout my stay. The room service to the laundry service and everything in between was excellent.",
+                        "source": "Mark, United Kingdom - booking.com"
+                    },
+                    {
+                        "order": 3,
+                        "text": "This is a brand new Jimbaran Hotel and it's really good. The staff is superb and makes every effort to make the stay here comfortable.",
+                        "source": "jennifer637, Italy - TripAdvisor"
+                    },
+                    {
+                        "order": 4,
+                        "text": "Such a lovely atmosphere, quiet and charming with warm and caring staff. The lounge is perfectly designed for small and enjoyable fun or large parties.",
+                        "source": "Julia, Indonesia - TripAdvisor"
+                    }
+                ]
             }
         ]
     },
@@ -310,6 +433,7 @@
                 },
                 "data": [
                     {
+                        "order": 1,
                         "title": "Destination",
                         "subtitle": "",
                         "banner": {
@@ -458,7 +582,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -625,35 +847,143 @@
                 "order": 6,
                 "status": 1,
                 "type": "custom.accommodation_promo",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "promotion/advance_purchase.jpg",
-                            "title": "Book 7 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/best_rate.jpg",
-                            "title": "Book Directly Through our website for Best Rate",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/early_booking.jpg",
-                            "title": "Book 30 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/long_stay.jpg",
-                            "title": "Book for at least 5 nights",
-                            "promo_link": "http://booking.com/sintesa/promotion"
-                        }
-                    ]
-                }
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
             },
             {
                 "order": 7,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             }
         ]
     },
@@ -742,7 +1072,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -852,7 +1280,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -962,7 +1488,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1072,7 +1696,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1182,7 +1904,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1292,7 +2112,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1413,7 +2331,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1471,7 +2487,7 @@
                 "type": "mixed.page_intro_alt",
                 "data": {
                     "columns": [
-                        "<h3>The BARber opens at 7am to 11pm on weekdays and 7am to 1 am on weekends with special live music performance on 8.30pm</h>",
+                        "<h3>The BARber opens at 7am to 11pm on weekdays and 7am to 1 am on weekends with special live music performance on 8.30pm</h3>",
                         "<p>Features and Facilities</p><ul><li>Band Venue</li><li>Grand Piano Jazz</li><li>DJ-Booth</li><li>BARber Shop</li><li>Billiard Area</li><li>Cigar Area</li></ul>",
                         "<p>Event To Host</p><ul><li>Music Events</li><li>Social Events</li><li>Cocktail Party</li><li>Pre and Post Wedding Parties</li><li>Private Party</li></ul><p>And more</p>"
                     ],
@@ -1517,43 +2533,160 @@
                 "order": 6,
                 "status": 1,
                 "type": "lightbox.gallery_column",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "barber/monday.jpg",
-                            "title": "Monday"
+                "data": [
+                    {
+                        "image": {
+                            "src": "barber/monday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "barber/tuesday.jpg",
-                            "title": "Tuesday"
+                        "title": "Monday"
+                    },
+                    {
+                        "image": {
+                            "src": "barber/tuesday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "barber/wednesday.jpg",
-                            "title": "Wednesday"
+                        "title": "Tuesday"
+                    },
+                    {
+                        "image": {
+                            "src": "barber/thursday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "barber/thursday.jpg",
-                            "title": "Thursday"
+                        "title": "Wednesday"
+                    },
+                    {
+                        "image": {
+                            "src": "barber/thursday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "barber/friday.jpg",
-                            "title": "Friday"
+                        "title": "Thursday"
+                    },
+                    {
+                        "image": {
+                            "src": "barber/friday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "barber/saturday.jpg",
-                            "title": "Saturday"
+                        "title": "Friday"
+                    },
+                    {
+                        "image": {
+                            "src": "barber/saturday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "barber/sunday.jpg",
-                            "title": "Sunday"
-                        }
-                    ]
-                }
+                        "title": "Saturday"
+                    },
+                    {
+                        "image": {
+                            "src": "barber/sunday.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Sunday"
+                    }
+                ]
             },
             {
                 "order": 7,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             }
         ]
     },
@@ -1652,7 +2785,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1789,7 +3020,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1901,7 +3230,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -1983,7 +3410,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -2057,7 +3582,105 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 5,
@@ -2148,7 +3771,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -2223,79 +3944,227 @@
                 "order": 4,
                 "status": 1,
                 "type": "lightbox.kids_gallery_column",
-                "data": {
-                    "gallery": [
-                        {
-                            "thumbnail": "kids/tutu_monday.jpg",
-                            "popup": "kids/popup_tutu_monday.jpg",
-                            "title": "Tutu Monday"
+                "data": [
+                    {
+                        "thumbnail": {
+                            "src": "kids/tutu_monday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "thumbnail": "kids/bubu_tuesday.jpg",
-                            "popup": "kids/popup_bubu_tuesday.jpg",
-                            "title": "Bubu Tuesday"
+                        "popup": {
+                            "src": "kids/popup_tutu_monday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "thumbnail": "kids/gaga_wednesday.jpg",
-                            "popup": "kids/popup_gaga_wednesday.jpg",
-                            "title": "Gaga Wednesday"
+                        "title": "Tutu Monday"
+                    },
+                    {
+                        "thumbnail": {
+                            "src": "kids/bubu_tuesday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "thumbnail": "kids/gukguk_thursday.jpg",
-                            "popup": "kids/popup_gukguk_thursday.jpg",
-                            "title": "Gukguk Thursday"
+                        "popup": {
+                            "src": "kids/popup_bubu_tuesday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "thumbnail": "kids/meomeo_friday.jpg",
-                            "popup": "kids/popup_meomeo_friday.jpg",
-                            "title": "Meomeo Friday"
+                        "title": "Bubu Tuesday"
+                    },
+                    {
+                        "thumbnail": {
+                            "src": "kids/gaga_wednesday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "thumbnail": "kids/momo_saturday.jpg",
-                            "popup": "kids/popup_momo_saturday.jpg",
-                            "title": "Momo Saturday"
+                        "popup": {
+                            "src": "kids/popup_gaga_wednesday.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "thumbnail": "kids/papa_sunday.jpg",
-                            "popup": "kids/popup_papa_sunday.jpg",
-                            "title": "Papa Sunday"
-                        }
-                    ]
-                }
+                        "title": "Gaga Wednesday"
+                    },
+                    {
+                        "thumbnail": {
+                            "src": "kids/gukguk_thursday.jpg",
+                            "alt": "Some text"
+                        },
+                        "popup": {
+                            "src": "kids/popup_gukguk_thursday.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Gukguk Thursday"
+                    },
+                    {
+                        "thumbnail": {
+                            "src": "kids/meomeo_friday.jpg",
+                            "alt": "Some text"
+                        },
+                        "popup": {
+                            "src": "kids/popup_meomeo_friday.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Meomeo Friday"
+                    },
+                    {
+                        "thumbnail": {
+                            "src": "kids/momo_saturday.jpg",
+                            "alt": "Some text"
+                        },
+                        "popup": {
+                            "src": "kids/popup_momo_saturday.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Momo Saturday"
+                    },
+                    {
+                        "thumbnail": {
+                            "src": "kids/papa_sunday.jpg",
+                            "alt": "Some text"
+                        },
+                        "popup": {
+                            "src": "kids/popup_papa_sunday.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Papa Sunday"
+                    }
+                ]
             },
             {
                 "order": 6,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 5,
                 "status": 1,
                 "type": "custom.accommodation_promo",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "promotion/advance_purchase.jpg",
-                            "title": "Book 7 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/best_rate.jpg",
-                            "title": "Book Directly Through our website for Best Rate",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/early_booking.jpg",
-                            "title": "Book 30 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/long_stay.jpg",
-                            "title": "Book for at least 5 nights",
-                            "promo_link": "http://booking.com/sintesa/promotion"
-                        }
-                    ]
-                }
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
             }
         ]
     },
@@ -2348,52 +4217,164 @@
                 "order": 4,
                 "status": 1,
                 "type": "lightbox.gallery_column",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "pool/swimming_building.jpg",
-                            "title": "Swimming Pool"
+                "data": [
+                    {
+                        "image": {
+                            "src": "pool/swimming_building.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "pool/swimming_ceiling.jpg",
-                            "title": "Swimming Pool"
-                        }
-                    ]
-                }
+                        "title": "Swimming Pool"
+                    },
+                    {
+                        "image": {
+                            "src": "pool/swimming_ceiling.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Swimming Pool"
+                    }
+                ]
             },
             {
                 "order": 6,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 5,
                 "status": 1,
                 "type": "custom.accommodation_promo",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "promotion/advance_purchase.jpg",
-                            "title": "Book 7 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/best_rate.jpg",
-                            "title": "Book Directly Through our website for Best Rate",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/early_booking.jpg",
-                            "title": "Book 30 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/long_stay.jpg",
-                            "title": "Book for at least 5 nights",
-                            "promo_link": "http://booking.com/sintesa/promotion"
-                        }
-                    ]
-                }
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
             }
         ]
     },
@@ -2514,7 +4495,105 @@
             {
                 "order": 7,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 8,
@@ -2605,7 +4684,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -2696,7 +4873,105 @@
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 6,
@@ -2756,8 +5031,10 @@
                 "order": 2,
                 "status": 0,
                 "type": "sliders.testimony",
+                "config": {
+                    "title": "Here's what people say"
+                },
                 "data": {
-                    "title": "Here's what people say",
                     "testimonies": [
                         {
                             "order": 1,
@@ -2775,7 +5052,7 @@
                             "source": "John K. Riley - Harvest Goods."
                         },
                         {
-                            "order": 3,
+                            "order": 4,
                             "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.",
                             "source": "John K. Riley - Harvest Goods."
                         }
@@ -2791,39 +5068,39 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "data": {
-                    "floorplan": "gallery-rooms/floorplan-superior.jpg",
-                    "gallery": [
-                        {
-                            "image": {
-                                "src": "gallery-rooms/superior1.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-superior1.jpg"
+                "config": {
+                    "floorplan": "gallery-rooms/floorplan-superior.jpg"
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "gallery-rooms/superior1.jpg",
+                            "alt": "Superior Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/generic2.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-generic2.jpg"
+                        "popup": "gallery-rooms/popup-superior1.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/generic2.jpg",
+                            "alt": "Superior Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/generic3.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-generic3.jpg"
+                        "popup": "gallery-rooms/popup-generic2.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/generic3.jpg",
+                            "alt": "Superior Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/generic4.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-generic4.jpg"
-                        }
-                    ]
-                }
+                        "popup": "gallery-rooms/popup-generic3.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/generic4.jpg",
+                            "alt": "Superior Room"
+                        },
+                        "popup": "gallery-rooms/popup-generic4.jpg"
+                    }
+                ]
             },
             {
                 "order": 5,
@@ -2853,10 +5130,13 @@
                 "order": 8,
                 "status": 1,
                 "type": "text.title_subtitle",
+                "config": {
+                    "pattern": true
+                },
                 "data": {
                     "title": "'The Sintesa' Jimbaran - Bali",
                     "subtitle": "Sintesa Hotels Group proudly to present the opening of ‘The Sintesa ‘ Jimbaran - Bali, a new concept of 5 star resort hotel in Jimbaran and locate on Bali’s southwestern coast is connecting between Jimbaran Bay and Clift (Bukit) of Jimbaran. The Sintesa Jimbaran Bali, designed for natural living with choices of the wellness and lifestyle activities and facilities to deliver ‘a best moment to stay‘.",
-                    "text": "The Sintesa Jimbaran – Bali is just 10 km south of the Bali Airport (Denpasar). 'The Sintesa' Jimbaran Bali is a short walk to many of Bali's most famous traditional beach - side Seafood Restaurants and is a close drive by hotel shuttle  to Cafés and Bars at Jimbaran Bay and Uluwatu. The Jimbaran region is also home to several world-class hotels and high end villas. Jimbaran is where we enjoy the majestic sunset emerged all year along the bay. Hotel’s location is conveniently positioned, is only 15 km away from vibrant area of Kuta and Nusa Dua. The Hotel is easily accessible to the main tourist quarter of Legian and Seminyak Beachs with its world- famous shopping and nightlife venues."
+                    "text": "<p>The Sintesa Jimbaran – Bali is just 10 km south of the Bali Airport (Denpasar). 'The Sintesa' Jimbaran Bali is a short walk to many of Bali's most famous traditional beach - side Seafood Restaurants and is a close drive by hotel shuttle  to Cafés and Bars at Jimbaran Bay and Uluwatu. The Jimbaran region is also home to several world-class hotels and high end villas. Jimbaran is where we enjoy the majestic sunset emerged all year along the bay. Hotel’s location is conveniently positioned, is only 15 km away from vibrant area of Kuta and Nusa Dua. The Hotel is easily accessible to the main tourist quarter of Legian and Seminyak Beachs with its world- famous shopping and nightlife venues.</p>"
                 }
             },
             {
@@ -2915,33 +5195,129 @@
                 "order": 12,
                 "status": 1,
                 "type": "text_image.two_alt",
-                "data": {
-                    "blocks": [
-                        {
-                            "title": "The BARber",
-                            "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
-                            "background": "generic/home-barber.jpg",
-                            "link": {
-                                "type": "page",
-                                "url": "barber"
-                            }
-                        },
-                        {
-                            "title": "The Wellness Center",
-                            "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
-                            "background": "generic/home-wellness.jpg",
-                            "link": {
-                                "type": "page",
-                                "url": "the-wellness-center"
-                            }
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
+                        "background": "generic/home-barber.jpg",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
                         }
-                    ]
-                }
+                    },
+                    {
+                        "title": "The Wellness Center",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
+                        "background": "generic/home-wellness.jpg",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wellness-center"
+                        }
+                    }
+                ]
             },
             {
                 "order": 13,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 14,
@@ -3018,38 +5394,36 @@
                 "order": 16,
                 "status": 1,
                 "type": "lightbox.gallery_column",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "barber/monday.jpg",
-                            "title": "Monday"
-                        },
-                        {
-                            "image": "barber/tuesday.jpg",
-                            "title": "Tuesday"
-                        },
-                        {
-                            "image": "barber/wednesday.jpg",
-                            "title": "Wednesday"
-                        },
-                        {
-                            "image": "barber/thursday.jpg",
-                            "title": "Thursday"
-                        },
-                        {
-                            "image": "barber/friday.jpg",
-                            "title": "Friday"
-                        },
-                        {
-                            "image": "barber/saturday.jpg",
-                            "title": "Saturday"
-                        },
-                        {
-                            "image": "barber/sunday.jpg",
-                            "title": "Sunday"
-                        }
-                    ]
-                }
+                "data": [
+                    {
+                        "image": "barber/monday.jpg",
+                        "title": "Monday"
+                    },
+                    {
+                        "image": "barber/tuesday.jpg",
+                        "title": "Tuesday"
+                    },
+                    {
+                        "image": "barber/wednesday.jpg",
+                        "title": "Wednesday"
+                    },
+                    {
+                        "image": "barber/thursday.jpg",
+                        "title": "Thursday"
+                    },
+                    {
+                        "image": "barber/friday.jpg",
+                        "title": "Friday"
+                    },
+                    {
+                        "image": "barber/saturday.jpg",
+                        "title": "Saturday"
+                    },
+                    {
+                        "image": "barber/sunday.jpg",
+                        "title": "Sunday"
+                    }
+                ]
             },
             {
                 "order": 17,
@@ -3285,77 +5659,209 @@
                 "order": 3,
                 "status": 1,
                 "type": "lightbox.gallery_column",
-                "data": {
-                    "title": "Hotel Gallery",
-                    "gallery": [
-                        {
-                            "image": "gallery-rooms/generic3.jpg",
-                            "title": "Accommodation"
+                "config": {
+                    "title": "Hotel Gallery"
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "gallery-rooms/generic3.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "gallery-rooms/popup-executive-suite1.jpg",
-                            "title": "Executive Suite"
+                        "title": "Accommodation"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/popup-executive-suite1.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "generic/pic2.jpg",
-                            "title": "Swimming Pool"
+                        "title": "Executive Suite"
+                    },
+                    {
+                        "image": {
+                            "src": "generic/pic2.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "gallery-rooms/presidential-suite1.jpg",
-                            "title": "Presidential Suite"
+                        "title": "Swimming Pool"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/presidential-suite1.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "page-banners/wedding.jpg",
-                            "title": "Wedding"
+                        "title": "Presidential Suite"
+                    },
+                    {
+                        "image": {
+                            "src": "page-banners/wedding.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "slider/tora-sudiro.jpg",
-                            "title": "The BARber"
+                        "title": "Wedding"
+                    },
+                    {
+                        "image": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "slider/sunken.jpg",
-                            "title": "Sunken Lounge"
+                        "title": "The BARber"
+                    },
+                    {
+                        "image": {
+                            "src": "slider/sunken.jpg",
+                            "alt": "Some text"
                         },
-                        {
-                            "image": "wellness/wellness4.jpg",
-                            "title": "Wellness SPA"
-                        }
-                    ]
-                }
+                        "title": "Sunken Lounge"
+                    },
+                    {
+                        "image": {
+                            "src": "wellness/wellness4.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Wellness SPA"
+                    }
+                ]
             },
             {
                 "order": 5,
                 "status": 1,
-                "type": "mixed.featurette"
+                "type": "mixed.featurette",
+                "config": {
+                    "header": {
+                        "title": "Discover",
+                        "description": "The Sintesa Jimbaran design embody the finest attributes of contemporary Balinese and Javanese design with modern life style concept and ultimately anticipate the needs of all our local and international travelers."
+                    }
+                },
+                "data": [
+                    {
+                        "title": "The BARber",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "barber"
+                        },
+                        "image": {
+                            "src": "generic/facility1.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Rooftop",
+                        "subtitle": "Coming Soon",
+                        "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran. Upon entering the hotel’s classic 1930s styled men’s Barbershop",
+                        "link": {
+                            "type": "page",
+                            "url": "rooftop"
+                        },
+                        "image": {
+                            "src": "generic/facility2.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Spa Treatment",
+                        "subtitle": "",
+                        "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic. Designed and fully facilitated by the purest natural products, enter a world of harmony",
+                        "link": {
+                            "type": "page",
+                            "url": "spa-treatment"
+                        },
+                        "image": {
+                            "src": "generic/facility3.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Healthy Corner",
+                        "subtitle": "",
+                        "description": "To accomplish your healthy lifestyle we provide a healthy juice bar near the pool. If you really want to kick-start your health resolutions this year, making fresh juice",
+                        "link": {
+                            "type": "page",
+                            "url": "healthy-corner"
+                        },
+                        "image": {
+                            "src": "generic/facility4.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "Angin Angin",
+                        "subtitle": "",
+                        "description": "The exotic aromas, the stunning views... The Coffee Shop overlooks colorful gardens a perfect setting for family and friends to eat, or and just chill out. Sipping",
+                        "link": {
+                            "type": "page",
+                            "url": "angin-angin"
+                        },
+                        "image": {
+                            "src": "generic/facility5.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Wedding",
+                        "subtitle": "",
+                        "description": "Exchange vows here... a dream venue for any Wedding Couple. The Sintesa Jimbaran Rooftop overlooks & Jimbaran Bay lush tropical fields, and the quaint architectural landscape of Bali.",
+                        "link": {
+                            "type": "page",
+                            "url": "the-wedding"
+                        },
+                        "image": {
+                            "src": "generic/facility6.jpg",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "title": "The Gym",
+                        "subtitle": "",
+                        "description": "Fancy a refreshing workout instead? Your daily fitness regimes can be maintained at our state-of-the-art Fitness Centre, with the latest Gym equipment, featuring treadmills, cross trainers, rowing machines",
+                        "link": {
+                            "type": "page",
+                            "url": "the-gym"
+                        },
+                        "image": {
+                            "src": "generic/facility7.jpg",
+                            "alt": ""
+                        }
+                    }
+                ]
             },
             {
                 "order": 4,
                 "status": 1,
                 "type": "custom.accommodation_promo",
-                "data": {
-                    "gallery": [
-                        {
-                            "image": "promotion/advance_purchase.jpg",
-                            "title": "Book 7 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/best_rate.jpg",
-                            "title": "Book Directly Through our website for Best Rate",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/early_booking.jpg",
-                            "title": "Book 30 days in advance",
-                            "promo_link": "http://booking.com/sintesa/promotion"
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
                         },
-                        {
-                            "image": "promotion/long_stay.jpg",
-                            "title": "Book for at least 5 nights",
-                            "promo_link": "http://booking.com/sintesa/promotion"
-                        }
-                    ]
-                }
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
             }
         ]
     }

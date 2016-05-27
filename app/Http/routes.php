@@ -22,6 +22,8 @@ if (env('APP_DEBUG')) {
     ]);
 }
 
+Route::get('listUrls', 'PageController@listUrls');
+
 Route::get('modules', 'PaperController@indexModules');
 Route::get('analytics', 'AnalyticsController@test');
 
