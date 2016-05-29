@@ -698,7 +698,6 @@
                         },
                         "title": "The Sintesa Group"
                     }
-
                 ]
             }
         ]
@@ -1038,39 +1037,42 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "data": {
-                    "floorplan": "gallery-rooms/floorplan-superior.jpg",
-                    "gallery": [
-                        {
-                            "image": {
-                                "src": "gallery-rooms/superior-new-1.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-superior-new-1.jpg"
+                "cofnig": {
+                    "floorplan": {
+                        "alt": "",
+                        "src": "gallery-rooms/floorplan-superior.jpg"
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "gallery-rooms/superior-new-1.jpg",
+                            "alt": "Superior Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/superior-new-2.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-superior-new-2.jpg"
+                        "popup": "gallery-rooms/popup-superior-new-1.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/superior-new-2.jpg",
+                            "alt": "Superior Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/superior-new-3.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-superior-new-3.jpg"
+                        "popup": "gallery-rooms/popup-superior-new-2.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/superior-new-3.jpg",
+                            "alt": "Superior Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/superior-new-4.jpg",
-                                "alt": "Superior Room"
-                            },
-                            "popup": "gallery-rooms/popup-superior-new-4.jpg"
-                        }
-                    ]
-                }
+                        "popup": "gallery-rooms/popup-superior-new-3.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/superior-new-4.jpg",
+                            "alt": "Superior Room"
+                        },
+                        "popup": "gallery-rooms/popup-superior-new-4.jpg"
+                    }
+                ]
             },
             {
                 "order": 5,
@@ -1309,39 +1311,42 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "data": {
-                    "floorplan": "gallery-rooms/floorplan-deluxe.jpg",
-                    "gallery": [
-                        {
-                            "image": {
-                                "src": "gallery-rooms/deluxe-new-1.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-deluxe-new-1.jpg"
+                "cofnig": {
+                    "floorplan": {
+                        "alt": "",
+                        "src": "gallery-rooms/floorplan-deluxe.jpg"
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "gallery-rooms/deluxe-new-1.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/deluxe-new-2.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-deluxe-new-2.jpg"
+                        "popup": "gallery-rooms/popup-deluxe-new-1.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/deluxe-new-2.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/deluxe-new-3.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-deluxe-new-3.jpg"
+                        "popup": "gallery-rooms/popup-deluxe-new-2.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/deluxe-new-3.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/generic4.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-generic4.jpg"
-                        }
-                    ]
-                }
+                        "popup": "gallery-rooms/popup-deluxe-new-3.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/generic4.jpg",
+                            "alt": "Deluxe Room"
+                        },
+                        "popup": "gallery-rooms/popup-generic4.jpg"
+                    }
+                ]
             },
             {
                 "order": 5,
@@ -1580,39 +1585,42 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "data": {
-                    "floorplan": "gallery-rooms/floorplan-junior-suite.jpg",
-                    "gallery": [
-                        {
-                            "image": {
-                                "src": "gallery-rooms/junior-new-1.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-junior-new-1.jpg"
+                "cofnig": {
+                    "floorplan": {
+                        "alt": "",
+                        "src": "gallery-rooms/floorplan-junior-suite.jpg"
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "gallery-rooms/junior-new-1.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/junior-new-2.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-junior-new-2.jpg"
+                        "popup": "gallery-rooms/popup-junior-new-1.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/junior-new-2.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/generic3.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-generic3.jpg"
+                        "popup": "gallery-rooms/popup-junior-new-2.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/generic3.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/generic4.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-generic4.jpg"
-                        }
-                    ]
-                }
+                        "popup": "gallery-rooms/popup-generic3.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/generic4.jpg",
+                            "alt": "Deluxe Room"
+                        },
+                        "popup": "gallery-rooms/popup-generic4.jpg"
+                    }
+                ]
             },
             {
                 "order": 5,
@@ -1851,39 +1859,42 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "data": {
-                    "floorplan": "gallery-rooms/floorplan-executive-suite.jpg",
-                    "gallery": [
-                        {
-                            "image": {
-                                "src": "gallery-rooms/executive-suite1.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-executive-suite1.jpg"
+                "cofnig": {
+                    "floorplan": {
+                        "alt": "",
+                        "src": "gallery-rooms/floorplan-executive-suite.jpg"
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "gallery-rooms/executive-suite1.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/executive-suite2.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-executive-suite2.jpg"
+                        "popup": "gallery-rooms/popup-executive-suite1.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/executive-suite2.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/executive-suite3.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-executive-suite3.jpg"
+                        "popup": "gallery-rooms/popup-executive-suite2.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/executive-suite3.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/executive-suite4.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-executive-suite4.jpg"
-                        }
-                    ]
-                }
+                        "popup": "gallery-rooms/popup-executive-suite3.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/executive-suite4.jpg",
+                            "alt": "Deluxe Room"
+                        },
+                        "popup": "gallery-rooms/popup-executive-suite4.jpg"
+                    }
+                ]
             },
             {
                 "order": 5,
@@ -2122,39 +2133,42 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "data": {
-                    "floorplan": "gallery-rooms/floorplan-sintesa-suite.jpg",
-                    "gallery": [
-                        {
-                            "image": {
-                                "src": "gallery-rooms/sintesa-suite1.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-sintesa-suite1.jpg"
+                "config": {
+                    "floorplan": {
+                        "alt": "",
+                        "src": "gallery-rooms/floorplan-sintesa-suite.jpg"
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "gallery-rooms/sintesa-suite1.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/sintesa-suite2.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-sintesa-suite2.jpg"
+                        "popup": "gallery-rooms/popup-sintesa-suite1.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/sintesa-suite2.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/sintesa-suite3.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-sintesa-suite3.jpg"
+                        "popup": "gallery-rooms/popup-sintesa-suite2.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/sintesa-suite3.jpg",
+                            "alt": "Deluxe Room"
                         },
-                        {
-                            "image": {
-                                "src": "gallery-rooms/sintesa-suite4.jpg",
-                                "alt": "Deluxe Room"
-                            },
-                            "popup": "gallery-rooms/popup-sintesa-suite4.jpg"
-                        }
-                    ]
-                }
+                        "popup": "gallery-rooms/popup-sintesa-suite3.jpg"
+                    },
+                    {
+                        "image": {
+                            "src": "gallery-rooms/sintesa-suite4.jpg",
+                            "alt": "Deluxe Room"
+                        },
+                        "popup": "gallery-rooms/popup-sintesa-suite4.jpg"
+                    }
+                ]
             },
             {
                 "order": 5,
@@ -2393,9 +2407,13 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "data": {
-                    "floorplan": "gallery-rooms/floorplan-presidential-suite.jpg",
-                    "gallery": [
+                "config": {
+                    "floorplan": {
+                        "alt": "",
+                        "src": "gallery-rooms/floorplan-superior.jpg"
+                    }
+                },
+                "data": [
                         {
                             "image": {
                                 "src": "gallery-rooms/presidential-suite1.jpg",
@@ -2425,7 +2443,6 @@
                             "popup": "gallery-rooms/popup-generic4.jpg"
                         }
                     ]
-                }
             },
             {
                 "order": 5,
@@ -5635,7 +5652,10 @@
                 "status": 1,
                 "type": "custom.rooms_gallery",
                 "config": {
-                    "floorplan": "gallery-rooms/floorplan-superior.jpg"
+                    "floorplan": {
+                        "alt": "",
+                        "src": "gallery-rooms/floorplan-superior.jpg"
+                    }
                 },
                 "data": [
                     {
