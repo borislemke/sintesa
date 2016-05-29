@@ -1,5 +1,5 @@
 <!-- module: custom.meeting_package -->
-<div class="section-block no-margins no-padding-top bkg-white">
+<div class="section-block no-margins bkg-white">
     <div class="row">
         <div class="column width-10 offset-1">
 

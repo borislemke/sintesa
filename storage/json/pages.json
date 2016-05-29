@@ -4647,23 +4647,6 @@
             },
             {
                 "order": 3,
-                "status": 0,
-                "type": "parallax.form_button",
-                "data": {
-                    "title": "Meeting Package Proposal Request",
-                    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                    "banner": "page-banners/meeting-proposal.jpg",
-                    "button": {
-                        "text": "Inquire Now",
-                        "link": {
-                            "type": "page",
-                            "url": "#"
-                        }
-                    }
-                }
-            },
-            {
-                "order": 4,
                 "status": 1,
                 "type": "mixed.three_column_header",
                 "data": {
@@ -4712,20 +4695,29 @@
                 }
             },
             {
-                "order": 5,
+                "order": 4,
                 "status": 1,
                 "type": "custom.meeting_package"
             },
             {
-                "order": 6,
+                "order": 5,
                 "status": 1,
-                "type": "parallax.image",
+                "type": "parallax.form_button",
                 "data": {
-                    "background": "wellness/wellness4.jpg"
+                    "title": "Meeting Package Proposal Request",
+                    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                    "banner": "page-banners/meeting-proposal.jpg",
+                    "button": {
+                        "text": "Inquire Now",
+                        "link": {
+                            "type": "page",
+                            "url": "#"
+                        }
+                    }
                 }
             },
             {
-                "order": 7,
+                "order": 6,
                 "status": 1,
                 "type": "mixed.featurette",
                 "config": {
@@ -4828,7 +4820,7 @@
                 ]
             },
             {
-                "order": 8,
+                "order": 7,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
