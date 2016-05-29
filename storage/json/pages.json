@@ -666,20 +666,39 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
+
                 ]
             }
         ]
@@ -1156,19 +1175,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -1364,19 +1401,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -1572,19 +1627,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -1780,19 +1853,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -1988,19 +2079,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -2196,19 +2305,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -2415,19 +2542,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -2869,19 +3014,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -3104,19 +3267,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -3314,19 +3495,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -3494,19 +3693,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -3666,19 +3883,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -3855,19 +4090,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -4579,19 +4832,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -4768,19 +5039,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -4957,19 +5246,37 @@
                 "type": "parallax.videos",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }
@@ -5571,11 +5878,42 @@
             {
                 "order": 21,
                 "status": 1,
-                "type": "parallax.video",
-                "data": {
-                    "background": "generic/bgvid.jpg",
-                    "video": "https://www.youtube.com/embed/aCn6hjYjLQw"
-                }
+                "type": "parallax.videos",
+                "data": [
+                    {
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
+                    },
+                    {
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
+                    },
+                    {
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
+                    }
+                ]
             },
             {
                 "order": 22,
@@ -5583,19 +5921,37 @@
                 "type": "mixed.page_intro_alt",
                 "data": [
                     {
-                        "background": "slider/slide-1.jpg",
-                        "video": "https://www.youtube.com/embed/dcD-I-_Sm1I",
-                        "subtitle": "The Sintesa Hotel"
+                        "background": {
+                            "src": "slider/slide-1.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
+                        },
+                        "title": "The Sintesa Hotel"
                     },
                     {
-                        "background": "slider/tora-sudiro.jpg",
-                        "video": "https://www.youtube.com/embed/3zERGVOrWXg",
-                        "subtitle": "The BARber"
+                        "background": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "background": "slider/event.jpg",
-                        "video": "https://www.youtube.com/embed/STrwX2IomJE",
-                        "subtitle": "The Sintesa Group"
+                        "background": {
+                            "src": "slider/event.jpg",
+                            "alt": ""
+                        },
+                        "video": {
+                            "type": "external",
+                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
+                        },
+                        "title": "The Sintesa Group"
                     }
                 ]
             }

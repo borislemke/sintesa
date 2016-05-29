@@ -31,12 +31,14 @@
         <div class="tmp-content-inner left">
             {{--<div class="row">--}}
                 @foreach($module->data as $video)
+                    <?php $link = $video->video->type != "external" ? route($video->video->type, ['url' => $video->video->url]) : $video->video->url ?>
                     <div class="column width-4 center video-item">
-                        <div class="video-item-background" style="background-image: url('/media/{{ $video->background }}')">
-                            <a href="{{ $video->video }}"
-                               class="lightbox-link icon-play icon-circled bkg-white bkg-hover-gold color-black color-hover-white no-margin-bottom left"></a>
+                        <div class="video-item-background" style="background-image: url('/media/{{ $video->background->src }}')">
+                            <a href="{{ $link }}"
+                               class="lightbox-link icon-play icon-circled bkg-white bkg-hover-gold color-black color-hover-white no-margin-bottom left"
+                               alt="{{ $video->background->alt }}"></a>
                         </div>
-                        <p class="mt-10">{{ $video->subtitle }}</p>
+                        <p class="mt-10">{{ $video->title }}</p>
                     </div>
                 @endforeach
             {{--</div>--}}
