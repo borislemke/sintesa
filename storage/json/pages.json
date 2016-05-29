@@ -3940,6 +3940,7 @@
                 },
                 "data": [
                     {
+                        "order": 1,
                         "title": "Fitness Studio",
                         "subtitle": "",
                         "banner": {
@@ -3967,7 +3968,7 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "parallax.call_to_action",
+                "type": "parallax.form_button",
                 "data": {
                     "title": "Join our Gym Membership",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
@@ -4647,7 +4648,7 @@
             {
                 "order": 3,
                 "status": 0,
-                "type": "parallax.call_to_action",
+                "type": "parallax.form_button",
                 "data": {
                     "title": "Meeting Package Proposal Request",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
@@ -4916,7 +4917,7 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "parallax.call_to_action",
+                "type": "parallax.form_button",
                 "data": {
                     "title": "Event Proposal Request",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
@@ -5123,7 +5124,7 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "parallax.call_to_action",
+                "type": "parallax.form_button",
                 "data": {
                     "title": "Wedding Package Proposal Request",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
