@@ -26,8 +26,8 @@
                                     <div class="clear"></div>
                                     @endif
 
-                                    @if(isset($slide->button))
-                                        <?php $link = $slide->button->link->type == "internal" ? route('page', ['url' => $slide->button->link->url]) : $slide->button->link->url ?>
+                                    @if(isset($slide->button) AND $slide->button->link->type != '')
+                                        <?php $link = $slide->button->link->type != "external" ? route($slide->button->link->type, ['url' => $slide->button->link->url]) : $slide->button->link->url ?>
                                         <a href="{{ $link }}"
                                            class="tms-caption button text-uppercase border-white bkg-hover-gold color-white color-hover-white mb-mobile-30"
                                            data-no-scale

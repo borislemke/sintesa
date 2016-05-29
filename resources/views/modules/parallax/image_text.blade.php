@@ -1,5 +1,5 @@
 <!-- module: parallax.image_text -->
-<div class="section-block parallax fixed-height bkg-black" data-src="media/{{ $module->data->background }}">
+<div class="section-block parallax fixed-height bkg-black" data-src="media/{{ $module->data->background->src }}">
     <div class="tmp-content">
         <div class="tmp-content-inner left">
             <div class="row">
@@ -8,7 +8,7 @@
                     <p class=" color-white">
                         {{ $module->data->description }}
                     </p>
-                    <?php $link = $module->data->button->link->type == "internal" ? route('page', ['url' => $module->data->button->link->url]) : $module->data->button->link->url ?>
+                    <?php $link = $module->data->button->link->type != "external" ? route($module->data->button->link->type, ['url' => $module->data->button->link->url]) : $module->data->button->link->url ?>
                     <a href="{{ $link }}"
                        class="button text-uppercase border-white bkg-hover-gold color-white color-hover-white mb-mobile-30 mt-30">{{ $module->data->button->text }}</a>
                 </div>

@@ -162,43 +162,15 @@
             },
             {
                 "order": 4,
-                "status": 0,
-                "type": "text_image.three",
-                "data": [
-                    {
-                        "title": "Nyepi Package",
-                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
-                        "image": {
-                            "src": "generic/offer1.jpg",
-                            "alt": "Some image alt"
-                        }
-                    },
-                    {
-                        "title": "Flight &amp; Hotel Deals",
-                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
-                        "image": {
-                            "src": "generic/offer2.jpg",
-                            "alt": "Some image alt"
-                        }
-                    },
-                    {
-                        "title": "Chinese New Year Package",
-                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
-                        "image": {
-                            "src": "generic/offer3.jpg",
-                            "alt": "Some image alt"
-                        }
-                    }
-                ]
-            },
-            {
-                "order": 5,
                 "status": 1,
                 "type": "parallax.image_text",
                 "data": {
                     "title": "Destination: Jimbaran",
                     "description": "Jimbaran Bay is one of iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay. Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fishermen are coming into shore with last night’s catch.",
-                    "background": "generic/jimbaran.jpg",
+                    "background": {
+                        "src": "generic/jimbaran.jpg",
+                        "alt": "some text"
+                    },
                     "button": {
                         "text": "Explore Jimbaran",
                         "link": {
@@ -209,7 +181,7 @@
                 }
             },
             {
-                "order": 6,
+                "order": 5,
                 "status": 1,
                 "type": "text_image.two_alt",
                 "data": [
@@ -240,7 +212,7 @@
                 ]
             },
             {
-                "order": 7,
+                "order": 6,
                 "status": 1,
                 "type": "custom.accommodation_promo",
                 "data": [
@@ -279,7 +251,7 @@
                 ]
             },
             {
-                "order": 8,
+                "order": 7,
                 "status": 1,
                 "type": "mixed.featurette",
                 "config": {
@@ -382,7 +354,7 @@
                 ]
             },
             {
-                "order": 9,
+                "order": 8,
                 "status": 1,
                 "type": "sliders.testimony",
                 "config": {
@@ -5552,7 +5524,10 @@
                 "data": {
                     "title": "Destination: Jimbaran",
                     "description": "Jimbaran Bay is one of iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay. Brightly painted traditional Jukung fishing boats dot the white sand in the early morning, the fishermen are coming into shore with last night’s catch.",
-                    "background": "generic/jimbaran.jpg",
+                    "background": {
+                        "src": "generic/jimbaran.jpg",
+                        "alt": "some text"
+                    },
                     "button": {
                         "text": "Explore Jimbaran",
                         "link": {
