@@ -5,7 +5,7 @@
             <div id="grid-1" class="row content-grid-3 masonry-grid fade-in-progressively">
 
                 <?php $i = 0 ?>
-                @foreach($module->data->gallery as $item)
+                @foreach($module->data as $item)
                     <div class="grid-item{{ $i == 0 ? ' grid-sizer' : ($i == 1 ? ' portrait' : '') }}">
                         <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
                              data-hover-bkg-color="#ffffff" data-hover-bkg-opacity=".8" style="padding:2px">
@@ -24,7 +24,7 @@
                     <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="500"
                          data-hover-bkg-color="#a39161" data-hover-bkg-opacity=".8" style="padding:2px">
                         <a class="overlay-link lightbox-link" data-group="gallery-1"
-                           data-caption="Room floor plan" href="media/{{ $module->data->floorplan }}">
+                           data-caption="Room floor plan" href="media/{{ $module->config->floorplan->src }}">
                             <img src="media/gallery-rooms/floorplan.jpg" alt="Room floor plan"/>
                             <span class="overlay-info">
                                 <span>

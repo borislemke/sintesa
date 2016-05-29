@@ -1037,7 +1037,7 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "cofnig": {
+                "config": {
                     "floorplan": {
                         "alt": "",
                         "src": "gallery-rooms/floorplan-superior.jpg"
@@ -1311,7 +1311,7 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "cofnig": {
+                "config": {
                     "floorplan": {
                         "alt": "",
                         "src": "gallery-rooms/floorplan-deluxe.jpg"
@@ -1585,7 +1585,7 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "cofnig": {
+                "config": {
                     "floorplan": {
                         "alt": "",
                         "src": "gallery-rooms/floorplan-junior-suite.jpg"
@@ -1859,7 +1859,7 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.rooms_gallery",
-                "cofnig": {
+                "config": {
                     "floorplan": {
                         "alt": "",
                         "src": "gallery-rooms/floorplan-executive-suite.jpg"
