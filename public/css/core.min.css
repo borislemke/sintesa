@@ -6350,6 +6350,7 @@ a {
 .tms-content-inner .tms-caption {
     position: static
 }
+
 .tms-content-inner.left {
     text-align: left
 }
@@ -6385,6 +6386,15 @@ a {
     }
     .tms-caption.hide-on-mobile {
         display: none !important
+    }
+    .tms-content-inner h1.tms-caption.title-medium {
+        font-size: 3rem;
+    }
+    .tms-content-inner p.tms-caption {
+        display:none !important;
+    }
+    .tms-content-inner.v-align-bottom, .tms-content-inner.v-align-bottom-on-mobile {
+        padding-bottom: 4rem !important;
     }
 }
 .tms-arrow-nav {

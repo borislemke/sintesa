@@ -412,8 +412,8 @@
                 "data": [
                     {
                         "order": 1,
-                        "title": "Destination",
-                        "subtitle": "",
+                        "title": "Destination: Jimbaran",
+                        "subtitle": "Jimbaran Bay is one of iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay.",
                         "banner": {
                             "src": "page-banners/destination.jpg",
                             "alt": "Some alt text"
@@ -725,7 +725,7 @@
                 "data": [
                     {
                         "title": "Accommodation",
-                        "subtitle": "",
+                        "subtitle": "The Sintesa Jimbaran Bali, 206 beautiful appointed guestrooms and suites are available in unique tiers of accommodation which include Superior Room, Deluxe Room, Family Rooms and our Suites Collection.",
                         "banner": {
                             "src": "slider/accommodation.jpg",
                             "alt": "Some alt text"
@@ -844,6 +844,12 @@
                 "order": 6,
                 "status": 1,
                 "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
                 "data": [
                     {
                         "image": {
@@ -1069,6 +1075,51 @@
             {
                 "order": 5,
                 "status": 1,
+                "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "status": 1,
                 "type": "mixed.featurette",
                 "config": {
                     "header": {
@@ -1170,7 +1221,7 @@
                 ]
             },
             {
-                "order": 6,
+                "order": 7,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -1295,6 +1346,51 @@
             {
                 "order": 5,
                 "status": 1,
+                "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "status": 1,
                 "type": "mixed.featurette",
                 "config": {
                     "header": {
@@ -1396,7 +1492,7 @@
                 ]
             },
             {
-                "order": 6,
+                "order": 7,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -1521,6 +1617,51 @@
             {
                 "order": 5,
                 "status": 1,
+                "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "status": 1,
                 "type": "mixed.featurette",
                 "config": {
                     "header": {
@@ -1622,7 +1763,7 @@
                 ]
             },
             {
-                "order": 6,
+                "order": 7,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -1747,6 +1888,51 @@
             {
                 "order": 5,
                 "status": 1,
+                "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "status": 1,
                 "type": "mixed.featurette",
                 "config": {
                     "header": {
@@ -1848,7 +2034,7 @@
                 ]
             },
             {
-                "order": 6,
+                "order": 7,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -1973,6 +2159,51 @@
             {
                 "order": 5,
                 "status": 1,
+                "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "status": 1,
                 "type": "mixed.featurette",
                 "config": {
                     "header": {
@@ -2074,7 +2305,7 @@
                 ]
             },
             {
-                "order": 6,
+                "order": 7,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -2199,6 +2430,51 @@
             {
                 "order": 5,
                 "status": 1,
+                "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
+                "data": [
+                    {
+                        "image": {
+                            "src": "promotion/advance_purchase.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 7 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/best_rate.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book Directly Through our website for Best Rate",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/early_booking.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book 30 days in advance",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    },
+                    {
+                        "image": {
+                            "src": "promotion/long_stay.jpg",
+                            "alt": "some text"
+                        },
+                        "title": "Book for at least 5 nights",
+                        "promo_link": "http://booking.com/sintesa/promotion"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "status": 1,
                 "type": "mixed.featurette",
                 "config": {
                     "header": {
@@ -2300,7 +2576,7 @@
                 ]
             },
             {
-                "order": 6,
+                "order": 7,
                 "status": 1,
                 "type": "parallax.videos",
                 "data": [
@@ -4363,6 +4639,12 @@
                 "order": 5,
                 "status": 1,
                 "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
                 "data": [
                     {
                         "image": {
@@ -4573,6 +4855,12 @@
                 "order": 5,
                 "status": 1,
                 "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
                 "data": [
                     {
                         "image": {
@@ -6158,6 +6446,12 @@
                 "order": 4,
                 "status": 1,
                 "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
                 "data": [
                     {
                         "image": {

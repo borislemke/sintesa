@@ -12,8 +12,9 @@
 
     }
     .three-videos > .tmp-content > .tmp-content-inner > .video-item {
-        height: 100%;
+        height: 200px;
         padding: 16px 8px;
+        margin-bottom:20px;
     }
     .three-videos > .tmp-content > .tmp-content-inner > .video-item > .video-item-background {
         height: 100%;
@@ -26,7 +27,7 @@
     }
     .three-videos > .tmp-content > .tmp-content-inner > .video-item > .video-item-background > a {}
 </style>
-<div class="section-block fixed-height three-videos bkg-white" style="height: 240px">
+<div class="section-block three-videos bkg-white">
     <div class="tmp-content">
         <div class="tmp-content-inner left">
             {{--<div class="row">--}}

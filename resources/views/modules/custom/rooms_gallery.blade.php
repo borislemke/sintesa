@@ -1,5 +1,5 @@
 <!-- module: custom.rooms_gallery -->
-<div class="section-block portfolio-5 no-margins no-padding-top" id="module__custom-rooms-gallery">
+<div class="section-block portfolio-5 no-margins bkg-grey-ultralight" id="module__custom-rooms-gallery">
     <div class="row">
         <div class="column width-10 offset-1">
             <div id="grid-1" class="row content-grid-3 masonry-grid fade-in-progressively">

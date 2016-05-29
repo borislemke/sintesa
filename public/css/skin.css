@@ -728,6 +728,12 @@ body,
     height: calc(100vh - 228px) !important;
   }
 }
+@media only screen and (max-width: 960px){
+	
+  .window-height.include-booking {
+    height: 320px !important;
+  }
+}
 
 /*------------------------------------------------------------------
 [5. Header Logo]
