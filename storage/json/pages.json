@@ -215,6 +215,12 @@
                 "order": 6,
                 "status": 1,
                 "type": "custom.accommodation_promo",
+                "config": {
+                    "header": {
+                        "title": "Promotion",
+                        "description": "Whether you are booking Bali family holidays or a honeymoon package in Bali, The Sintesa Jimbaran has created special offers to ensure a memorable holiday with world-class dining, recreation and pampering."
+                    }
+                },
                 "data": [
                     {
                         "image": {

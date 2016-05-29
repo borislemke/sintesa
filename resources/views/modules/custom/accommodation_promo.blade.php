@@ -36,12 +36,8 @@ $dates = [
 <div class="section-block portfolio-5 small-margins bkg-pattern">
     <div class="row">
         <div class="column width-3 offset-1">
-            <h2 class="mb-20">Promotion</h2>
-            @if(FALSE)
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            @endif
+            <h2 class="mb-20">{{ $module->config->header->title }}</h2>
+            <p>{{ $module->config->header->description }}</p>
         </div>
         <div class="column width-7">
             <div id="grid-1" class="row content-grid-2 masonry-grid fade-in-progressively" data-grid-ratio="1">
