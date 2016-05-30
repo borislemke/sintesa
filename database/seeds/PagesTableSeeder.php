@@ -21,7 +21,7 @@ class PagesTableSeeder extends Seeder
                 'bodyclass' => isset($page->bodyclass) ? $page->bodyclass : "",
                 'meta' => $page->meta,
                 'url' => $page->url,
-                'layout' => $page->template,
+                'layout' => $page->layout,
                 'user_id' => 1,
                 'status' => $page->status,
                 'content' => json_encode($page->content),
