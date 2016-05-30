@@ -1,0 +1,108 @@
+[
+    {
+        "title": "Dashboard",
+        "icon": "basic-accelerator",
+        "identifier": "dashboard",
+        "submenu": [
+            {
+                "title": "Analytics",
+                "link": "dashboard"
+            }
+        ]
+    },
+    {
+        "title": "Projects",
+        "icon": "basic-accelerator",
+        "identifier": "projects",
+        "submenu": [
+            {
+                "title": "Projects",
+                "link": "projects"
+            },
+            {
+                "title": "Clients",
+                "link": "clients"
+            },
+            {
+                "title": "Invoices",
+                "link": "invoices"
+            },
+            {
+                "title": "Documents",
+                "link": "documents"
+            }
+        ]
+    },
+    {
+        "title": "Content",
+        "icon": "basic-webpage-img-txt",
+        "identifier": "content",
+        "submenu": [
+            {
+                "title": "Products",
+                "link": "products"
+            },
+            {
+                "title": "Rooms",
+                "link": "rooms"
+            },
+            {
+                "title": "Pages",
+                "link": "pages"
+            },
+            {
+                "title": "Navigation",
+                "link": "navigation"
+            }
+        ]
+    },
+    {
+        "title": "Blog",
+        "icon": "basic-todolist-pencil",
+        "identifier": "blog",
+        "submenu": [
+            {
+                "title": "Posts",
+                "link": "posts"
+            },
+            {
+                "title": "Categories",
+                "link": "post-categories"
+            }
+        ]
+    },
+    {
+        "title": "Settings",
+        "icon": "basic-mixer2",
+        "identifier": "settings",
+        "submenu": [
+            {
+                "title": "General",
+                "link": "settings"
+            },
+            {
+                "title": "Admins",
+                "link": "users"
+            },
+            {
+                "title": "File Manager",
+                "link": "file-manage"
+            }
+        ]
+    },
+    {
+        "title": "Messaging",
+        "icon": "basic-message-multiple",
+        "identifier": "messaging",
+        "submenu": [
+            {
+                "title": "Chat",
+                "link": "messaging"
+            },
+            {
+                "title": "Emails",
+                "link": "email"
+            }
+        ]
+    }
+]

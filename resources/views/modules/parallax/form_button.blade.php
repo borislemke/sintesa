@@ -16,7 +16,7 @@
 
 <div class="enquire-popup-wrapper" id="modal-content" style="padding:30px;display:none;">
     <div class="enquiry-popup">
-        
+
         <form class="reservation-form" id="enquire-form" method="post" novalidate>
            <div class="row small-margins">
                 <div class="column width-12">
@@ -98,7 +98,7 @@
                 <div class="column width-4">
                     <input type="text" name="budget" class="form-budget form-element" placeholder="Budget" tabindex="2">
                 </div>
-               
+
                 <div class="column width-12 mt-5 mb-5">
                     Meeting Needs
                 </div>
@@ -149,14 +149,9 @@
 
             </div>
             <div class="row">
-                
+
             </div>
         </form>
     </div>
 </div>
 <!-- module_end: parallax.call_to_action -->
-
-
-<script type="text/javascript">
-        
-    </script>

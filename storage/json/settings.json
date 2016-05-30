@@ -11,6 +11,12 @@
             "order": "2",
             "key": "social",
             "title": "Social Accounts"
+        },
+        {
+            "id": "3",
+            "order": "3",
+            "key": "plugins",
+            "title": "Plugins"
         }
     ],
     "data": [
@@ -62,6 +68,20 @@
             "key": "social/youtube",
             "value": "https://www.youtube.com/channel/UClt1s81tGD_sSFQ0TsYV7ew",
             "config_group_id": 2
+        },
+        {
+            "order": 1,
+            "title": "Chatra ID",
+            "key": "plugin/chatra",
+            "value": "iqFxHHaSmXuBgvjSe",
+            "config_group_id": 3
+        },
+        {
+            "order": 2,
+            "title": "Google Analytics ID",
+            "key": "plugin/ganalytics",
+            "value": "UA-78522615-1",
+            "config_group_id": 3
         }
     ]
 }

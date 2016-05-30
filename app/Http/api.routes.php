@@ -41,6 +41,7 @@ Route::group(['prefix' => 'api'], function () {
             Route::resource('posts', 'PostsController');
 
             Route::resource('navigation', 'NavigationController');
+            Route::resource('admin-nav', 'AdminNavController');
 
             Route::resource('footers', 'PostsController');
 
