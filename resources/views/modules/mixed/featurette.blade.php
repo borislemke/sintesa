@@ -3,7 +3,7 @@
     <div class="row">
         <div class="column width-6 offset-1">
             <h2 class="mb-20">{{ $module->config->header->title }}</h2>
-            <p class="mb-40">{{ $module->config->header->description }}</p>
+            <p class="mb-40">{!! $module->config->header->description !!}</p>
         </div>
         <div class="column width-4">
             <div class="slider-aux-nav mb-30 left weight-bold v-align-bottom right">
@@ -35,7 +35,7 @@
                                 @if(isset($slide->subtitle) && $slide->subtitle != '')
                                     <h4 class="occupation">{{ $slide->subtitle }}</h4>
                                 @endif
-                                <p>{{ $slide->description }}</p>
+                                {!! $slide->description !!}
                             </div>
                         </li>
                     @endforeach

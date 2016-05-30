@@ -21,18 +21,14 @@
 
                                     @if(!$module->config->short AND isset($slide->subtitle) AND $slide->subtitle != "")
                                     <p class="tms-caption color-white sublead"
-                                       data-animate-in="opacity:0;transX:-30px;duration:800ms;delay:700ms;easing:easeFastSlow;"
-                                       data-no-scale>{{ $slide->subtitle }}</p>
+                                       data-animate-in="opacity:0;transX:-30px;duration:800ms;delay:700ms;easing:easeFastSlow;" data-no-scale>{!! $slide->subtitle !!}</p>
                                     <div class="clear"></div>
                                     @endif
 
                                     @if(isset($slide->button) AND $slide->button->link->type != '')
                                         <?php $link = $slide->button->link->type != "external" ? route($slide->button->link->type, ['url' => $slide->button->link->url]) : $slide->button->link->url ?>
                                         <a href="{{ $link }}"
-                                           class="tms-caption button text-uppercase border-white bkg-hover-gold color-white color-hover-white mb-mobile-30"
-                                           data-no-scale
-                                           data-animate-in="opacity:0;transX:30px;duration:800ms;delay:900ms;easing:easeFastSlow;"
-                                        >{{ $slide->button->text }}</a>
+                                           class="tms-caption button text-uppercase border-white bkg-hover-gold color-white color-hover-white mb-mobile-30" data-no-scale data-animate-in="opacity:0;transX:30px;duration:800ms;delay:900ms;easing:easeFastSlow;">{{ $slide->button->text }}</a>
                                     @endif
 
                                     @if($module->config->short)

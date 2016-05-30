@@ -14,7 +14,7 @@
                             <span class="content-inner center">
                                 <h2 class="post-title">{{ $item->title }}</h2>
                                 <span class="post-info">
-                                    <span class="">{{ $item->description }}</span>
+                                    <span class="">{!! $item->description !!}</span>
                                 </span>
                             </span>
                         </div>
