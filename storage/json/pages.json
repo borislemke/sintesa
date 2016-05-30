@@ -5773,37 +5773,7 @@
                     "description_two": "Taste the succulent catches of the day, freshly grilled over coconut husk barbecues when night falls and the beachside restaurants serve up. Dine under the starry skies to the sounds of the waves, the ultimate toes-in-the-sand dining experience."
                 }
             },
-            {
-                "order": 11,
-                "status": 0,
-                "type": "text_image.three",
-                "data": [
-                    {
-                        "title": "Nyepi Package",
-                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
-                        "image": {
-                            "src": "generic/offer1.jpg",
-                            "alt": "Some image alt"
-                        }
-                    },
-                    {
-                        "title": "Flight &amp; Hotel Deals",
-                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
-                        "image": {
-                            "src": "generic/offer2.jpg",
-                            "alt": "Some image alt"
-                        }
-                    },
-                    {
-                        "title": "Chinese New Year Package",
-                        "subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh...",
-                        "image": {
-                            "src": "generic/offer3.jpg",
-                            "alt": "Some image alt"
-                        }
-                    }
-                ]
-            },
+            
             {
                 "order": 12,
                 "status": 1,
