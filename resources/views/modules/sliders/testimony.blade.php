@@ -30,7 +30,7 @@
 </div>
 
 <style>
-    .smartling-notranslate.smartling-notranslate-div div:nth-child(2) { display: none; }
+    .smartling-notranslate.smartling-notranslate-div > div:nth-child(2) { display: none; }
 </style>
 <div class="review-modal" id="review-modal" style="padding:30px;display:none;">
     <div class="testimony-popup">

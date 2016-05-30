@@ -58,7 +58,7 @@
     },
     {
         "title": "Blog",
-        "icon": "basic-todolist-pencil",
+        "icon": "basic-book-pencil",
         "identifier": "blog",
         "submenu": [
             {
