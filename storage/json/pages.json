@@ -2723,7 +2723,10 @@
                 "status": 1,
                 "type": "parallax.image",
                 "data": {
-                    "background": "wellness/wellness4.jpg"
+                    "background": {
+                        "src": "wellness/wellness4.jpg",
+                        "alt": ""
+                    }
                 }
             },
             {
@@ -3195,7 +3198,10 @@
                 "status": 1,
                 "type": "parallax.image",
                 "data": {
-                    "background": "wellness/wellness4.jpg"
+                    "background": {
+                        "src": "wellness/wellness4.jpg",
+                        "alt": ""
+                    }
                 }
             },
             {
@@ -3448,7 +3454,10 @@
                 "status": 1,
                 "type": "parallax.image",
                 "data": {
-                    "background": "wellness/wellness4.jpg"
+                    "background": {
+                        "src": "wellness/wellness4.jpg",
+                        "alt": ""
+                    }
                 }
             },
             {
@@ -3676,7 +3685,10 @@
                 "status": 1,
                 "type": "parallax.image",
                 "data": {
-                    "background": "wellness/wellness4.jpg"
+                    "background": {
+                        "src": "wellness/wellness4.jpg",
+                        "alt": ""
+                    }
                 }
             },
             {
@@ -3874,7 +3886,10 @@
                 "status": 1,
                 "type": "parallax.image",
                 "data": {
-                    "background": "wellness/wellness4.jpg"
+                    "background": {
+                        "src": "wellness/wellness4.jpg",
+                        "alt": ""
+                    }
                 }
             },
             {
@@ -4265,12 +4280,15 @@
                 "data": {
                     "title": "Join our Gym Membership",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                    "banner": "page-banners/gym-proposal.jpg",
+                    "background": {
+                        "src": "page-banners/gym-proposal.jpg",
+                        "alt": ""
+                    },
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "page",
-                            "url": "#"
+                            "type": "popup",
+                            "url": "#modal-content"
                         }
                     }
                 }
@@ -5011,12 +5029,15 @@
                 "data": {
                     "title": "Meeting Package Proposal Request",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                    "banner": "page-banners/meeting-proposal.jpg",
+                    "background": {
+                        "src": "page-banners/meeting-proposal.jpg",
+                        "alt": ""
+                    },
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "page",
-                            "url": "#"
+                            "type": "popup",
+                            "url": "#modal-content"
                         }
                     }
                 }
@@ -5218,12 +5239,15 @@
                 "data": {
                     "title": "Event Proposal Request",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                    "banner": "page-banners/event-proposal.jpg",
+                    "background": {
+                        "src": "page-banners/event-proposal.jpg",
+                        "alt": ""
+                    },
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "page",
-                            "url": "#"
+                            "type": "popup",
+                            "url": "#modal-content"
                         }
                     }
                 }
@@ -5425,12 +5449,15 @@
                 "data": {
                     "title": "Wedding Package Proposal Request",
                     "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-                    "banner": "page-banners/wedding-proposal.jpg",
+                    "background": {
+                        "src": "page-banners/wedding-proposal.jpg",
+                        "alt": ""
+                    },
                     "button": {
                         "text": "Inquire Now",
                         "link": {
-                            "type": "page",
-                            "url": "#"
+                            "type": "popup",
+                            "url": "#modal-content"
                         }
                     }
                 }
@@ -6156,7 +6183,10 @@
                 "status": 1,
                 "type": "parallax.image",
                 "data": {
-                    "background": "gallery-rooms/rooms-big.jpg"
+                    "background": {
+                        "src": "gallery-rooms/rooms-big.jpg",
+                        "alt": ""
+                    }
                 }
             },
             {
