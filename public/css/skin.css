@@ -3516,7 +3516,7 @@ body.wellness .bkg-grey-ultralight {background-color: #f4eff8;}
 	border-color:#000;
 }
 
-#tml-content {
+#tml-content.modal-dialog {
     width: 100% !important;
 
 }

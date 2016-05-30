@@ -4486,80 +4486,52 @@
             {
                 "order": 4,
                 "status": 1,
-                "type": "lightbox.kids_gallery_column",
+                "type": "lightbox.gallery_column",
                 "data": [
                     {
-                        "thumbnail": {
-                            "src": "kids/tutu_monday.jpg",
-                            "alt": "Some text"
-                        },
-                        "popup": {
+                        "image": {
                             "src": "kids/popup_tutu_monday.jpg",
                             "alt": "Some text"
                         },
                         "title": "Tutu Monday"
                     },
                     {
-                        "thumbnail": {
-                            "src": "kids/bubu_tuesday.jpg",
-                            "alt": "Some text"
-                        },
-                        "popup": {
+                        "image": {
                             "src": "kids/popup_bubu_tuesday.jpg",
                             "alt": "Some text"
                         },
                         "title": "Bubu Tuesday"
                     },
                     {
-                        "thumbnail": {
-                            "src": "kids/gaga_wednesday.jpg",
-                            "alt": "Some text"
-                        },
-                        "popup": {
+                        "image": {
                             "src": "kids/popup_gaga_wednesday.jpg",
                             "alt": "Some text"
                         },
                         "title": "Gaga Wednesday"
                     },
                     {
-                        "thumbnail": {
-                            "src": "kids/gukguk_thursday.jpg",
-                            "alt": "Some text"
-                        },
-                        "popup": {
+                        "image": {
                             "src": "kids/popup_gukguk_thursday.jpg",
                             "alt": "Some text"
                         },
                         "title": "Gukguk Thursday"
                     },
                     {
-                        "thumbnail": {
-                            "src": "kids/meomeo_friday.jpg",
-                            "alt": "Some text"
-                        },
-                        "popup": {
+                        "image": {
                             "src": "kids/popup_meomeo_friday.jpg",
                             "alt": "Some text"
                         },
                         "title": "Meomeo Friday"
                     },
                     {
-                        "thumbnail": {
-                            "src": "kids/momo_saturday.jpg",
-                            "alt": "Some text"
-                        },
-                        "popup": {
+                        "image": {
                             "src": "kids/popup_momo_saturday.jpg",
                             "alt": "Some text"
                         },
                         "title": "Momo Saturday"
                     },
                     {
-                        "thumbnail": {
-                            "src": "kids/papa_sunday.jpg",
-                            "alt": "Some text"
-                        },
-                        "popup": {
+                        "image": {
                             "src": "kids/popup_papa_sunday.jpg",
                             "alt": "Some text"
                         },
@@ -5644,30 +5616,28 @@
                 "config": {
                     "title": "Here's what people say"
                 },
-                "data": {
-                    "testimonies": [
-                        {
-                            "order": 1,
-                            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
-                            "source": "John K. Riley - Harvest Goods."
-                        },
-                        {
-                            "order": 2,
-                            "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.",
-                            "source": "John K. Riley - Harvest Goods."
-                        },
-                        {
-                            "order": 3,
-                            "text": "Adignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend.",
-                            "source": "John K. Riley - Harvest Goods."
-                        },
-                        {
-                            "order": 4,
-                            "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.",
-                            "source": "John K. Riley - Harvest Goods."
-                        }
-                    ]
-                }
+                "data": [
+                    {
+                        "order": 1,
+                        "text": "This was one of the best hotels I have stayed in. The room was large, the beds very comfortable and the facilities great. And the spa - what a treat. Loved, loved, loved this place. Food was great and the staff were amazing. I would return there in a heartbeat",
+                        "source": "Salatchee, Australia - booking.com"
+                    },
+                    {
+                        "order": 2,
+                        "text": "The staff are amazing!!! They could not have done anymore for me to make my stay as great as it was. From the front desk you are greeted with big smiles and that was the same from all of the staff throughout my stay. The room service to the laundry service and everything in between was excellent.",
+                        "source": "Mark, United Kingdom - booking.com"
+                    },
+                    {
+                        "order": 3,
+                        "text": "This is a brand new Jimbaran Hotel and it's really good. The staff is superb and makes every effort to make the stay here comfortable.",
+                        "source": "jennifer637, Italy - TripAdvisor"
+                    },
+                    {
+                        "order": 4,
+                        "text": "Such a lovely atmosphere, quiet and charming with warm and caring staff. The lounge is perfectly designed for small and enjoyable fun or large parties.",
+                        "source": "Julia, Indonesia - TripAdvisor"
+                    }
+                ]
             },
             {
                 "order": 3,
@@ -5782,7 +5752,10 @@
                     {
                         "title": "The BARber",
                         "description": "An authentic reminiscent full service bar and lounge built as an icon to the newly established ‘The Sintesa’ Jimbaran.",
-                        "background": "generic/home-barber.jpg",
+                        "background": {
+                            "src": "generic/home-barber.jpg",
+                            "alt": "Some text"
+                        },
                         "link": {
                             "type": "page",
                             "url": "barber"
@@ -5791,7 +5764,10 @@
                     {
                         "title": "The Wellness Center",
                         "description": "Sintesa Wellness SPA offers a complete range of therapies experiences, luxurious, organic & authentic.",
-                        "background": "generic/home-wellness.jpg",
+                        "background": {
+                            "src": "generic/home-wellness.jpg",
+                            "alt": "Some text"
+                        },
                         "link": {
                             "type": "page",
                             "url": "the-wellness-center"
@@ -5977,34 +5953,65 @@
                 "order": 16,
                 "status": 1,
                 "type": "lightbox.gallery_column",
+                "config": {
+                    "title": "Hotel Gallery"
+                },
                 "data": [
                     {
-                        "image": "barber/monday.jpg",
-                        "title": "Monday"
+                        "image": {
+                            "src": "gallery-rooms/generic3.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Accommodation"
                     },
                     {
-                        "image": "barber/tuesday.jpg",
-                        "title": "Tuesday"
+                        "image": {
+                            "src": "gallery-rooms/popup-executive-suite1.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Executive Suite"
                     },
                     {
-                        "image": "barber/wednesday.jpg",
-                        "title": "Wednesday"
+                        "image": {
+                            "src": "generic/pic2.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Swimming Pool"
                     },
                     {
-                        "image": "barber/thursday.jpg",
-                        "title": "Thursday"
+                        "image": {
+                            "src": "gallery-rooms/presidential-suite1.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Presidential Suite"
                     },
                     {
-                        "image": "barber/friday.jpg",
-                        "title": "Friday"
+                        "image": {
+                            "src": "page-banners/wedding.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Wedding"
                     },
                     {
-                        "image": "barber/saturday.jpg",
-                        "title": "Saturday"
+                        "image": {
+                            "src": "slider/tora-sudiro.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "The BARber"
                     },
                     {
-                        "image": "barber/sunday.jpg",
-                        "title": "Sunday"
+                        "image": {
+                            "src": "slider/sunken.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Sunken Lounge"
+                    },
+                    {
+                        "image": {
+                            "src": "wellness/wellness4.jpg",
+                            "alt": "Some text"
+                        },
+                        "title": "Wellness SPA"
                     }
                 ]
             },
@@ -6180,46 +6187,6 @@
                 "order": 21,
                 "status": 1,
                 "type": "parallax.videos",
-                "data": [
-                    {
-                        "background": {
-                            "src": "slider/slide-1.jpg",
-                            "alt": ""
-                        },
-                        "video": {
-                            "type": "external",
-                            "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
-                        },
-                        "title": "The Sintesa Hotel"
-                    },
-                    {
-                        "background": {
-                            "src": "slider/tora-sudiro.jpg",
-                            "alt": ""
-                        },
-                        "video": {
-                            "type": "external",
-                            "url": "https://www.youtube.com/embed/3zERGVOrWXg"
-                        },
-                        "title": "The BARber"
-                    },
-                    {
-                        "background": {
-                            "src": "slider/event.jpg",
-                            "alt": ""
-                        },
-                        "video": {
-                            "type": "external",
-                            "url": "https://www.youtube.com/embed/STrwX2IomJE"
-                        },
-                        "title": "The Sintesa Group"
-                    }
-                ]
-            },
-            {
-                "order": 22,
-                "status": 1,
-                "type": "mixed.page_intro_alt",
                 "data": [
                     {
                         "background": {
