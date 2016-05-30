@@ -14,8 +14,8 @@
                         <div class="row">
                             <div class="column width-8 offset-2">
                                 <blockquote class="center large">
-                                    <p>{{ $testimony->text }}</p>
-                                    <cite>{{ $testimony->source }}</cite>
+                                    <p>{!! $testimony->text !!}</p>
+                                    <cite>{!! $testimony->source !!}</cite>
                                 </blockquote>
                             </div>
                         </div>
