@@ -3601,6 +3601,9 @@ body.barber .three-column-text-wrapper ul li {
 	.pb-50, .section-block.pb-50 {
 		padding-bottom:2rem;
 	}
+	.mt-module__plugins-popup {
+		display: none;
+	}
 }
 
 
