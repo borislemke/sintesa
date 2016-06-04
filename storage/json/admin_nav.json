@@ -12,7 +12,7 @@
     },
     {
         "title": "Projects",
-        "icon": "basic-accelerator",
+        "icon": "basic-todo-txt",
         "identifier": "projects",
         "submenu": [
             {
@@ -53,12 +53,16 @@
             {
                 "title": "Navigation",
                 "link": "navigation"
+            },
+            {
+                "title": "Popup Builder",
+                "link": "popups"
             }
         ]
     },
     {
         "title": "Blog",
-        "icon": "basic-book-pencil",
+        "icon": "basic-sheet-pencil",
         "identifier": "blog",
         "submenu": [
             {
@@ -86,7 +90,7 @@
             },
             {
                 "title": "File Manager",
-                "link": "file-manage"
+                "link": "file-manager"
             }
         ]
     },

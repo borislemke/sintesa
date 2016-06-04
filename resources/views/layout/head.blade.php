@@ -17,15 +17,22 @@
     <!-- Css -->
     <link rel="stylesheet" href="css/core.min.css"/>
     <link rel="stylesheet" href="css/skin.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <?php if(env('APP_DEBUG')): ?>
+    <script type="text/javascript">
+        document.write('<script src="//localhost:35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+    </script>
+    <?php endif ?>
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <base href="/">
 
-{!! $settings->widget->chatra or '' !!}
+    {!! $settings->widget->chatra or '' !!}
 
-@if(isset($settings['plugin/chatra']) AND $settings['plugin/chatra'] != '')
+    @if(isset($settings['plugin/chatra']) AND $settings['plugin/chatra'] != '')
     <!-- Chatra {literal} -->
         <script>
             ChatraID = '{{ $settings['plugin/chatra'] }}';
@@ -42,26 +49,27 @@
             })(document, window, 'Chatra');
         </script>
         <!-- /Chatra {/literal} -->
-@endif
-
-@if(isset($settings['plugin/ganalytics']) AND $settings['plugin/ganalytics'] != '')
-    <!-- Google Analytics -->
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                            (i[r].q = i[r].q || []).push(arguments)
-                        }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', '{{ $settings['plugin/ganalytics'] }}', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <!-- /Google Analytics -->
     @endif
+
+    {{--@if(isset($settings['plugin/ganalytics']) AND $settings['plugin/ganalytics'] != '')--}}
+<!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        {{--ga('create', '{{ $settings['plugin/ganalytics'] }}', 'auto');--}}
+        ga('create', 'UA-78522615-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- /Google Analytics -->
+    {{--@endif--}}
 </head>
