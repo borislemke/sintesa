@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call(NavigationTableSeeder::class);
         $this->call(FootersTableSeeder::class);
         $this->call(MediaTableSeeder::class);
-        $this->call(SettingsTableSeeder::class);
+        // $this->call(SettingsTableSeeder::class);
 
         Model::reguard();
     }
