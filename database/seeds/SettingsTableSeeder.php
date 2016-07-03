@@ -12,6 +12,7 @@ class SettingsTableSeeder extends Seeder
     public function run()
     {
         //
+        /*
         $settings_json = json_decode(File::get(storage_path("json/settings.json")));
         $settings_group = $settings_json->groups;
         $settings = $settings_json->data;
@@ -32,6 +33,31 @@ class SettingsTableSeeder extends Seeder
                 "config_group_id" => $settings->config_group_id
             ]);
         }
+        */
+
+        \App\SystemLanguage::create([
+            'code' => 'en',
+            'title' => 'English',
+            'is_default' => 1
+        ]);
+
+        \App\SystemLanguage::create([
+            'code' => 'id',
+            'title' => 'Indonesian',
+            'is_default' => 0
+        ]);
+
+        \App\SystemLanguage::create([
+            'code' => 'fr',
+            'title' => 'French',
+            'is_default' => 0
+        ]);
+
+        \App\SystemLanguage::create([
+            'code' => 'es',
+            'title' => 'Spanish',
+            'is_default' => 0
+        ]);
     }
 }
 

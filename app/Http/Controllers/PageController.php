@@ -23,13 +23,14 @@ class PageController extends Controller
     // $target equals $url in this context
     public function render($target = '')
     {
+        if (match_locale()) $target = substr($target, (strpos($target, '/') + 1));
         $target = ($target == '' ? 'home' : $target);
         $data = env('APP_DEBUG') ? $this->fromJson($target) : Paper::where('url', $target)->where('status', 1)->first();
 
-        if(!$data) return abort(404);
+        if (!$data) return abort(404);
 
         $page_content = env('APP_DEBUG') ? json_decode(json_encode($data->content), TRUE) : json_decode($data->content, TRUE);
-        usort($page_content, function($a, $b) {
+        usort($page_content, function ($a, $b) {
             return $a['order'] - $b['order'];
         });
         $data->content = json_decode(json_encode($page_content));

@@ -13,6 +13,7 @@ Route::group(['prefix' => 'api'], function () {
     Route::group(['prefix' => 'ajax'], function() {
 
         Route::post('contact-form', 'AjaxController@submit');
+        Route::post('meeting', 'AjaxController@meeting');
     });
 
     Route::group(['middleware' => ['jwt.auth']], function () {

@@ -221,7 +221,7 @@
     @include('modules.plugins.popup')
 
 <!-- Js -->
-<script src="js/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery-1.11.2.min.js"></script>
 <script>
     /*
      $(function() {
@@ -232,7 +232,7 @@
  {{--<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>--}}
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbZed0XBhy8tgs-2OgoZoO8tHqO33SUw&callback=initMap" async
  defer></script>
- <script src="js/timber.master.min.js"></script>
- <script src="js/template-functions.js"></script>
+ <script src="/js/timber.master.min.js"></script>
+ <script src="/js/template-functions.js"></script>
 </body>
 </html>

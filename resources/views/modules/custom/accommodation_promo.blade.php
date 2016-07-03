@@ -36,8 +36,8 @@ $dates = [
 <div class="section-block portfolio-5 small-margins bkg-pattern">
     <div class="row">
         <div class="column width-3 offset-1">
-            <h2 class="mb-20">{{ $module->config->header->title }}</h2>
-            <p>{!! $module->config->header->description !!}</p>
+            <h2 class="mb-20">{{ translate($module->config->header->title) }}</h2>
+            <p>{!! translate($module->config->header->description) !!}</p>
         </div>
         <div class="column width-7">
             <div id="grid-1" class="row content-grid-2 masonry-grid fade-in-progressively" data-grid-ratio="1">

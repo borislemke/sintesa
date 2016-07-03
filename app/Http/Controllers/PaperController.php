@@ -80,7 +80,7 @@ class PaperController extends Controller
     {
         $page = Paper::find($request->id);
         $page->bodyclass = $request->bodyclass;
-        $page->content = json_encode($request->content);
+        $page->content = json_encode($request->{'content'});
         $page->layout = $request->layout;
         $page->meta = $request->meta;
         $page->navigation_id = $request->navigation_id;

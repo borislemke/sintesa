@@ -12,9 +12,9 @@
                         <div class="content-overlay"></div>
                         <div class="content-outer">
                             <span class="content-inner center">
-                                <h2 class="post-title">{{ $item->title }}</h2>
+                                <h2 class="post-title">{{ $item->title->{locale()} }}</h2>
                                 <span class="post-info">
-                                    <span class="">{!! $item->description !!}</span>
+                                    <span class="">{!! $item->description->{locale()} !!}</span>
                                 </span>
                             </span>
                         </div>

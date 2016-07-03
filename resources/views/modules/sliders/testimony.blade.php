@@ -2,7 +2,7 @@
 <div class="section-block testimonial-5 testimonials-5-about-1 bkg-grey-ultralight" style="text-align: center;">
     <div class="row">
         <div class="column width-8 offset-2 center">
-            <h2 class="mb-30">{{ $module->config->title }}</h2>
+            <h2 class="mb-30">{{ $module->config->title->{locale()} }}</h2>
         </div>
     </div>
     <div id="testimonial-slider-1" class="testimonial-slider tm-slider-container">

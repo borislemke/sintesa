@@ -5,9 +5,9 @@
         <div class="tmp-content-inner left">
             <div class="row">
                 <div class="column width-3 offset-1 left center-on-mobile color-white">
-                    <h1 class="hominis title-xlarge">{{ $module->data->title }}</h1>
-                    <h3 class="title-medium">{{ $module->data->description }}</h3>
-                    <a href="{{ $module->data->button->link->url }}" class="button border-white color-white">{{ $module->data->button->text }}</a>
+                    <h1 class="hominis title-xlarge">{{ $module->data->title->{locale()} }}</h1>
+                    <h3 class="title-medium">{{ $module->data->description->{locale()} }}</h3>
+                    <a href="{{ $module->data->button->link->url }}" class="button border-white color-white">{{ $module->data->button->text->{locale()} }}</a>
                 </div>
             </div>
         </div>

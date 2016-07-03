@@ -1,4 +1,42 @@
 <?php
+/*
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "sintesa_translate";
+
+$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+$stmt = $conn->prepare("SELECT * FROM pages");
+$result = $stmt->execute();
+$results = $stmt->fetchAll();
+$arrayResult = [];
+
+foreach ($results as $row) {
+	$row = json_decode(json_encode($row));
+	$arrayRow = [];
+	$arrayRow["id"] = $row->id;
+	$arrayRow["title"] = $row->title;
+	$arrayRow["url"] = $row->url;
+	$arrayRow["bodyclass"] = $row->bodyclass;
+	$arrayRow["meta"] = $row->meta;
+	$arrayRow["layout"] = $row->layout;
+	$arrayRow["status"] = $row->status;
+	$arrayRow["user_id"] = $row->user_id;
+	$arrayRow["navigation_id"] = $row->navigation_id;
+	$arrayRow["hotel_id"] = $row->hotel_id;
+	$arrayRow["created_at"] = $row->created_at;
+	$arrayRow["updated_at"] = $row->updated_at;
+	$arrayRow["content"] = json_decode($row->content);
+	$arrayResult[] = $arrayRow;
+}
+
+$fp = fopen('translatable.json', 'w');
+fwrite($fp, json_encode($arrayResult));
+fclose($fp);
+
+$conn = null;
+die();
+*/
 
 /**
  * Laravel - A PHP Framework For Web Artisans

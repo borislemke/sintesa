@@ -2,10 +2,10 @@
 <div class="section-block no-padding-bottom">
     <div class="row">
         <div class="column width-5 offset-1 pb-50">
-            <p class="sublead">{!! $module->data->title !!}</p>
+            <p class="sublead">{!! translate($module->data->title) !!}</p>
         </div>
         <div class="column width-5 pb-50">
-            <p class="">{!! $module->data->text !!}</p>
+            <p class="">{!! translate($module->data->text) !!}</p>
         </div>
     </div>
 </div>

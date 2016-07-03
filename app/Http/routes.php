@@ -1,16 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
 if (env('APP_DEBUG')) {
     Route::get('/_debugbar/assets/stylesheets', [
         'as' => 'debugbar-css',
@@ -21,11 +10,11 @@ if (env('APP_DEBUG')) {
         'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@js'
     ]);
 }
+match_locale();
 
 Route::get('listUrls', 'PageController@listUrls');
 
 Route::get('modules', 'PaperController@indexModules');
-Route::get('analytics', 'AnalyticsController@test');
 
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@render']);
 Route::get('/file/{file?}', ['as' => 'pdf', 'uses' => 'FileController@renderPdf'])->where('file', '(.*)');

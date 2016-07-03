@@ -2,8 +2,8 @@
 <div class="section-block replicable-content bkg-grey-ultralight bkg-pattern">
     <div class="row">
         <div class="column width-6 offset-1">
-            <h2 class="mb-20">{{ $module->config->header->title }}</h2>
-            <p class="mb-40">{!! $module->config->header->description !!}</p>
+            <h2 class="mb-20">{{ translate($module->config->header->title) }}</h2>
+            <p class="mb-40">{!! translate($module->config->header->description) !!}</p>
         </div>
         <div class="column width-4">
             <div class="slider-aux-nav mb-30 left weight-bold v-align-bottom right">
@@ -29,13 +29,13 @@
                                                            alt="{{ $slide->image->alt }}"/></a>
                             </div>
                             <div class="team-content-info">
-                                <h3 class="{{ isset($slide->subtitle) && $slide->subtitle != '' ? 'mb-10' : 'mb-30' }}">
-                                    <a href="{{ $link }}">{{ $slide->title }}</a>
+                                <h3 class="{{ isset($slide->subtitle) && translate($slide->subtitle) != '' ? 'mb-10' : 'mb-30' }}">
+                                    <a href="{{ $link }}">{{ translate($slide->title) }}</a>
                                 </h3>
-                                @if(isset($slide->subtitle) && $slide->subtitle != '')
-                                    <h4 class="occupation">{{ $slide->subtitle }}</h4>
+                                @if(isset($slide->subtitle) && translate($slide->subtitle) != '')
+                                    <h4 class="occupation">{{ translate($slide->subtitle) }}</h4>
                                 @endif
-                                {!! $slide->description !!}
+                                {!! translate($slide->description) !!}
                             </div>
                         </li>
                     @endforeach

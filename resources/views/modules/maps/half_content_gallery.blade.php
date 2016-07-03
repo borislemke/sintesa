@@ -1,4 +1,4 @@
-<!-- module: map.half_content -->
+<!-- module: map.half_content_gallery -->
 <script>
     var map;
     var infowindow;
@@ -110,9 +110,9 @@
 					<?php if ($i < 9) { ?>
 						<div class="grid-item{{ $i == 0 ? ' grid-sizer' : '' }} bkg-grey-ultralight" style="border:5px solid #fff;">
 							<img src="{{ $marker->image }}" />
-							<div class="" style="padding:20px;">
+							<div style="padding:20px;">
 								<h4 class="mt-10">{{ $marker->text }}</h4>
-								<p>{{ $marker->description }}</p>
+								{!! $marker->description->{locale()} !!}
 							</div>
 						</div>
 					<?php $i++; } ?>
@@ -121,7 +121,7 @@
 	  </div>
 	</div>
 </section>
-<!-- module_end: map.half_content -->
+<!-- module_end: map.half_content_gallery -->
 
 
 

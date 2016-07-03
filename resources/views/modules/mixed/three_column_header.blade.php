@@ -5,11 +5,11 @@
             <div class="column width-10 offset-1">
 
                 <div class="column width-6 offset-4 pb-30">
-                    @if(isset($module->data->title) && $module->data->title != '')
-                        <h2 class="">{{ $module->data->title }}</h2>
+                    @if(isset($module->data->title->{locale()}) && $module->data->title->{locale()} != '')
+                        <h2 class="">{{ $module->data->title->{locale()} }}</h2>
                     @endif
-                    
-                    <p class="lead"><em>{{ $module->data->heading }}</em></p>
+
+                    <p class="lead"><em>{{ $module->data->heading->{locale()} }}</em></p>
                 </div>
 
             </div>
@@ -28,8 +28,8 @@
                                 <a href="{{ $slide->link->url }}" title="{{ $slide->banner->alt }}"><img data-src="media/{{ $slide->banner->src }}" src="media/{{ $slide->banner->src }}" width="760" height="500" alt="{{ $slide->banner->alt }}"/></a>
                             </div>
                             <div class="team-content-info">
-                                <h4 class="mb-20"><a href="{{ $slide->link->url }}">{{ $slide->title }}</a></h4>
-                                <p>{{ $slide->text }}</p>
+                                <h4 class="mb-20"><a href="{{ $slide->link->url }}">{{ $slide->title->{locale()} }}</a></h4>
+                                <p>{{ $slide->text->{locale()} }}</p>
                             </div>
                         </li>
                     @endforeach

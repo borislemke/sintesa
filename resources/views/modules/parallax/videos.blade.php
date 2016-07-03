@@ -39,7 +39,7 @@
                                class="lightbox-link icon-play icon-circled bkg-white bkg-hover-gold color-black color-hover-white no-margin-bottom left"
                                alt="{{ $video->background->alt }}"></a>
                         </div>
-                        <p class="mt-10">{{ $video->title }}</p>
+                        <p class="mt-10">{{ translate($video->title) }}</p>
                     </div>
                 @endforeach
             {{--</div>--}}

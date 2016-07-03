@@ -1,4 +1,4 @@
-<!-- module: mixed.featurette -->
+<!-- module: maps.marker_popup -->
 <script>
     var map;
     var infowindow;
@@ -40,4 +40,4 @@
 <section class="section-block bkg-white">
     <div id="jimbaran-map" style="height: 540px"></div>
 </section>
-<!-- module_end: mixed.featurette -->
+<!-- module_end: maps.marker_popup -->

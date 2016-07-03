@@ -2,12 +2,12 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
     <meta name="twitter:widgets:theme" content="light">
-    <meta property="og:title" content="{{ $data->title }}"/>
+    <meta property="og:title" content="{{ translate($data->title) }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="media/favicon.png"/>
-    <meta property="og:description" content="{{ $data->meta }}"/>
-    <title>{{ $data->title }}</title>
-    <meta name="description" content="{{ $data->meta }}"/>
+    <meta property="og:description" content="{{ translate($data->meta) }}"/>
+    <title>{{ translate($data->title) }}</title>
+    <meta name="description" content="{{ translate($data->meta) }}"/>
     <link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
 
     <!-- Font -->
@@ -15,9 +15,9 @@
           rel='stylesheet' type='text/css'>
 
     <!-- Css -->
-    <link rel="stylesheet" href="css/core.min.css"/>
-    <link rel="stylesheet" href="css/skin.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="/css/core.min.css"/>
+    <link rel="stylesheet" href="/css/skin.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
 
     <?php if(env('APP_DEBUG')): ?>
     <script type="text/javascript">
@@ -35,8 +35,25 @@
     {{--@if(isset($settings['plugin/chatra']) AND $settings['plugin/chatra'] != '')--}}
 <!-- Chatra {literal} -->
     <script>
+
+        var errors = {
+            username: [
+                'Already in use'
+            ],
+            email: [
+                    'Duplicate email'
+            ]
+        };
+
+        for (var index in errors) {
+            if (errors.hasOwnProperty(index)) {
+                console.log(index);
+                console.log(errors[index][0]);
+            }
+        }
+
         {{--ChatraID = '{{ $settings['plugin/chatra'] }}';--}}
-        ChatraID = 'iqFxHHaSmXuBgvjSe';
+                ChatraID = 'iqFxHHaSmXuBgvjSe';
         (function (d, w, c) {
             var n = d.getElementsByTagName('script')[0],
                     s = d.createElement('script');

@@ -3,20 +3,20 @@
     <div class="row">
         <div class="column width-10 offset-1">
             <div class="column width-4">
-                <h2 class="">{{ $module->data->title }}</h2>
-                <p class="lead"><em>{{ $module->data->lead }}</em></p>
+                <h2 class="">{{ $module->data->title->{locale()} }}</h2>
+                <p class="lead"><em>{{ $module->data->lead->{locale()} }}</em></p>
             </div>
             <div class="column width-4">
-                @if(isset($module->data->description_one) && $module->data->description_one != "")
-                    <p>{{ $module->data->description_one }}</p>
+                @if(isset($module->data->description_one->{locale()}) && $module->data->description_one->{locale()} != "")
+                    <p>{{ $module->data->description_one->{locale()} }}</p>
                 @endif
             </div>
             <div class="column width-4">
-                @if(isset($module->data->description_two) && $module->data->description_two != "")
-                    <p>{{ $module->data->description_two }}</p>
+                @if(isset($module->data->description_two->{locale()}) && $module->data->description_two->{locale()} != "")
+                    <p>{{ $module->data->description_two->{locale()} }}</p>
                 @endif
             </div>
-            
+
 
             @if(FALSE)
                 <ul class="social-list list-horizontal">
