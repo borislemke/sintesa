@@ -15,9 +15,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        $navigation = new NavigationController();
-        $navigation = $navigation->build(1);
-        view()->share(compact('navigation'));
+        if (\Schema::hasTable('navigation')) {
+            $navigation = new NavigationController();
+            $navigation = $navigation->build(1);
+            view()->share(compact('navigation'));
+        }
     }
 
     /**

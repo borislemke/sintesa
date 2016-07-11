@@ -89,10 +89,10 @@ class PaperController extends Controller
         $page->bodyclass = $request->bodyclass;
         $page->content = json_encode($request->{'content'});
         $page->layout = $request->layout;
-        $page->meta = $request->meta;
+        $page->meta = json_encode($request->meta);
         $page->navigation_id = $request->navigation_id;
         $page->status = $request->status;
-        $page->title = $request->title;
+        $page->title = json_encode($request->title);
         $page->url = $request->url;
         $page->save();
 
