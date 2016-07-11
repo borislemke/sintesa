@@ -35,6 +35,10 @@ Route::group(['prefix' => 'api'], function () {
              * NGINX DOES NOT ACCEPT WEBDAV METHODS BY DEFAULT
              * FORGET ABOUT THEM AS IT IS TEDIOUS
              */
+            
+            Route::get('languages', function() {
+                return \App\SystemLanguage::all();
+            });
 
             Route::post('pages/update', 'PaperController@update');
             Route::resource('pages', 'PaperController');

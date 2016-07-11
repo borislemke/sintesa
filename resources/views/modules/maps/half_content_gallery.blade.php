@@ -112,7 +112,7 @@
 							<img src="{{ $marker->image }}" />
 							<div style="padding:20px;">
 								<h4 class="mt-10">{{ $marker->text }}</h4>
-								{!! $marker->description->{locale()} !!}
+								{!! translate($marker->description) !!}
 							</div>
 						</div>
 					<?php $i++; } ?>

@@ -51,6 +51,11 @@ class PaperController extends Controller
         $start = ($request->start - 1) * $request->offset;
         $collection = $collection->slice($start, $request->offset);
 
+        foreach ($collection as $pageData) {
+            $pageTitle = json_decode($pageData->title);
+            $pageData->title = $pageTitle->en;
+        }
+
         return response()->json([
             'data' => $collection,
             'start' => $start + 1,
@@ -66,6 +71,8 @@ class PaperController extends Controller
 
         if(!$page) return abort(404);
 
+        $page->title = json_decode($page->title);
+        $page->meta = json_decode($page->meta);
         $page->content = json_decode($page->content);
 
         return response()->json($page);
@@ -95,5 +102,10 @@ class PaperController extends Controller
     public function destroy(Request $request)
     {
         return $request->items;
+    }
+
+    public function jsonToObject($json)
+    {
+        return json_decode($json);
     }
 }

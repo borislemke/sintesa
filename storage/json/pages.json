@@ -540,7 +540,8 @@
                     {
                         "order": 1,
                         "title": {
-                            "en": "Destination: Jimbaran"
+                            "en": "Destination: Jimbaran",
+                            "fr": "Destination: Le petit Jimbaran"
                         },
                         "subtitle": {
                             "en": "Jimbaran Bay is one of iconic beaches in the South of Bali. This place is where we can find the majestic sunset emerged all year along the bay."
@@ -881,7 +882,9 @@
                             "type": "external",
                             "url": "https://www.youtube.com/embed/dcD-I-_Sm1I"
                         },
-                        "title": "The Sintesa Hotel"
+                        "title": {
+                            "en": "The Sintesa Hotel"
+                        }
                     },
                     {
                         "background": {
@@ -892,7 +895,9 @@
                             "type": "external",
                             "url": "https://www.youtube.com/embed/3zERGVOrWXg"
                         },
-                        "title": "The BARber"
+                        "title": {
+                            "en": "The BARber"
+                        }
                     },
                     {
                         "background": {
@@ -903,7 +908,9 @@
                             "type": "external",
                             "url": "https://www.youtube.com/embed/STrwX2IomJE"
                         },
-                        "title": "The Sintesa Group"
+                        "title": {
+                            "en": "The Sintesa Group"
+                        }
                     }
                 ]
             }
@@ -7175,8 +7182,12 @@
     },
     {
         "id": 22,
-        "title": "All Modules",
-        "meta": "The Sintesa Jimbaran Resort",
+        "title": {
+            "en": "All Modules"
+        },
+        "meta": {
+            "en": "The Sintesa Jimbaran Resort"
+        },
         "bodyclass": "",
         "url": "all-modules",
         "layout": "main",
