@@ -54,8 +54,14 @@ class SettingsTableSeeder extends Seeder
         ]);
 
         \App\SystemLanguage::create([
-            'code' => 'es',
-            'title' => 'Spanish',
+            'code' => 'ru',
+            'title' => 'Russian',
+            'is_default' => 0
+        ]);
+
+        \App\SystemLanguage::create([
+            'code' => 'cn',
+            'title' => 'Chinese',
             'is_default' => 0
         ]);
     }
