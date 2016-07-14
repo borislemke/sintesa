@@ -26,13 +26,18 @@ class PaperController extends Controller
         $collection = Paper::all();
 
         $availableModules = [];
+        $added_modules = [];
         foreach ($collection as $page) {
             foreach (json_decode($page->content) as $module) {
-                $availableModules[] = $module->type;
+                if (!in_array($module->type, $added_modules)) {
+                    $added_modules[] = $module->type;
+                    $availableModules[] = $module;
+                }
             }
         }
-        $availableModules = array_unique($availableModules);
-        echo "<pre>"; print_r($availableModules); echo "</pre>";
+        echo "<pre>";
+        echo json_encode($availableModules, JSON_PRETTY_PRINT);
+        echo "</pre>";
     }
 
     public function indexRange(Request $request)

@@ -10,6 +10,13 @@ use App\Http\Requests;
 class NavigationController extends Controller
 {
     //
+
+    public function index(Request $request)
+    {
+        if (isset($request->start)) return $this->indexRange($request);
+        return Nav::all();
+    }
+
     public function indexRange(Request $request)
     {
         $nav = Nav::where('parent', 0)->get();
@@ -46,6 +53,11 @@ class NavigationController extends Controller
         }
 
         return $nav;
+    }
+
+    public function show($id)
+    {
+        return $this->get($id);
     }
 
     public function get($id)
