@@ -83,9 +83,29 @@ class PaperController extends Controller
         return response()->json($page);
     }
 
-    public function create(Request $request)
+    public function store(Request $request)
     {
-        return ['status' => 200, 'status-text' => 'success', 'monolog' => ['title' => 'Page created', 'message' => 'Page has been created successfully']];
+        $url_conflict = Paper::where('url', $request->url)->first();
+
+        if ($url_conflict) {
+            return ['status' => 500, 'status-text' => 'error', 'monolog' => ['title' => 'Error saving page', 'message' => 'A page with the same URL already exists. Please choose a different URL']];
+        }
+
+        $page = new Paper();
+        $page->bodyclass = $request->bodyclass;
+        $page->content = json_encode($request->{'content'});
+        $page->layout = 'main';
+        $page->meta = json_encode($request->meta);
+        $page->navigation_id = 1;
+        $page->status = $request->status;
+        $page->title = json_encode($request->title);
+        $page->url = $request->url;
+
+        if ($page->save()) {
+            return ['status' => 200, 'status-text' => 'success', 'monolog' => ['title' => 'Page created', 'message' => 'Page has been created successfully'], 'saved_id' => $page->id];
+        } else {
+            return ['status' => 500, 'status-text' => 'error', 'monolog' => ['title' => 'Error saving page', 'message' => 'Something went wrong saving the page. If the error persists, contact your developer for assistance.']];
+        }
     }
 
     public function update(Request $request)
@@ -93,9 +113,9 @@ class PaperController extends Controller
         $page = Paper::find($request->id);
         $page->bodyclass = $request->bodyclass;
         $page->content = json_encode($request->{'content'});
-        $page->layout = $request->layout;
+        $page->layout = 'main';
         $page->meta = json_encode($request->meta);
-        $page->navigation_id = $request->navigation_id;
+        $page->navigation_id = 1;
         $page->status = $request->status;
         $page->title = json_encode($request->title);
         $page->url = $request->url;

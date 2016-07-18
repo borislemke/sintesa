@@ -11,8 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
 
     <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CRaleway:100,300,400,500,700'
-          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CRaleway:100,300,400,500,700' rel='stylesheet' type='text/css'>
 
     <!-- Css -->
     <link rel="stylesheet" href="/css/core.min.css"/>

@@ -33,12 +33,19 @@ Route::group(['prefix' => 'api'], function () {
              * | DELETE     | /{model}/{model_id}           | destroy   | model.destroy |
              * --------------------------------------------------------------------------
              * NGINX DOES NOT ACCEPT WEBDAV METHODS BY DEFAULT
-             * FORGET ABOUT THEM AS IT IS TEDIOUS
+             * FORGET ABOUT THEM AS IT IS RATHER TEDIOUS TO SET UP
              */
-            
+
             Route::get('languages', function() {
                 return \App\SystemLanguage::all();
             });
+
+            Route::post('languages/default', 'SettingsController@makeDefaultLanguage');
+            Route::post('languages/add', 'SettingsController@addLanguage');
+            Route::post('languages/remove', 'SettingsController@removeLanguage');
+            Route::get('languages/all', 'SettingsController@indexLanguages');
+
+            // Route::resource('languages', '');
 
             Route::post('pages/update', 'PaperController@update');
             Route::resource('pages', 'PaperController');
@@ -54,7 +61,16 @@ Route::group(['prefix' => 'api'], function () {
 
             Route::resource('hotels', 'PostsController');
 
+            Route::post('users/delete', 'UsersController@destroy');
+            Route::get('users/auth', 'AuthenticateController@getAuthenticatedUser');
+            Route::resource('users', 'UsersController');
+
             //Route::resource('media', 'PostsController');
+
+            Route::group(['prefix' => 'dashboard'], function () {
+                Route::get('analytics/query/{days}', 'AnalyticsController@query');
+                Route::post('analytics/query', 'AnalyticsController@query');
+            });
 
             Route::group(['prefix' => 'navigation'], function () {
                 Route::get('index', 'NavigationController@index');

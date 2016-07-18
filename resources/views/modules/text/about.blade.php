@@ -4,16 +4,16 @@
         <div class="column width-10 offset-1">
             <div class="column width-4">
                 <h2 class="">{{ translate($module->data->title) }}</h2>
-                <p class="lead"><em>{{ translate($module->data->lead) }}</em></p>
+                <p class="lead"><em>{!! translate($module->data->lead) !!}</em></p>
             </div>
             <div class="column width-4">
                 @if(isset($module->data->description_one) && translate($module->data->description_one) != "")
-                    <p>{{ translate($module->data->description_one) }}</p>
+                {!! translate($module->data->description_one) !!}
                 @endif
             </div>
             <div class="column width-4">
                 @if(isset($module->data->description_two) && translate($module->data->description_two) != "")
-                    <p>{{ translate($module->data->description_two) }}</p>
+                {!! translate($module->data->description_two) !!}
                 @endif
             </div>
 

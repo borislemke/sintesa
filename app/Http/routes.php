@@ -12,6 +12,9 @@ if (env('APP_DEBUG')) {
 }
 match_locale();
 
+Route::get('calendar', 'CalendarController@index');
+Route::get('analytics/{days}', 'AnalyticsController@query');
+Route::get('languages', 'SettingsController@indexLanguages');
 Route::get('listUrls', 'PageController@listUrls');
 
 Route::get('modules', 'PaperController@indexModules');

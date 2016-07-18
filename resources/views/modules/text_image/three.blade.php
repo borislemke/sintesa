@@ -13,8 +13,8 @@
 
                         </div>
                         <div class="team-content-info">
-                            <h4 class="mb-20"><a href="{{ $item->link->url }}">{{ $item->title->{locale()} }}</a></h4>
-                            <p>{{ $item->subtitle->{locale()} }}</p>
+                            <h4 class="mb-20"><a href="{{ $item->link->url }}">{{ translate($item->title) }}</a></h4>
+                            <p>{{ translate($item->subtitle) }}</p>
                         </div>
                     </div>
                     <?php $i++ ?>

@@ -1,48 +1,22 @@
 <?php
 
-return
+return [
 
-    [
-        /*
-         * The siteId is used to retrieve and display Google Analytics statistics
-         * in the admin-section.
-         *
-         * Should look like: ga:xxxxxxxx.
-         */
-        'siteId' => env('ga:42642544'),
+    /*
+     * The view id of which you want to display data.
+     */
+    'view_id' => '122919356',
 
-        /*
-         * Set the client id
-         *
-         * Should look like:
-         * xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com
-         */
-        'clientId' => env('3b3f585667d348c2d82a25319d66b21838d83bc2'),
+    /*
+     * Path to the client secret json file. Take a look at the README of this package
+     * to learn how to get this file.
+     */
+    'service_account_credentials_json' => storage_path('credentials/sintesa-api.json'),
 
-        /*
-         * Set the service account name
-         *
-         * Should look like:
-         * xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@developer.gserviceaccount.com
-         */
-        'serviceEmail' => env('fleavaweb@fleava-website.iam.gserviceaccount.com'),
+    /*
+     * The amount of minutes the Google API responses will be cached.
+     * If you set this to zero, the responses won't be cached at all.
+     */
+    'cache_lifetime_in_minutes' => 60 * 24,
 
-        /*
-         * You need to download a p12-certifciate from the Google API console
-         * Be sure to store this file in a secure location.
-         */
-        'certificatePath' => storage_path('credentials/fleavawebsite-3b3f585667d3.p12'),
-
-        /*
-         * The amount of minutes the Google API responses will be cached.
-         * If you set this to zero, the responses won't be cached at all.
-         */
-        'cacheLifetime' => 60 * 24 * 2,
-
-        /*
-         * The amount of seconds the Google API responses will be cached for
-         * queries that use the real time query method. If you set this to zero,
-         * the responses of real time queries won't be cached at all.
-         */
-        'realTimeCacheLifetimeInSeconds' => 5,
-    ];
+];

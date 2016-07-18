@@ -162,7 +162,8 @@ return [
          * Third parties
          */
         Barryvdh\Debugbar\ServiceProvider::class,
-        Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Spatie\Analytics\AnalyticsServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
     ],
 
@@ -213,9 +214,9 @@ return [
         /*
          * Third parties
          */
+        'Analytics' => Spatie\Analytics\AnalyticsFacade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
-        'LaravelAnalytics' => Spatie\LaravelAnalytics\LaravelAnalyticsFacade::class,
     ],
 ];
