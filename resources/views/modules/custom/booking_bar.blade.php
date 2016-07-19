@@ -141,18 +141,24 @@
                     <h3>When would you like to stay?</h3>
                     <form id="b_availFrm" class="b_availForm">
                         <div class="b_availFormInner">
-                        <div class="b_availPromo">
-                            <h4>Promo Code</h4>
-                            <div id="b_availPromo">
-                                <input type="text" name="AccessCode" id="promoCode">
+                            <div class="b_availPromo">
+                                <h4>Promo Code</h4>
+                                <div id="b_availPromo">
+                                    <input type="text" name="AccessCode" id="promoCode">
+                                </div>
                             </div>
-                        </div>
                             <div class="b_availDatesInner">
                                 <h4>Check-in</h4>
-                                <div id="b_availCheckIn">
+                                <div id="b_availCheckIn" style="padding-right: 8px;">
+
+                                    <input id="b_checkin_day" type="text"
+                                           style="background: rgba(255, 255, 255, .2); color: #fff; border: none; border-radius: 0; -webkit-appearance: none; outline: none; padding: 1rem 1.5rem; font-size: 1.1rem;">
+                                    <input type="hidden" id="hidden_checkin">
+
+                                    <?php if(FALSE): ?>
                                     <select id="b_checkin_day" name="checkin_monthday">
                                         <?php
-                                        for($day = 1; $day <= 31; $day++) {
+                                        for ($day = 1; $day <= 31; $day++) {
                                             $today = $day == date('j');
                                             echo "<option value=\"$day\"" . ($today ? " selected=\"selected\"" : "") . "> $day</option>";
                                         }
@@ -172,14 +178,22 @@
                                         }
                                         ?>
                                     </select>
+                                    <?php endif ?>
+
                                 </div>
                             </div>
                             <div class="b_availDatesInner">
                                 <h4>Check-out</h4>
-                                <div id="b_availCheckOut">
+                                <div id="b_availCheckOut" style="padding-right: 8px;">
+
+                                    <input id="b_checkout_day" type="text"
+                                           style="background: rgba(255, 255, 255, .2); color: #fff; border: none; border-radius: 0; -webkit-appearance: none; outline: none; padding: 1rem 1.5rem; font-size: 1.1rem;">
+                                    <input type="hidden" id="hidden_checkout">
+
+                                    <?php if(FALSE): ?>
                                     <select id="b_checkout_day" name="checkout_monthday">
                                         <?php
-                                        for($day = 1; $day <= 31; $day++) {
+                                        for ($day = 1; $day <= 31; $day++) {
                                             $today = $day == date('j', strtotime(' +1 day'));
                                             echo "<option value=\"$day\"" . ($today ? " selected=\"selected\"" : "") . "> $day</option>";
                                         }
@@ -199,6 +213,8 @@
                                         }
                                         ?>
                                     </select>
+                                    <?php endif ?>
+
                                 </div>
                             </div>
                             <div id="b_availSubmit">
@@ -212,26 +228,45 @@
     </div>
 </section>
 
-<script type="text/javascript">
-    window.onload = function() {
-    var bookingForm = document.getElementById('b_availFrm');
-    bookingForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        var checkinDay = document.getElementById('b_checkin_day').value;
-        var checkinMonth = document.getElementById('b_checkin_month').value;
-        var checkoutDay = document.getElementById('b_checkout_day').value;
-        var checkoutMonth = document.getElementById('b_checkout_month').value;
-        var promoCode = document.getElementById('b_availPromo').value;
-        var param = "&arrival=" + checkinMonth + '-' + checkinDay +
-        "&departure=" + checkoutMonth + '-' + checkoutDay +
-        "&promo=" + promoCode
-        "&adults1=1" +
-        "&children1=0";
-        var bookingUrl = "https://www.book-secure.com/index.php?s=results&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl" + param;
-        window.location = bookingUrl;
-        
+
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#b_checkin_day").datepicker({
+            minDate: 0,
+            maxDate: "+1Y",
+            dateFormat: 'DD, M dd yy',
+            altFormat: 'yy-mm-dd',
+            altField: '#hidden_checkin'
+        });
+        $("#b_checkout_day").datepicker({
+            minDate: 1,
+            maxDate: "+1Y",
+            dateFormat: 'DD, M dd yy',
+            altFormat: 'yy-mm-dd',
+            altField: '#hidden_checkout'
+        });
     });
-}
+</script>
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        var bookingForm = document.getElementById('b_availFrm');
+        bookingForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            var checkinDate = document.getElementById('hidden_checkin').value;
+            var checkoutDate = document.getElementById('hidden_checkout').value;
+            var promoCode = document.getElementById('b_availPromo').value;
+            var param = "&arrival=" + checkinDate +
+                    "&departure=" + checkoutDate +
+                    "&promo=" + promoCode +
+                    "&adults1=1" +
+                    "&children1=0";
+            window.location = "https://www.book-secure.com/index.php?s=results&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl" + param;
+
+        });
+    }
 </script>
 <!--
 https://www.book-secure.com/index.php?s=results&property=idbal28401&arrival=2016-05-24&departure=2016-05-25&code=qwerwqrwqr&adults1=1&children1=0&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl

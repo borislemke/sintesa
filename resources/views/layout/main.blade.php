@@ -221,7 +221,6 @@
     @include('modules.plugins.popup')
 
 <!-- Js -->
-<script src="/js/jquery-1.11.2.min.js"></script>
 <script>
     /*
      $(function() {

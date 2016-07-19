@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/skin.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <?php if(env('APP_DEBUG')): ?>
     <script type="text/javascript">
         document.write('<script src="//localhost:35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
@@ -89,4 +90,9 @@
     </script>
     <!-- /Google Analytics -->
     {{--@endif--}}
+
+    <script type="text/javascript" src="http://hotelsitecontents.fastbooking.com/js/fb.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
 </head>
