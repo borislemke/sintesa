@@ -427,7 +427,7 @@ small.small {font-size:30%; line-height: 1.5; max-width:500px; display: block; m
 		color: #000 !important;
 	}
 
-	
+
 }
 
 
@@ -738,7 +738,7 @@ body,
   }
 }
 @media only screen and (max-width: 960px){
-	
+
   .window-height.include-booking {
     height: 320px !important;
   }
@@ -1357,8 +1357,9 @@ body,
 
 /* main nav */
 .overlay-navigation > ul > li > a{
-	font-size: 3rem;
-	color: #999;
+	font-size: 1.6rem;
+	color: #555759;
+	font-family: 'Trajan Pro', sans-serif;
 }
 .overlay-navigation > ul > li > a:hover,
 .overlay-navigation > ul > li.current > a,
@@ -1384,8 +1385,9 @@ body,
 	letter-spacing: 0.1rem;
 	text-transform: normal;
 	font-weight: normal;
-	line-height: 1.2;
-	color: #999;
+	line-height: 1;
+    color: #959799;
+    font-size: 1.5rem;
 }
 .overlay-navigation .sub-menu .current a{
 	color: #000;
@@ -2743,6 +2745,12 @@ textarea.required-field{
 	text-transform: none;
 	font-style: normal;
 }
+@media only screen and (max-width: 960px) {
+	.footer .widget,
+	.footer address{
+		text-align: center;
+	}
+}
 .footer-top a:not(.button){
 	color: #666;
 }
@@ -2803,6 +2811,8 @@ textarea.required-field{
 	line-height: 1.7;
 }
 
+
+
 /* Footer Navigation */
 .footer .navigation li,
 .footer .navigation ul li a{
@@ -2821,6 +2831,19 @@ textarea.required-field{
 .footer-1 .footer-bottom .navigation,
 .footer-1 .footer-bottom .social-list{
 	float: none;
+}
+
+@media only screen and (max-width: 768px){
+	.footer {
+		font-size:1em;
+	}
+	.footer small {
+		font-size:90%;
+	}
+	.footer div.award {
+		text-align: center;
+	}
+
 }
 
 /*------------------------------------------------------------------
@@ -3596,7 +3619,7 @@ body.barber .three-column-text-wrapper ul li {
     padding-bottom: 2rem;
 	}
 	.push-up {
-	    margin-top: -1rem;
+	    margin-top: -4rem;
 	}
 	.pb-50, .section-block.pb-50 {
 		padding-bottom:2rem;

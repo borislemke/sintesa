@@ -1,0 +1,20 @@
+<mt-module-block layout="row" layout-wrap class="max-1000">
+	<div flex="100" flex-gt-xs="33">
+    <md-input-container class="md-block">
+      <label>Title</label>
+      <textarea ng-model="module.data.title" class="larger"></textarea>
+    </md-input-container>
+  </div>
+  <div flex="100" flex-gt-xs="33">
+    <mt-input-container class="md-padding no-padding-top no-padding-left-right">
+        <p class="mt-module-title">Text One</p>
+        <div medium-editor ng-model="module.data.text_one" bind-options="mediumOptionsBasic"></div>
+    </mt-input-container>
+  </div>
+  <div flex="100" flex-gt-xs="33">
+    <mt-input-container class="md-padding no-padding-top no-padding-left-right">
+        <p class="mt-module-title">Text Two</p>
+        <div medium-editor ng-model="module.data.text_two" bind-options="mediumOptionsBasic"></div>
+    </mt-input-container>
+  </div>
+</mt-module-block>

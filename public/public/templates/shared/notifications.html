@@ -1,0 +1,18 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2 mt-notification-sidebar" md-component-id="notifications-bar">
+    <md-toolbar class="">
+        <h1 class="md-toolbar-tools">Notifications</h1>
+    </md-toolbar>
+    <md-content class="mt-notifications-wrapper">
+        <div class="mt-notification-item mt-notif-priority-{{ notif.priority }}" ng-repeat="(key,notif) in notificationCtrl.notifications track by key">
+            <h4 ng-bind="notif.title"></h4>
+            <small ng-bind-html="notif.message"></small>
+            <a ng-click="notificationCtrl.dismiss(key)" aria-label="Notification dismiss" class="remove">&times;</a>
+            <!--
+            <div class="mt-notifications-actions" layout="row">
+                <md-button flex ng-click="notificationCtrl.dismiss(key)" aria-label="Notification dismiss">dismiss</md-button>
+                <md-button flex ng-if="notif.action" ng-href="{{ notif.action.link }}" aria-label="Notification action" ng-bind="notif.action.text"></md-button>
+            </div>
+            -->
+        </div>
+    </md-content>
+</md-sidenav>

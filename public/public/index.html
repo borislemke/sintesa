@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stellium</title>
+    <script>
+        // Takes current URL e.g http://some-client.com/admin/
+        var url = window.location.href;
+        var adminIndex = url.indexOf('admin');
+        // strips the base URL e.g http://some-client.com/admin/ -> http://some-client.com/
+        var SERVER_ADDRESS = adminIndex > -1 ? url.substr(0, adminIndex) : 'http://sintesa.dev/';
+        // var SOCKET_ADDRESS = 'http://socket.stellium.io/';
+        var SOCKET_ADDRESS = 'http://localhost:3030/';
+        // false if app runs inside electron
+        var isElectron = !(window && window.process && window.process.type);
+        var HTML5_MODE = isElectron;
+        var ROUTE_PREFIX = HTML5_MODE ? (adminIndex > -1 ? '/admin/' : '/') : '#/';
+        document.write('<base href="' + (adminIndex > -1 ? '/admin/' : '/') + '">');
+    </script>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0001, maximum-scale=1.0001, minimum-scale=1.0001">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="css/dependencies.css">
+    <link rel="stylesheet" href="plugins/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dependencies.js"></script>
+    <script src="plugins/medium-editor/autolist.js"></script>
+    <script src="plugins/angular-mappy/angular-mappy.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body ng-controller="MainCtrl as mainCtrl"
+      ng-class="{
+      init: init,
+      aside: sideIsOpen,
+      sidelocked: sideIsLocked,
+      authScreen: isAuthPage
+      }" md-no-ink>
+<mt-app-wrapper layout="row">
+    <mt-navbar></mt-navbar>
+
+    <md-content id="md-content-right" ng-click="mainCtrl.closeMenu()">
+        <!-- MAGIC VIEW -->
+        <md-content id="app-view" ng-view>
+
+        </md-content>
+    </md-content>
+    <mt-notifications></mt-notifications>
+    <mt-profile-sidebar></mt-profile-sidebar>
+</mt-app-wrapper>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<mt-module-block layout="row" layout-padding layout-wrap class="mt-module--block mt-module--sliders-fullscreen">
+
+    <div class="mt-module--item" flex="100" flex-gt-xs="50" flex-gt-sm="25" flex-gt-lg="20" ng-repeat="slider in module.data track by $index">
+        <md-icon md-svg-icon="icons/close.svg" class="mt-module__remove-module"></md-icon>
+        <div class="mt-module__image-wrapper mt-bg-image cursor mb-30" ng-click="pageEditCtrl.filePicker(slider.banner, $event)" style="background-image: url({{ __serverAddress }}media/{{ slider.banner.src }})"></div>
+
+        <div class="mt-module__link-selector md-block">
+            <md-input-container class="md-block" ng-if="slider.button.link.type && slider.button.link.type !== undefined">
+                <label>Button Label</label>
+                <input type="text" ng-model="slider.button.text[selectedLanguage]">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Button Link Type</label>
+                <md-select ng-model="slider.button.link.type" aria-label="Link type selector">
+                    <md-option value="" ng-selected="!slider.button.link.type || slider.button.link.type === undefined">No Button</md-option>
+                    <md-option value="external">External</md-option>
+                    <md-option value="page">Page</md-option>
+                    <md-option value="file">File</md-option>
+                    <md-option value="pdf">PDF File</md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container class="md-block" ng-if="slider.button.link.type === 'page'">
+                <label>Page URL</label>
+                <md-select ng-model="slider.button.link.url" aria-label="Link type selector">
+                    <md-option ng-repeat="page in pageEditCtrl.allPages" value="{{ page.url }}" ng-bind="page.title"></md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container class="md-block" ng-if="slider.button.link.type === 'external'">
+                <label>External Link</label>
+                <input type="text" ng-model="slider.button.link.url">
+            </md-input-container>
+            <md-button class="fwidth" ng-if="slider.button.link.type === 'file' || slider.button.link.type === 'pdf'" ng-click="pageEditCtrl.filePicker(slider.banner, $event)">File Picker</md-button>
+        </div>
+
+        <md-input-container class="md-block">
+            <label>Slider Title</label>
+            <input type="text" ng-model="slider.title[selectedLanguage]">
+        </md-input-container>
+
+        <mt-input-container class="md-padding no-padding-top">
+            <p class="mt-module-title">Slider Subtitle</p>
+            <div medium-editor ng-model="slider.subtitle[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+        </mt-input-container>
+    </div>
+    <!-- Module duplicator takes the first data inside a module.data and pushes it to the end of the module.data -->
+    <mt-module-duplicator file-data="module" file-selector="banner" class="mt-module-block mt-add-image" flex="100" flex-gt-xs="50" flex-gt-sm="25" flex-gt-lg="20" layout="column" layout-align="center center" ng-click="pageEditCtrl.moduleDuplicator(module)">
+        <md-icon md-icon-ghost md-svg-icon="icons/add.svg"></md-icon>
+    </mt-module-duplicator>
+</mt-module-block>

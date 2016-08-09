@@ -1,0 +1,25 @@
+<md-content class="mt-page-template mt-page-card-content" id="mt-page-content-hotels-listing" layout="column">
+    <md-toolbar class="md-toolbar-header" layout="column">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row" layout-align="center center">
+            <h2>
+                <span>Manage Hotels</span>
+            </h2>
+            <span class="flex"></span>
+            <md-button class="upload-button btn gradient" ng-click="hotelsCtrl.addHotel($event)">
+                add hotel
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <div class="mt-data-container md-padding">
+
+        <div class="mt-card-wrapper" layout="row" layout-wrap>
+            <div class="mt-card-item mt-hotel-item" ng-repeat="hotel in hotelsCtrl.hotels track by $index">
+                <div style="background-image: url('http://4.bp.blogspot.com/-MHFS-DfcP2g/VlAsPkfSwLI/AAAAAAAAEzw/LhMCV9XwRo8/s1600/The%2BSintesa%2BJimbaran%2BBali.jpg'); background-size: cover; background-position: center" class="mt-card-thumbnail-wrapper" layout="row" layout-align="center center">
+                </div>
+                <p class="mt-hotel-title" ng-bind="hotel.title"></p>
+            </div>
+        </div>
+    </div>
+</md-content>

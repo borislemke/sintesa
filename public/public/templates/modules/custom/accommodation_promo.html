@@ -1,0 +1,22 @@
+<mt-module-block layout-padding layout-wrap layout="row" class="mt-module--block mt-module--custom-accommodation-promo">
+    <div layout="row" layout-wrap>
+        <md-input-container flex="100" flex-gt-sm="50">
+            <label>Header Title</label>
+            <input type="text" ng-model="module.config.header.title[selectedLanguage]">
+        </md-input-container>
+        <mt-input-container class="mb-30" flex="100" flex-gt-sm="50">
+            <p class="mt-module-title">Header Description</p>
+            <div medium-editor ng-model="module.config.header.description[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+        </mt-input-container>
+    </div>
+    <div class="mt-module--item mt-module--item__custom-accommodation-promo" flex="100" flex-gt-xs="50" flex-gt-sm="25" flex-gt-lg="20" ng-repeat="promo in module.data">
+        <div class="mt-module__image-wrapper cursor mb-20" layout="column" layout-align="center center" ng-click="pageEditCtrl.filePicker(promo.image, $event)">
+            <img ng-src="{{ __serverAddress }}media/{{ promo.image.src }}">
+        </div>
+
+        <md-input-container class="md-block">
+            <label>Promo Title</label>
+            <textarea rows="2" ng-model="promo.title"></textarea>
+        </md-input-container>
+    </div>
+</mt-module-block>

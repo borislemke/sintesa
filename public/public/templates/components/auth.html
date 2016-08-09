@@ -1,0 +1,20 @@
+
+<md-content class="auth-bg">
+    <div class="auth-overlay" style="background-image:url('images/hero.jpg')"></div>
+
+    <md-content class="md-padding mt-auth-wrapper">
+        <form autocomplete="off" ng-submit="authCtrl.login()" layout="column">
+            <md-input-container class="md-block" md-no-float>
+                <input type="text" placeholder="Email" ng-model="authCtrl.email">
+            </md-input-container>
+            <md-input-container class="md-block" md-no-float>
+                <input type="password" placeholder="Password" ng-model="authCtrl.password">
+            </md-input-container>
+            <span class="flex"></span>
+            <md-button class="btn black gradient" type="submit">login</md-button>
+        </form>
+    </md-content>
+
+</md-content>
+
+

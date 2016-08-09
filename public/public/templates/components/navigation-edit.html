@@ -1,0 +1,115 @@
+<md-content class="mt-page-template" id="mt-page-content-nav-edit" layout="column">
+    <md-toolbar class="md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row" layout-align="center center">
+            <h2 flex>
+                <span ng-bind="navEditCtrl.title + navEditCtrl.nav.title"></span>
+            </h2>
+            <mt-warning style="margin: 0 16px 0 0" ng-if="navigationForm.$dirty">You have unsaved changes</mt-warning>
+            <md-button class="btn md-primary" ng-disabled="navigationForm.$pristine" ng-click="navEditCtrl.reset(navigationForm)" aria-label="Reset form content">reset
+            </md-button>
+            <md-button class="btn gradient md-primary" ng-disabled="navigationForm.$pristine" ng-click="navEditCtrl.save()" aria-lable="Save navigation form">save
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content class="mt-data-container md-padding" flex md-scroll-y layout="row">
+        <form layout="column" name="navigationForm" flex="50" style="padding-right: 16px">
+            <h3 style="padding-left: 16px">Menu Structure</h3>
+
+            <div class="navigation-scroller" style="max-height: calc(100vh - 140px); overflow-y: scroll">
+                <div class="mt-navigation-item nav-item-parent" ng-repeat="child in navEditCtrl.nav.children | toArray | orderBy:'order' track by child.id">
+                    <div layout="row">
+                        <!--<p ng-bind-html="child.title"></p>-->
+                        <md-button class="mt-nav-item-menu btn" aria-label="Open phone interactions menu" ng-click="navEditCtrl.selectNav(child)">
+                            <i class="icon-basic-sheet menu-icon"></i>{{ child.title }}
+                        </md-button>
+                        <span class="flex"></span>
+                    </div>
+
+                    <div class="mt-navigation-item nav-item-child" ng-repeat="grand in child.children | toArray | orderBy:grand.order track by grand.id">
+                        <div layout="row" ng-click="navEditCtrl.selectNav(grand)">
+                            <i class="icon-arrows-slide-right2 menu-icon light"></i>
+                            <i class="icon-basic-sheet menu-icon"></i>
+                            <span flex ng-bind-html="grand.title"></span>
+                        </div>
+
+                        <dav class="grand-bag" dragula="'grand-bag'" dragula-model="grand.children">
+                            <div class="mt-navigation-item nav-item-grand" ng-repeat="grandG in grand.children | toArray | orderBy:grandG.order track by grandG.id" ng-click="navEditCtrl.selectNav(grandG)">
+                                <div layout="row" dragula="'bag-{{ grand.id }}'">
+                                    <i class="icon-arrows-slide-right2 menu-icon light"></i>
+                                    <i class="icon-basic-sheet menu-icon"></i>
+                                    <span flex ng-bind-html="grandG.title"></span>
+                                </div>
+                            </div>
+                        </dav>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form layout="column" flex="50" ng-submit="navEditCtrl.updateItem()">
+            <h3>Menu Detail: {{ navEditCtrl.selectedNav.title }}</h3>
+
+            <div layout="row" layout-wrap>
+
+                <md-input-container flex="100">
+                    <label>Menu Title</label>
+                    <input type="text" ng-model="navEditCtrl.selectedNav.title">
+                </md-input-container>
+
+                <md-input-container class="md-block" flex="50">
+                    <label>Link Type</label>
+                    <md-select ng-model="navEditCtrl.selectedNav.url_type" aria-label="Link type selector">
+                        <md-option value="" ng-selected="!navEditCtrl.selectedNav.url_type || navEditCtrl.selectedNav.url_type === undefined">
+                            No
+                            Link
+                        </md-option>
+                        <md-option value="external">External</md-option>
+                        <md-option value="page">Page</md-option>
+                        <md-option value="file">File</md-option>
+                        <md-option value="pdf">PDF File</md-option>
+                    </md-select>
+                </md-input-container>
+
+                <md-input-container flex="50">
+                    <label>Menu URL</label>
+                    <input type="text" ng-model="navEditCtrl.selectedNav.url">
+                </md-input-container>
+
+                <md-input-container flex="100">
+                    <label>Menu Tooltip</label>
+                    <input type="text" ng-model="navEditCtrl.selectedNav.tooltip">
+                </md-input-container>
+
+
+                <md-checkbox style="margin: 8px" md-no-ink aria-label="Enable menu" ng-true-value="1" ng-false-value="0" ng-model="navEditCtrl.selectedNav.hide" class="md-primary" flex="50">
+                    Hide
+                </md-checkbox>
+
+                <md-checkbox style="margin: 8px" md-no-ink aria-label="Don't link menu" ng-true-value="1" ng-false-value="0" ng-model="navEditCtrl.selectedNav.no_link" class="md-primary" flex="50">
+                    Don't link
+                </md-checkbox>
+
+                <md-checkbox style="margin: 8px" md-no-ink aria-label="Open in new tab" ng-true-value="1" ng-false-value="0" ng-model="navEditCtrl.selectedNav.open_in_new" class="md-primary" flex="50">
+                    Open in new tab
+                </md-checkbox>
+
+            </div>
+
+            <div layout="row">
+                <span class="flex"></span>
+                <md-button type="submit">update</md-button>
+            </div>
+        </form>
+
+        <!--
+        <p>Dragula items</p>
+        <div dragula="'touche-bag'" dragula-model="navEditCtrl.nav.children">
+            <div ng-repeat="child in navEditCtrl.nav.children">
+                <p ng-bind="child.title"></p>
+            </div>
+        </div>
+        -->
+    </md-content>
+</md-content>

@@ -1,0 +1,63 @@
+<mt-module-block layout="row" layout-wrap class="max-1000">
+  <div flex="25" class="mb-20">
+    <md-input-container class="md-block">
+      <label>Zoom</label>
+      <textarea ng-model="module.data.zoom" class="bordered"></textarea>
+    </md-input-container>
+  </div>
+  <div flex="25" class="mb-20">
+    <md-input-container class="md-block">
+      <label>Center Latitude</label>
+      <textarea ng-model="module.data.lat" class="bordered"></textarea>
+    </md-input-container>
+  </div>
+  <div flex="25" class="mb-20">
+    <md-input-container class="md-block">
+      <label>Center Longitude</label>
+      <textarea ng-model="module.data.long" class="bordered"></textarea>
+    </md-input-container>
+  </div>
+  <div flex="25" class="mb-20">
+    <md-input-container class="md-block">
+      <label>Content</label>
+      <textarea ng-model="module.data.content" class="bordered"></textarea>
+    </md-input-container>
+  </div>
+
+  <div flex="25" ng-repeat="marker in module.data.markers track by $index" class="mb-30" style="max-height:1000px !important">
+    <div class="mt-module-block mt-bg-image square ml-30" style="background-image:url({{ __serverAddress }}{{ marker.image }})">
+      <button class="mt-module-remove-button" ng-click="pageEditCtrl.removeModuleBlock(module, $index)">
+          <md-icon md-svg-icon="icons/close.svg"></md-icon>
+      </button>
+    </div>
+    <md-input-container class="md-block">
+      <label>Text</label>
+      <textarea ng-model="marker.text" class="bordered"></textarea>
+    </md-input-container>
+    <mt-input-container class="md-block md-padding mt-10 mb-20 no-padding-bottom">
+        <p class="mt-module-title">Description</p>
+        <div medium-editor ng-model="marker.description[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+    </mt-input-container>
+    <md-input-container class="md-block">
+      <label>Time</label>
+      <textarea ng-model="marker.time" class="bordered"></textarea>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Distance</label>
+      <textarea ng-model="marker.dist" class="bordered"></textarea>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Latitude</label>
+      <textarea ng-model="marker.lat" class="bordered"></textarea>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Longitude</label>
+      <textarea ng-model="marker.long" class="bordered"></textarea>
+    </md-input-container>
+  </div>
+  <div flex="25">
+    <div class="mt-module-block mt-add-image ml-30 square" layout="column" layout-align="center center" ng-click="pageEditCtrl.filePicker(module, $event)">
+        <md-icon md-icon-ghost md-svg-icon="icons/add.svg"></md-icon>
+    </div>
+  </div>
+</mt-module-block>

@@ -1,0 +1,59 @@
+<md-dialog aria-label="File Upload" id="mt-add-user-dialog" layout="column">
+    <h3 style="margin: 24px 16px">Register new User</h3>
+    <form ng-submit="userAddCtrl.save()" layout="column">
+        <div class="input-wrapper" layout="row" layout-padding layout-wrap>
+
+            <md-input-container md-no-float flex="50">
+                <input type="text" placeholder="First Name" ng-model="userAddCtrl.firstname">
+            </md-input-container>
+
+            <md-input-container md-no-float flex="50">
+                <input type="text" placeholder="Last Name" ng-model="userAddCtrl.lastname">
+            </md-input-container>
+
+            <md-input-container md-no-float flex="50">
+                <input type="text" placeholder="Username" ng-model="userAddCtrl.username">
+            </md-input-container>
+
+            <md-input-container md-no-float flex="50">
+                <input type="text" placeholder="User Email" ng-model="userAddCtrl.email">
+            </md-input-container>
+
+            <md-input-container md-no-float flex="100">
+                <input type="text" placeholder="User password" ng-model="userAddCtrl.password">
+            </md-input-container>
+
+
+            <md-input-container md-no-float id="user-role-selector" flex="100">
+                <md-select ng-model="userAddCtrl.role_id" aria-label="All languages">
+                    <md-option ng-repeat="(code,role) in {1: 'Super Admin', 2: 'Web Master', 3: 'Analyst'}" value="{{ code }}" ng-selected="userAddCtrl.role_id == code" ng-bind="role">
+                    </md-option>
+                </md-select>
+            </md-input-container>
+
+            <md-checkbox style="margin: 8px" md-no-ink aria-label="Enable user" ng-true-value="1" ng-false-value="0" ng-model="userAddCtrl.active" class="md-primary">
+                Enable user
+            </md-checkbox>
+
+
+            <!--
+            username //
+            email //
+            password //
+            role_id
+            firstname //
+            lastname //
+            image
+            active
+            -->
+            <div layout="row" layout-align="end center" flex="100">
+                <md-button ng-click="userAddCtrl.cancel()" class="btn">
+                    cancel
+                </md-button>
+                <md-button type="submit" class="btn gradient">
+                    save
+                </md-button>
+            </div>
+        </div>
+    </form>
+</md-dialog>

@@ -1,0 +1,34 @@
+<md-dialog aria-label="Module picker" id="mt-module-picker-window">
+    <md-content layout="column">
+        <div class="mt-modal-header md-block" layout="column">
+            <h3>Module Picker</h3>
+            <div layout="row">
+                <md-button class="btn mt-module-filter mt-module-filter-all" ng-class="{gradient: modulePickerCtrl.isSelected('all')}" ng-click="modulePickerCtrl.current = 'all'">all</md-button>
+                <md-button class="btn mt-module-filter" ng-repeat="moduleGroup in modulePickerCtrl.modules | orderBy:'order' track by $index" ng-class="{gradient: modulePickerCtrl.isSelected(moduleGroup.name)}" ng-click="modulePickerCtrl.current = moduleGroup.name">{{ moduleGroup.name }}</md-button>
+                <span class="flex"></span>
+            </div>
+        </div>
+        <!--
+        <div class="mt-modal-content" layout="column">
+            <div class="mt-module-group" layut="column"
+                 ng-repeat="moduleGroup in modulePickerCtrl.modules | orderBy:'order' track by $index" ng-if="modulePickerCtrl.isSelected(moduleGroup.name) || modulePickerCtrl.isSelected('all')">
+                <h3 ng-bind="moduleGroup.name"></h3>
+                <div class="mt-module-wrapper" layout="row" layout-wrap>
+                    <div class="mt-module-item"
+                         ng-repeat="module in moduleGroup.modules | orderBy:'order' track by $index">
+                        <div class="mt-module-icon" style="height: 108px; width: 108px; background-color: grey;"></div>
+                        <p ng-bind="module.name"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="mt-modal-content" layout="row" layout-wrap>
+            <div ng-repeat-start="moduleGroup in modulePickerCtrl.modules track by $index" ng-if="false"></div>
+            <div class="mt-module-item" flex-xs="50" flex-gt-xs="20" cursor layout-padding ng-repeat="module in moduleGroup.modules | orderBy:'title' track by $index" ng-if="modulePickerCtrl.isSelected(moduleGroup.name) || modulePickerCtrl.isSelected('all')" ng-repeat-end ng-click="modulePickerCtrl.pick(module)">
+                <div class="mt-module-icon" style="height: 108px; width: 90%; background-color: #e5e7e9"></div>
+                <span ng-bind="module.name"></span>
+            </div>
+        </div>
+    </md-content>
+</md-dialog>

@@ -1,0 +1,31 @@
+<md-dialog aria-label="File Upload" id="mt-file-upload-window" layout="column">
+    <form ng-submit="fileUploadCtrl.upload()" layout="column" ng-disabled="fileUploadCtrl.isLoading">
+        <div class="mt-file-upload-img-wrapper">
+            <input id="file-upload" type="file" cursor mt-file-change mt-model="fileUploadCtrl.file.name" mt-source="fileUploadCtrl.file.src" accept="image/*">
+            <div class="mt-file-upload-img-preview" layout="column" layout-align="center center">
+                <md-icon ng-if="!fileUploadCtrl.file.src" style="height: 96px; width: 96px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto" md-icon-ghost md-svg-icon="icons/cloud_upload.svg"></md-icon>
+                <img ng-src="{{ fileUploadCtrl.file.src }}">
+            </div>
+        </div>
+        <div class="input-wrapper" layout-padding layout="column">
+            <md-input-container md-no-float>
+                <input type="text" placeholder="File Name" ng-model="fileUploadCtrl.file.name">
+            </md-input-container>
+            <md-input-container md-no-float>
+                <textarea rows="2" placeholder="Description" ng-model="fileUploadCtrl.file.description"></textarea>
+            </md-input-container>
+            <span class="flex"></span>
+            <div layout="row" layout-align="end center">
+                <md-button ng-click="fileUploadCtrl.cancel()" class="btn">
+                    cancel
+                </md-button>
+                <md-button type="submit" class="btn gradient">
+                    upload
+                </md-button>
+            </div>
+        </div>
+    </form>
+    <div class="file-upload-loader" ng-if="fileUploadCtrl.isLoading">
+        <md-icon md-icon-grey md-svg-icon="icons/cloud_upload.svg"></md-icon>
+    </div>
+</md-dialog>

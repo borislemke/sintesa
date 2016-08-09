@@ -264,7 +264,6 @@
                     "&adults1=1" +
                     "&children1=0";
             window.location = "https://www.book-secure.com/index.php?s=results&property=idbal28401&rooms=1&locale=en_GB&currency=IDR&stid=3gthgk0hl" + param;
-
         });
     }
 </script>

@@ -1,0 +1,10 @@
+<mt-module-block layout="row" layout-margin>
+    <div class="mt-module-block mt-bg-image custom-gallery" flex="20" ng-repeat="gallery in module.data | limitTo:4 track by $index" style="background-image:url({{ __serverAddress }}media/{{ gallery.image.src }})" ng-click="pageEditCtrl.filePicker(gallery.image, $event)">
+        <button class="mt-module-remove-button" ng-click="pageEditCtrl.removeModuleBlock(module, $index)">
+            <md-icon md-svg-icon="icons/close.svg"></md-icon>
+        </button>
+    </div>
+    <!-- FLOOR-PLAN PICKER -->
+    <div class="mt-module-block mt-bg-image custom-gallery" flex="20" style="background-image:url({{ __serverAddress }}media/{{ module.config.floorplan.src }})" ng-click="pageEditCtrl.filePicker(module.config.floorplan, $event)">
+    </div>
+</mt-module-block>

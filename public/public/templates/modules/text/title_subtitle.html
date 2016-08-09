@@ -1,0 +1,18 @@
+<mt-module-block layout="row" layout-wrap class="max-1000">
+    <div flex="100" flex-gt-xs="50">
+        <md-input-container class="md-block mb-30">
+            <label>Title</label>
+            <textarea ng-model="module.data.title[selectedLanguage]" class="larger"></textarea>
+        </md-input-container>
+
+        <mt-input-container class="md-block mb-30 md-padding no-padding-top">
+            <p class="mt-module-title">Subtitle</p>
+            <div medium-editor ng-model="module.data.subtitle[selectedLanguage]" bind-options="mediumOptions"></div>
+        </mt-input-container>
+    </div>
+
+    <mt-input-container class="md-block" flex="100" flex-gt-xs="50">
+        <p class="mt-module-title">Text</p>
+        <div medium-editor ng-model="module.data.text[selectedLanguage]" bind-options="mediumOptions"></div>
+    </mt-input-container>
+</mt-module-block>

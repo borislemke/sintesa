@@ -1,0 +1,8 @@
+<mt-module-block layout-padding class="mt-module--block mt-module--parallax-image">
+    
+    <div layout="row" layout-wrap>
+        <div class="mt-module__image-wrapper cursor" layout="column" layout-align="center center" ng-click="pageEditCtrl.filePicker(module.data.background, $event)" flex="100" flex-gt-xs="100">
+            <img ng-src="{{ __serverAddress }}media/{{ module.data.background.src }}">
+        </div>
+    </div>
+</mt-module-block>

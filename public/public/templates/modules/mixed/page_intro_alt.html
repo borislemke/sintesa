@@ -1,0 +1,27 @@
+<mt-module-block layout="row" layout-wrap class="max-1000">
+    <div flex="100" flex-gt-xs="33" ng-repeat="column in module.data.columns">
+        <md-input-container class="md-block">
+            <!--<div cursor ng-bind-html="column" ng-click="pageEditCtrl.htmlEdit(column, $event)"></div>-->
+            <div ng-model="column" medium-editor bind-options="mediumOptions"></div>
+        </md-input-container>
+    </div>
+    <hr>
+    <div flex="100" flex-gt-xs="66">
+        <div class="mt-module-block mt-bg-image" style="background-image:url({{ __serverAddress }}media/{{ module.data.image_wide.src}})">
+            <button class="mt-module-remove-button" ng-click="pageEditCtrl.removeModuleBlock(module, $index)">
+                <md-icon md-svg-icon="icons/close.svg"></md-icon>
+            </button>
+        </div>
+    </div>
+    <div flex="100" flex-gt-xs="33">
+        <div class="mt-module-block mt-bg-image ml-30" style="background-image:url({{ __serverAddress }}media/{{ module.data.image_square.src}})">
+            <button class="mt-module-remove-button" ng-click="pageEditCtrl.removeModuleBlock(module, $index)">
+                <md-icon md-svg-icon="icons/close.svg"></md-icon>
+            </button>
+        </div>
+    </div>
+    <mt-input-container flex="100">
+        <p class="mt-module-title">Intro Text</p>
+        <div ng-model="module.data.intro" medium-editor bind-options="mediumOptions"></div>
+    </mt-input-container>
+</mt-module-block>

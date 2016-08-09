@@ -1,0 +1,142 @@
+<md-content class="mt-page-template" id="mt-page-content-file-manager" layout="column">
+    <md-toolbar class="md-toolbar-header" layout="column">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row" layout-align="center center">
+            <h2>
+                <span>File Manager</span>
+            </h2>
+            <span class="flex"></span>
+            <md-button class="upload-button btn gradient" ng-click="fileManCtrl.uploadFile($event)">
+                <i class="menu-icon icon-basic-upload"></i>
+                upload file
+            </md-button>
+        </div>
+        <div layout="row" class="mt-file-breadcrumbs">
+            <div class="mt-file-breadcrumb" ng-repeat="dir in fileManCtrl.directory track by $index">
+                <md-button class="folder-history-button" aria-label="File manager breadcrumb" ng-if="!$last" ng-bind="dir.title" ng-click="fileManCtrl.backFolder(dir.url, $index)"></md-button>
+                <md-icon class="chevron-separator" ng-if="!$last" md-icon-ghost md-svg-icon="icons/chevron_right.svg">/</md-icon>
+                <md-menu class="mt-menu-group-item" ng-if="$last">
+                    <md-button aria-label="Open menu" ng-click="$mdOpenMenu($event)">
+                        {{ dir.title }}
+                        <md-icon md-icon-grey md-svg-icon="icons/keyboard_arrow_down.svg"></md-icon>
+                    </md-button>
+                    <md-menu-content width="3">
+
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-click="fileManCtrl.mkdir()" layout="row" aria-lable="Create a new folder">
+                                <i class="menu-icon icon-basic-folder"></i>
+                                <!--<md-icon md-svg-icon="icons/create_new_folder.svg" class="md-icon-dark"></md-icon>-->
+                                <p flex>New folder...</p>
+                            </md-button>
+                        </md-menu-item>
+
+                        <md-menu-item>
+                            <md-button ng-click="fileManCtrl.uploadFile($event)" layout="row" aria-lable="Upload a new file">
+                                <i class="menu-icon icon-basic-server-upload"></i>
+                                <!--<md-icon md-svg-icon="icons/file_upload.svg" class="md-icon-dark"></md-icon>-->
+                                <p flex>File upload...</p>
+                            </md-button>
+                        </md-menu-item>
+
+                    </md-menu-content>
+                </md-menu>
+            </div>
+
+            <div ng-if="false" class="mt-file-breadcrumb" cursor layout="row" ng-repeat="dir in fileManCtrl.directory" ng-click="fileManCtrl.backFolder(dir.url, $index)">
+                <p ng-if="!$last" ng-bind="dir.title" flex></p>
+                <md-icon ng-if="!$last" md-icon-ghost md-svg-icon="icons/chevron_right.svg">/</md-icon>
+                <md-menu class="mt-menu-group-item" id="mt-file-action-menu" ng-if="$last">
+                    <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                        {{ dir.title }}
+                        <md-icon md-icon-grey md-svg-icon="icons/keyboard_arrow_down.svg"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="4">
+
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-click="fileManCtrl.mkdir()" layout="row">
+                                <i class="menu-icon icon-basic-folder"></i>
+                                <!--<md-icon md-svg-icon="icons/create_new_folder.svg" class="md-icon-dark"></md-icon>-->
+                                <p flex>New folder...</p>
+                            </md-button>
+                        </md-menu-item>
+
+                        <md-menu-item>
+                            <md-button ng-click="fileManCtrl.uploadFile($event)" layout="row">
+                                <md-icon md-svg-icon="icons/file_upload.svg" class="md-icon-dark"></md-icon>
+                                <p flex>File upload...</p>
+                            </md-button>
+                        </md-menu-item>
+
+                    </md-menu-content>
+                </md-menu>
+            </div>
+        </div>
+    </md-toolbar>
+
+    <div class="mt-data-container md-padding">
+
+        <div layout="row" layout-wrap>
+            <div class="mt-file-manager-item mt-file-man-folder" ng-repeat="folder in fileManCtrl.media.folders" ng-click="fileManCtrl.openFolder(folder.link)" flex-xs="50" flex-gt-xs="25" flex-gt-md="20" cursor layout-padding>
+                <div class="mt-file-item-card folder-card" layout="row" md-whiteframe="1">
+                    <!--<md-icon md-icon-grey md-svg-icon="icons/folder.svg"></md-icon>-->
+                    <i class="menu-icon icon-basic-folder"></i>
+                    <p ellipsis flex ng-bind="folder.name"></p>
+                    <md-menu class="mt-menu-group-item" md-position-mode="target-right target">
+                        <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                            <md-icon md-icon-grey md-svg-icon="icons/more_vert.svg"></md-icon>
+                        </md-button>
+
+                        <md-menu-content width="3">
+                            <md-menu-item>
+                                <md-button md-menu-align-target ng-click="fileManCtrl.editFolder(folder.link, $event)">
+                                    Edit
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button md-menu-align-target ng-click="fileManCtrl.deleteFolder(folder.link, $event)">
+                                    Delete
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+            </div>
+        </div>
+
+        <div layout="row" layout-wrap>
+            <div class="mt-file-manager-item mt-file-man-file" ng-repeat="file in fileManCtrl.media.files" flex-xs="50" flex-gt-xs="25" flex-gt-md="20" layout-padding>
+                <div class="mt-file-item-card" layout="column" md-whiteframe="1" ng-click="fileManCtrl.editFile(file, $event)">
+                    <div class="mt-file-item-img-wrapper" cursor layout="row" layout-align="center center" style="background-image:url({{ __serverAddress }}media/{{ file.url }})" ng-class="{small: fileManCtrl.fileIsSmall(file.dimension)}">
+                        <!--<img ng-src="{{ __serverAddress }}media/{{ file.url }}">-->
+                    </div>
+
+                    <div layout="row" class="mt-file-actions">
+                        <p flex ellipsis ng-bind="file.title"></p>
+                        <md-menu class="mt-menu-group-item" md-position-mode="target-right target">
+                            <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                                <md-icon md-icon-white md-svg-icon="icons/more_vert.svg"></md-icon>
+                            </md-button>
+
+                            <md-menu-content width="3">
+                                <md-menu-item>
+                                    <md-button md-menu-align-target ng-click="fileManCtrl.editFile(file, $event)">
+                                        Edit
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-item>
+                                    <md-button md-menu-align-target ng-click="fileManCtrl.deleteFile(file.id)">
+                                        Delete
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <span class="flex"></span>
+    </div>
+</md-content>

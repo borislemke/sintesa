@@ -1,0 +1,48 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2 mt-notification-sidebar" md-component-id="profile-sidebar">
+    <md-toolbar class="md-theme-light">
+        <h1 class="md-toolbar-tools">My Profile</h1>
+    </md-toolbar>
+    <md-content class="mt-notifications-wrapper" layout-padding>
+        <form ng-submit="profileCtrl.update()">
+            <div layout="row">
+                <div class="mt-profile-wrapper">
+                    <img ng-src="{{ profileCtrl.user.image }}" style="max-width: 120px; max-height: 120px; height: auto; width: auto">
+                </div>
+                <div layout="column" flex>
+                    <md-input-container class="md-block">
+                        <label>Username</label>
+                        <input type="text" ng-model="profileCtrl.user.username">
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>Email Address</label>
+                        <input type="text" ng-model="profileCtrl.user.email">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div layout="row" mt-no-padding>
+                <md-input-container flex="50">
+                    <label>First Name</label>
+                    <input type="text" ng-model="profileCtrl.user.firstname">
+                </md-input-container>
+                <md-input-container flex="50">
+                    <label>Last Name</label>
+                    <input type="text" ng-model="profileCtrl.user.lastname">
+                </md-input-container>
+            </div>
+
+            <md-input-container style="width: calc(100% - 18px)">
+                <label>New Password</label>
+                <input type="password" ng-model="profileCtrl.user.password">
+            </md-input-container>
+
+            <div layout="row" layout-align="end center">
+                <md-button type="submit" class="btn gradient">update</md-button>
+            </div>
+        </form>
+    </md-content>
+
+    <div ng-if="profileCtrl.loading" class="loading-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, .35)">
+        <span style="color: white; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; height: 32px; width: 128px; text-align: center">Updating...</span>
+    </div>
+</md-sidenav>

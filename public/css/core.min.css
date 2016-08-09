@@ -6387,6 +6387,9 @@ a {
     .tms-caption.hide-on-mobile {
         display: none !important
     }
+    div.tms-caption {
+        display: none !important
+    }
     .tms-content-inner h1.tms-caption.title-medium {
         font-size: 3rem;
     }
@@ -12580,6 +12583,9 @@ body.boxed .blog-masonry.full-width [class*="content-grid"] {
     }
     .mb-mobile-50 {
         margin-bottom: 5rem
+    }
+    .pb-mobile-50 {
+        padding-bottom: 5rem
     }
     .mb-mobile-60 {
         margin-bottom: 6rem

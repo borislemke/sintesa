@@ -1,0 +1,8 @@
+<mt-module-block layout="row" layout-wrap class="max-1000">
+	<div class="mt-module--item" flex="100" flex-gt-sm="33" ng-repeat="column in module.data track by $index">
+    <mt-input-container class="md-block md-padding mt-10 mb-20 no-padding-bottom">
+        <p class="mt-module-title">Column Text</p>
+        <div medium-editor ng-model="column" bind-options="mediumOptions"></div>
+    </mt-input-container>
+  </div>
+</mt-module-block>

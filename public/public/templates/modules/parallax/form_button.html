@@ -1,0 +1,39 @@
+<mt-module-block layout-padding class="mt-module--block mt-module--parallax-form_button max-1000">
+
+    <div layout="row" layout-wrap>
+        <div flex="100" flex-gt-xs="33" class="mb-30">
+            <md-input-container class="md-block">
+                <label>Section Title</label>
+                <input type="text" ng-model="module.data.title[selectedLanguage]">
+            </md-input-container>
+        </div>
+        <div flex="100" flex-gt-xs="50" class="mb-30">
+            <mt-input-container>
+                <p class="mt-module-title">Section Text</p>
+                <div medium-editor ng-model="module.data.text[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+            </mt-input-container>
+        </div>
+        <div class="mt-module__image-wrapper cursor" layout="column" layout-align="center center" ng-click="pageEditCtrl.filePicker(module.data.background, $event)" flex="100" flex-gt-xs="66">
+            <img ng-src="{{ __serverAddress }}media/{{ module.data.background.src }}">
+        </div>
+        <div flex="100" flex-gt-xs="33">
+            <md-input-container class="md-block" ng-if="module.data.button.link.type && module.data.button.link.type !== undefined">
+                <label>Button Label</label>
+                <input type="text" ng-model="module.data.button.text[selectedLanguage]">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Button Link Type</label>
+                <md-select ng-model="module.data.button.link.type" aria-label="Link type selector">
+                    <md-option value="" ng-selected="!module.data.button.link.type || module.data.button.link.type === undefined">No Button</md-option>
+                    <md-option value="popup">Popup</md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container class="md-block" ng-if="module.data.button.link.type === 'popup'">
+                <label>Popup URL</label>
+                <input type="text" ng-model="module.data.button.link.url">
+            </md-input-container>
+        </div>
+
+
+    </div>
+</mt-module-block>

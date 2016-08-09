@@ -1,0 +1,26 @@
+<mt-module-block layout="row" layout-wrap class="max-1000">
+
+
+  <div flex="100" flex-gt-xs="33" ng-repeat="gallery in module.data track by $index">
+    <div class="mt-module-block mt-bg-image ml-30" style="background-image:url({{ __serverAddress }}media/{{ gallery.image.src }})">
+        <button class="mt-module-remove-button" ng-click="pageEditCtrl.removeModuleBlock(module, $index)">
+            <md-icon md-svg-icon="icons/close.svg"></md-icon>
+        </button>
+    </div>
+    <md-input-container class="md-block">
+      <label>Title</label>
+      <textarea ng-model="gallery.title[selectedLanguage]" class="larger bordered"></textarea>
+    </md-input-container>
+    <mt-input-container class="md-block md-padding mt-10 mb-20 no-padding-bottom">
+        <p class="mt-module-title">Text</p>
+        <div medium-editor ng-model="gallery.subtitle[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+    </mt-input-container>
+    <md-input-container class="md-block">
+      <label>Link URL</label>
+      <input type="text" ng-model="gallery.link.url" class="smaller">
+    </md-input-container>
+
+  </div>
+
+
+</mt-module-block>

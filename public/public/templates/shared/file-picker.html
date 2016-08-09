@@ -1,0 +1,29 @@
+<md-dialog class="mt-file-picker-dialog" id="mt-page-content-file-picker" layout="column">
+    <div class="mt-data-container md-padding">
+        <div class="mt-loading-wrapper" ng-if="filePickerCtrl.isLoading">
+            <div class="mt-loading-spinner">
+                <md-icon md-svg-icon="icons/cloud_download.svg"></md-icon>
+            </div>
+        </div>
+
+        <div layout="row" layout-wrap>
+            <div class="mt-file-manager-item mt-file-man-folder" ng-repeat="folder in filePickerCtrl.media.folders" ng-click="filePickerCtrl.openFolder(folder.link)" flex-xs="50" flex-gt-xs="25" flex-gt-md="20" cursor layout-padding>
+                <div class="mt-file-item-card folder-card" layout="row" md-whiteframe="1">
+                    <!--<md-icon md-icon-grey md-svg-icon="icons/folder.svg"></md-icon>-->
+                    <i class="menu-icon icon-basic-folder"></i>
+                    <p ellipsis flex ng-bind="folder.name"></p>
+                </div>
+            </div>
+        </div>
+
+        <div layout="row" layout-wrap>
+            <div class="mt-file-manager-item mt-file-man-file" ng-repeat="file in filePickerCtrl.media.files" flex-xs="50" flex-gt-xs="25" flex-gt-md="20" layout-padding>
+                <div class="mt-file-item-card" layout="column" md-whiteframe="1" ng-click="filePickerCtrl.pick(file)">
+                    <div class="mt-file-item-img-wrapper" cursor layout="row" layout-align="center center" style="background-image:url({{ filePickerCtrl.__serverAddress }}media/{{ file.url }})" ng-class="{small: filePickerCtrl.fileIsSmall(file.dimension)}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="flex"></span>
+    </div>
+</md-dialog>

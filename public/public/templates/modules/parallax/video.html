@@ -1,0 +1,21 @@
+<mt-module-block layout="column" layout-wrap class="module-fullscreen">
+	<div class="bg-wrapper" style="background-image:url({{ __serverAddress }}media/{{ module.data.background }})">
+		<div class="overlay"></div>
+		<div class="bg-header-overlay"></div>
+
+		<div class="content-wrapper">
+			<md-button ng-click="pageEditCtrl.filePicker(module, $event)" class="btn white gradient">Change Background Picture</md-button>
+			<md-input-container>
+	        <label>Video URL</label>
+	        <input type="text" ng-model="module.data.video">
+	    </md-input-container>
+		</div>
+
+
+		<!--
+    <h3 ng-bind="module.data.background" ng-click="pageEditCtrl.filePicker(module, $event)"></h3>
+
+    
+  	-->
+  </div>
+</mt-module-block>

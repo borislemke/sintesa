@@ -1,0 +1,24 @@
+<mt-module-block layout="row">
+    <div class="mt-module-block mt-bg-image auto-height has-text" flex="50" ng-repeat="block in module.data.blocks track by $index" style="background-image:url({{ __serverAddress }}media/{{ block.background }})">
+        <div class="overlay"></div>
+        <md-button ng-click="pageEditCtrl.filePicker(module, $event)" class="md-fab change-bg" aria-label="Pick module background image">
+            <i class="menu-icon icon-basic-photo"></i>
+        </md-button>
+        <div layout="column" flex="100" class="p-30 align-center">
+            <md-input-container class="md-block">
+                <label>title</label>
+                <textarea ng-model="block.title"></textarea>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Description</label>
+                <textarea ng-model="block.description" class="smaller"></textarea>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Link URL</label>
+                <input type="text" ng-model="block.link.url" class="smaller">
+            </md-input-container>
+
+        </div>
+    </div>
+
+</mt-module-block>

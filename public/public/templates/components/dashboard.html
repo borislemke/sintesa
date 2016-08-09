@@ -1,0 +1,185 @@
+<md-content class="mt-page-template" id="mt-page-dashboard" ng-cloak layout="column">
+    <md-toolbar mt-chameleon="mt-chameleon-canvas" class="md-toolbar-header md-menu-toolbar" layout="column" style="background-color:#a9edef">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row" layout-align="center center">
+            <h2 ng-click="analyticsCtrl.init()">
+                <span>Site Analytics</span>
+            </h2>
+            <span class="flex"></span>
+            <md-input-container id="date-selector" style="position: absolute; right: 32px; color: #646464; font-size: 16px; margin: 0">
+                <md-select ng-model="analyticsCtrl.timeline" aria-label="Timeline date">
+                    <md-option ng-repeat="date in [{code: 13, title: 'Last 14 days'}, {code: 27, title: 'Last 28 days'}, {code: 179, title: 'Last 6 months'}, {code: 359, title: 'Last year'}, {code: 729, title: 'Last 2 years'}]" value="{{ date.code }}" ng-selected="analyticsCtrl.timeline === date.code" ng-bind="date.title" ng-click="analyticsCtrl.changeTimeline(date.code)">
+                    </md-option>
+                </md-select>
+            </md-input-container>
+            <!--
+            <form name="userForm">
+                <md-datepicker ng-model="analyticsCtrl.startDate"
+                               md-placeholder="Select Start Date"></md-datepicker>
+
+                <md-datepicker md-min-date="analyticsCtrl.startDate" ng-model="analyticsCtrl.endDate"
+                               md-placeholder="Select End Date"></md-datepicker>
+            </form>
+            -->
+        </div>
+        <span class="flex"></span>
+    </md-toolbar>
+
+    <md-content class="analytics-wrapper" id="mt-chameleon-canvas" flex md-scroll-y>
+        <div class="main-stat mt-chameleon-color blue" layout="row" layout-wrap data-chameleon="#a9edef">
+            <div flex="100" class="stat-heading">
+                <h5>Site Visitor</h5>
+            </div>
+            <div flex="80" class="stat-graph">
+                <canvas id="visitor" class="chart chart-line" chart-data="analyticsCtrl.visitor.data" chart-labels="analyticsCtrl.visitor.labels" chart-options="analyticsCtrl.visitor.options" chart-legend="false" chart-series="analyticsCtrl.visitor.series" chart-colors="analyticsCtrl.visitor.colors" chart-click="analyticsCtrl.chartClick(0, $event)" height="120">
+                </canvas>
+            </div>
+            <div flex="20" class="stat-text">
+                <div class="info-box">
+                    <h5 ng-bind="analyticsCtrl.visitor.series[0]"></h5>
+                    <h1>{{ analyticsCtrl.this_total | number }}
+                        <small></small>
+                    </h1>
+                </div>
+                <div class="info-box">
+                    <h5 ng-bind="analyticsCtrl.visitor.series[1]"></h5>
+                    <h1>{{ analyticsCtrl.last_total | number }}
+                        <small class="{{ last_total > this_total ? 'drop' : '' }}"></small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-stat mt-chameleon-color purple" layout="row" layout-wrap data-chameleon="#dacaf0">
+            <div flex="100" class="stat-heading">
+                <h5>Traffic Acquisition</h5>
+            </div>
+            <div flex="40" class="stat-graph">
+                <canvas id="traffic" class="chart chart-bar" chart-data="analyticsCtrl.traffic.data" chart-labels="analyticsCtrl.traffic.labels" chart-options="analyticsCtrl.traffic.options" chart-legend="false" chart-colors="analyticsCtrl.traffic.colors" chart-click="analyticsCtrl.chartClick(0, $event)" height="210">
+                </canvas>
+            </div>
+            <div flex="60" class="stat-text mt-50">
+                <div class="info-box">
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>Traffic Source</td>
+                            <td>Sessions</td>
+                            <td>New Users</td>
+                            <td>Bounce Rate</td>
+                            <td>Pages / Session</td>
+                        </tr>
+
+                        <tr ng-repeat="traffic in analyticsCtrl.traffic_data">
+                            <td><strong>{{ $index + 1 }}. {{ traffic.source }}</strong></td>
+                            <td>{{ traffic.sessions | number }}</td>
+                            <td>{{ traffic.new_users | number }}</td>
+                            <td>{{ traffic.bounce_rate | number:2 }}%</td>
+                            <td>{{ traffic.pages_per_session | number:2 }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div flex="100" class="stat-heading mt-70">
+                <h5>Desktop vs Mobile</h5>
+            </div>
+            <div flex="80" class="stat-graph">
+                <canvas id="desktop-mobile" class="chart chart-line" chart-data="analyticsCtrl.devices.data" chart-labels="analyticsCtrl.devices.labels" chart-options="analyticsCtrl.devices.options" chart-legend="false" chart-series="analyticsCtrl.devices.series" chart-colors="analyticsCtrl.devices.colors" chart-click="analyticsCtrl.chartClick(0, $event)" height="120">
+                </canvas>
+            </div>
+            <div flex="20" class="stat-text">
+                <div class="info-box" ng-repeat="device in analyticsCtrl.device_total">
+                    <h5 ng-bind="device[0]"></h5>
+                    <h1 ng-bind="device[1]">
+                        <small>+23%</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-stat mt-chameleon-color blue" layout="row" layout-wrap data-chameleon="#a9edef">
+            <!-- <mt-anal-location anal-data="[1,2,3,4]"></mt-anal-location> -->
+
+            <div flex="100" class="stat-heading">
+                <h5>Location</h5>
+            </div>
+            <div flex="60" class="stat-graph">
+                <mappy data="analyticsCtrl.mapData" map-data="analyticsCtrl.mapPathData" key="metric" id="mappy" colors="analyrticsCtrl.heatmapColors" min="0" max="50" humanize-fn="analyticsCtrl.mapDataHumanizeFn(val)" noscrollzoom="0"></mappy>
+            </div>
+            <div flex="40" class="stat-text">
+                <div class="info-box">
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>Country</td>
+                            <td>Sessions</td>
+                            <td>New Users</td>
+                        </tr>
+                        <tr ng-repeat="country in analyticsCtrl.country_data">
+                            <td><strong ng-bind="country.country"></strong></td>
+                            <td ng-bind="country.sessions | number"></td>
+                            <td ng-bind="country.new_visitors | number"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="main-stat mt-chameleon-color purple" layout="row" layout-wrap data-chameleon="#dacaf0">
+            <div flex="50" class="stat-heading">
+                <h5>New vs Returning</h5>
+            </div>
+            <div flex="50" class="stat-heading">
+                <h5>New vs Returning</h5>
+            </div>
+            <div flex="25" class="stat-graph">
+                <canvas id="returning" class="chart chart-doughnut" chart-data="analyticsCtrl.traffic.data"
+                        chart-labels="analyticsCtrl.traffic.labels" chart-options="analyticsCtrl.traffic.options"
+                        chart-legend="false" chart-colors="analyticsCtrl.traffic.colors"
+                        chart-click="analyticsCtrl.chartClick(0, $event)" height="220">
+                </canvas>
+            </div>
+            <div flex="25" class="stat-text">
+                <div class="info-box">
+                    <h5>New Visitor</h5>
+                    <h1>1,025
+                        <small>+23%</small>
+                    </h1>
+                </div>
+                <div class="info-box">
+                    <h5>Returning Visitor</h5>
+                    <h1>983
+                        <small class="drop">-17%</small>
+                    </h1>
+                </div>
+            </div>
+            <div flex="25" class="stat-graph">
+                <canvas id="line" class="chart chart-doughnut" chart-data="analyticsCtrl.traffic.data"
+                        chart-labels="analyticsCtrl.traffic.labels" chart-options="analyticsCtrl.traffic.options"
+                        chart-legend="false" chart-colors="analyticsCtrl.traffic.colors"
+                        chart-click="analyticsCtrl.chartClick(0, $event)" height="220">
+                </canvas>
+            </div>
+            <div flex="25" class="stat-text">
+                <div class="info-box">
+                    <h5>New User</h5>
+                    <h1>1,025
+                        <small>+23%</small>
+                    </h1>
+                </div>
+                <div class="info-box">
+                    <h5>Returning User</h5>
+                    <h1>983
+                        <small class="drop">-17%</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div ng-if="analyticsCtrl.loading" class="loading-overlay" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, .35)">
+            <span style="color: white; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; height: 32px; width: 128px; text-align: center">Loading Data...</span>
+        </div>
+    </md-content>
+</md-content>
+

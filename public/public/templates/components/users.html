@@ -1,0 +1,48 @@
+<md-content class="mt-page-template" id="mt-page-content-settings-users" layout="column">
+    <md-toolbar class="md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <div flex>
+                <h2>
+                    <span>Users Management</span>
+                </h2>
+                <small ng-if="authUser.role_id != 1">Your account does not have access to edit users</small>
+            </div>
+            <md-button ng-if="authUser.role_id == 1" class="btn gradient" ng-click="usersCtrl.addUser($event)">add user
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content class="mt-data-container md-padding" flex md-scroll-y>
+
+        <div class="mt-config-group content-module-block p-30 card-block" ng-repeat="group in usersCtrl.users">
+            <h3 ng-bind="group.group"></h3>
+            <p ng-bind="group.info"></p>
+
+            <small ng-if="!group.users.length">No users in this group</small>
+
+            <md-list layout="column" md-no-ink ng-if="group.users.length">
+                <md-list-item class="mt-config-item" ng-repeat="user in group.users">
+                    <!--
+                    <div class="mt-user-img-wrapper avatar">
+                        <img ng-src="{{ user.image }}">
+                    </div>
+                    -->
+                    <div class="mt-user-info">
+                        <p ng-bind-html="user.firstname + ' ' + user.lastname + (user.id === authUser.id ? '<strong> (You)</strong>' : '')"></p>
+                        <small ng-bind="user.email"></small>
+                    </div>
+                    <span class="flex"></span>
+                    <div class="mt-user-status">
+                        <p ng-bind="user.active ? 'This user is active' : 'This user is disabled'"></p>
+                    </div>
+                    <md-button ng-if="authUser.role_id == 1" class="btn gradient" ng-click="usersCtrl.editUser(user, $event)">edit
+                    </md-button>
+                    <md-button ng-if="authUser.role_id == 1" ng-disabled="user.id === authUser.id" class="btn gradient" ng-click="usersCtrl.removeUser(user, $event)">
+                        <span>remove</span>
+                    </md-button>
+                </md-list-item>
+            </md-list>
+        </div>
+    </md-content>
+</md-content>

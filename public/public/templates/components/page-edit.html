@@ -1,0 +1,149 @@
+<md-content class="mt-page-template" id="mt-page-content-page-edit" layout="column">
+    <md-toolbar class="md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex ng-click="pageEditCtrl.notify()">
+                <span ng-bind="pageEditCtrl.title + ': ' + pageEditCtrl.page.title[selectedLanguage]"></span>
+                <mt-warning ng-if="pageForm.$dirty" class="edit-notif">
+                    *
+                    <md-tooltip md-direction="bottom" md-delay="0">
+                        You have unsaved changes
+                    </md-tooltip>
+                </mt-warning>
+            </h2>
+
+            <md-button class="btn" ng-click="pageEditCtrl.resetForm(pageForm)" ng-disabled="pageForm.$pristine">reset</md-button>
+            <md-button ng-click="pageEditCtrl.savePage(pageForm)" class="md-primary btn gradient" ng-disabled="pageForm.$pristine">save</md-button>
+            <md-button ng-if="!pageEditCtrl.page.status" type="submit" class="md-primary btn gradient" ng-disabled="pageForm.$pristine">save &amp; publish</md-button>
+            <md-button class="btn gradient" ng-href="{{ __serverAddress + pageEditCtrl.page.url }}" target="_blank">preview page</md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content class="mt-data-container md-padding" flex md-scroll-y>
+        <form id="mt-page-form" name="pageForm" ng-submit="pageEditCtrl.savePage(pageForm)">
+
+            <md-content class="md-padding content-module-block p-30 card-block">
+                <md-input-container id="language-selector" style="position: absolute; right: 32px; text-transform: capitalize">
+                    <label>Language</label>
+                    <md-select ng-model="selectedLanguage" aria-label="Content language">
+                        <md-option ng-repeat="lang in systemLanguage" value="{{ lang.code }}" ng-selected="selectedLanguage === lang.code" ng-bind="lang.title">
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <h3>Basic Information</h3>
+                <div class="" layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="50">
+                        <label>Page Title</label>
+                        <input type="text" ng-model="pageEditCtrl.page.title[selectedLanguage]">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="50">
+                        <label>Page URL</label>
+                        <input type="text" ng-model="pageEditCtrl.page.url">
+                    </md-input-container>
+                </div>
+                <div layout="row">
+                    <md-input-container flex="33">
+                        <label>Status</label>
+                        <md-select ng-model="pageEditCtrl.page.status" aria-label="Page availability">
+                            <md-option ng-repeat="status in [{name: 'Enabled', code: 1}, {name: 'Disabled', code: 0}]" value="{{status.code}}" ng-selected="status.code === pageEditCtrl.page.status" ng-bind="status.name">
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <span flex="66"></span>
+
+                    <!--
+                    <md-input-container flex="33">
+                        <label>Page Header</label>
+                        <md-select ng-model="pageEditCtrl.page.header"
+                                   aria-label="Select which page header this page is using">
+                            <md-option ng-repeat="header in pageEditCtrl.headers" ng-selected="header.code == pageEditCtrl.page.header" value="{{header.code}}"
+                                       ng-bind="header.name">
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container flex="33">
+                        <label>Page Footer</label>
+                        <md-select ng-model="pageEditCtrl.page.footer"
+                                   aria-label="Select which page footer this page is using">
+                            <md-option ng-repeat="footer in pageEditCtrl.footers" ng-selected="footer.code === pageEditCtrl.page.footer" value="{{footer.code}}" ng-bind="footer.name"></md-option>
+                        </md-select>
+                    </md-input-container>
+                    -->
+                </div>
+
+                <md-input-container class="md-block">
+                    <label>Page Meta Description</label>
+                    <textarea ng-model="pageEditCtrl.page.meta[selectedLanguage]" md-maxlength="155"></textarea>
+                    <div ng-messages="pageEditCtrl.page.meta.$error" role="alert">
+                        <div ng-message="md-maxlength" class="my-message">
+                            Meta description that are too long may cripple Search Engine Ranking
+                        </div>
+                    </div>
+                </md-input-container>
+
+            </md-content>
+            <md-button class="mt-add-module-button mt-add-module-button-last btn" ng-click="pageEditCtrl.addModule(1, $event)">add module</md-button>
+
+            <div layout="column">
+                <md-content class="mt-page-module-wrapper p-30 pt-0 card-block" ng-repeat="module in pageEditCtrl.page.content | toArray | orderBy:'order' track by $index">
+
+                    <div layout="row" class="mt-page-module-header">
+                        <h3 ng-bind="pageEditCtrl.trans(module.type)"></h3>
+                        <p class="module-disabled" ng-if="!module.status">HIDDEN</p>
+                        <span class="flex"></span>
+                        <div class="mt-page-module-action" layout="row">
+
+                            <md-button class="md-icon-button" ng-if="!$first" ng-click="pageEditCtrl.moduleOrder(module, 'up')">
+                                <md-tooltip md-direction="bottom" md-delay="1000">
+                                    Move up
+                                </md-tooltip>
+                                <i class="menu-icon icon-arrows-up"></i>
+                            </md-button>
+                            <md-button class="md-icon-button" ng-if="!$last" ng-click="pageEditCtrl.moduleOrder(module, 'down')">
+                                <md-tooltip md-direction="bottom" md-delay="1000">
+                                    Move down
+                                </md-tooltip>
+                                <i class="menu-icon icon-arrows-down"></i>
+                            </md-button>
+
+                            <md-menu class="mt-menu-group-item" md-position-mode="target-right target">
+                                <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                                    <md-icon md-icon-grey md-svg-icon="icons/more_vert.svg"></md-icon>
+                                </md-button>
+
+                                <md-menu-content width="3">
+
+                                    <md-menu-item>
+                                        <md-button md-menu-align-target ng-href="notifications">
+                                            <i class="menu-icon icon-basic-mixer2"></i>
+                                            <p flex>Configuration</p>
+                                        </md-button>
+                                    </md-menu-item>
+
+                                    <md-menu-item>
+                                        <md-button md-menu-align-target ng-click="pageEditCtrl.removeModule(module)">
+                                            <i class="menu-icon icon-basic-trashcan"></i>
+                                            <p flex>Remove</p>
+                                        </md-button>
+                                    </md-menu-item>
+
+                                    <md-menu-item>
+                                        <md-switch ng-model="module.status" ng-true-value="1" ng-false-value="0" aria-label="Module status">
+                                            <p flex>Show</p>
+                                        </md-switch>
+                                    </md-menu-item>
+
+                                </md-menu-content>
+                            </md-menu>
+                        </div>
+                    </div>
+
+                    <md-button class="mt-add-module-button mt-add-module-button-last btn" ng-click="pageEditCtrl.addModule((module.order + 1), $event)" style="position: absolute; bottom: -54px; left: 0px">add module</md-button>
+
+                    <ng-include src="'templates/modules/' + pageEditCtrl.mapModule(module.type) + '.html'" class="p-30"></ng-include>
+
+                </md-content>
+            </div>
+        </form>
+    </md-content>
+</md-content>

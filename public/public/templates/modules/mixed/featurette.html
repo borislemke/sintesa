@@ -1,0 +1,52 @@
+<mt-module-block layout="row" layout-wrap>
+    <div layout="row" layout-wrap>
+        <md-input-container flex="100" flex-gt-sm="50">
+            <label>Header Title</label>
+            <input type="text" ng-model="module.config.header.title[selectedLanguage]">
+        </md-input-container>
+        <mt-input-container class="mb-30" flex="100" flex-gt-sm="50">
+            <p class="mt-module-title">Header Description</p>
+            <div medium-editor ng-model="module.config.header.description[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+        </mt-input-container>
+    </div>
+
+    <div layout="row" layout-wrap layout-padding>
+        <div ng-repeat="feature in module.data" layout="column" flex="100" flex-gt-xs="50" flex-gt-sm="25">
+            <div class="mt-module__image-wrapper mb-20 cursor" layout="column" layout-align="center center" ng-click="pageEditCtrl.filePicker(feature.image, $event)">
+                <img ng-src="{{ __serverAddress }}media/{{ feature.image.src }}">
+            </div>
+
+            <md-input-container class="md-block">
+                <label>Feature Title</label>
+                <input type="text" ng-model="feature.title[selectedLanguage]">
+            </md-input-container>
+
+            <md-input-container class="md-block no-margin">
+                <label>Link Type</label>
+                <md-select ng-model="feature.link.type" aria-label="Link type selector">
+                    <md-option value="external">External</md-option>
+                    <md-option value="page">Page</md-option>
+                    <md-option value="file">File</md-option>
+                    <md-option value="pdf">PDF File</md-option>
+                </md-select>
+            </md-input-container>
+
+            <md-input-container class="md-block no-margin" ng-if="feature.link.type === 'page'" flex="100" flex-gt-xs="50">
+                <label>Link URL</label>
+                <md-select ng-model="feature.link.url" aria-label="Link type selector">
+                    <md-option ng-repeat="page in pageEditCtrl.allPages" value="{{ page.url }}" ng-bind="page.title"></md-option>
+                </md-select>
+            </md-input-container>
+
+            <mt-input-container class="md-block md-padding mt-10 mb-20 no-padding-bottom">
+                <p class="mt-module-title">Feature Description</p>
+                <div medium-editor ng-model="feature.description[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+            </mt-input-container>
+        </div>
+
+        <!-- Module duplicator takes the first data inside a module.data and pushes it to the end of the module.data -->
+        <mt-module-duplicator file-data="module" file-selector="banner" class="mt-module-block mt-add-image" flex="100" flex-gt-xs="50" flex-gt-sm="25" flex-gt-lg="20" layout="column" layout-align="center center" ng-click="pageEditCtrl.moduleDuplicator(module)">
+            <md-icon md-icon-ghost md-svg-icon="icons/add.svg"></md-icon>
+        </mt-module-duplicator>
+    </div>
+</mt-module-block>

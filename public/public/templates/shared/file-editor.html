@@ -1,0 +1,60 @@
+<md-dialog aria-label="File Manager" id="mt-file-editor-window">
+    <md-content layout="row" style="height: 100%">
+        <div class="mt-file-editor-display" layout="column" layout-align="center center" flex="66">
+            <div ng-if="fileEditCtrl.file.type !== 'pdf'" class="cover-bg" style="background-image:url({{ fileEditCtrl.__serverAddress }}media/{{ fileEditCtrl.file.url }})"></div>
+            <img ng-if="fileEditCtrl.file.type !== 'pdf'" ng-src="{{ fileEditCtrl.__serverAddress }}media/{{ fileEditCtrl.file.url }}">
+            <md-icon ng-if="fileEditCtrl.file.type === 'pdf'" md-svg-icon="icons/insert_drive_file.svg" class="mt-file-placeholder"></md-icon>
+        </div>
+        <div class="mt-file-editor-sidebar" flex="33" layout="column" layout-padding md-scroll-y>
+            <form ng-submit="fileEditCtrl.save()" name="fileEditForm" layout="column">
+                <md-button class="md-icon-button file-editor-close" ng-click="fileEditCtrl.close(fileEditForm)" aria-label="Close file editor">
+                    <md-icon md-svg-icon="icons/close.svg"></md-icon>
+                </md-button>
+                <div class="mt-file-editor-specs">
+                    <p class="mt-file-spec">File name: <span ng-bind="fileEditCtrl.file.name"></span></p>
+                    <p class="mt-file-spec">File type: <span ng-bind="fileEditCtrl.file.type"></span></p>
+                    <p class="mt-file-spec">Uploaded on: <span ng-bind="fileEditCtrl.file.created_at"></span></p>
+                    <p class="mt-file-spec">File size: <span ng-bind="fileEditCtrl.file.size"></span></p>
+                    <p class="mt-file-spec">Dimensions: <span ng-bind="fileEditCtrl.file.dimension"></span></p>
+                </div>
+
+                <div class="mt-file-editor-inputs" layout="column">
+                    <md-input-container class="md-block">
+                        <label>File URL</label>
+                        <input type="text" value="{{ fileEditCtrl.__serverAddress }}media/{{ fileEditCtrl.file.url }}" ng-disabled="true">
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>Title</label>
+                        <input ng-model="fileEditCtrl.file.title">
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>Description</label>
+                        <input ng-model="fileEditCtrl.file.description">
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>Caption</label>
+                        <input ng-model="fileEditCtrl.file.caption">
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>Alt text</label>
+                        <input type="text" ng-model="fileEditCtrl.file.alt_text">
+                    </md-input-container>
+
+                    <span class="flex"></span>
+
+                    <div layout="row" style="padding: 0 10px">
+                        <div flex="50">
+                            <md-button class="btn fwidth nomargin" type="submit" aria-label="Save file info">
+                                replace
+                            </md-button>
+                        </div>
+                        <div flex="50">
+                            <md-button class="btn gradient fwidth nomargin" type="submit" ng-disabled="fileEditForm.$pristine" aria-label="Save file info">save
+                            </md-button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </md-content>
+</md-dialog>

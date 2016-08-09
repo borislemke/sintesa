@@ -1,0 +1,78 @@
+<md-content class="mt-page-template" id="mt-page-content-page-edit" layout="column">
+    <md-toolbar class="md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 class="ellipsis" flex ng-click="postEditCtrl.notify()">
+                <span ng-bind="postEditCtrl.title + ': ' + postEditCtrl.post.locale.title"></span>
+            </h2>
+
+            <mt-warning ng-if="pageForm.$dirty" style="margin-right: 16px">You have unsaved changes</mt-warning>
+            <md-button class="btn" ng-click="postEditCtrl.resetForm(pageForm)" ng-disabled="pageForm.$pristine">reset
+            </md-button>
+            <md-button type="submit" class="md-primary btn gradient" ng-disabled="pageForm.$pristine">save</md-button>
+            <md-button ng-if="!postEditCtrl.post.status" type="submit" class="md-primary btn gradient" ng-disabled="pageForm.$pristine">save &amp; publish
+            </md-button>
+            <md-button class="btn gradient" ng-href="{{ __serverAddress + postEditCtrl.post.url }}" target="_blank">
+                preview post
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content class="mt-data-container md-padding" flex md-scroll-y>
+        <form name="pageForm" ng-submit="postEditCtrl.savePage(pageForm)">
+
+            <md-content class="md-padding content-module-block p-30 card-block">
+                <h3>Basic Information</h3>
+                <div class="" layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="50">
+                        <label>Page Title</label>
+                        <input type="text" ng-model="postEditCtrl.post.locale.title">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="50">
+                        <label>Page URL</label>
+                        <input type="text" ng-model="postEditCtrl.post.slug">
+                    </md-input-container>
+                </div>
+                <div layout="row">
+                    <md-input-container flex="33">
+                        <label>Status</label>
+                        <md-select ng-model="postEditCtrl.post.status" aria-label="Page availability">
+                            <md-option ng-repeat="status in [{name: 'Enabled', code: 1}, {name: 'Disabled', code: 0}]" value="{{status.code}}" ng-selected="status.code === postEditCtrl.post.status" ng-bind="status.name">
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container flex="33">
+                        <label>Page Header</label>
+                        <md-select ng-model="postEditCtrl.post.header" aria-label="Select which page header this page is using">
+                            <md-option ng-repeat="header in postEditCtrl.headers" ng-selected="header.code == postEditCtrl.post.header" value="{{header.code}}" ng-bind="header.name">
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container flex="33">
+                        <label>Page Footer</label>
+                        <md-select ng-model="postEditCtrl.post.footer" aria-label="Select which page footer this page is using">
+                            <md-option ng-repeat="footer in postEditCtrl.footers" ng-selected="footer.code === postEditCtrl.post.footer" value="{{footer.code}}" ng-bind="footer.name"></md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <md-input-container class="md-block">
+                    <label>Content</label>
+                    <textarea ng-model="postEditCtrl.post.locale.content" md-maxlength="200"></textarea>
+                    <div ng-messages="postEditCtrl.post.locale.content.$error" role="alert">
+                        <div ng-message="md-maxlength" class="my-message">
+                            Meta description that are too long may cripple Search Engine Ranking
+                        </div>
+                    </div>
+                </md-input-container>
+                <div layout="row" layout-align="end center">
+                    <md-switch ng-model="postEditCtrl.post.bindFacebook" aria-label="Post to facebook">
+                        Share on facebook
+                    </md-switch>
+                    <md-switch ng-model="postEditCtrl.post.bindTwitter" aria-label="Post to twitter">
+                        Share on twitter
+                    </md-switch>
+                </div>
+            </md-content>
+        </form>
+    </md-content>
+</md-content>

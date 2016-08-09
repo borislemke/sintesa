@@ -1,0 +1,96 @@
+<div class="mt-component mt-table" md-whiteframe="1">
+    <div class="table-topbar" layout="column">
+        <div layout="row">
+            <h2 ng-bind="dataTableCtrl.title"></h2>
+            <span class="flex"></span>
+            <div class="mt-module-list-action-wrapper" layout="row">
+                <md-button class="md-icon-button" ng-href="{{ dataTableCtrl.model }}-create" aria-label="Create new model">
+                    <i class="menu-icon icon-arrows-circle-plus"></i>
+                    <md-tooltip class="mt-data-action-tooltip" md-direction="bottom" md-delay="300">Create new</md-tooltip>
+                </md-button>
+                <!--
+                <md-button class="md-icon-button" aria-label="Select all items in list">
+                    <i class="menu-icon icon-basic-webpage-multiple"></i>
+                </md-button>
+                -->
+                <md-button class="md-icon-button" aria-label="Deletes selected items in list" ng-if="dataTableCtrl.selected.length" ng-click="dataTableCtrl.batchDelete(dataTableCtrl.items)">
+                    <i class="menu-icon icon-basic-trashcan"></i>
+                </md-button>
+                <!--
+                <md-menu class="mt-module-list-menu" md-position-mode="target-right target">
+                    <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                        <md-icon md-menu-origin md-svg-icon="icons/more_vert.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-href="page-edit" aria-label="Edit selected items in list">Edit
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button md-menu-align-target aria-label="Delete selected items in list">Delete
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+                -->
+            </div>
+        </div>
+        <mt-module-list-header layout="row" aria-label="Disabled click on list item">
+            <md-checkbox class="mt-module-list-checkbox" ng-checked="dataTableCtrl.isChecked()" md-indeterminate="dataTableCtrl.isIndeterminate()" ng-click="dataTableCtrl.toggleAll()" aria-label="Select item"></md-checkbox>
+            <div class="mt-module-list-header-sort" flex="{{ (100 / dataTableCtrl.keys.length) | number:0 }}" ng-repeat="key in dataTableCtrl.keys" ng-click="dataTableCtrl.sortListBy(dataTableCtrl.filter[$index])" ng-class="{active: dataTableCtrl.sortFilter == dataTableCtrl.filter[$index], sortUp: dataTableCtrl.sortFilterVal, sortDown: !dataTableCtrl.sortFilterVal}">
+                {{ key }}
+                <md-icon class="mt-module-sort-arrow mt-module-sort-arrow-up md-icon-dark" md-svg-icon="icons/keyboard_arrow_up.svg"></md-icon>
+                <md-icon class="mt-module-sort-arrow mt-module-sort-arrow-down md-icon-dark" md-svg-icon="icons/keyboard_arrow_down.svg"></md-icon>
+            </div>
+        </mt-module-list-header>
+    </div>
+
+    <div class="mt-data-table-content">
+        <md-list ng-class="{striped: dataTableCtrl.striped}" md-scroll-y>
+            <p class="mt-module-list-error mt-module-list-error-nodata" ng-if="!dataTableCtrl.rowCount && !dataTableCtrl.isLoading">No data
+                found. Insert a new item or redirect home.</p>
+            <div class="mt-module-list-error mt-module-list-error-loading" ng-if="dataTableCtrl.isLoading" layout="row" layout-align="center center">
+                <md-icon md-icon-grey md-svg-icon="icons/refresh.svg"></md-icon>
+            </div>
+
+            <md-list-item class="mt-module-list-items" ng-repeat="item in filteredItems = (dataTableCtrl.items | toArray | orderBy:dataTableCtrl.sortFilter:dataTableCtrl.sortFilterVal) track by $index" md-no-ink layout="row">
+                <md-checkbox class="mt-module-list-checkbox" ng-checked="dataTableCtrl.isSelected(item.id)" ng-click="dataTableCtrl.toggleSelect(item.id)" aria-label="Select this item"></md-checkbox>
+                <div flex="{{ (100 / dataTableCtrl.filter.length) | number:0 }}" ng-repeat="(key, value) in item" ng-if="dataTableCtrl.filter.indexOf(key) != -1" ng-bind="key === 'status' ? dataTableCtrl.readStatus(value) : value" class="ellipsis" style="padding-right: 32px"></div>
+                <md-menu class="mt-module-list-menu" md-position-mode="target-right target">
+
+                    <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                        <md-icon md-menu-origin md-svg-icon="icons/more_vert.svg" class="md-icon-dark"></md-icon>
+                    </md-button>
+
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button md-menu-align-target ng-href="{{ dataTableCtrl.model + '-edit/' + item.id }}">
+                                Edit
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item ng-if="item.url !== 'home'">
+                            <md-button md-menu-align-target ng-click="dataTableCtrl.deleteItem(item)">Delete</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </md-list-item>
+        </md-list>
+        <md-content ng-if="filteredItems.length" class="mt-module-list-footer" layout="row" layout-align="end center">
+            <p>Rows per page:</p>
+            <md-input-container class="mt-module-list-limit" md-no-float>
+                <md-select ng-model="dataTableCtrl.rowOffset" aria-label="Select which page footer this page is using">
+                    <md-option ng-repeat="inc in [10, 25, 50, 100]" ng-selected="inc === dataTableCtrl.rowOffset" value="{{inc}}" ng-click="dataTableCtrl.changePageSize(inc)" ng-bind="inc"></md-option>
+                </md-select>
+            </md-input-container>
+            <p style="margin-right: 8px" ng-bind="dataTableCtrl.dataStart + '-' + dataTableCtrl.dataEnd + ' of ' + dataTableCtrl.rowCount"></p>
+
+            <md-button class="md-icon-button" ng-if="dataTableCtrl.pageNum != 1" ng-click="dataTableCtrl.previousPage()" aria-label="Previous page">
+                <md-icon class="md-icon-dark" md-svg-icon="icons/chevron_left.svg"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" ng-if="dataTableCtrl.dataEnd != dataTableCtrl.rowCount" ng-click="dataTableCtrl.nextPage()" aria-label="Next page">
+                <md-icon class="md-icon-dark" md-svg-icon="icons/chevron_right.svg"></md-icon>
+            </md-button>
+        </md-content>
+    </div>
+</div>

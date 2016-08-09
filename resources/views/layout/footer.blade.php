@@ -2,7 +2,7 @@
 <footer class="footer-1 footer reveal-side-navigation bkg-gold color-white" {{ isset($dark) ? ' style="background-color: #161616; color: white;"' : '' }}>
     <div class="footer-top ">
         <div class="row pb-60">
-            <div class="column width-3">
+            <div class="column width-3 mb-mobile-30">
                 <svg class="">
                     <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
                 </svg>
@@ -83,9 +83,9 @@
             </div>
 
 
-            <div class="column width-2">
+            <div class="column width-2 award">
                 <h4 class="widget-title">Awards</h4>
-                <img src="media/bookingaward2.jpg" style="width:100%; height:auto"/>
+                <img src="media/bookingaward2.jpg" style="width:100%; height:auto; max-width: 196px;"/>
             </div>
 
 

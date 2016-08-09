@@ -1,0 +1,44 @@
+<mt-module-block layout-padding class="mt-module--block mt-module--parallax-image_text">
+
+    <div layout="row" layout-wrap>
+        <div flex="100" flex-gt-xs="20" class="mb-30">
+            <md-input-container>
+                <label>Parallax Title</label>
+                <input type="text" ng-model="module.data.title[selectedLanguage]">
+            </md-input-container>
+        </div>
+        <div flex="100" flex-gt-xs="50" class="mb-30">
+            <mt-input-container flex="100" flex-gt-xs="33">
+                <p class="mt-module-title">Subtitle</p>
+                <div medium-editor ng-model="module.data.description[selectedLanguage]" bind-options="mediumOptionsBasic"></div>
+            </mt-input-container>
+        </div>
+        <div class="mt-module__image-wrapper cursor" layout="column" layout-align="center center" ng-click="pageEditCtrl.filePicker(module.data.background, $event)" flex="100" flex-gt-xs="66">
+            <img ng-src="{{ __serverAddress }}media/{{ module.data.background.src }}">
+        </div>
+        <div flex="100" flex-gt-xs="33">
+            <md-input-container class="md-block" ng-if="module.data.button.link.type && module.data.button.link.type !== undefined">
+                <label>Button Label</label>
+                <input type="text" ng-model="module.data.button.text[selectedLanguage]">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Button Link Type</label>
+                <md-select ng-model="module.data.button.link.type" aria-label="Link type selector">
+                    <md-option value="" ng-selected="!module.data.button.link.type || module.data.button.link.type === undefined">No Button</md-option>
+                    <md-option value="external">External</md-option>
+                    <md-option value="page">Page</md-option>
+                    <md-option value="file">File</md-option>
+                    <md-option value="pdf">PDF File</md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container class="md-block" ng-if="module.data.button.link.type === 'page'">
+                <label>Page URL</label>
+                <md-select ng-model="module.data.button.link.url" aria-label="Link type selector">
+                    <md-option ng-repeat="page in pageEditCtrl.allPages" value="{{ page.url }}" ng-bind="page.title"></md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+
+
+    </div>
+</mt-module-block>

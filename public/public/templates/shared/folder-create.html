@@ -1,0 +1,11 @@
+<md-dialog aria-label="Folder create" class="md-padding" id="mt-file-folder-window" layout="column">
+    <h3 style="margin: 0; margin-bottom: 12px" ng-bind="editFolderCtrl.title"></h3>
+    <form ng-submit="editFolderCtrl.save()" ng-disabled="!editFolderCtrl.folderName.length">
+        <md-input-container>
+            <label>Folder Name</label>
+            <input type="text" md-autofocus ng-model="editFolderCtrl.folderName">
+        </md-input-container>
+        <span class="flex"></span>
+        <md-button type="submit" ng-bind="editFolderCtrl.method" class="btn gradient" aria-label="Create folder in current directory"></md-button>
+    </form>
+</md-dialog>

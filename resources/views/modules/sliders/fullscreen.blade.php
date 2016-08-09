@@ -20,8 +20,8 @@
                                     <div class="clear"></div>
 
                                     @if(!$module->config->short AND isset($slide->subtitle) AND translate($slide->subtitle) != "")
-                                    <p class="tms-caption color-white sublead"
-                                       data-animate-in="opacity:0;transX:-30px;duration:800ms;delay:700ms;easing:easeFastSlow;" data-no-scale>{!! translate($slide->subtitle) !!}</p>
+                                    <div class="tms-caption color-white sublead"
+                                       data-animate-in="opacity:0;transX:-30px;duration:800ms;delay:700ms;easing:easeFastSlow;" data-no-scale style="margin-bottom: 3rem;">{!! translate($slide->subtitle) !!}</div>
                                     <div class="clear"></div>
                                     @endif
 

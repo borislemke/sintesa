@@ -1,0 +1,17 @@
+<mt-module-block layout="row" layout-wrap layout-padding class="max-1000">
+
+    <div flex="100" flex-gt-xs="25" ng-repeat="gallery in module.data track by $index" class="mb-30">
+        <div class="mt-module__image-wrapper cursor" layout="column" layout-align="center center" ng-click="pageEditCtrl.filePicker(gallery.image, $event)">
+            <img ng-src="{{ __serverAddress }}media/{{ gallery.image.src }}">
+        </div>
+        <md-input-container class="md-block">
+            <label>Title</label>
+            <textarea ng-model="gallery.title[selectedLanguage]" class="bordered"></textarea>
+        </md-input-container>
+    </div>
+    <!-- Module duplicator takes the first data inside a module.data and pushes it to the end of the module.data -->
+    <mt-module-duplicator file-data="module" file-selector="banner" class="mt-module-block mt-add-image" flex="100" flex-gt-xs="50" flex-gt-sm="25" flex-gt-lg="20" layout="column" layout-align="center center" ng-click="pageEditCtrl.moduleDuplicator(module)">
+        <md-icon md-icon-ghost md-svg-icon="icons/add.svg"></md-icon>
+    </mt-module-duplicator>
+
+</mt-module-block>

@@ -1,0 +1,25 @@
+<mt-module-block layout="row" layout-padding layout-wrap class="mt-module--block mt-module--sliders-fullscreen max-1000">
+    <div class="mt-module--item" flex="100" flex-gt-xs="50" flex-gt-sm="33" flex-gt-lg="20" ng-repeat="video in module.data track by $index">
+        <md-icon md-svg-icon="icons/close.svg" class="mt-module__remove-module"></md-icon>
+        <div class="mt-module__image-wrapper mt-bg-image cursor mb-30" ng-click="pageEditCtrl.filePicker(video.background, $event)" style="background-image: url({{ __serverAddress }}media/{{ video.background.src }})"></div>
+        <div class="mt-module__link-selector md-block">
+            <md-input-container class="md-block">
+                <label>Video Link Type</label>
+                <md-select ng-model="video.video.type" aria-label="Link type selector">
+                    <md-option value="" ng-selected="!video.video.type || video.video.type === undefined">No Video</md-option>
+                    <md-option value="external">External</md-option>
+                    <md-option value="file">File</md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container class="md-block" ng-if="video.video.type === 'external'">
+                <label>Video URL</label>
+                <input type="text" ng-model="video.video.url">
+            </md-input-container>
+            <md-button class="fwidth" ng-if="video.video.type === 'file'" ng-click="pageEditCtrl.filePicker(video.background, $event)">Choose Video</md-button>
+        </div>
+        <md-input-container class="md-block">
+            <label>Video Title</label>
+            <input type="text" ng-model="video.title[selectedLanguage]">
+        </md-input-container>
+    </div>
+</mt-module-block>

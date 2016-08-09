@@ -1,0 +1,18 @@
+<md-dialog aria-label="File Manager" id="mt-file-editor-window">
+    <md-content layout="row" style="height: 100%">
+        <form ng-submit="languageAddCtrl.save()" name="fileEditForm" layout="column">
+
+            <md-input-container>
+                <label>Language Title</label>
+                <md-input type="text" ng-model="languageAddCtrl.languageTitle"></md-input>
+            </md-input-container>
+
+            <md-input-container>
+                <label>Language Code</label>
+                <md-input type="text" ng-model="languageAddCtrl.languageCode"></md-input>
+            </md-input-container>
+
+            <md-button type="submit">add language</md-button>
+        </form>
+    </md-content>
+</md-dialog>

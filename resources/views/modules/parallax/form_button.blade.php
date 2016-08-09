@@ -188,7 +188,6 @@
                 }
             })
         });
-
     </script>
 </div>
 <!-- module_end: parallax.call_to_action -->

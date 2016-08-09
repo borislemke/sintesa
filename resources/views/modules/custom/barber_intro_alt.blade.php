@@ -26,7 +26,7 @@
                 <p class="pt-50">{!! $module->data->intro !!}</p>
             </div>
         </div>
-        <div class="column width-3 push-up">
+        <div class="column width-3 push-up mt-mobile-30">
             <img src="media/{{ $module->data->image_square->src }}" class="bordered horizon"
                  data-animate-in="opacity:0;transY:50;duration:1000;easing:easeFastSlow;"
                  data-threshold="0.5" alt="{{ $module->data->image_square->src }}"/>

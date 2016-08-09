@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -16,6 +17,7 @@ class AuthenticateController extends Controller
 
     public function authenticate(Request $request)
     {
+
         // grab credentials from the request
         $credentials = $request->only('email', 'password');
 
@@ -29,10 +31,10 @@ class AuthenticateController extends Controller
             return response()->json(['error' => 'could_not_create_token'], 500);
         }
 
-        // $user = JWTAuth::parseToken()->authenticate();
+        $user = User::where('email', $request->email)->first();
 
         // all good so return the token
-        return response()->json(compact('token'));
+        return response()->json(compact('token', 'user'));
     }
 
     public function reauthenticate(Request $request)

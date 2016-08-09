@@ -1,0 +1,57 @@
+<md-content id="mt-sidenav" layout="row">
+    <md-button class="md-icon-button" id="sidebar-lock-button" ng-click="navbarCtrl.switchSideLock()" aria-label="Toggle sidebar lock">
+        <i ng-if="!sideIsLocked" class="icon-basic-lock-open"></i>
+        <i ng-if="sideIsLocked" class="icon-basic-lock"></i>
+    </md-button>
+    <md-list id="mt-menu-group-wrapper" layout="column">
+
+        <!-- Admin Profile -->
+        <mt-menu-item id="nav-user-profile">
+            <md-menu class="mt-menu-group-item">
+                <md-button aria-label="Open menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                    <img src="images/avatar.jpeg">
+                </md-button>
+
+                <md-menu-content width="4">
+                    <md-menu-item>
+                        <md-button ng-click="navbarCtrl.toggleNotifications()">
+                            <i class="menu-icon icon-basic-bolt"></i>
+                            Notifications
+                        </md-button>
+                    </md-menu-item>
+
+                    <md-menu-item>
+                        <md-button ng-click="navbarCtrl.myAccount()">
+                            <i class="menu-icon icon-basic-case"></i>
+                            My Profile
+                        </md-button>
+                    </md-menu-item>
+
+                    <md-menu-item>
+                        <md-button ng-click="navbarCtrl.logout()">
+                            <i class="menu-icon icon-basic-download rotate-90"></i>
+                            Logout
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+            <mt-notif-counter>7</mt-notif-counter>
+        </mt-menu-item>
+
+        <!-- Main Navigation Groups -->
+        <mt-menu-item ng-repeat="menu in navbarCtrl.menuItems track by $index" class="mt-menu-group-item" ng-click="menu.submenu ? navbarCtrl.openMenu(menu.identifier) : navbarCtrl.navigate(menu.link, menu.identifier)" md-ink-ripple="#d3d3d3" ng-cloak ng-class="{active: activeMenu == menu.identifier}">
+            <i class="menu-icon icon-{{menu.icon}}"></i>
+            <md-tooltip class="nav-group-tooltip" md-direction="right" md-delay="500">{{menu.title}}</md-tooltip>
+        </mt-menu-item>
+    </md-list>
+
+    <md-content id="mt-submenu-wrapper">
+        <md-list ng-repeat="menu in navbarCtrl.menuItems track by $index" ng-if="menu.submenu" ng-show="activeMenu == menu.identifier">
+            <h3 ng-bind="menu.title"></h3>
+            <md-list-item ng-repeat="submenu in menu.submenu track by $index" ng-if="!submenu.subtitle" ng-href="{{ __routePrefix + submenu.link }}" ng-class="{current: location === submenu.link}" aria-label="submenu.title">
+                <p ng-bind="submenu.title"></p>
+                <!--<mt-submenu-notif ng-bind="24"></mt-submenu-notif>-->
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-content>

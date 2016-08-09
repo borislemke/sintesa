@@ -24,8 +24,8 @@
 
                             @foreach($navigation->children as $nav)
                             <li class="">
-                                <a href="{{ $nav->no_link ? Request::path() . '#' : ($nav->url_type != 'external' ? route($nav->url_type, ['url' => $nav->url]) : $nav->url) }}" class="{{ count($nav->children) ? 'contains-sub-menu' : '' }}">{{  $nav->title }}</a>
-                                @if(isset($nav->children) AND $nav->children)
+                                <a href="{{ $nav->no_link ? Request::path() . '#' : ($nav->url_type != 'external' ? route($nav->url_type, ['url' => $nav->url]) : $nav->url) }}" class="{{ count($nav->children) && $nav->url != 'accommodation' ? 'contains-sub-menu' : '' }}">{{  $nav->title }}</a>
+                                @if(isset($nav->children) AND $nav->children AND $nav->url != 'accommodation')
                                 <ul class="sub-menu">
                                     @foreach($nav->children as $child)
                                     <li class="{{ count($child->children) ? 'contains-sub-menu' : '' }}">
@@ -132,7 +132,7 @@
                                     @foreach($navigation->children as $nav)
                                     <li>
                                         <a href="{{ $nav->no_link ? Request::path() . '#' : ($nav->url_type != 'external' ? route($nav->url_type, ['url' => $nav->url]) : $nav->url) }}" class="{{ $nav->no_link ? 'disable-linkeffect' : '' }}">{{  $nav->title }}</a>
-                                        @if(isset($nav->children) AND $nav->children)
+                                        @if(isset($nav->children) AND $nav->children AND $nav->url)
                                         <ul class="sub-menu">
                                             @foreach($nav->children as $child)
                                             <li class="{{ count($child->children) ? 'contains-sub-menu' : '' }}">

@@ -1,0 +1,168 @@
+<md-content class="mt-page-template" id="mt-page-content-page-edit" layout="column">
+    <md-toolbar class="md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex ng-click="productEditCtrl.notify()">
+                <span ng-bind="productEditCtrl.title + ': ' + productEditCtrl.product.name"></span>
+                <mt-warning ng-if="pageForm.$dirty" style="margin-right: 16px">You have unsaved changes</mt-warning>
+            </h2>
+
+            <md-button class="btn" ng-click="productEditCtrl.resetForm(pageForm)" ng-disabled="pageForm.$pristine">
+                reset
+            </md-button>
+            <md-button type="submit" class="md-primary btn gradient" ng-disabled="pageForm.$pristine">save</md-button>
+            <md-button ng-if="!productEditCtrl.product.status" type="submit" class="md-primary btn gradient" ng-disabled="pageForm.$pristine">save &amp; publish
+            </md-button>
+            <md-button class="btn gradient" ng-href="{{ __serverAddress + productEditCtrl.product.url }}" target="_blank">preview page
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content class="mt-data-container md-padding" flex md-scroll-y>
+        <form name="pageForm" ng-submit="productEditCtrl.savePage(pageForm)">
+
+            <md-content class="md-padding content-module-block p-30 card-block">
+                <h3>Basic Information</h3>
+                <div class="" layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="50">
+                        <label>Product Title</label>
+                        <input type="text" ng-model="productEditCtrl.product.locale.title">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="50">
+                        <label>Product URL</label>
+                        <input type="text" ng-model="productEditCtrl.product.slug">
+                    </md-input-container>
+                </div>
+                <div layout="row">
+                    <md-input-container flex="33">
+                        <label>Status</label>
+                        <md-select ng-model="productEditCtrl.product.status" aria-label="Page availability">
+                            <md-option value="1" ng-selected="productEditCtrl.product.status === 1">
+                                Enabled
+                            </md-option>
+                            <md-option value="0" ng-selected="productEditCtrl.product.status === 0">
+                                Disabled
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container flex="33">
+                        <label>Page Header</label>
+                        <md-select ng-model="productEditCtrl.product.header" aria-label="Select which page header this page is using">
+                            <md-option ng-repeat="header in productEditCtrl.headers" ng-selected="header.code == productEditCtrl.product.header" value="{{header.code}}" ng-bind="header.name">
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container flex="33">
+                        <label>Page Footer</label>
+                        <md-select ng-model="productEditCtrl.product.footer" aria-label="Select which page footer this page is using">
+                            <md-option ng-repeat="footer in productEditCtrl.footers" ng-selected="footer.code === productEditCtrl.product.footer" value="{{footer.code}}" ng-bind="footer.name"></md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <md-input-container class="md-block">
+                    <label>Page Meta Description</label>
+                    <textarea ng-model="productEditCtrl.product.locale.content" md-maxlength="155"></textarea>
+                    <div ng-messages="productEditCtrl.product.meta.$error" role="alert">
+                        <div ng-message="md-maxlength" class="my-message">
+                            Meta description that are too long may cripple Search Engine Ranking
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <div class="" layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="50">
+                        <label>Product Price</label>
+                        <input type="text" ng-model="productEditCtrl.product.price">
+                    </md-input-container>
+                    <md-input-container flex="50">
+                        <label>Price By Request</label>
+                        <md-select ng-model="productEditCtrl.product.priceRequest" aria-label="Price by request only">
+                            <md-option value="0">
+                                No
+                            </md-option>
+                            <md-option value="1">
+                                Yes
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <md-input-container class="md-block" flex="33">
+                    <label>Exterior Designer</label>
+                    <input type="text" ng-model="productEditCtrl.product.exterior_designer" title="Exterior Designer">
+                </md-input-container>
+            </md-content>
+
+            <md-content class="md-padding content-module-block p-30 card-block">
+                <h3>Specification</h3>
+                <div layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="33">
+                        <label>Crew Capacity</label>
+                        <input type="number" ng-model="productEditCtrl.product.crew" title="Crew Capacity">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="33">
+                        <label>Cabins</label>
+                        <input type="number" ng-model="productEditCtrl.product.cabin" title="Cabins">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="33">
+                        <label>Guest Capacity</label>
+                        <input type="number" ng-model="productEditCtrl.product.guest" title="Guest Capacity">
+                    </md-input-container>
+                </div>
+                <div layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="50">
+                        <label>Builder</label>
+                        <input type="text" ng-model="productEditCtrl.product.builder" title="Builder">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="50">
+                        <label>Build Year</label>
+                        <input type="text" ng-model="productEditCtrl.product.built" title="Build year">
+                    </md-input-container>
+                </div>
+                <div layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="50">
+                        <label>Construction</label>
+                        <input type="text" ng-model="productEditCtrl.product.construction" title="Construction">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="50">
+                        <label>Engine</label>
+                        <input type="text" ng-model="productEditCtrl.product.engine" title="Engine">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="50">
+                        <label>Speed(knots)</label>
+                        <input type="text" ng-model="productEditCtrl.product.speed" title="Speed in Knots">
+                    </md-input-container>
+                </div>
+                <div layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex="33">
+                        <label>Length</label>
+                        <input type="number" ng-model="productEditCtrl.product.length" title="Product Length">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="33">
+                        <label>Cabins</label>
+                        <input type="number" ng-model="productEditCtrl.product.cabin" title="Cabins">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="33">
+                        <label>Displacement</label>
+                        <input type="number" ng-model="productEditCtrl.product.displacement" title="Displacement">
+                    </md-input-container>
+                </div>
+            </md-content>
+        </form>
+    </md-content>
+</md-content>
+
+<!--
+beam
+builder
+built
+cabin
+construction
+crew
+displacement
+engine
+exterior_designer
+guest
+length
+price
+speed
+-->

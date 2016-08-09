@@ -1,0 +1,30 @@
+<md-content class="mt-page-template" id="mt-page-content-room-edit" layout="column">
+    <md-toolbar class="md-toolbar-header">
+        <span class="flex"></span>
+        <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+            <h2 flex>
+                <span>Edit Footer</span>
+            </h2>
+        </div>
+    </md-toolbar>
+
+    <md-content class="mt-data-container md-padding card-block" flex md-scroll-y>
+        <form>
+            <div layout="row">
+                <md-input-container flex>
+                    <label>Footer identifier</label>
+                    <input type="text" ng-model="footerEditCtrl.footer.name">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Footer label</label>
+                    <input type="text" ng-model="footerEditCtrl.footer.title">
+                    <div class="hint">This label is shown when you select a footer while editing a page</div>
+                </md-input-container>
+            </div>
+
+            <div class="footer-builder">
+
+            </div>
+        </form>
+    </md-content>
+</md-content>

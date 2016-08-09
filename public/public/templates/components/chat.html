@@ -1,0 +1,66 @@
+<md-content class="mt-page-template" id="mt-page-content-messaging" layout="row">
+
+    <md-content flex="20" class="chat-window-left">
+        <md-toolbar class="md-toolbar-header">
+            <span class="flex"></span>
+            <h2>
+                <span>People</span>
+            </h2>
+        </md-toolbar>
+        <md-list md-scroll-y>
+            <div class="mt-contact-placeholder" ng-if="!chatCtrl.contacts.length">
+                <p>No one has contacted you yet</p>
+            </div>
+
+            <md-list-item ng-repeat="person in chatCtrl.contacts" class="cursor" layout="row" ng-click="chatCtrl.getThread(person.from_user)" aria-label="Chat contact person">
+                <img ng-if="person.thumbnail" src="https://www.google.co.id/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwja0sfx8f_MAhXMLY8KHU8GBywQjBwIBA&url=http%3A%2F%2Fgrifftrans2000.hu%2Fimages%2Funknown.png&psig=AFQjCNFYnkcdOGWgmuWVrKBSLHLYGUy16w&ust=1464632096156610">
+                <img ng-src="{{ person.thumbnail }}">
+                <div class="mt-person-info" layout="column">
+                    <p class="mt-person-name" ng-bind="person.from_user"></p>
+                    <p class="mt-person-email" ng-bind="person.email"></p>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+
+    <md-content flex="80" class="chat-window-right">
+        <md-toolbar class="md-toolbar-header">
+            <span class="flex"></span>
+            <div class="toolbar-tools md-toolbars-tool-bottom" layout="row">
+                <h2 flex>
+                    <span ng-bind="chatCtrl.currentRecipient.name"></span>
+                </h2>
+            </div>
+        </md-toolbar>
+
+        <md-content class="mt-data-container md-padding" flex md-scroll-y>
+            <div layout="column" class="mt-chat-wrapper">
+                <div class="mt-chat-content" id="mt-chat-content" layout="column" flex>
+
+                    <div class="mt-chat-placeholder" ng-if="!chatCtrl.currentRecipient.messages.length" layout="column" layout-align="center center">
+                        <md-icon md-svg-icon="icons/delete.svg"></md-icon>
+                    </div>
+
+                    <div ng-repeat="chat in chatCtrl.currentRecipient.messages" class="mt-chat-item" ng-class="{'mt-chat-item-outgoing': chat.from_user === chatCtrl.selfId, 'mt-chat-item-incoming':chat.from_user !== chatCtrl.selfId}">
+                        <p ng-bind="chat.message"></p>
+                        <p class="mt-chat-timestamp">23:10</p>
+                    </div>
+
+                    <div ng-if="chatTyping !== ''" class="mt-chat-item mt-chat-item-typing">
+                        <p class="mt-chat-timestamp">User is typing</p>
+                        <p ng-bind="chatTyping"></p>
+                    </div>
+                </div>
+
+                <mt-chat-actions>
+                    <form ng-submit="chatCtrl.send()" layout="row">
+                        <md-input-container md-no-float class="md-block" flex>
+                            <input type="text" ng-model="chatCtrl.msg" ng-keyup="chatCtrl.emitTyping()" autocomplete="off" aria-label="Message input box">
+                        </md-input-container>
+                        <md-button type="submit">send</md-button>
+                    </form>
+                </mt-chat-actions>
+            </div>
+        </md-content>
+    </md-content>
+</md-content>

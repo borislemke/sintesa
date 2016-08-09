@@ -5,7 +5,8 @@
             <h3 style="margin: 40px 12px;">{{ $module->data->title->{locale()} }}</h3>
         @endif
         <div class="column width-12">
-            <div id="grid-1" class="row content-grid-4 masonry-grid fade-in-progressively" data-grid-ratio="1">
+            {{-- masonry-grid --}}
+            <div id="grid-1" class="row content-grid-4 fade-in-progressively" data-grid-ratio="1">
                 <?php $i = 0 ?>
                 @foreach($module->data as $item)
                     <div class="grid-item {{ $i == 0 ? ' grid-sizer' : '' }} portrait">

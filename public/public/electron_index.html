@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MatterCMS</title>
+    <script>
+        var SERVER_ADDRESS = 'http://sintesa.dev/';
+        var SOCKET_ADDRESS = 'http://socket.stellium.io/';
+        // false if app runs inside electron
+        var HTML5_MODE = !(window && window.process && window.process.type);
+        if (HTML5_MODE) document.write('<base href="/">');
+    </script>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0001, maximum-scale=1.0001, minimum-scale=1.0001">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="css/dependencies.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dependencies.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        #electron-drag-region {
+            height: 24px;
+            left: 64px;
+            background-color: #3B404D;
+            width: calc(100% - 64px);
+            -webkit-app-region: drag;
+            position: relative;
+            z-index: 99;
+            text-align: right;
+        }
+        .electron-buttons {
+            background: transparent;
+            border: 0;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+            letter-spacing: .5px;
+            line-height: 20px;
+        }
+        #md-content-right {
+            height: calc(100% - 24px) !important;
+            top: 24px !important;
+        }
+    </style>
+</head>
+<body ng-controller="MainCtrl as mainCtrl"
+      ng-class="{
+      init: init,
+      aside: sideIsOpen,
+      sidelocked: sideIsLocked,
+      authScreen: isAuthPage
+      }">
+<div id="electron-drag-region">
+    <button id="electron-close" class="electron-buttons">close</button>
+    <button id="electron-min" class="electron-buttons">min</button>
+    <button id="electron-max" class="electron-buttons" style="margin-right: 2px;">max</button>
+</div>
+<mt-app-wrapper layout="row" style="box-shadow: none;">
+    <mt-navbar></mt-navbar>
+
+    <md-content id="md-content-right" ng-click="mainCtrl.closeMenu()">
+        <!-- MAGIC VIEW -->
+        <md-content id="app-view" ng-view>
+
+        </md-content>
+    </md-content>
+    <mt-notifications></mt-notifications>
+    <mt-profile-sidebar></mt-profile-sidebar>
+</mt-app-wrapper>
+<script src="renderer.js"></script>
+</body>
+</html>
