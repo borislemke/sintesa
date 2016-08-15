@@ -65,6 +65,8 @@ Route::group(['prefix' => 'api'], function () {
             Route::get('users/auth', 'AuthenticateController@getAuthenticatedUser');
             Route::resource('users', 'UsersController');
 
+            Route::resource('footer', 'FooterDataController');
+
             //Route::resource('media', 'PostsController');
 
             Route::group(['prefix' => 'dashboard'], function () {

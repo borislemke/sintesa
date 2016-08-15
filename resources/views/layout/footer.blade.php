@@ -1,4 +1,7 @@
 <!-- Footer 1-->
+<?php
+        $footer_data = json_decode(File::get(storage_path('json/footer.json')));
+?>
 <footer class="footer-1 footer reveal-side-navigation bkg-gold color-white" {{ isset($dark) ? ' style="background-color: #161616; color: white;"' : '' }}>
     <div class="footer-top ">
         <div class="row pb-60">
@@ -11,48 +14,47 @@
 
             <div class="column width-3">
                 <div class="widget">
-                    <h4 class="widget-title">{{ $footer->data->address->title }}</h4>
+                    <h4 class="widget-title">{{ $footer_data->contact->title }}</h4>
                     <address>
-                        Jl. Kencana No. 1<br>
-                        Jimbaran, Bali 80361 - Indonesia<br>
-                        <i class="icon-phone"></i> <strong>+62 361 472 5333</strong><br>
-                        <i class="icon-mail"></i> <a href="mailto:infotsj@sintesahotels.com">infotsj@sintesahotels
-                            .com</a><br>
+                        {{ $footer_data->contact->address_1 }}<br>
+                        {{ $footer_data->contact->address_2 }}<br>
+                        <i class="icon-phone"></i> <strong>{{ $footer_data->contact->tel }}</strong><br>
+                        <i class="icon-mail"></i> <a href="mailto:{{ $footer_data->contact->email }}">{{ $footer_data->contact->email }}</a><br>
                     </address>
 
                     <ul class="social-list list-horizontal no-margin-bottom">
                         <li>
-                            <a href="https://twitter.com/SintesaJimbaran">
+                            <a href="{{ $footer_data->social->twitter }}">
                                 <span class="icon-twitter small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/The-Sintesa-Jimbaran-Bali-1590874997861251/">
+                            <a href="{{ $footer_data->social->facebook }}">
                                 <span class="icon-facebook small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/thesintesajimbaran/">
+                            <a href="{{ $footer_data->social->instagram }}">
                                 <span class="icon-instagram small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://id.pinterest.com/sintesajimbaran/">
+                            <a href="{{ $footer_data->social->pinterest }}">
                                 <span class="icon-pinterest small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/106742365410489660521/about">
+                            <a href="{{ $footer_data->social->google }}">
                                 <span class="icon-google small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/the-sintesa-jimbaran-b6095a100">
+                            <a href="{{ $footer_data->social->linkedin }}">
                                 <span class="icon-linkedin small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UClt1s81tGD_sSFQ0TsYV7ew">
+                            <a href="{{ $footer_data->social->youtube }}">
                                 <span class="icon-youtube small"></span>
                             </a>
                         </li>
@@ -84,8 +86,8 @@
 
 
             <div class="column width-2 award">
-                <h4 class="widget-title">Awards</h4>
-                <img src="media/bookingaward2.jpg" style="width:100%; height:auto; max-width: 196px;"/>
+                <h4 class="widget-title">{{ $footer_data->awards->title }}</h4>
+                <img src="media/{{ $footer_data->awards->image->src }}" alt="{{ $footer_data->awards->image->alt }}" style="width:100%; height:auto; max-width: 196px;"/>
             </div>
 
 
