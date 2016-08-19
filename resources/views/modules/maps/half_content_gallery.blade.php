@@ -25,7 +25,7 @@
 
         var marker, i;
 
-        var vendor_logo = new google.maps.MarkerImage("media/" + focus["icon"], null, null, null, new google.maps.Size(32, 32));
+        var vendor_logo = new google.maps.MarkerImage("media/" + focus["icon"], null, null, null, new google.maps.Size(64, 64));
 
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(focus['lat'], focus['long']),
