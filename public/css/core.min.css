@@ -6397,7 +6397,7 @@ a {
         display:none !important;
     }
     .tms-content-inner.v-align-bottom, .tms-content-inner.v-align-bottom-on-mobile {
-        padding-bottom: 4rem !important;
+        padding-bottom: 10rem !important;
     }
 }
 .tms-arrow-nav {

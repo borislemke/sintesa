@@ -740,8 +740,12 @@ body,
 @media only screen and (max-width: 960px){
 
   .window-height.include-booking {
-    height: 320px !important;
+    height: 220px !important;
   }
+
+    .window-height.include-booking .tsm-slide {
+        height: 75% !important;
+    }
 }
 
 /*------------------------------------------------------------------
