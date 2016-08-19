@@ -5,8 +5,8 @@
 <footer class="footer-1 footer reveal-side-navigation bkg-gold color-white" {{ isset($dark) ? ' style="background-color: #161616; color: white;"' : '' }}>
     <div class="footer-top ">
         <div class="row pb-60">
-            <div class="column width-3 mb-mobile-30">
-                <svg class="" style="text-align: center;">
+            <div class="column width-3 mb-mobile-30" style="text-align: center;">
+                <svg class="">
                     <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
                 </svg>
 
