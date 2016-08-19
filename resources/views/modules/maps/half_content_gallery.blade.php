@@ -13,6 +13,7 @@
             mapTypeControl: false,
             styles: styles,
             scrollwheel: false,
+            draggable: !("ontouchend" in document),
             zoom: {{ $module->data->zoom }}
         });
 
@@ -84,10 +85,10 @@
 
 <section class="section-block no-padding-top no-padding-bottom" style="background-color:#d9d9d9">
 	<div class="row collapse full-width">
-		<div class="column width-6">
+		<div class="column width-6 mobile-width-12">
 			<div id="jimbaran-map" style="height: 540px; width:100%;"></div>
 		</div>
-		<div class="column width-6 hide-on-mobile">
+		<div class="column width-6 mobile-width-12">
 			<table class="distances">
 				@foreach($module->data->markers as $marker)
 				<tr>
@@ -98,13 +99,13 @@
 				@endforeach
 			</table>
 		</div>
-  </div>
+    </div>
 </section>
 
 <section class="section-block blog-masonry bkg-white small-margins">
 	<div class="row">
 		<div class="column width-10 offset-1">
-			<div class="content-grid-3 masonry-grid equalize">
+			<div class="content-grid-3 equalize">
 				<?php $i = 0 ?>
 				@foreach($module->data->markers as $marker)
 					<?php if ($i < 9) { ?>
@@ -117,9 +118,9 @@
 						</div>
 					<?php $i++; } ?>
 				@endforeach
-	  	</div>
-	  </div>
-	</div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- module_end: map.half_content_gallery -->
 
