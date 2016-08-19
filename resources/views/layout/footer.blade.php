@@ -6,7 +6,7 @@
     <div class="footer-top ">
         <div class="row pb-60">
             <div class="column width-3 mb-mobile-30">
-                <svg class="">
+                <svg class="" style="text-align: center;">
                     <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
                 </svg>
 
