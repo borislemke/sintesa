@@ -105,7 +105,7 @@
 <section class="section-block blog-masonry bkg-white small-margins">
 	<div class="row">
 		<div class="column width-10 offset-1">
-			<div class="content-grid-3 equalize">
+			<div class="content-grid-3 masonry-grid equalize">
 				<?php $i = 0 ?>
 				@foreach($module->data->markers as $marker)
 					<?php if ($i < 9) { ?>

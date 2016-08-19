@@ -86,7 +86,7 @@
         "order": 3,
         "title": "Food &amp; Beverage",
         "parent": 1,
-        "url": "accommodation",
+        "url": "#",
         "url_type": "page",
         "no_link": 1
     },
