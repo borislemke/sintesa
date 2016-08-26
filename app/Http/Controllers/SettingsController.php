@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use File;
+use App\Paper;
 use App\SystemLanguage;
 use Illuminate\Filesystem\FilesystemManager;
 use Illuminate\Http\Request;
@@ -132,5 +133,33 @@ class SettingsController extends Controller
                 ]
             ];
         }
+    }
+
+    public function doctor()
+    {
+        $pages = Paper::all();
+
+        $pagesData = [];
+        foreach ($pages as $page) {
+            $pagesData[] = [
+                "page" => $page->title,
+                "content" => json_decode($page->content)
+            ];
+        }
+
+        echo "<pre>";
+        foreach ($pagesData as $pData) {
+            $module_order = [$pData["page"]];
+            foreach ($pData["content"] as $module) {
+                if (in_array($module->order, $module_order)) dd($pData["content"]);
+                if ($module->order) $module_order[] = $module->order;
+                else $module_order[] = [
+                    "error_on" => $module
+                ];
+            }
+            var_dump($module_order);
+            echo "<br><br>";
+        }
+        echo "<pre>";
     }
 }
