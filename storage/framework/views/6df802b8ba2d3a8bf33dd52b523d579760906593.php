@@ -90,7 +90,7 @@ $footer_data = json_decode(File::get(storage_path('json/footer.json')));
 
                 <h4 class="widget-title"><?php echo e($footer_data->awards->title); ?></h4>
 
-                <div class="tm-slider-container content-slider lazyload resizing footer-slider" data-animation="slide" data-scale-min-height="100" data-scale-under="960" data-width="240" data-height="240" style="width: 160px; height: 160px;">
+                <div class="tm-slider-container content-slider lazyload resizing footer-slider" data-animation="slide" data-scale-min-height="100" data-scale-under="960" data-width="240" data-height="240" style="width: 160px; height: 160px;" data-auto-advance="2000">
                     <ul class="tms-slides">
                         <li class="tms-slide active tms-forcefit" data-image="" data-force-fit="" data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.1" id="tms-slide-1">
                             <img data-src="media/bookingaward.jpg" data-retina="" src="media/bookingaward.jpg" alt="">
