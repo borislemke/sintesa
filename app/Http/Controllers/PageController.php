@@ -48,7 +48,7 @@ class PageController extends Controller
 
         $page = ($page == '' ? 'home' : $page);
 
-        if (Config::get('app.debug')) return $this->serveManual($page);
+        if (env('SERVE_MANUAL')) return $this->serveManual($page);
 
         return File::get(storage_path("rendered/$page.html"));
     }
