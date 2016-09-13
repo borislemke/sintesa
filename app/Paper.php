@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Htmldom;
+use File;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -30,7 +32,6 @@ class Paper extends Model
     {
         parent::boot();
         static::creating(function($page) {
-
         });
 
         static::updating(function($page) {
@@ -40,8 +41,13 @@ class Paper extends Model
 
         });
 
-        static::created(function($page) {
+        static::created(function($paper) {
 
+            $dom = new Htmldom();
+
+            // $page = $dom->file_get_html('http://sintesa.dev/render/' . $paper->url);
+
+            // File::put(storage_path('rendered/' . $paper->url . '.html'), $page);
         });
 
         static::updated(function($page) {

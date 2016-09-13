@@ -157,9 +157,12 @@ class SettingsController extends Controller
                     "error_on" => $module
                 ];
             }
-            var_dump($module_order);
+            asort($module_order);
+            print_r($module_order);
             echo "<br><br>";
         }
         echo "<pre>";
+        unset($module_order);
+        unset($pagesData);
     }
 }

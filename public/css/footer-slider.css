@@ -1,0 +1,8 @@
+.tm-slider-container.footer-slider .tms-arrow-nav {
+    opacity: .2;
+    margin-top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.4rem;
+}

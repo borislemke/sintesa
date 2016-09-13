@@ -2,66 +2,66 @@
 <?php
 $footer_data = json_decode(File::get(storage_path('json/footer.json')));
 ?>
-<footer class="footer-1 footer reveal-side-navigation bkg-gold color-white" {{ isset($dark) ? ' style="background-color: #161616; color: white;"' : '' }}>
+<footer class="footer-1 footer reveal-side-navigation bkg-gold color-white" <?php echo e(isset($dark) ? ' style="background-color: #161616; color: white;"' : ''); ?>>
     <div class="footer-top ">
         <div class="row pb-60">
             <div class="column width-3 mb-mobile-30" style="text-align: center;">
                 <svg class="">
-                    <use xlink:href="{{ Request::path() }}#fleava-logo-sintesa"></use>
+                    <use xlink:href="<?php echo e(Request::path()); ?>#fleava-logo-sintesa"></use>
                 </svg>
 
             </div>
 
             <div class="column width-3">
                 <div class="widget">
-                    <h4 class="widget-title">{{ $footer_data->contact->title }}</h4>
+                    <h4 class="widget-title"><?php echo e($footer_data->contact->title); ?></h4>
                     <address>
-                        {{ $footer_data->contact->address_1 }}<br>
-                        {{ $footer_data->contact->address_2 }}<br>
-                        <i class="icon-phone"></i> <strong>{{ $footer_data->contact->tel }}</strong><br>
+                        <?php echo e($footer_data->contact->address_1); ?><br>
+                        <?php echo e($footer_data->contact->address_2); ?><br>
+                        <i class="icon-phone"></i> <strong><?php echo e($footer_data->contact->tel); ?></strong><br>
                         <i class="icon-mail"></i> <a
-                                href="mailto:{{ $footer_data->contact->email }}">{{ $footer_data->contact->email }}</a><br>
+                                href="mailto:<?php echo e($footer_data->contact->email); ?>"><?php echo e($footer_data->contact->email); ?></a><br>
                     </address>
 
                     <ul class="social-list list-horizontal no-margin-bottom">
                         <li>
-                            <a href="{{ $footer_data->social->twitter }}">
+                            <a href="<?php echo e($footer_data->social->twitter); ?>">
                                 <span class="icon-twitter small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $footer_data->social->facebook }}">
+                            <a href="<?php echo e($footer_data->social->facebook); ?>">
                                 <span class="icon-facebook small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $footer_data->social->instagram }}">
+                            <a href="<?php echo e($footer_data->social->instagram); ?>">
                                 <span class="icon-instagram small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $footer_data->social->pinterest }}">
+                            <a href="<?php echo e($footer_data->social->pinterest); ?>">
                                 <span class="icon-pinterest small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $footer_data->social->google }}">
+                            <a href="<?php echo e($footer_data->social->google); ?>">
                                 <span class="icon-google small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $footer_data->social->linkedin }}">
+                            <a href="<?php echo e($footer_data->social->linkedin); ?>">
                                 <span class="icon-linkedin small"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $footer_data->social->youtube }}">
+                            <a href="<?php echo e($footer_data->social->youtube); ?>">
                                 <span class="icon-youtube small"></span>
                             </a>
                         </li>
                     </ul>
                     <br>
-                    <small style="display:block; line-height:1.3">&copy; {{ $footer->data->copyright }}<br> Website
+                    <small style="display:block; line-height:1.3">&copy; <?php echo e($footer->data->copyright); ?><br> Website
                         by <a href="http://fleava.com/" target="_blank"
                               title="Fleava - Bali Digital Advertising Agency">Fleava</a>.
                     </small>
@@ -88,7 +88,7 @@ $footer_data = json_decode(File::get(storage_path('json/footer.json')));
 
             <div class="column width-2 award">
 
-                <h4 class="widget-title">{{ $footer_data->awards->title }}</h4>
+                <h4 class="widget-title"><?php echo e($footer_data->awards->title); ?></h4>
 
                 <div class="tm-slider-container content-slider lazyload resizing footer-slider" data-animation="slide" data-scale-min-height="100" data-scale-under="960" data-width="240" data-height="240" style="width: 160px; height: 160px;">
                     <ul class="tms-slides">

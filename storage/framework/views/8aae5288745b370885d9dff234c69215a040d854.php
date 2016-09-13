@@ -2,12 +2,12 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
     <meta name="twitter:widgets:theme" content="light">
-    <meta property="og:title" content="{{ translate($data->title) }}"/>
+    <meta property="og:title" content="<?php echo e(translate($data->title)); ?>"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="media/favicon.png"/>
-    <meta property="og:description" content="{{ translate($data->meta) }}"/>
-    <title>{{ translate($data->title) }}</title>
-    <meta name="description" content="{{ translate($data->meta) }}"/>
+    <meta property="og:description" content="<?php echo e(translate($data->meta)); ?>"/>
+    <title><?php echo e(translate($data->title)); ?></title>
+    <meta name="description" content="<?php echo e(translate($data->meta)); ?>"/>
     <link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
 
     <link rel="stylesheet" href="css/footer-slider.css">
@@ -32,9 +32,10 @@
     <![endif]-->
     <base href="/">
 
-    {!! $settings->widget->chatra or '' !!}
+    <?php echo isset($settings->widget->chatra) ? $settings->widget->chatra : ''; ?>
 
-    {{--@if(isset($settings['plugin/chatra']) AND $settings['plugin/chatra'] != '')--}}
+
+    <?php /*<?php if(isset($settings['plugin/chatra']) AND $settings['plugin/chatra'] != ''): ?>*/ ?>
 <!-- Chatra {literal} -->
     <script>
 
@@ -54,7 +55,7 @@
             }
         }
 
-        {{--ChatraID = '{{ $settings['plugin/chatra'] }}';--}}
+        <?php /*ChatraID = '<?php echo e($settings['plugin/chatra']); ?>';*/ ?>
                 ChatraID = 'iqFxHHaSmXuBgvjSe';
         (function (d, w, c) {
             var n = d.getElementsByTagName('script')[0],
@@ -69,9 +70,9 @@
         })(document, window, 'Chatra');
     </script>
     <!-- /Chatra {/literal} -->
-    {{--@endif--}}
+    <?php /*<?php endif; ?>*/ ?>
 
-    {{--@if(isset($settings['plugin/ganalytics']) AND $settings['plugin/ganalytics'] != '')--}}
+    <?php /*<?php if(isset($settings['plugin/ganalytics']) AND $settings['plugin/ganalytics'] != ''): ?>*/ ?>
 <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -86,12 +87,12 @@
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        {{--ga('create', '{{ $settings['plugin/ganalytics'] }}', 'auto');--}}
+        <?php /*ga('create', '<?php echo e($settings['plugin/ganalytics']); ?>', 'auto');*/ ?>
         ga('create', 'UA-78522615-1', 'auto');
         ga('send', 'pageview');
     </script>
     <!-- /Google Analytics -->
-    {{--@endif--}}
+    <?php /*<?php endif; ?>*/ ?>
 
     <script type="text/javascript" src="http://hotelsitecontents.fastbooking.com/js/fb.js"></script>
 

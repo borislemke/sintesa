@@ -165,6 +165,7 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Spatie\Analytics\AnalyticsServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        Yangqi\Htmldom\HtmldomServiceProvider::class
     ],
 
     /*
@@ -218,5 +219,6 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'Htmldom' => Yangqi\Htmldom\Htmldom::class,
     ],
 ];

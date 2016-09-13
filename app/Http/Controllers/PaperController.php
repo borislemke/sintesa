@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Htmldom;
+use File;
+
 use App\Paper;
 use App\Http\Requests;
-use Illuminate\Support\Facades\File;
 
 class PaperController extends Controller
 {
@@ -17,7 +19,7 @@ class PaperController extends Controller
 
     public function index(Request $request)
     {
-        if(isset($request->start)) return $this->indexRange($request);
+        if (isset($request->start)) return $this->indexRange($request);
         return Paper::all();
     }
 
@@ -74,7 +76,7 @@ class PaperController extends Controller
     {
         $page = Paper::find($id);
 
-        if(!$page) return abort(404);
+        if (!$page) return abort(404);
 
         $page->title = json_decode($page->title);
         $page->meta = json_decode($page->meta);
@@ -88,7 +90,11 @@ class PaperController extends Controller
         $url_conflict = Paper::where('url', $request->url)->first();
 
         if ($url_conflict) {
-            return ['status' => 500, 'status-text' => 'error', 'monolog' => ['title' => 'Error saving page', 'message' => 'A page with the same URL already exists. Please choose a different URL']];
+            return [
+                'status' => 500, 'status-text' => 'error',
+                'monolog' => [
+                    'title' => 'Error saving page',
+                    'message' => 'A page with the same URL already exists. Please choose a different URL']];
         }
 
         $page = new Paper();
@@ -102,9 +108,20 @@ class PaperController extends Controller
         $page->url = $request->url;
 
         if ($page->save()) {
-            return ['status' => 200, 'status-text' => 'success', 'monolog' => ['title' => 'Page created', 'message' => 'Page has been created successfully'], 'saved_id' => $page->id];
+            return [
+                'status' => 200,
+                'status-text' => 'success',
+                'monolog' =>
+                    ['title' => 'Page created', 'message' => 'Page has been created successfully'], 'saved_id' => $page->id];
         } else {
-            return ['status' => 500, 'status-text' => 'error', 'monolog' => ['title' => 'Error saving page', 'message' => 'Something went wrong saving the page. If the error persists, contact your developer for assistance.']];
+            return [
+                'status' => 500,
+                'status-text' => 'error',
+                'monolog' => [
+                    'title' => 'Error saving page',
+                    'message' => 'Something went wrong saving the page. If the error persists, contact your developer for assistance.'
+                ]
+            ];
         }
     }
 
@@ -119,9 +136,19 @@ class PaperController extends Controller
         $page->status = $request->status;
         $page->title = json_encode($request->title);
         $page->url = $request->url;
-        $page->save();
 
-        return ['status' => 200, 'status-text' => 'success', 'monolog' => ['title' => 'Page created', 'message' => 'Page has been created successfully']];
+        if ($page->save()) {
+            $this->renderPage($page->url);
+        }
+
+        return [
+            'status' => 200,
+            'status-text' => 'success',
+            'monolog' => [
+                'title' => 'Page created',
+                'message' => 'Page has been created successfully'
+            ]
+        ];
     }
 
     public function destroy(Request $request)
@@ -132,5 +159,14 @@ class PaperController extends Controller
     public function jsonToObject($json)
     {
         return json_decode($json);
+    }
+
+    public function renderPage($url)
+    {
+        $dom = new Htmldom();
+
+        $page = $dom->file_get_html(env('APP_URL') . $url);
+
+        File::put(storage_path('rendered/' . $url . 'html'), $page);
     }
 }

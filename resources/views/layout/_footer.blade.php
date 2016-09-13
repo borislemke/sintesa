@@ -87,34 +87,64 @@ $footer_data = json_decode(File::get(storage_path('json/footer.json')));
 
 
             <div class="column width-2 award">
+                {{--
+                <h4 class="widget-title">{{ $footer_data->awards->title }}</h4>
+                <img src="media/{{ $footer_data->awards->image->src }}" alt="{{ $footer_data->awards->image->alt }}" style="width:100%; height:auto; max-width: 196px;"/>
+                --}}
 
                 <h4 class="widget-title">{{ $footer_data->awards->title }}</h4>
 
-                <div class="tm-slider-container content-slider lazyload resizing footer-slider" data-animation="slide" data-scale-min-height="100" data-scale-under="960" data-width="240" data-height="240" style="width: 160px; height: 160px;">
-                    <ul class="tms-slides">
-                        <li class="tms-slide active tms-forcefit" data-image="" data-force-fit="" data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.1" id="tms-slide-1">
-                            <img data-src="media/bookingaward.jpg" data-retina="" src="media/bookingaward.jpg" alt="">
-                            <div class="tms-overlay"></div>
-                        </li>
-                        <li class="tms-slide tms-forcefit" data-image="" data-force-fit="" data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.1" id="tms-slide-2">
-                            <img data-src="media/bookingaward2.jpg" data-retina="" src="media/bookingaward2.jpg" alt="">
-                            <div class="tms-overlay"></div>
-                        </li>
-                        <li class="tms-slide tms-forcefit" data-image="" data-force-fit="" data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.1" id="tms-slide-3">
-                            <img data-src="media/bookingaward.jpg" data-retina="" src="media/bookingaward.jpg" alt="">
-                            <div class="tms-overlay"></div>
-                        </li>
-                        <li class="tms-slide tms-forcefit" data-image="" data-force-fit="" data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.1" id="tms-slide-2">
-                            <img data-src="media/bookingaward2.jpg" data-retina="" src="media/bookingaward2.jpg" alt="">
-                            <div class="tms-overlay"></div>
-                        </li>
-                    </ul>
+                <ul class="mt-slider__widget">
 
-                </div>
+                        <li class="mt-slider__item active">
+                            <img src="media/bookingaward.jpg" alt="Footer image">
+                        </li>
+                        <li class="mt-slider__item">
+                            <img src="media/bookingaward2.jpg" alt="Footer image">
+                        </li>
+                    
+                    {{--
+                    <div class="mt-slider__navigation">
+                        <button class="mt-slider__navigation-prev">&lt;</button>
+                        <button class="mt-slider__navigation-prev"></button>
+                    </div>
+                    --}}
+
+                </ul>
 
             </div>
         </div>
     </div>
+
+    <script>
+
+        var stopAnimation = false;
+
+        var animateMtSlider = function (items, position) {
+
+            if (stopAnimation) return false;
+
+            for (var i = 0; i < items.length; i++) {
+                if ($(items[i]).hasClass('active')) $(items[i]).removeClass('active');
+                else $(items[i]).addClass('active');
+            }
+
+            if (position === items.length) position = 1;
+
+            setTimeout(function () {
+                animateMtSlider(items, position);
+            }, 3000);
+        };
+
+        window.onload = function () {
+            var items = $('.mt-slider__item');
+            console.log('Slider init');
+            console.log('Items', items);
+            console.log('Items length', items.length);
+            console.log('Items lenght is true', items.length > 1);
+            if (items.length > 1) animateMtSlider(items, 1);
+        };
+    </script>
 
 
     <script>
