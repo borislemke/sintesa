@@ -1,5 +1,10 @@
 <?php
 
+
+Route::get('/benchmark', function () {
+    return 'Hello World';
+});
+
 if (env('APP_DEBUG')) {
 
     Route::get('/_debugbar/assets/stylesheets', [
