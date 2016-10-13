@@ -21,7 +21,9 @@
 
 <div class="enquire-popup-wrapper" id="modal-content" style="padding:30px;display:none;">
 
-    @include('modules.parallax.forms.meeting', compact('module'))
+    <?php $form = 'meeting'; if (Request::path() == 'fitness-studio') $form = 'fitness';  ?>
+
+    @include('modules.parallax.forms.' . $form, compact('module'))
 
 </div>
 <!-- module_end: parallax.call_to_action -->

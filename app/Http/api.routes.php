@@ -14,6 +14,7 @@ Route::group(['prefix' => 'api'], function () {
 
         Route::post('contact-form', 'AjaxController@submit');
         Route::post('meeting', 'AjaxController@meeting');
+        Route::post('fitness', 'AjaxController@fitness');
     });
 
     Route::group(['middleware' => ['jwt.auth']], function () {

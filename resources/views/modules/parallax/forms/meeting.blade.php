@@ -151,11 +151,10 @@
     $(document).on('submit', '#enquire-form', function (e) {
         e.preventDefault();
         $.ajax({
+            data: $(this).serialize(),
             method: 'POST',
             url: '/api/ajax/meeting',
-            data: $(this).serialize(),
-            dataType: 'json',
-            contentType: "application/json; charset=utf-8",
+            // contentType: "application/json; charset=utf-8",
             error: function (err) {
                 alert("Could not connect to the registration server.");
                 console.log(err)

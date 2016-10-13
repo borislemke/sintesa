@@ -7,6 +7,11 @@
 <body>
     <table>
         <tr>
+            <td>Meeting Package Inquiry</td>
+        </tr>
+
+
+        <tr>
             <td>Name: {{ $data->title }} {{ $data->name }}</td>
         </tr>
         <tr>
